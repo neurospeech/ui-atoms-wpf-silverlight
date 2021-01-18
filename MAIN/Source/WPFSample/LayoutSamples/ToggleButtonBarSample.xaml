@@ -1,0 +1,26 @@
+﻿<Page xmlns:ns="http://uiatoms.neurospeech.com/wpf"  
+      x:Class="UIAtoms.WPFSamples.LayoutSamples.ToggleButtonBarSample"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+	  Title="ToggleButtonBarSample">
+
+    <Grid HorizontalAlignment="Center">
+        <ns:AtomForm 
+            LabelWidth="100" 
+            Header="ToggleButton Bar" Width="700">
+            
+            <ns:AtomToggleButtonBar 
+                ns:AtomForm.Label="Gender:" Name="togglebutton1" Margin="0,0,0,30">
+                    <sys:String>Male</sys:String>
+                    <sys:String>Female</sys:String>
+
+            </ns:AtomToggleButtonBar>
+                <TextBlock Text="{Binding SelectedValue,ElementName=togglebutton1}" 
+                           ns:AtomForm.Label="Selected Value:"  Margin="0,3,0,0"/>    
+        </ns:AtomForm>
+    </Grid>
+</Page>

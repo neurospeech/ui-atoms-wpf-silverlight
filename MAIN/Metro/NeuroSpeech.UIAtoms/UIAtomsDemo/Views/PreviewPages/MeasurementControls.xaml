@@ -1,0 +1,55 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="UIAtomsDemo.Views.PreviewPages.MeasurementControls"
+	d:DesignWidth="640" d:DesignHeight="480"    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    >
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="25"
+                   >Measurement Unit Controls</TextBlock>
+        <Image Source="/UIAtomsDemo;component/Views/PreviewPages/MeasurementControlPart1.png"
+               Stretch="None"
+               HorizontalAlignment="Right"
+               Margin="20" Grid.Row="1" />
+        <ItemsControl Grid.Column="1" VerticalAlignment="Center" Grid.Row="1">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="/UIAtomsDemo;component/Views/PreviewPages/AtomApproveButton.Icon.png" 
+                               Width="16" Height="16"
+                               />
+                        <ContentControl FontSize="20" Grid.Column="1" Content="{Binding}" />
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+            <sys:String>Length Editor</sys:String>
+            <sys:String>Temperature Editor</sys:String>
+            <sys:String>Time Editor</sys:String>
+            <sys:String>Velocity Editor</sys:String>
+            <sys:String>Volume Editor</sys:String>
+            <sys:String>Weight Editor</sys:String>
+            <sys:String>Angle Editor</sys:String>
+            <sys:String>Area Editor</sys:String>
+            <sys:String>Energy Editor</sys:String>
+            <sys:String>Power Editor</sys:String>
+            <sys:String>Pressure Editor</sys:String>
+        </ItemsControl>
+    </Grid>
+</UserControl>

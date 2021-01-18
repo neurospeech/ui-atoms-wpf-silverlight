@@ -1,0 +1,26 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.ListSamples.CountryComboBoxSample"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" Title="CountryComboBoxSample" xmlns:ns="http://uiatoms.neurospeech.com/wpf">
+
+        <ns:AtomForm 
+            LabelWidth="130" Width="700" 
+            Header="CountryComboBox" x:Name="countryForm" HorizontalAlignment="Center">
+            
+            <ns:AtomCountryComboBox 
+                ns:AtomForm.MissingValueMessage="Please select country"
+                Height="23" ns:AtomForm.Label="Country:" 
+                HorizontalAlignment="Left" Name="atomCountryComboBox1" 
+                Width="300" ns:AtomForm.IsRequired="True"/>
+            
+            <TextBlock 
+                   Name="txtbcountryComboBox" ns:AtomForm.Label="Selected Country:"
+                   Text="{Binding SelectedValue,ElementName=atomCountryComboBox1}"/>
+            
+            <ns:AtomButton 
+                HorizontalAlignment="Left"
+                Content="Validate" ValidationRootElement="countryForm"/>
+        </ns:AtomForm>
+</Page>

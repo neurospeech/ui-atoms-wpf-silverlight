@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <!-- The configuration and platform will be used to determine which
+         assemblies to include from solution and project documentation
+         sources -->
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b06091de-0197-4345-b9cb-8babdce5d1fe}</ProjectGuid>
+    <SHFBSchemaVersion>1.9.3.0</SHFBSchemaVersion>
+    <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual
+         Studio adds them anyway -->
+    <AssemblyName>Documentation</AssemblyName>
+    <RootNamespace>Documentation</RootNamespace>
+    <Name>Documentation</Name>
+    <!-- SHFB properties -->
+    <OutputPath>.\Help\</OutputPath>
+    <HtmlHelpName>UI Atoms 2010</HtmlHelpName>
+    <ContentPlacement>AboveNamespaces</ContentPlacement>
+    <DocumentationSources>
+      <DocumentationSource sourceFile="..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UIAtoms.csproj" />
+    </DocumentationSources>
+    <NamespaceSummaries>
+      <NamespaceSummaryItem name="XamlGeneratedNamespace" isDocumented="False" xmlns="" />
+    </NamespaceSummaries>
+    <ProjectSummary>UI Atoms 2010 - Line of Business Controls for WPF and Silverlight</ProjectSummary>
+    <CopyrightHref>http://uiatoms.neurospeech.com</CopyrightHref>
+    <CopyrightText>All rights reserved, 2010</CopyrightText>
+    <FeedbackEMailAddress>uiatoms%40neurospeech.com</FeedbackEMailAddress>
+    <FeedbackEMailLinkText>NeuroSpeech UIAtoms Division</FeedbackEMailLinkText>
+    <FooterText>NeuroSpeech Inc.</FooterText>
+    <HeaderText>UI Atoms 2010 for WPF and Silverlight</HeaderText>
+    <HelpTitle>UI Atoms 2010 for WPF and Silverlight</HelpTitle>
+    <VisibleItems>Protected, SealedProtected</VisibleItems>
+    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
+    <NewProperty1>
+    </NewProperty1>
+    <MissingTags>None</MissingTags>
+    <ComponentConfigurations>
+    </ComponentConfigurations>
+    <RootNamespaceContainer>True</RootNamespaceContainer>
+    <RootNamespaceTitle>UIAtoms Class Library</RootNamespaceTitle>
+    <SyntaxFilters>Standard</SyntaxFilters>
+    <NamingMethod>MemberName</NamingMethod>
+    <MSHelp2SdkLinkType>Index</MSHelp2SdkLinkType>
+    <MSHelpViewerSdkLinkType>None</MSHelpViewerSdkLinkType>
+    <PresentationStyle>Prototype</PresentationStyle>
+  </PropertyGroup>
+  <!-- There are no properties for these two groups but they need to appear in
+       order for Visual Studio to perform the build. -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <ContentLayout Include="Layout.content" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\" />
+    <Folder Include="Content\Getting Started\" />
+    <Folder Include="Content\Tokens\" />
+    <Folder Include="Content\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Welcome.aml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Getting Started.aml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\LicenseAgreement.aml" />
+    <None Include="Content\Getting Started\Walkthrough - Create New Form.aml" />
+    <None Include="Content\Getting Started\Walkthrough - Add Third Party Controls.aml" />
+    <None Include="Content\Getting Started\Walkthrough - Inline Validation in Code Behind.aml" />
+    <None Include="Content\Getting Started\Walkthrough - Create Custom Validation Rule.aml" />
+    <None Include="Content\Getting Started\Walkthrough - Customize Filter of ItemsControl.aml" />
+    <None Include="Content\Getting Started\Walkthrough - Filter Third Party Collection Controls.aml" />
+    <None Include="Content\Getting Started\Walkthrough - Create AtomForm with MVVM Pattern.aml" />
+    <None Include="Content\Getting Started\Walkthrough - Auto Generate Fields with Tabs.aml" />
+    <None Include="Content\Getting Started\Walkthrough - Create Tabbed AtomForm.aml" />
+    <Content Include="Content\Getting Started\Installation Instructions.aml" />
+    <Image Include="Content\Images\MVVMViewModels.png">
+      <ImageId>MVVMViewModels</ImageId>
+      <AlternateText>MVVMView Models</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Tokens Include="Content\Tokens\Links.tokens" />
+  </ItemGroup>
+  <!-- Import the SHFB build targets -->
+  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
+</Project>

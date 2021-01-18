@@ -1,0 +1,24 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="EmployeeWebServiceSoap" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="LicenseServiceSoap" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:3474/Service/EmployeeWebService.asmx"
+                binding="basicHttpBinding" bindingConfiguration="EmployeeWebServiceSoap"
+                contract="DataService.EmployeeWebServiceSoap" name="EmployeeWebServiceSoap" />
+            <endpoint address="http://account.neurospeech.com/Service/LicenseService.asmx"
+                binding="basicHttpBinding" bindingConfiguration="LicenseServiceSoap"
+                contract="LicenseManager.LicenseServiceSoap" name="LicenseServiceSoap" />
+        </client>
+    </system.serviceModel>
+</configuration>

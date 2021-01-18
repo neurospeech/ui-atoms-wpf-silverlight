@@ -1,0 +1,8 @@
+﻿                    <!--Grid>
+                        <Border CornerRadius="5" x:Name="mask" Background="White" Height="{Binding Height,ElementName=items}"/>
+                        <ItemsPresenter Margin="1" x:Name="items">
+                            <ItemsPresenter.OpacityMask>
+                                <VisualBrush Visual="{Binding ElementName=mask}"/>
+                            </ItemsPresenter.OpacityMask>
+                        </ItemsPresenter>
+                    </Grid-->

@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="UIAtomsDemo.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:UIAtomsDemo"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="800">
+    
+    <Grid x:Name="LayoutRoot" Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="/UIAtomsDemo;component/Resources/BG.png" Stretch="Fill" Grid.ColumnSpan="3" Grid.RowSpan="2" />
+            <HyperlinkButton NavigateUri="/" TargetName="_blank" Padding="0" HorizontalAlignment="Left" Grid.RowSpan="2">
+                <Image Source="/UIAtomsDemo;component/Resources/Logo.png" Height="80" />
+            </HyperlinkButton>
+            <!--<HyperlinkButton Grid.Column="1">
+                <Image Source="/UIAtomsDemo;component/Resources/facebook.jpg" Height="44" Width="144"/>
+            </HyperlinkButton>-->
+            <HyperlinkButton NavigateUri="http://uiatoms.neurospeech.com/contact/" TargetName="_blank" Padding="0" HorizontalAlignment="Right" Grid.Column="2" Grid.RowSpan="2">
+                <Image Source="/UIAtomsDemo;component/Resources/ContactButton.png" Height="80" />
+            </HyperlinkButton>
+            <HyperlinkButton NavigateUri="http://uiatoms.neurospeech.com/purchase/" TargetName="_blank" Padding="0" HorizontalAlignment="Right" Grid.Column="3" Grid.RowSpan="2">
+                <Image Source="/UIAtomsDemo;component/Resources/CompareButton.png" Height="80" />
+            </HyperlinkButton>
+            <HyperlinkButton NavigateUri="http://uiatoms.neurospeech.com/v1/download/UIAtoms2010Demo.zip" TargetName="_blank" Padding="0" HorizontalAlignment="Right" Grid.Column="4" Grid.RowSpan="2">
+                <Image Source="/UIAtomsDemo;component/Resources/DownloadButton.png" Height="80" />
+            </HyperlinkButton>
+            <HyperlinkButton NavigateUri="http://uiatoms.neurospeech.com/v1/download/UIAtoms2010Demo.zip" TargetName="_blank" Padding="0" HorizontalAlignment="Right" Grid.Column="4" Grid.RowSpan="2">
+                <Image Source="/UIAtomsDemo;component/Resources/DownloadButton.png" Height="80" />
+            </HyperlinkButton>
+        </Grid>
+        <Border  HorizontalAlignment="Stretch" 
+                 VerticalAlignment="Center" 
+                 Grid.Column="1" 
+                 Grid.Row="1"
+                 Margin="20"
+                 CornerRadius="5"
+                 Background="White">
+            <local:MainPage Margin="5"/>
+        </Border>
+
+        <Image Grid.Row="2" Source="/UIAtomsDemo;component/Resources/BottomBG.png" Stretch="Fill" Grid.ColumnSpan="3" />
+        <HyperlinkButton Grid.Row="2" Padding="0" HorizontalAlignment="Right" Grid.Column="2">
+            <Image Source="/UIAtomsDemo;component/Resources/NSLogo.png" Height="30" />
+        </HyperlinkButton>
+    </Grid>
+</UserControl>

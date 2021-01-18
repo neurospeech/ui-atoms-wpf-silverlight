@@ -1,0 +1,24 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.ListSamples.ComboBoxwithFilterDesc" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="ComboBoxwithFilterDesc Page">
+    <Grid x:Name="LayoutRoot">
+        <StackPanel>
+            <TextBlock Text="This control works in the same manner as the ComboBox. It does have an additional feature of the filter."
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+            <TextBlock Text="The Filter is a smart text box which will 'Filter' the data items within the ComboBox and display only those data items which match the filter text entered."
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+            <TextBlock Text="The Filter can be set to search for data that either
+•	At the start of the text
+•	At the end of the text
+•	Anywhere in the text"
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+        </StackPanel>
+
+    </Grid>
+</navigation:Page>

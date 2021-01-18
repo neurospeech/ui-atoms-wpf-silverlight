@@ -1,0 +1,35 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.EditorSamples.EmailTextBoxSample"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+	  Title="EmailTextBoxSample" xmlns:ns="http://uiatoms.neurospeech.com/wpf" xmlns:nsb="http://uiatoms.neurospeech.com/wpf/buttons">
+
+    <Grid>
+        <ns:AtomForm LabelWidth="90" Name="emailValidation" Header="EmailTextBox" HorizontalAlignment="Center" RowLayout="2" Width="700">
+
+            <ns:AtomEmailTextBox 
+                Name="atomEmailTextBox1" 
+                ns:AtomForm.Label="Enter Email:" ns:AtomForm.IsRequired="True"  
+                ns:AtomForm.InvalidValueMessage="Invalid email address"  
+                ns:AtomForm.MissingValueMessage="Email address required"
+                AllowMultiple="{Binding SelectedItem,ElementName=comboMulti,Mode=TwoWay}"/>
+                
+            
+            <ns:AtomComboBox
+                
+                ns:AtomForm.Label="Allow Multiple:" x:Name="comboMulti"
+                >
+                <sys:String>True</sys:String>
+                <sys:String>False</sys:String>
+            </ns:AtomComboBox>
+
+            <ns:AtomButton Content="Submit" ValidationRootElement="emailValidation"/>
+            
+            <TextBlock Text="{Binding Text,ElementName=atomEmailTextBox1}"/>
+            
+        </ns:AtomForm>
+    </Grid>
+</Page>

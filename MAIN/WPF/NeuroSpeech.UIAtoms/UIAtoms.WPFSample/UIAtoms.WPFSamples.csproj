@@ -1,0 +1,983 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A4E4B82-97A7-4812-A995-6617FCC5665C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UIAtoms.WPFSamples</RootNamespace>
+    <AssemblyName>UIAtoms.WPFSamples</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\UIAtoms.WPFSamples.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <CodeAnalysisLogFile>bin\Release\UIAtoms.WPFSamples.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugDemo|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugDemo\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DEMO</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <CodeAnalysisLogFile>bin\Debug\UIAtoms.WPFSamples.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseDemo|AnyCPU'">
+    <OutputPath>bin\ReleaseDemo\</OutputPath>
+    <DefineConstants>TRACE;DEMO</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <CodeAnalysisLogFile>bin\Release\UIAtoms.WPFSamples.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug4|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug4\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <CodeAnalysisLogFile>bin\Debug\UIAtoms.WPFSamples.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugDemo4|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugDemo4\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DEMO</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <CodeAnalysisLogFile>bin\Debug\UIAtoms.WPFSamples.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release4|AnyCPU'">
+    <OutputPath>bin\Release4\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <CodeAnalysisLogFile>bin\Release\UIAtoms.WPFSamples.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseDemo4|AnyCPU'">
+    <OutputPath>bin\ReleaseDemo4\</OutputPath>
+    <DefineConstants>TRACE;DEMO</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <CodeAnalysisLogFile>bin\Release\UIAtoms.WPFSamples.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(Configuration)'=='ReleaseDemo'">
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="NeuroSpeech.UIAtoms">
+      <HintPath>..\UIAtoms.V4.Design\bin\ReleaseDemo\NeuroSpeech.UIAtoms.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)'=='Release'">
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="NeuroSpeech.UIAtoms">
+      <HintPath>..\UIAtoms.V4.Design\bin\Release\NeuroSpeech.UIAtoms.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)'=='DebugDemo'">
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="NeuroSpeech.UIAtoms">
+      <HintPath>..\UIAtoms.V4.Design\bin\DebugDemo\NeuroSpeech.UIAtoms.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)'=='Debug'">
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="NeuroSpeech.UIAtoms">
+      <HintPath>..\UIAtoms.V4.Design\bin\Debug\NeuroSpeech.UIAtoms.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)'=='Debug4'">
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="NeuroSpeech.UIAtoms">
+      <HintPath>..\UIAtoms.V4.Design\bin\Debug4\NeuroSpeech.UIAtoms.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)'=='DebugDemo4'">
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="NeuroSpeech.UIAtoms">
+      <HintPath>..\UIAtoms.V4.Design\bin\DebugDemo4\NeuroSpeech.UIAtoms.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)'=='Release4'">
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="NeuroSpeech.UIAtoms">
+      <HintPath>..\UIAtoms.V4.Design\bin\Release4\NeuroSpeech.UIAtoms.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)'=='ReleaseDemo4'">
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="NeuroSpeech.UIAtoms">
+      <HintPath>..\UIAtoms.V4.Design\bin\ReleaseDemo4\NeuroSpeech.UIAtoms.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="..\UIAtoms\VersionInfo.cs">
+      <Link>VersionInfo.cs</Link>
+    </Compile>
+    <Compile Include="Controls\AtomHyperlinkButton.cs" />
+    <Compile Include="FormSamples\FormLayoutSample.xaml.cs">
+      <DependentUpon>FormLayoutSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\FormLayoutSampleDesc.xaml.cs">
+      <DependentUpon>FormLayoutSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\Validations\InbuiltValidationPropertyChanged.xaml.cs">
+      <DependentUpon>InbuiltValidationPropertyChanged.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\Validations\InbuiltValidationPropertyChangedDesc.xaml.cs">
+      <DependentUpon>InbuiltValidationPropertyChangedDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutSamples\FlexibleGridSample.xaml.cs">
+      <DependentUpon>FlexibleGridSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutSamples\FlexibleGridSampleDesc.xaml.cs">
+      <DependentUpon>FlexibleGridSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TraceSample\TraceSample.xaml.cs">
+      <DependentUpon>TraceSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TraceSample\TraceSampleDesc.xaml.cs">
+      <DependentUpon>TraceSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UnitSamples\AllUnitsSample.xaml.cs">
+      <DependentUpon>AllUnitsSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UnitSamples\AllUnitsSampleDesc.xaml.cs">
+      <DependentUpon>AllUnitsSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFSamples.xaml.cs">
+      <DependentUpon>WPFSamples.xaml</DependentUpon>
+    </Compile>
+    <Page Include="EditorSamples\Calculator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\CalculatorDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\CurrencyTextBoxDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\CurrencyTextBoxSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\DoubleTextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\DoubleTextBoxDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\EmailTextBoxDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\EmailTextBoxSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\FileSizeDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\FileSizeSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\FilterTextBoxDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\FilterTextBoxSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\IntegerTextBoxDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\IntegerTextBoxSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\PasswordBoxAgain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\PasswordBoxAgainDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\PasswordBoxDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\PasswordBoxSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\TextBoxDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\TextBoxSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\TextBoxWithRegExDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\TextBoxWithRegExSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\TitleTextBoxDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditorSamples\TitleTextBoxSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\AdvancedButtonSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\AdvancedButtonSampleDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\BasicSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\BasicSampleDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\BusinessSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\BusinessSampleDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\ButtonSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\ButtonSampleDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\ComplexSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\ComplexSampleDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\FormLayoutSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormSamples\FormLayoutSampleDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormSamples\SignupSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\SignupSampleDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\Validations\CodeBehindValidation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\Validations\CodeBehindValidationDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\Validations\CustomValidationRule.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\Validations\CustomValidationRuleDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\Validations\DataAnnotationValidation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\Validations\DataAnnotationValidationDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\Validations\InbuiltValidationPropertyChanged.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormSamples\Validations\InbuiltValidationPropertyChangedDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormSamples\Validations\InbuiltValidations.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\Validations\InbuiltValidationsDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\Validations\ThirdPartyInbuiltValidation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FormSamples\Validations\ThirdPartyInbuiltValidationDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LayoutSamples\AccordionDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LayoutSamples\AccordionSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LayoutSamples\AtomStackPanelSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LayoutSamples\FlexibleGridSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutSamples\FlexibleGridSampleDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutSamples\StackPanelDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LayoutSamples\StackPanelSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LayoutSamples\ToggleButtonBarDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LayoutSamples\ToggleButtonBarSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LayoutSamples\UniformGridDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LayoutSamples\UniformGridSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LayoutSamples\ViewPanelDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LayoutSamples\ViewPanelSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListSamples\CheckBoxListDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListSamples\CheckBoxListSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListSamples\ComboBoxDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListSamples\ComboBoxSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListSamples\ComboBoxwithFilter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListSamples\ComboBoxWithFilterDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListSamples\CountryComboBoxDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListSamples\CountryComboBoxSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListSamples\List.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListSamples\ListBoxDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListSamples\ListBoxwithFilter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListSamples\ListBoxWithFilterDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListSamples\NumberComboBoxDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListSamples\NumberComboBoxSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListSamples\RadioButtonDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListSamples\RadioButtonList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\NwindDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NwindDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\Calculator.xaml.cs">
+      <DependentUpon>Calculator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\CalculatorDesc.xaml.cs">
+      <DependentUpon>CalculatorDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\CurrencyTextBoxDesc.xaml.cs">
+      <DependentUpon>CurrencyTextBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\CurrencyTextBoxSample.xaml.cs">
+      <DependentUpon>CurrencyTextBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\DoubleTextBox.xaml.cs">
+      <DependentUpon>DoubleTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\DoubleTextBoxDesc.xaml.cs">
+      <DependentUpon>DoubleTextBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\EmailTextBoxDesc.xaml.cs">
+      <DependentUpon>EmailTextBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\EmailTextBoxSample.xaml.cs">
+      <DependentUpon>EmailTextBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\FileSizeDesc.xaml.cs">
+      <DependentUpon>FileSizeDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\FileSizeSample.xaml.cs">
+      <DependentUpon>FileSizeSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\FilterTextBoxDesc.xaml.cs">
+      <DependentUpon>FilterTextBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\FilterTextBoxSample.xaml.cs">
+      <DependentUpon>FilterTextBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\IntegerTextBoxDesc.xaml.cs">
+      <DependentUpon>IntegerTextBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\IntegerTextBoxSample.xaml.cs">
+      <DependentUpon>IntegerTextBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\PasswordBoxAgain.xaml.cs">
+      <DependentUpon>PasswordBoxAgain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\PasswordBoxAgainDesc.xaml.cs">
+      <DependentUpon>PasswordBoxAgainDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\PasswordBoxDesc.xaml.cs">
+      <DependentUpon>PasswordBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\PasswordBoxSample.xaml.cs">
+      <DependentUpon>PasswordBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\TextBoxDesc.xaml.cs">
+      <DependentUpon>TextBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\TextBoxSample.xaml.cs">
+      <DependentUpon>TextBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\TextBoxWithRegExDesc.xaml.cs">
+      <DependentUpon>TextBoxWithRegExDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\TextBoxWithRegExSample.xaml.cs">
+      <DependentUpon>TextBoxWithRegExSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\TitleTextBoxDesc.xaml.cs">
+      <DependentUpon>TitleTextBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditorSamples\TitleTextBoxSample.xaml.cs">
+      <DependentUpon>TitleTextBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FileObject.cs" />
+    <Compile Include="FormSamples\AdvancedButtonSample.xaml.cs">
+      <DependentUpon>AdvancedButtonSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\AdvancedButtonSampleDesc.xaml.cs">
+      <DependentUpon>AdvancedButtonSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\BasicSample.xaml.cs">
+      <DependentUpon>BasicSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\BasicSampleDesc.xaml.cs">
+      <DependentUpon>BasicSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\BusinessSample.xaml.cs">
+      <DependentUpon>BusinessSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\BusinessSampleDesc.xaml.cs">
+      <DependentUpon>BusinessSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\ButtonSample.xaml.cs">
+      <DependentUpon>ButtonSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\ButtonSampleDesc.xaml.cs">
+      <DependentUpon>ButtonSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\ComplexSample.xaml.cs">
+      <DependentUpon>ComplexSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\ComplexSampleDesc.xaml.cs">
+      <DependentUpon>ComplexSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\SignupSample.xaml.cs">
+      <DependentUpon>SignupSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\SignupSampleDesc.xaml.cs">
+      <DependentUpon>SignupSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\Validations\CodeBehindValidation.xaml.cs">
+      <DependentUpon>CodeBehindValidation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\Validations\CodeBehindValidationDesc.xaml.cs">
+      <DependentUpon>CodeBehindValidationDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\Validations\CustomValidationRule.xaml.cs">
+      <DependentUpon>CustomValidationRule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\Validations\CustomValidationRuleDesc.xaml.cs">
+      <DependentUpon>CustomValidationRuleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\Validations\DataAnnotationValidation.xaml.cs">
+      <DependentUpon>DataAnnotationValidation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\Validations\DataAnnotationValidationDesc.xaml.cs">
+      <DependentUpon>DataAnnotationValidationDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\Validations\InbuiltValidations.xaml.cs">
+      <DependentUpon>InbuiltValidations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\Validations\InbuiltValidationsDesc.xaml.cs">
+      <DependentUpon>InbuiltValidationsDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\Validations\ThirdPartyInbuiltValidation.xaml.cs">
+      <DependentUpon>ThirdPartyInbuiltValidation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSamples\Validations\ThirdPartyInbuiltValidationDesc.xaml.cs">
+      <DependentUpon>ThirdPartyInbuiltValidationDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutSamples\AccordionDesc.xaml.cs">
+      <DependentUpon>AccordionDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutSamples\AccordionSample.xaml.cs">
+      <DependentUpon>AccordionSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutSamples\AtomStackPanelSample.xaml.cs">
+      <DependentUpon>AtomStackPanelSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutSamples\StackPanelDesc.xaml.cs">
+      <DependentUpon>StackPanelDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutSamples\StackPanelSample.xaml.cs">
+      <DependentUpon>StackPanelSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutSamples\ToggleButtonBarDesc.xaml.cs">
+      <DependentUpon>ToggleButtonBarDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutSamples\ToggleButtonBarSample.xaml.cs">
+      <DependentUpon>ToggleButtonBarSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutSamples\UniformGridDesc.xaml.cs">
+      <DependentUpon>UniformGridDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutSamples\UniformGridSample.xaml.cs">
+      <DependentUpon>UniformGridSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutSamples\ViewPanelDesc.xaml.cs">
+      <DependentUpon>ViewPanelDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutSamples\ViewPanelSample.xaml.cs">
+      <DependentUpon>ViewPanelSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamples\CheckBoxListDesc.xaml.cs">
+      <DependentUpon>CheckBoxListDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamples\CheckBoxListSample.xaml.cs">
+      <DependentUpon>CheckBoxListSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamples\ComboBoxDesc.xaml.cs">
+      <DependentUpon>ComboBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamples\ComboBoxSample.xaml.cs">
+      <DependentUpon>ComboBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamples\ComboBoxwithFilter.xaml.cs">
+      <DependentUpon>ComboBoxwithFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamples\ComboBoxWithFilterDesc.xaml.cs">
+      <DependentUpon>ComboBoxWithFilterDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamples\CountryComboBoxDesc.xaml.cs">
+      <DependentUpon>CountryComboBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamples\CountryComboBoxSample.xaml.cs">
+      <DependentUpon>CountryComboBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamples\List.xaml.cs">
+      <DependentUpon>List.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamples\ListBoxDesc.xaml.cs">
+      <DependentUpon>ListBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamples\ListBoxwithFilter.xaml.cs">
+      <DependentUpon>ListBoxwithFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamples\ListBoxWithFilterDesc.xaml.cs">
+      <DependentUpon>ListBoxWithFilterDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamples\NumberComboBoxDesc.xaml.cs">
+      <DependentUpon>NumberComboBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamples\NumberComboBoxSample.xaml.cs">
+      <DependentUpon>NumberComboBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamples\RadioButtonDesc.xaml.cs">
+      <DependentUpon>RadioButtonDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamples\RadioButtonList.xaml.cs">
+      <DependentUpon>RadioButtonList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="TraceSample\TraceSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TraceSample\TraceSampleDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UnitSamples\AllUnitsSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UnitSamples\AllUnitsSampleDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFSamples.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PageNode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Data\NwindDataSet.xsc">
+      <DependentUpon>NwindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data\NwindDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NwindDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\NwindDataSet.xss">
+      <DependentUpon>NwindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Resources\Samples.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UIAtoms.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\gridImag1.jpg" />
+    <Resource Include="Asset\gridImag2.jpg" />
+    <Resource Include="Asset\gridImag3.jpg" />
+    <Resource Include="Asset\gridImag4.jpg" />
+    <Resource Include="Asset\gridImag5.jpg" />
+    <Resource Include="Asset\gridImag6.jpg" />
+    <Resource Include="Asset\gridImag7.jpg" />
+    <Resource Include="Asset\gridImag8.jpg" />
+    <Resource Include="Asset\mercedes-e-class-2009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\Logo.256.256.png">
+      <Link>Logo.256.256.png</Link>
+    </Resource>
+    <Content Include="Data\Nwind.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\Logo.png" />
+    <Resource Include="Resources\Samples.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FormSamples\ValidationModes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

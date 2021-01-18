@@ -1,0 +1,13 @@
+
+<Unit 
+  Name="Ohm" 
+  Symbol="Ω" 
+  ID="ohm"
+  >
+  <Conversions>
+    <Conversion Name="Abohm" ID="abohm" Factor="1" Factor10="-9" />
+    <Conversion Name="EMU of Resistance" ID="EMU_of_resistance_abohm" SubType="Abohm" Factor="1" Factor10="-9" />
+    <Conversion Name="ESU of Resistance" ID="ESU_of_resistance_statohm" SubType="Statohm" Factor="8.987552" Factor10="11" />
+    <Conversion Name="Statohm" ID="statohm" Factor="8.987552" Factor10="11" />
+  </Conversions>
+</Unit>

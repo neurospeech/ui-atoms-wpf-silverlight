@@ -1,0 +1,16 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.UnitSamples.LengthSample" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:ns="http://uiatoms.neurospeech.com/silverlight"
+                 xmlns:nsu="clr-namespace:NeuroSpeech.UIAtoms.UnitControls;assembly=NeuroSpeech.UIAtoms.Silverlight"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="LengthSample Page">
+    <ns:AtomForm>
+        <nsu:AtomLengthEditor
+            />
+    </ns:AtomForm>
+</navigation:Page>

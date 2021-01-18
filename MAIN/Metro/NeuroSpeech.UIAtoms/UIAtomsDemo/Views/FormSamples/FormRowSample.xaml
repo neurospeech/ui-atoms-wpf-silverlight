@@ -1,0 +1,65 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.FormSamples.FormRowSample" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:ns="http://uiatoms.neurospeech.com/silverlight"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           Title="FormRowSample Page">
+    <Grid x:Name="LayoutRoot">
+        <ns:AtomForm Header="Data Entry Form With Form Rows"
+            Width="850"
+            HorizontalAlignment="Center">
+            
+            <TextBlock>First row hosting three controls</TextBlock>
+            
+            <!-- First Row Hosting Three Controls -->
+            
+            <ns:AtomFormRow>
+                <ns:AtomTextBox 
+                    ns:AtomForm.Label="Firstname:" 
+                    ns:AtomForm.IsRequired="True"
+                    Width="Auto"
+                    HorizontalAlignment="Stretch"
+                    />
+                <ns:AtomTextBox 
+                    ns:AtomForm.Label="Middlename:"
+                    Width="Auto"
+                    HorizontalAlignment="Stretch" />
+                <ns:AtomTextBox
+                    ns:AtomForm.Label="Lastname:"
+                    ns:AtomForm.IsRequired="True"
+                    Width="Auto"
+                    HorizontalAlignment="Stretch" />
+            </ns:AtomFormRow>
+            
+            <TextBlock>Second row hosting two controls</TextBlock>
+            
+            <!-- Second Row Hosting Two Controls -->
+            <ns:AtomFormRow>
+                <ns:AtomEmailTextBox 
+                    ns:AtomForm.Label="Email:"
+                    Width="Auto"
+                    HorizontalAlignment="Stretch" />
+                <ns:AtomEmailTextBox
+                    ns:AtomForm.Label="Alternate Email:"
+                    Width="Auto"
+                    HorizontalAlignment="Stretch" />
+            </ns:AtomFormRow>
+
+            <TextBlock>Third row hosting three controls with a header</TextBlock>
+            
+            <ns:AtomFormRow
+                Header="Location">
+                <TextBox
+                    ns:AtomForm.Label="Country:" />
+                <TextBox
+                    ns:AtomForm.Label="State:" />
+                <TextBox
+                    ns:AtomForm.Label="City:" />
+            </ns:AtomFormRow>
+
+        </ns:AtomForm>
+    </Grid>
+</navigation:Page>

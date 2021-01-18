@@ -1,0 +1,37 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.ListSamples.ListBoxwithFilter" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:System="clr-namespace:System;assembly=mscorlib"
+           Title="ListBoxwithFilter Page" 
+           xmlns:ns="http://uiatoms.neurospeech.com/silverlight">
+    
+<Grid HorizontalAlignment="Center">
+    
+        <ns:AtomForm 
+            x:Name="form" Width="700" 
+            HorizontalAlignment="Center" Header="ListBox with Filter">
+
+            <ns:AtomListBox 
+                Width="100" ns:AtomForm.Label="Select Car:" 
+                ns:AtomForm.IsRequired="True" IsFilterVisible="True" 
+                HorizontalAlignment="Left" ns:AtomForm.MissingValueMessage="Please select car type">
+                <System:String>Passenger Cars</System:String>
+                <System:String>Sport Cars</System:String>
+                <System:String>SUVs</System:String>
+                <System:String>Green Cars</System:String>
+                <System:String>Minivans</System:String>
+                <System:String>Pickup Trucks</System:String>
+                <System:String>Luxury Cars</System:String>
+                <System:String>Crossovers</System:String>
+            </ns:AtomListBox>
+
+            <ns:AtomButton 
+                HorizontalAlignment="Left"
+                Content="Submit" ValidationRootElement="form"/>
+
+        </ns:AtomForm>
+    </Grid></navigation:Page>

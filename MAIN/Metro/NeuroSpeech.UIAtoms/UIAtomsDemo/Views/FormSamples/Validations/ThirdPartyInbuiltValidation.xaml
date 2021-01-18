@@ -1,0 +1,107 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.FormSamples.Validations.ThirdPartyInbuiltValidation" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="740" d:DesignHeight="480"
+           Title="ThirdPartyInbuiltValidation Page"
+           xmlns:sys="clr-namespace:System;assembly=mscorlib"
+           xmlns:nsv="clr-namespace:NeuroSpeech.UIAtoms.Validation;assembly=NeuroSpeech.UIAtoms.Silverlight"
+           xmlns:ns="http://uiatoms.neurospeech.com/silverlight">
+
+    <navigation:Page.Resources>
+        <nsv:AtomStringValidationRule x:Key="stringValidation"/>
+        <nsv:AtomEmailValidationRule x:Key="emailValidation"/>
+        <nsv:AtomBooleanValidationRule x:Key="booleanValidation"/>
+        <nsv:AtomSelectionValidationRule x:Key="selectionValidation"/>
+        <nsv:AtomRegExValidationRule x:Key="regexValidation"/>
+    </navigation:Page.Resources>
+    
+    <ns:AtomForm 
+        MinWidth="700"
+        HorizontalAlignment="Center"
+        x:Name="theForm">
+
+        <ns:AtomForm.Header>
+            Please Check Source for setting Attached Properties
+        </ns:AtomForm.Header>
+
+        <TextBox 
+            ns:AtomForm.MissingValueMessage="Username is required"
+            ns:AtomForm.Label="Username:"
+            ns:AtomForm.IsRequired="True" 
+            ns:AtomForm.Description="Inbuilt Regex Validation " 
+            nsv:AtomRegExValidationRule.ValidationRegEx="[a-zA-Z0-9]+" HorizontalAlignment="Left" Width="150" >
+            <ns:AtomForm.AtomValidator>
+                <nsv:AtomPropertyValidator Property="Text" ValidationRule="{StaticResource regexValidation}"></nsv:AtomPropertyValidator>
+            </ns:AtomForm.AtomValidator>
+        </TextBox>
+
+        <TextBox
+            ns:AtomForm.MissingValueMessage="Email is required"
+            ns:AtomForm.Label="Email:"
+            ns:AtomForm.IsRequired="True" 
+            ns:AtomForm.Description="Inbuilt Email Validation " 
+            HorizontalAlignment="Left" Width="150" >
+            <ns:AtomForm.AtomValidator>
+                <nsv:AtomPropertyValidator Property="Text" ValidationRule="{StaticResource emailValidation}"></nsv:AtomPropertyValidator>
+            </ns:AtomForm.AtomValidator>
+        </TextBox>
+
+        <TextBox
+            ns:AtomForm.MissingValueMessage="Email is required"
+            ns:AtomForm.Label="Emails:"
+            ns:AtomForm.IsRequired="True" 
+            ns:AtomForm.Description="Inbuilt Multiple Email Validation (Comma Seperated)" 
+            nsv:AtomEmailValidationRule.AllowMultiple="True" HorizontalAlignment="Left" Width="150" >
+            <ns:AtomForm.AtomValidator>
+                <nsv:AtomPropertyValidator Property="Text" ValidationRule="{StaticResource emailValidation}"></nsv:AtomPropertyValidator>
+            </ns:AtomForm.AtomValidator>
+        </TextBox>
+
+        <TextBox
+            ns:AtomForm.MissingValueMessage="Name is required"
+            ns:AtomForm.Label="Name:"
+            ns:AtomForm.IsRequired="True" 
+            ns:AtomForm.Description="Inbuilt Non Empty String Validation " 
+            HorizontalAlignment="Left" Width="150" >
+            <ns:AtomForm.AtomValidator>
+                <nsv:AtomPropertyValidator Property="Text" ValidationRule="{StaticResource stringValidation}"></nsv:AtomPropertyValidator>
+            </ns:AtomForm.AtomValidator>
+        </TextBox>
+
+        <ComboBox 
+            ns:AtomForm.MissingValueMessage="Please select gender"
+            ns:AtomForm.Label="Gender:" 
+            ns:AtomForm.Description="Inbuilt Selection Validation"
+            HorizontalAlignment="Left"
+            ns:AtomForm.IsRequired="True">
+            <ns:AtomForm.AtomValidator>
+                <nsv:AtomPropertyValidator Property="SelectedIndex" ValidationRule="{StaticResource selectionValidation}"></nsv:AtomPropertyValidator>
+            </ns:AtomForm.AtomValidator>
+            <sys:String>Male</sys:String>
+            <sys:String>Female</sys:String>
+        </ComboBox>
+
+        <CheckBox 
+            ns:AtomForm.MissingValueMessage="Agreement is required"
+            Content="Agree to Terms" 
+            ns:AtomForm.Description="Inbuilt validation of accepting checkbox value" 
+            ns:AtomForm.IsRequired="True" >
+            <ns:AtomForm.AtomValidator>
+                <nsv:AtomPropertyValidator Property="IsChecked" ValidationRule="{StaticResource booleanValidation}"></nsv:AtomPropertyValidator>
+            </ns:AtomForm.AtomValidator>
+        </CheckBox>
+
+        <ns:AtomButton
+            HorizontalAlignment="Left"
+            Content="Submit"
+            ValidationRootElement="theForm"
+            ns:AtomForm.Description="Click button to validate the form"
+            />
+
+
+    </ns:AtomForm>
+</navigation:Page>

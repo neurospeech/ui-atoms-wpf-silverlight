@@ -1,0 +1,19 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.LayoutSamples.UniformGridDesc" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="UniformGridDesc Page">
+    <Grid x:Name="LayoutRoot">
+        <StackPanel>
+            <TextBlock Text="•	Data items in the Uniform Grid are displayed in a grid of rows and columns as preset. In this sample, the data items are images, and they are configured in a 3 X 3 grid."
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+            <TextBlock Text="•	The data items are clustered together, and can be spaced out. Use the sliders on the X and Y axes of the grid to provide padding in pixels between the data items, and the spacing is evenly applied throughout the grid."
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+        </StackPanel>
+
+    </Grid>
+</navigation:Page>

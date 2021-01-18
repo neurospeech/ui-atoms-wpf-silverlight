@@ -1,0 +1,49 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+    xmlns:System="clr-namespace:System;assembly=mscorlib" 
+    x:Class="UIAtoms.WPFSamples.BasicSamples.List"
+    Title="List">
+    
+    <Grid HorizontalAlignment="Center"> 
+        <ns:AtomForm 
+            x:Name="form" Width="700"
+            HorizontalAlignment="Center" Header="ListBox">
+
+
+            <ns:AtomListBox 
+                Width="100" ns:AtomForm.Label="Select Color:" 
+                ns:AtomForm.IsRequired="True" IsFilterVisible="False" 
+                ns:AtomForm.MissingValueMessage="Please select color"
+                HorizontalAlignment="Left">
+			        <ListBoxItem Content="Red"/>
+			        <ListBoxItem Content="Blue"/>
+			        <ListBoxItem Content="Green"/>
+		    </ns:AtomListBox>
+        
+            <ns:AtomListBox 
+                Width="100" ns:AtomForm.Label="Select Type:" 
+                ns:AtomForm.MissingValueMessage="Please select type"
+                ns:AtomForm.IsRequired="True" IsFilterVisible="False" 
+                HorizontalAlignment="Left">
+                <ns:AtomListBox.InvalidIndices>
+                    <System:Int32>0</System:Int32>
+                    <System:Int32>3</System:Int32>
+                </ns:AtomListBox.InvalidIndices
+                    >
+                    <ListBoxItem Content="List Controls" Foreground="Gray" />
+                    <ListBoxItem Content="ListBox"/>
+                    <ListBoxItem Content="ComboBox"/>
+                <ListBoxItem Content="Data Controls" Foreground="Gray"/>
+                    <ListBoxItem Content="TextBox"/>
+                    <ListBoxItem Content="Button"/>
+            </ns:AtomListBox>
+
+            <ns:AtomButton 
+                HorizontalAlignment="Left"
+                Content="Submit" ValidationRootElement="form"/>
+        
+        </ns:AtomForm>
+    </Grid>
+</Page>

@@ -1,0 +1,22 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.FormSamples.Validations.CodeBehindValidationDesc" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="CodeBehindValidationDesc Page">
+    <Grid x:Name="LayoutRoot">
+        <StackPanel>
+            <TextBlock Text="Code behind validation rules can be custom created to work with a variety of controls."
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+            <TextBlock Text="This sample demonstrates the use of CodeBehindValidation used within the demonstrated TextBoxes."
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+            <TextBlock Text=" The code used can be viewed by clicking the C# tab. "
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+
+        </StackPanel>
+
+    </Grid>
+</navigation:Page>

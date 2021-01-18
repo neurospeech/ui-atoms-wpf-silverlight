@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="RequestTrialLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="emailAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="editionUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="subscribe" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestTrialLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RequestTrialLicenseResult" type="tns:WSResultOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WSResultOfString">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:GenericResult">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Result" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Results" type="tns:ArrayOfString" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="GenericResult" abstract="true">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Total" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Successful" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MessageDetails" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="emailAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="editionUID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="licenseCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="computerName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLicenseResult" type="tns:WSResultOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActivateLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="emailAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="editionUID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="licenseCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="computerName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActivateLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActivateLicenseResult" type="tns:WSResultOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeactivateLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="emailAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="editionUID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="licenseCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="computerName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeactivateLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeactivateLicenseResult" type="tns:WSResultOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Subscribe">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="emailAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="editionUID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubscribeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubscribeResult" type="tns:WSResultOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RequestTrialLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:RequestTrialLicense" />
+  </wsdl:message>
+  <wsdl:message name="RequestTrialLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:RequestTrialLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLicense" />
+  </wsdl:message>
+  <wsdl:message name="GetLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActivateLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:ActivateLicense" />
+  </wsdl:message>
+  <wsdl:message name="ActivateLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:ActivateLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeactivateLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:DeactivateLicense" />
+  </wsdl:message>
+  <wsdl:message name="DeactivateLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:DeactivateLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubscribeSoapIn">
+    <wsdl:part name="parameters" element="tns:Subscribe" />
+  </wsdl:message>
+  <wsdl:message name="SubscribeSoapOut">
+    <wsdl:part name="parameters" element="tns:SubscribeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LicenseServiceSoap">
+    <wsdl:operation name="RequestTrialLicense">
+      <wsdl:input message="tns:RequestTrialLicenseSoapIn" />
+      <wsdl:output message="tns:RequestTrialLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicense">
+      <wsdl:input message="tns:GetLicenseSoapIn" />
+      <wsdl:output message="tns:GetLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateLicense">
+      <wsdl:input message="tns:ActivateLicenseSoapIn" />
+      <wsdl:output message="tns:ActivateLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateLicense">
+      <wsdl:input message="tns:DeactivateLicenseSoapIn" />
+      <wsdl:output message="tns:DeactivateLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Subscribe">
+      <wsdl:input message="tns:SubscribeSoapIn" />
+      <wsdl:output message="tns:SubscribeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LicenseServiceSoap" type="tns:LicenseServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RequestTrialLicense">
+      <soap:operation soapAction="http://tempuri.org/RequestTrialLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicense">
+      <soap:operation soapAction="http://tempuri.org/GetLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateLicense">
+      <soap:operation soapAction="http://tempuri.org/ActivateLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateLicense">
+      <soap:operation soapAction="http://tempuri.org/DeactivateLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Subscribe">
+      <soap:operation soapAction="http://tempuri.org/Subscribe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LicenseServiceSoap12" type="tns:LicenseServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RequestTrialLicense">
+      <soap12:operation soapAction="http://tempuri.org/RequestTrialLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicense">
+      <soap12:operation soapAction="http://tempuri.org/GetLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateLicense">
+      <soap12:operation soapAction="http://tempuri.org/ActivateLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateLicense">
+      <soap12:operation soapAction="http://tempuri.org/DeactivateLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Subscribe">
+      <soap12:operation soapAction="http://tempuri.org/Subscribe" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LicenseService">
+    <wsdl:port name="LicenseServiceSoap" binding="tns:LicenseServiceSoap">
+      <soap:address location="http://account.neurospeech.com/Service/LicenseService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LicenseServiceSoap12" binding="tns:LicenseServiceSoap12">
+      <soap12:address location="http://account.neurospeech.com/Service/LicenseService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

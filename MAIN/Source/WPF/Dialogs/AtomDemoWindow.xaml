@@ -1,0 +1,27 @@
+﻿<Window x:Class="NeuroSpeech.UIAtoms.Dialogs.AtomDemoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="UI Atoms Demo" Height="150" Width="400" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Margin="5">
+            <Run>This is a demo version of UI Atoms.</Run>
+            <LineBreak/>
+            <Hyperlink 
+                x:Name="hlDemo"
+                TargetName="_blank" 
+                Click="hlDemo_Click"
+                NavigateUri="http://uiatoms.neurospeech.com/purchase/">Click here</Hyperlink> to Purchase full version of UI Atoms.
+        </TextBlock>
+        <Button Grid.Row="1" 
+                HorizontalAlignment="Right" 
+                Width="100" 
+                Margin="5" 
+                x:Name="okButton"
+                Click="okButton_Click"
+                >OK</Button>
+    </Grid>
+</Window>

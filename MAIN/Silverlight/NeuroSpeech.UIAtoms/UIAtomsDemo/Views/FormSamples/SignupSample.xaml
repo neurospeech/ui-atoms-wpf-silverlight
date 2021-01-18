@@ -1,0 +1,86 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.FormSamples.SignupSample" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:wc="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           Title="HomeBasic Page" 
+           xmlns:ns="http://uiatoms.neurospeech.com/silverlight"
+           xmlns:nsb="http://uiatoms.neurospeech.com/silverlight/buttons"
+           xmlns:sys="clr-namespace:System;assembly=mscorlib"
+           xmlns:nsv="clr-namespace:NeuroSpeech.UIAtoms.Validation;assembly=NeuroSpeech.UIAtoms.Silverlight"
+           xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           >
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <!--RowDefinition Height="5"/-->
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ns:AtomForm 
+            LabelWidth="100" x:Name="form" Header="Signup Form (Two Form Rows)" 
+            MinWidth="800"
+            HorizontalAlignment="Center">
+
+            <TextBlock>This is simple form, without any data model associated, it can still do the validations.<LineBreak/>
+            When validation error shows up, you can click on error to focus the field.<LineBreak/>
+            Adding AtomFormRow will make children appear in one row.<LineBreak/>
+            And the code for Silverlight as well as WPF is exactly same.
+            </TextBlock>
+            <ns:AtomUsernameTextBox 
+                    ns:AtomForm.Label="Username:" x:Name="username" 
+                    ns:AtomForm.IsRequired="True"  />
+
+            <ns:AtomFormRow>
+                <ns:AtomEmailTextBox Width="280" HorizontalAlignment="Left"
+                        ns:AtomForm.Label="Email-ID:"
+                        ns:AtomForm.IsRequired="true" 
+                        ns:AtomForm.MissingValueMessage="Email ID is required"/>
+
+                <ns:AtomPasswordBox Width="280"
+                    ns:AtomForm.Label="Password:"
+                    ns:AtomForm.IsRequired="True" x:Name="password1"
+                    ns:AtomForm.MissingValueMessage="Password is required" />
+            </ns:AtomFormRow>
+            <ns:AtomFormRow>
+                <ns:AtomPasswordBoxAgain
+                    Width="280"
+                    ns:AtomForm.Label="Password again:"
+                    ns:AtomForm.IsRequired="True"
+                    FirstPasswordBoxName="password1"
+                    ns:AtomForm.MissingValueMessage="Password again is required" />
+
+                <ns:AtomCountryComboBox
+                    ns:AtomForm.IsRequired="True"
+                    ns:AtomForm.MissingValueMessage="Please select country"
+                    Width="280"
+                    ns:AtomForm.Label="Country:"
+                    HorizontalAlignment="Left" />
+
+            </ns:AtomFormRow>
+
+                <ns:AtomCurrencyTextBox 
+                    ns:AtomForm.Label="Amount:" 
+                    ns:AtomForm.Description="Click on Calculator Button to load in built Calculator"
+                    HorizontalAlignment="Left" Width="280"/>
+                
+                <ns:AtomToggleButtonBar 
+                     ns:AtomForm.Label="Gender:" HorizontalAlignment="Left">
+                    
+                    <sys:String>Male</sys:String>
+                    <sys:String>Female</sys:String>
+                
+                </ns:AtomToggleButtonBar>
+                
+                <nsb:AtomSubmitButton
+                    x:Name="submitButton" Content="Signup" 
+                    HorizontalAlignment="Left" ValidationRootElement="form" />
+
+
+        </ns:AtomForm>
+    </Grid>
+</navigation:Page>

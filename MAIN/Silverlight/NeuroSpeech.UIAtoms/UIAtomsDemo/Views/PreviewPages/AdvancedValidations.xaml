@@ -1,0 +1,54 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="UIAtomsDemo.Views.PreviewPages.AdvancedValidations"
+	d:DesignWidth="640" d:DesignHeight="480"    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    >
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="25"
+                   >Advanced Validation Methods</TextBlock>
+        <Image Source="/UIAtomsDemo;component/Views/PreviewPages/Validations.PNG"
+               Stretch="None"
+               HorizontalAlignment="Right"
+               Margin="20" Grid.Row="1" />
+        <ItemsControl Grid.Column="1" VerticalAlignment="Center" Grid.Row="1">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="/UIAtomsDemo;component/Views/PreviewPages/AtomApproveButton.Icon.png" 
+                               Width="16" Height="16"
+                               />
+                        <ContentControl FontSize="20" Grid.Column="1" Content="{Binding}" />
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+            <sys:String>Simple Text Validation</sys:String>
+            <sys:String>ComboBox Validation</sys:String>
+            <sys:String>CheckBox Validation</sys:String>
+            <sys:String>Inbuilt Validation Rules</sys:String>
+            <sys:String>Custom Validation Rules</sys:String>
+            <sys:String>Third Party Control Validation Integration</sys:String>
+            <sys:String>Code Behind Validation</sys:String>
+            <sys:String>Data Annotations Validations</sys:String>
+            <sys:String>Advanced Error display Control</sys:String>
+            <sys:String>UI Only Validation</sys:String>
+        </ItemsControl>
+    </Grid>
+</UserControl>

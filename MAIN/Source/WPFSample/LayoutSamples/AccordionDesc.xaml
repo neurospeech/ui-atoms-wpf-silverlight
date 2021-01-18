@@ -1,0 +1,47 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.LayoutSamples.AccordionDesc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="600"
+	Title="AccordionDesc">
+
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <List>
+                    <ListItem>
+                        <Paragraph>	The Accordion is displayed in the left column of this sample. The right column is the summary sheet of the selections made from the data items in the accordion.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	The UIAtom AtomAccordion can display text, images, and other embedded controls.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>The first view of the Accordion titled “Selected Car” displays an image of the selected car and the name of the car in pure text form. This is a view only format and is non-interactive.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	Clicking the “Fuel Type” title will collapse the image view of the “Selected Car” and expand the “Fuel Type” menu. This is a radio button selection. Making a selection here returns the selected value to the “Selected Car” panel on the right column.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	Selecting the “Choose your Options” title will collapse the “Fuel Type” view and expand the Options menu. Selections within this CheckBoxList will return the selected values over to the right column where a summary of all selections is displayed.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	Collapsing a menu will not cause the control to lose the selections.</Paragraph>
+                    </ListItem>
+                </List>
+
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Page>

@@ -1,0 +1,39 @@
+﻿<Unit
+  ID="Meter"
+  Name="Meter"
+  Symbol="m"
+  >
+  <Conversions>
+    <Conversion ID="Nanometer" Name="Nanometer" SubType="" Symbol="nm" Factor="1" Factor10="-9" />
+    <Conversion ID="Micrometer" Name="Micrometer" SubType="" Symbol="µm" Factor="1" Factor10="-6" />
+    <Conversion ID="Milimeter" Name="Milimeter" SubType="" Symbol="mm" Factor="1" Factor10="-3" />
+    <Conversion ID="Centimeter" Name="Centimeter" SubType="" Symbol="cm" Factor="1" Factor10="-2" />
+    <Conversion ID="Kilometer" Name="Kilometer" SubType="" Symbol="km" Factor="1" Factor10="3" />
+    
+    <Conversion ID="Angstrom" Name="Angstrom" SubType="" Symbol="Å" Factor="1" Factor10="-10" />
+    <Conversion ID="Astronomical_Unit" Name="Astronomical Unit" SubType="" Symbol="ua" Factor="1.495979" Factor10="11" />
+    <Conversion ID="Chain" Name="Chain" SubType="based on U.S. survey foot" Symbol="ch" Factor="2.011684" Factor10="1" />
+    <Conversion ID="Fathom" Name="Fathom" SubType="based on U.S. survey foot" Symbol="fathom" Factor="1.828804" Factor10="00" />
+    <Conversion ID="Fermi" Name="Fermi" SubType="" Symbol="fermi" Factor="1" Factor10="-15" />
+    <Conversion ID="Foot" Name="Foot" SubType="" Symbol="ft" Factor="3.048" Factor10="-1" />
+    <Conversion ID="Foot_USSurvey" Name="Foot" SubType="U.S. survey" Symbol="ft" Factor="3.048006" Factor10="-1" />
+    <Conversion ID="Inch" Name="Inch" SubType="" Symbol="in" Factor="2.54" Factor10="-02" />
+    
+    <Conversion ID="Kayser" Name="Kayser" SubType="" Symbol="K" Factor="1" Factor10="02" />
+    
+    <Conversion ID="Light_Year" Name="Light Year" SubType="" Symbol="l.y." Factor="9.46073" Factor10="15" />
+    <Conversion ID="Microinch" Name="Microinch" SubType="" Symbol="microinch" Factor="2.54" Factor10="-08" />
+    <Conversion ID="Micron" Name="Micron" SubType="" Symbol="μ" Factor="1" Factor10="-06" />
+    <Conversion ID="Mil" Name="Mil" SubType="0.001 in" Symbol="mil" Factor="2.54" Factor10="-05" />
+    <Conversion ID="Mile" Name="Mile" SubType="" Symbol="mi" Factor="1.609344" Factor10="3" />
+    <Conversion ID="Mile_USSurvey" Name="Mile" SubType="based on U.S. survey foot" Symbol="mi" Factor="1.609347" Factor10="3" />
+    <Conversion ID="Mile_Nautical" Name="Nautical Mile" SubType="" Symbol="N. mi." Factor="1.852" Factor10="3" />
+    <Conversion ID="Parsec" Name="Parsec" SubType="" Symbol="pc" Factor="3.085678" Factor10="16" />
+    <Conversion ID="Pica_Computer" Name="Pica" SubType="Computer (1/6 in)" Symbol="pica" Factor="4.233333" Factor10="-3" />
+    <Conversion ID="Pica_Printer" Name="Pica" SubType="Printers" Symbol="pica" Factor="4.217518" Factor10="-3" />
+    <Conversion ID="Point_Computer" Name="Point" SubType="Computer (1/72 in)" Symbol="point" Factor="3.527778" Factor10="-04" />
+    <Conversion ID="Point_Printer" Name="Point" SubType="Printers" Symbol="point" Factor="3.514598" Factor10="-04" />
+    <Conversion ID="Rod" Name="Rod" SubType="based on U.S. survey foot" Symbol="rd" Factor="5.029210" Factor10="00" />
+    <Conversion ID="Yard" Name="Yard" SubType="" Symbol="yd" Factor="9.144" Factor10="-01" />
+  </Conversions>
+</Unit>

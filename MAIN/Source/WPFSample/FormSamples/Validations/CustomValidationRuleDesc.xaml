@@ -1,0 +1,27 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.FormSamples.Validations.CustomValidationRuleDesc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="CustomValidationRuleDesc">
+
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph>
+                    UIAtoms comes packed with inbuilt validations making form building easy. 
+                    However, many controls would require custom validation rules established.
+                </Paragraph>
+                <Paragraph>
+                    The UIAtoms CustomValidationRule demonstrated in this sample shows how custom validation rules can be provided for controls.
+                </Paragraph>
+                <Paragraph>
+                    The code applied can be viewed by clicking the XAML Tab. The CustomValidationRule code can be viewed by clicking the C# tab.
+                </Paragraph>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+
+    </Grid>
+</Page>

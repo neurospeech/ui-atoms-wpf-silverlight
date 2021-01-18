@@ -1,0 +1,36 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.EditorSamples.EmailTextBoxDesc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="600"
+	Title="EmailTextBoxDesc">
+
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <List>
+                    <ListItem>
+                        <Paragraph>	This field is a required field. Clicking the “Submit” button without providing an input will trigger a customized validation error message which is displayed at the bottom of the screen.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	The EmailTextBox is an extension of AtomTextBox so all the parameters of the AtomTextBox apply here.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	Further, the field is set to accept only properly formatted email addresses, and will reject any other inputs.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	Multiple email addresses can be input by setting the “Multiple” parameter to true. These inputs have to be separated by commas.</Paragraph>
+                    </ListItem>
+                </List>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Page>

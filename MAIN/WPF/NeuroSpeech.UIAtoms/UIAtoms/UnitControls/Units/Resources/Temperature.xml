@@ -1,0 +1,10 @@
+﻿<Unit
+  ID="Kelvin"
+  Name="Kelvin"
+  Symbol="K"
+  >
+  <Conversions>
+    <Conversion ID="Celsius" Name="Celsius" SubType="" Symbol="°C" FormulaFromBase="input-273.15" FormulaToBase="input+273.15"/>
+    <Conversion ID="Fahrenheit" Name="Fahrenheit" SubType="" Symbol="°F" FormulaFromBase="(input-273.15)*1.8+32" FormulaToBase="(input-32)/1.8+273.15"/>
+  </Conversions>
+</Unit>

@@ -1,0 +1,31 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.ListSamples.ListBoxWithFilterDesc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="ListBoxWithFilterDesc">
+
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <List>
+                    <ListItem>
+                        <Paragraph>This is an extension of the ListBox sample displayed above. It has a filter facility linked to the ListBox.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>The filter will sort through the data and display only those data items from within the list box that match the string input entered.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>The filter can be set to search for data that either starts with the string input, ends with the string input, or contains the string input.</Paragraph>
+                    </ListItem>
+                </List>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Page>

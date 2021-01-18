@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="168a2bac-5d24-42fe-9828-b0df660d8d8a" revisionNumber="1">
+  <developerHowToDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+    <introduction>
+      <para>This topic describes additional tools that are required to use
+      UIAtoms along with some general configuration information.</para>
+    </introduction>
+    <!-- Optional procedures followed by optional code example but must have
+         at least one procedure or code example -->
+    <section address="Requirements">
+      <title>Requirements</title>
+      <content>
+        <para>The latest version of UIAtoms can always be found at 
+        <token>UIAtomsWebLink</token>. In order to use the UIAtoms Library,
+        the following additional tools are required and must be installed prior
+        to using the library.
+        </para>
+        <list class="ordered">
+        	<listItem>The <token>DotNet35SP1</token></listItem>
+        	<listItem><token>VSLink</token></listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerHowToDocument>
+</topic>

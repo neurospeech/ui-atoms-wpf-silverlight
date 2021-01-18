@@ -1,0 +1,249 @@
+<countries>
+  <country CountryName="Afghanistan" CountryCode="AF" ISDCode="+93" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Albania" CountryCode="AL" ISDCode="+355" LocalCode="" IDDCode="00" Currency="Lek" />
+  <country CountryName="Algeria" CountryCode="AG" ISDCode="+213" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Andorra" CountryCode="AN" ISDCode="+376" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Angola" CountryCode="AO" ISDCode="+244" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Anguilla" CountryCode="AV" ISDCode="+1" LocalCode="264" IDDCode="011" Currency="" />
+  <country CountryName="Antarctica" CountryCode="AY" ISDCode="+672" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Antigua and Barbuda" CountryCode="AC" ISDCode="+1" LocalCode="268" IDDCode="011" Currency="" />
+  <country CountryName="Argentina" CountryCode="AR" ISDCode="+54" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Armenia" CountryCode="AM" ISDCode="+374" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Aruba" CountryCode="AA" ISDCode="+297" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Ashmore and Cartier Islands" CountryCode="AT" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Australia" CountryCode="AS" ISDCode="+61" LocalCode="" IDDCode="0011" Currency="" />
+  <country CountryName="Austria" CountryCode="AU" ISDCode="+43" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Azerbaijan" CountryCode="AJ" ISDCode="+994" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Bahrain" CountryCode="BA" ISDCode="+973" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Bangladesh" CountryCode="BG" ISDCode="+880" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Barbados" CountryCode="BB" ISDCode="+1" LocalCode="246" IDDCode="011" Currency="" />
+  <country CountryName="Bassas da India" CountryCode="BS" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Belarus" CountryCode="BO" ISDCode="+375" LocalCode="" IDDCode="8-10" Currency="" />
+  <country CountryName="Belgium" CountryCode="BE" ISDCode="+32" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Belize" CountryCode="BH" ISDCode="+501" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Benin" CountryCode="BN" ISDCode="+229" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Bermuda" CountryCode="BD" ISDCode="+1" LocalCode="441" IDDCode="011" Currency="" />
+  <country CountryName="Bhutan" CountryCode="BT" ISDCode="+975" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Bodies of water" CountryCode="OS" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Bolivia" CountryCode="BL" ISDCode="+591" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Bosnia and Herzegovina" CountryCode="BK" ISDCode="+387" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Botswana" CountryCode="BC" ISDCode="+267" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Bouvet Island" CountryCode="BV" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Brazil" CountryCode="BR" ISDCode="+55" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="British Indian Ocean Territory" CountryCode="IO" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="British Virgin Islands" CountryCode="VI" ISDCode="+1" LocalCode="284" IDDCode="011" Currency="" />
+  <country CountryName="Brunei" CountryCode="BX" ISDCode="+673" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Bulgaria" CountryCode="BU" ISDCode="+359" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Burkina Faso" CountryCode="UV" ISDCode="+226" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Burundi" CountryCode="BY" ISDCode="+257" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Cambodia" CountryCode="CB" ISDCode="+855" LocalCode="" IDDCode="001" Currency="" />
+  <country CountryName="Cameroon" CountryCode="CM" ISDCode="+237" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Canada" CountryCode="CA" ISDCode="1" LocalCode="" IDDCode="011" Currency="" />
+  <country CountryName="Cape Verde" CountryCode="CV" ISDCode="+238" LocalCode="" IDDCode="0" Currency="" />
+  <country CountryName="Cayman Islands" CountryCode="CJ" ISDCode="+1" LocalCode="345" IDDCode="011" Currency="" />
+  <country CountryName="Central African Republic" CountryCode="CT" ISDCode="+236" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Chad" CountryCode="CD" ISDCode="+235" LocalCode="" IDDCode="15" Currency="" />
+  <country CountryName="Chile" CountryCode="CI" ISDCode="+56" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="China" CountryCode="CH" ISDCode="+86" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Christmas Island" CountryCode="KT" ISDCode="+61" LocalCode="8" IDDCode="0011" Currency="" />
+  <country CountryName="Clipperton Island" CountryCode="IP" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Cocos (Keeling) Islands" CountryCode="CK" ISDCode="+61" LocalCode="" IDDCode="0011" Currency="" />
+  <country CountryName="Colombia" CountryCode="CO" ISDCode="+57" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Comoros" CountryCode="CN" ISDCode="+269" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Congo (Brazzaville)" CountryCode="CF" ISDCode="+242" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Congo (Kinshasa)" CountryCode="CG" ISDCode="+243" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Cook Islands" CountryCode="CW" ISDCode="+682" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Coral Sea Islands" CountryCode="CR" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Costa Rica" CountryCode="CS" ISDCode="+506" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Cote D'Ivoire" CountryCode="IV" ISDCode="+225" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Croatia" CountryCode="HR" ISDCode="+385" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Cuba" CountryCode="CU" ISDCode="+53" LocalCode="" IDDCode="119" Currency="" />
+  <country CountryName="Cyprus" CountryCode="CY" ISDCode="+357" LocalCode="" IDDCode="" Currency="00" />
+  <country CountryName="Czech Republic" CountryCode="EZ" ISDCode="+420" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Denmark" CountryCode="DA" ISDCode="+45" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Djibouti" CountryCode="DJ" ISDCode="+253" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Dominica" CountryCode="DO" ISDCode="+1" LocalCode="767" IDDCode="011" Currency="" />
+  <country CountryName="Dominican Republic" CountryCode="DR" ISDCode="+1" LocalCode="809" IDDCode="011" Currency="" />
+  <country CountryName="East Timor" CountryCode="TT" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Ecuador" CountryCode="EC" ISDCode="+593" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Egypt" CountryCode="EG" ISDCode="+20" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="El Salvador" CountryCode="ES" ISDCode="+503" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Equatorial Guinea" CountryCode="EK" ISDCode="+240" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Eritrea" CountryCode="ER" ISDCode="+291" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Estonia" CountryCode="EN" ISDCode="+372" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Ethiopia" CountryCode="ET" ISDCode="+251" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Europa Island" CountryCode="EU" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Falkland Islands (Islas Malvinas)" CountryCode="FK" ISDCode="+500" LocalCode="" IDDCode="" Currency="00" />
+  <country CountryName="Faroe Islands" CountryCode="FO" ISDCode="+298" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Fiji" CountryCode="FJ" ISDCode="+679" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Finland" CountryCode="FI" ISDCode="+358" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="France" CountryCode="FR" ISDCode="+33" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="French Guiana" CountryCode="FG" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="French Polynesia" CountryCode="FP" ISDCode="+689" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="French Southern and Antarctic Lands" CountryCode="FS" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Gabon" CountryCode="GB" ISDCode="+241" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Gaza Strip" CountryCode="GZ" ISDCode="970" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Georgia" CountryCode="GG" ISDCode="+995" LocalCode="" IDDCode="8-10" Currency="" />
+  <country CountryName="Germany" CountryCode="GM" ISDCode="+49" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Ghana" CountryCode="GH" ISDCode="+233" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Gibraltar" CountryCode="GI" ISDCode="+350" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Glorioso Islands" CountryCode="GO" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Greece" CountryCode="GR" ISDCode="+30" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Greenland" CountryCode="GL" ISDCode="+299" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Grenada" CountryCode="GJ" ISDCode="+1" LocalCode="473" IDDCode="011" Currency="" />
+  <country CountryName="Guadeloupe" CountryCode="GP" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Guatemala" CountryCode="GT" ISDCode="+502" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Guernsey" CountryCode="GK" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Guinea" CountryCode="GV" ISDCode="+224" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Guinea-Bissau" CountryCode="PU" ISDCode="+245" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Guyana" CountryCode="GY" ISDCode="+592" LocalCode="" IDDCode="001" Currency="" />
+  <country CountryName="Haiti" CountryCode="HA" ISDCode="+509" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Heard Island and McDonald Islands" CountryCode="HM" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Holy See (Vatican City)" CountryCode="VT" ISDCode="+39" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Honduras" CountryCode="HO" ISDCode="+504" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Hong Kong" CountryCode="HK" ISDCode="+852" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Hungary" CountryCode="HU" ISDCode="+36" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Iceland" CountryCode="IC" ISDCode="+354" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="India" CountryCode="IN" ISDCode="91" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Indonesia" CountryCode="ID" ISDCode="+62" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Iran" CountryCode="IR" ISDCode="+98" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Iraq" CountryCode="IZ" ISDCode="+964" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Ireland" CountryCode="EI" ISDCode="+353" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Isle of Man" CountryCode="IM" ISDCode="+972" LocalCode="" IDDCode="44" Currency="" />
+  <country CountryName="Israel" CountryCode="IS" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Italy" CountryCode="IT" ISDCode="+39" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Jamaica" CountryCode="JM" ISDCode="+1" LocalCode="876" IDDCode="00" Currency="" />
+  <country CountryName="Jan Mayen" CountryCode="JN" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Japan" CountryCode="JA" ISDCode="+81" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Jersey" CountryCode="JE" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Jordan" CountryCode="JO" ISDCode="+962" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Juan de Nova Island" CountryCode="JU" ISDCode="" LocalCode="" IDDCode="" />
+  <country CountryName="Kazakhstan" CountryCode="KZ" ISDCode="+7" LocalCode="" IDDCode="8-10" Currency="" />
+  <country CountryName="Kenya" CountryCode="KE" ISDCode="+254" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Kiribati" CountryCode="KR" ISDCode="+686" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Kuwait" CountryCode="KU" ISDCode="+965" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Kyrgyzstan" CountryCode="KG" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Laos" CountryCode="LA" ISDCode="+856" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Latvia" CountryCode="LG" ISDCode="+371" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Lebanon" CountryCode="LE" ISDCode="+961" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Lesotho" CountryCode="LT" ISDCode="+266" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Liberia" CountryCode="LI" ISDCode="+231" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Libya" CountryCode="LY" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Liechtenstein" CountryCode="LS" ISDCode="+423" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Lithuania" CountryCode="LH" ISDCode="+370" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Luxembourg" CountryCode="LU" ISDCode="+352" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Macau" CountryCode="MC" ISDCode="+853" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Macedonia" CountryCode="MK" ISDCode="+389" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Madagascar" CountryCode="MA" ISDCode="+261" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Malawi" CountryCode="MI" ISDCode="+265" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Malaysia" CountryCode="MY" ISDCode="+60" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Maldives" CountryCode="MV" ISDCode="+960" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Mali" CountryCode="ML" ISDCode="+223" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Malta" CountryCode="MT" ISDCode="+356" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Martinique" CountryCode="MB" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Mauritania" CountryCode="MR" ISDCode="+222" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Mauritius" CountryCode="MP" ISDCode="+230" LocalCode="" IDDCode="020" Currency="" />
+  <country CountryName="Mayotte" CountryCode="MF" ISDCode="+269" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Mexico" CountryCode="MX" ISDCode="+52" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Moldova" CountryCode="MD" ISDCode="+373" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Monaco" CountryCode="MN" ISDCode="+377" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Mongolia" CountryCode="MG" ISDCode="+976" LocalCode="" IDDCode="011" Currency="" />
+  <country CountryName="Montserrat" CountryCode="MH" ISDCode="+1" LocalCode="664" IDDCode="011" Currency="" />
+  <country CountryName="Morocco" CountryCode="MO" ISDCode="212" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Mozambique" CountryCode="MZ" ISDCode="+258" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Myanmar (Burma)" CountryCode="BM" ISDCode="" LocalCode="" IDDCode="" Currency="" />
+  <country CountryName="Namibia" CountryCode="WA" ISDCode="+264" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Nauru" CountryCode="NR" ISDCode="+674" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Nepal" CountryCode="NP" ISDCode="+977" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Netherlands" CountryCode="NL" ISDCode="+31" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Netherlands Antilles" CountryCode="NT" ISDCode="+599" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="New Caledonia" CountryCode="NC" ISDCode="+687" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="New Zealand" CountryCode="NZ" ISDCode="+64" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Nicaragua" CountryCode="NU" ISDCode="+505" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Niger" CountryCode="NG" ISDCode="+227" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Nigeria" CountryCode="NI" ISDCode="+234" LocalCode="" IDDCode="009" Currency="" />
+  <country CountryName="Niue" CountryCode="NE" ISDCode="+683" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Norfolk Island" CountryCode="NF" ISDCode="+672" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="North Korea" CountryCode="KN" ISDCode="+850" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Norway" CountryCode="NO" ISDCode="+47" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Oman" CountryCode="MU" ISDCode="+968" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Pakistan" CountryCode="PK" ISDCode="+92" LocalCode="" IDDCode="00" Currency="" />
+  <country CountryName="Panama" CountryCode="PM" ISDCode="+507" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Papua New Guinea" CountryCode="PP" ISDCode="+675" LocalCode="" IDDCode="05" Currency=""/>
+  <country CountryName="Paracel Islands" CountryCode="PF" ISDCode="" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Paraguay" CountryCode="PA" ISDCode="+595" LocalCode="" IDDCode="002" Currency=""/>
+  <country CountryName="Peru" CountryCode="PE" ISDCode="+51" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Philippines" CountryCode="RP" ISDCode="+63" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Pitcairn Islands" CountryCode="PC" ISDCode="64" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Poland" CountryCode="PL" ISDCode="+48" LocalCode="" IDDCode="0-0" Currency=""/>
+  <country CountryName="Portugal" CountryCode="PO" ISDCode="+351" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Qatar" CountryCode="QA" ISDCode="+974" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Reunion" CountryCode="RE" ISDCode="" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Romania" CountryCode="RO" ISDCode="+40" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Russia" CountryCode="RS" ISDCode="+7" LocalCode="" IDDCode="8-10" Currency=""/>
+  <country CountryName="Rwanda" CountryCode="RW" ISDCode="+250" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Saint Helena" CountryCode="SH" ISDCode="+290" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Saint Kitts and Nevis" CountryCode="SC" ISDCode="+1" LocalCode="869" IDDCode="011" Currency=""/>
+  <country CountryName="Saint Lucia" CountryCode="ST" ISDCode="+1" LocalCode="758" IDDCode="011" Currency=""/>
+  <country CountryName="Saint Pierre and Miquelon" CountryCode="SB" ISDCode="+508" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Saint Vincent and the Grenadines" CountryCode="VC" ISDCode="+1" LocalCode="784" IDDCode="011" Currency=""/>
+  <country CountryName="Samoa" CountryCode="WS" ISDCode="+685" LocalCode="" IDDCode="0" Currency=""/>
+  <country CountryName="San Marino" CountryCode="SM" ISDCode="+378" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Sao Tome and Principe" CountryCode="TP" ISDCode="+239" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Saudi Arabia" CountryCode="SA" ISDCode="+966" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Senegal" CountryCode="SG" ISDCode="+221" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Serbia and Montenegro" CountryCode="YI" ISDCode="+381" LocalCode="" IDDCode="99" Currency=""/>
+  <country CountryName="Seychelles" CountryCode="SE" ISDCode="+248" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Sierra Leone" CountryCode="SL" ISDCode="+232" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Singapore" CountryCode="SN" ISDCode="+65" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Slovakia" CountryCode="LO" ISDCode="+421" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Slovenia" CountryCode="SI" ISDCode="+386" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Solomon Islands" CountryCode="BP" ISDCode="+677" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Somalia" CountryCode="SO" ISDCode="+252" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="South Africa" CountryCode="SF" ISDCode="+27" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="South Georgia and the South Sandwich Islands" CountryCode="SX" ISDCode="" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="South Korea" CountryCode="KS" ISDCode="+82" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Spain" CountryCode="SP" ISDCode="+34" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Spratly Islands" CountryCode="PG" ISDCode="" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Sri Lanka" CountryCode="CE" ISDCode="+94" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Sudan" CountryCode="SU" ISDCode="+249" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Suriname" CountryCode="NS" ISDCode="+597" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Svalbard" CountryCode="SV" ISDCode="" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Swaziland" CountryCode="WZ" ISDCode="+268" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Sweden" CountryCode="SW" ISDCode="+46" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Switzerland" CountryCode="SZ" ISDCode="+41" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Syria" CountryCode="SY" ISDCode="+963" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Taiwan" CountryCode="TW" ISDCode="+866" LocalCode="" IDDCode="002" Currency=""/>
+  <country CountryName="Tajikistan" CountryCode="TI" ISDCode="+992" LocalCode="" IDDCode="8-10" Currency=""/>
+  <country CountryName="Tanzania" CountryCode="TZ" ISDCode="+255" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Thailand" CountryCode="TH" ISDCode="+66" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="The Bahamas" CountryCode="BF" ISDCode="+1" LocalCode="242" IDDCode="011" Currency=""/>
+  <country CountryName="The Gambia" CountryCode="GA" ISDCode="" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Togo" CountryCode="TO" ISDCode="+228" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Tokelau" CountryCode="TL" ISDCode="+690" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Tonga" CountryCode="TN" ISDCode="+676" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Trinidad and Tobago" CountryCode="TD" ISDCode="+1" LocalCode="868" IDDCode="011" Currency=""/>
+  <country CountryName="Tromelin Island" CountryCode="TE" ISDCode="" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Tunisia" CountryCode="TS" ISDCode="+216" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Turkey" CountryCode="TU" ISDCode="+90" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Turkmenistan" CountryCode="TX" ISDCode="+993" LocalCode="" IDDCode="8-10" Currency=""/>
+  <country CountryName="Turks and Caicos Islands" CountryCode="TK" ISDCode="+1" LocalCode="649" IDDCode="011" Currency=""/>
+  <country CountryName="Tuvalu" CountryCode="TV" ISDCode="+688" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Uganda" CountryCode="UG" ISDCode="+256" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Ukraine" CountryCode="UP" ISDCode="+380" LocalCode="" IDDCode="8-10" Currency=""/>
+  <country CountryName="Undersea features" CountryCode="UF" ISDCode="" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="United Arab Emirates" CountryCode="AE" ISDCode="+971" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="United Kingdom" CountryCode="UK" ISDCode="44" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="United States" CountryCode="US" ISDCode="1" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Uruguay" CountryCode="UY" ISDCode="+598" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Uzbekistan" CountryCode="UZ" ISDCode="+998" LocalCode="" IDDCode="8-10" Currency=""/>
+  <country CountryName="Vanuatu" CountryCode="NH" ISDCode="+678" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Venezuela" CountryCode="VE" ISDCode="+58" LocalCode="" IDDCode="00" Currency=""/>
+  <country CountryName="Vietnam" CountryCode="VM" ISDCode="+84" LocalCode="" IDDCode="0" Currency=""/>
+  <country CountryName="Wallis and Futuna" CountryCode="WF" ISDCode="+681" LocalCode="" IDDCode="19" Currency=""/>
+  <country CountryName="West Bank" CountryCode="WE" ISDCode="970" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Western Sahara" CountryCode="WI" ISDCode="" LocalCode="" IDDCode="" Currency=""/>
+  <country CountryName="Yemen" CountryCode="YM" ISDCode="+967" LocalCode="" IDDCode="0" Currency=""/>
+  <country CountryName="Zambia" CountryCode="ZA" ISDCode="+260" LocalCode="" IDDCode="0" Currency=""/>
+  <country CountryName="Zimbabwe" CountryCode="ZI" ISDCode="+263" LocalCode="" IDDCode="0" Currency=""/>
+</countries>

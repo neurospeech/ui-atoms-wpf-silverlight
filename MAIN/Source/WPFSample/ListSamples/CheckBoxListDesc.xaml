@@ -1,0 +1,33 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.ListSamples.CheckBoxListDesc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="600"
+	Title="CheckBoxListDesc">
+
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <List>
+                    <ListItem>
+                        <Paragraph>	Selections within the CheckBoxList are returned to the system. They are displayed under the heading of Selected Items.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	The selections can appear in any order, either</Paragraph>
+                        <Paragraph> - In the order selected</Paragraph>
+                        <Paragraph> - In the order that they appear.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	For the purposes of this sample, selections made within the first column will appear above selections made in the second column. However, individual selections in either of the columns will appear in the order in which the selections were made.</Paragraph>
+                    </ListItem>
+                </List>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Page>

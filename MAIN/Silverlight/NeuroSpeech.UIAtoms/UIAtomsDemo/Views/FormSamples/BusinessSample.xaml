@@ -1,0 +1,217 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.FormSamples.BusinessSample" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           Title="HomeVista Page" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:sys="clr-namespace:System;assembly=mscorlib"
+           xmlns:ns="http://uiatoms.neurospeech.com/silverlight"
+           xmlns:nsb="http://uiatoms.neurospeech.com/silverlight/buttons"      >
+
+    <Grid x:Name="LayoutRoot">
+        <ns:AtomForm x:Name="signupForm"
+            Header="Employee"
+                     HorizontalAlignment="Center"
+            Width="850">
+        
+            <ns:AtomComboBox 
+                ns:AtomForm.IsRequired="True"
+                ns:AtomForm.MissingValueMessage="Please select title"
+                ns:AtomForm.Label="Title:"
+                IsFilterVisible="False">
+                
+                <sys:String>Dr.</sys:String>
+                <sys:String>Mr.</sys:String>
+                <sys:String>Miss</sys:String>
+                <sys:String>Mrs.</sys:String>
+                <sys:String>Ms.</sys:String>
+                
+            </ns:AtomComboBox>
+            <ns:AtomFormRow>
+                <ns:AtomTextBox 
+                    ns:AtomForm.IsRequired="True"
+                    ns:AtomForm.MissingValueMessage="First name is required"
+                    ns:AtomForm.Label="First Name:" />
+            
+                <ns:AtomTextBox 
+                    ns:AtomForm.MissingValueMessage="Last name is required"
+                    ns:AtomForm.IsRequired="True"
+                    ns:AtomForm.Label="Last Name:" />
+            </ns:AtomFormRow>
+            <ns:AtomTextBox 
+                ns:AtomForm.MissingValueMessage="Job title id required"
+                ns:AtomForm.IsRequired="True"
+                ns:AtomForm.Label="Job Title:" />
+            
+            <ns:AtomComboBox 
+                ns:AtomForm.MissingValueMessage="Please select report to"
+                ns:AtomForm.IsRequired="True"
+                ns:AtomForm.Label="Report To:"
+                IsFilterVisible="False">
+                
+                <sys:String>Nancy Devolio</sys:String>
+                <sys:String>Andrew Fuller</sys:String>
+                <sys:String>Janet Leveling</sys:String>
+                <sys:String>Margaret Peacock</sys:String>
+                <sys:String>Steven Buchanan</sys:String>
+                <sys:String>Michael Suyama</sys:String>
+                <sys:String>Rebort King</sys:String>
+                <sys:String>Luara Callahan</sys:String>
+                <sys:String>Anne Dodsworth</sys:String>
+            
+            </ns:AtomComboBox>
+            
+            <ns:AtomFormRow
+                Header="General Information" Margin="0,20,0,20">
+
+                <ns:AtomFormGroup Header="Height" Margin="0,10,0,0">
+                    
+                    <ns:AtomDoubleTextBox 
+                        ns:AtomForm.Label="KG:" Width="233"/>
+                    
+                    <ns:AtomDoubleTextBox 
+                        ns:AtomForm.Label="LBS:" Width="233"/>
+
+                </ns:AtomFormGroup>
+
+                <ns:AtomFormGroup 
+                    Header="Weight" Margin="0,10,0,0">
+                
+                    <ns:AtomDoubleTextBox 
+                        ns:AtomForm.Label="Foot:" Width="233"/>
+                    
+                    <ns:AtomDoubleTextBox 
+                        ns:AtomForm.Label="Inch:" Width="233"/>
+
+                </ns:AtomFormGroup>
+
+            </ns:AtomFormRow>
+
+            <ns:AtomFormGroup Header="Othor Information">
+                <ns:AtomFormTab
+                    Header="Details">
+                    <StackPanel
+                        Orientation="Horizontal">
+
+                        <ns:AtomFormGroup
+                            Header="Details"
+                            Width="Auto">
+
+                            <ns:AtomTextBox
+                                ns:AtomForm.MissingValueMessage="Manufacturer is required"
+                                ns:AtomForm.IsRequired="True"
+                                ns:AtomForm.Label="Manufacturer:"
+                                Width="370" />
+
+                            <ns:AtomTextBox
+                                ns:AtomForm.MissingValueMessage="Model is required"
+                                ns:AtomForm.IsRequired="True"
+                                ns:AtomForm.Label="Model:"
+                                Width="370" />
+
+                            <ns:AtomComboBox
+                                ns:AtomForm.MissingValueMessage="Category is required"
+                                ns:AtomForm.IsRequired="True"
+                                ns:AtomForm.Label="Category:"
+                                Width="370"
+                                HorizontalAlignment="Left"
+                                IsFilterVisible="False">
+
+                                <sys:String>Sports</sys:String>
+                                <sys:String>Sloon</sys:String>
+                                <sys:String>Truck</sys:String>
+
+                            </ns:AtomComboBox>
+
+                            <ns:AtomFormRow>
+                                <ns:AtomCurrencyTextBox
+                                    ns:AtomForm.Label="Price:"
+                                    HorizontalAlignment="Left" />
+
+                                <ns:AtomTextBox
+                                    ns:AtomForm.MissingValueMessage="City is required"
+                                    ns:AtomForm.IsRequired="True"
+                                    ns:AtomForm.Label="City:"
+                                    Width="135" />
+
+                            </ns:AtomFormRow>
+
+
+                            <HyperlinkButton
+                                ns:AtomForm.Label="Link:"
+                                Content="http://www3.mercedes-benz.com"
+                                TargetName="_blank"
+                                NavigateUri="http://www3.mercedes-benz.com"
+                                Click="HyperlinkButton_Click" />
+
+                        </ns:AtomFormGroup>
+
+                        <Border
+                            BorderBrush="Black"
+                            BorderThickness="1"
+                            Width="225"
+                            Height="200"
+                            Margin="5,10,0,10">
+                            <Image
+                                Name="image1"
+                                Source="/UIAtomsDemo;component/Asset/mercedes-e-class-2009.jpg" />
+                        </Border>
+
+                    </StackPanel>
+
+                </ns:AtomFormTab>
+
+                <ns:AtomFormTab
+                    Header="Performance Attributes">
+                    <ns:AtomDoubleTextBox
+                        ns:AtomForm.MissingValueMessage="Capacity is required"
+                        ns:AtomForm.Label="Capacity:"
+                        Width="200"
+                        HorizontalAlignment="Left" />
+                    <ns:AtomFormRow>
+                        <ns:AtomDoubleTextBox
+                            ns:AtomForm.MissingValueMessage="HP is required"
+                            ns:AtomForm.Label="HP:"
+                            Width="200"
+                            HorizontalAlignment="Left" />
+
+                        <ns:AtomDoubleTextBox
+                            ns:AtomForm.MissingValueMessage="Cyl is required"
+                            ns:AtomForm.Label="Cyl:"
+                            Width="200"
+                            HorizontalAlignment="Left" />
+                    </ns:AtomFormRow>
+
+                    <ns:AtomFormRow>
+                        <ns:AtomDoubleTextBox
+                            ns:AtomForm.MissingValueMessage="MGP city is required"
+                            ns:AtomForm.Label="MPG City:"
+                            Width="200"
+                            HorizontalAlignment="Left" />
+
+                        <ns:AtomDoubleTextBox
+                            ns:AtomForm.MissingValueMessage="MGP hightway is required"
+                            ns:AtomForm.Label="MPG Hightway:"
+                            Width="200"
+                            HorizontalAlignment="Left" />
+
+                    </ns:AtomFormRow>
+
+
+                    <ns:AtomDoubleTextBox
+                        ns:AtomForm.MissingValueMessage="# of gears is required"
+                        ns:AtomForm.Label="# of Gears:"
+                        Width="200"
+                        HorizontalAlignment="Left" />
+
+                </ns:AtomFormTab>
+
+                
+            </ns:AtomFormGroup>
+            <nsb:AtomSubmitButton Content="Submit" ValidationRootElement="signupForm"/>
+        </ns:AtomForm>
+    </Grid>
+</navigation:Page>

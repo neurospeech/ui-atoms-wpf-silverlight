@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="NeuroSpeech.UIAtoms.Designers.Form.Designer.FormProperties"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NeuroSpeech.UIAtoms.Designers.Form.Designer"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+        <local:FormItemControl Header="Label">
+            <TextBox Text="{Binding Label,Mode=TwoWay}"/>
+        </local:FormItemControl>
+        <local:FormItemControl Header="Required">
+            <CheckBox IsChecked="{Binding IsRequired,Mode=TwoWay}"/>
+        </local:FormItemControl>
+        <local:FormItemControl Header="Description">
+            <TextBox Text="{Binding Description,Mode=TwoWay}"/>
+        </local:FormItemControl>
+        <local:FormItemControl Header="Title">
+            <TextBox Text="{Binding Title,Mode=TwoWay}"/>
+        </local:FormItemControl>
+        <local:FormItemControl Header="Width">
+            <!--local:HorizontalAlignControl SelectedValue="{Binding HorizontalAlignment,Mode=TwoWay}"/-->
+            <local:WidthControl Value="{Binding ItemWidth, Mode=TwoWay}"/>
+        </local:FormItemControl>
+        <local:FormItemControl Header="Missing Message">
+            <TextBox Text="{Binding MissingValueMessage,Mode=TwoWay}"/>
+        </local:FormItemControl>
+        <local:FormItemControl Header="Invalid Message">
+            <TextBox Text="{Binding InvalidValueMessage,Mode=TwoWay}"/>
+        </local:FormItemControl>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,44 @@
+﻿<Control 
+	Name="AtomComboTextBox" 
+	BaseType="System.Windows.Controls.TextBox" 
+	HasDefaultStyleKey="True" 
+	Namespace="NeuroSpeech.UIAtoms.Controls" 
+	xmlns="http://uiatoms.neurospeech.com/core">
+
+  <TemplatePart Name="listPresenter" Type="ContentControl" Required="true" />
+  <TemplatePart Name="popup" Type="System.Windows.Controls.Primitives.Popup" Required="true" />
+  <TemplatePart Name="watermark" Type="TextBlock" Required="true" />
+  <TemplatePart Name="toggleButton" Type="System.Windows.Controls.Primitives.ToggleButton" Required="true" />
+
+  <DependencyProperty Name="SelectedIndex"
+                        Type="int"
+                        Default="-1"
+                        GenerateChangedMethod="True"
+						            GenerateEvent="True"
+                        />
+  <DependencyProperty Name="SelectedItem"
+                        Type="object"
+                        GenerateChangedMethod="True"
+                        />
+  <DependencyProperty Name="SelectedValue"
+                        Type="object"
+                        GenerateChangedMethod="True"
+                        />
+  <DependencyProperty Name="SelectedValuePath"
+                        Type="string"
+                        GenerateChangedMethod="True"
+                        />
+  <DependencyProperty Name="ItemsSource"
+                        Type="System.Collections.IEnumerable"
+                        GenerateChangedMethod="True"
+                        />
+  <DependencyProperty Name="IsPopupOpen"
+                        Type="bool"
+                        GenerateChangedMethod="True"
+                        />
+  
+  <DependencyProperty Name="DisplayMemberPath"
+                        Type="string"
+                        />
+
+</Control>

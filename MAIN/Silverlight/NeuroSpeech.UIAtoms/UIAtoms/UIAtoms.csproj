@@ -1,0 +1,1109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8498857F-71D7-4617-AC96-739C2F6E7ACA}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NeuroSpeech.UIAtoms</RootNamespace>
+    <AssemblyName>NeuroSpeech.UIAtoms.Silverlight</AssemblyName>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>v4.0</SilverlightVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT ;DA</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>v4.0</SilverlightVersion>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;DA</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugDemo|AnyCPU'">
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>v4.0</SilverlightVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugDemo\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;DEMO;DA</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Debug\NeuroSpeech.UIAtoms.Silverlight.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseDemo|AnyCPU'">
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>v4.0</SilverlightVersion>
+    <OutputPath>bin\ReleaseDemo\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;DEMO;DA</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Release\NeuroSpeech.UIAtoms.Silverlight.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug5|AnyCPU'">
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>v5.0</SilverlightVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug5\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;DA</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Debug\NeuroSpeech.UIAtoms.Silverlight.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugDemo5|AnyCPU'">
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightVersion>v5.0</SilverlightVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugDemo5\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;DEMO;DA</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Debug\NeuroSpeech.UIAtoms.Silverlight.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release5|AnyCPU'">
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightVersion>v5.0</SilverlightVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OutputPath>bin\Release5\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;DA</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Release\NeuroSpeech.UIAtoms.Silverlight.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseDemo5|AnyCPU'">
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>v5.0</SilverlightVersion>
+    <OutputPath>bin\ReleaseDemo5\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;DEMO;DA</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Release\NeuroSpeech.UIAtoms.Silverlight.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Controls">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Data.Input">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Xml.Linq">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\AtomBindingHelper.cs">
+      <Link>AtomBindingHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomAddButton.cs">
+      <Link>Buttons\AtomAddButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomApproveButton.cs">
+      <Link>Buttons\AtomApproveButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomArchiveButton.cs">
+      <Link>Buttons\AtomArchiveButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomAttachmentButton.cs">
+      <Link>Buttons\AtomAttachmentButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomCopyButton.cs">
+      <Link>Buttons\AtomCopyButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomDeleteButton.cs">
+      <Link>Buttons\AtomDeleteButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomDownloadButton.cs">
+      <Link>Buttons\AtomDownloadButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomEmailButton.cs">
+      <Link>Buttons\AtomEmailButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomImageButton.cs">
+      <Link>Buttons\AtomImageButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomModifyButton.cs">
+      <Link>Buttons\AtomModifyButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomMoveDownButton.cs">
+      <Link>Buttons\AtomMoveDownButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomMoveUpButton.cs">
+      <Link>Buttons\AtomMoveUpButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomNextButton.cs">
+      <Link>Buttons\AtomNextButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomOpenButton.cs">
+      <Link>Buttons\AtomOpenButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomPasteButton.cs">
+      <Link>Buttons\AtomPasteButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomPlayButton.cs">
+      <Link>Buttons\AtomPlayButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomPreviousButton.cs">
+      <Link>Buttons\AtomPreviousButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomPrintButton.cs">
+      <Link>Buttons\AtomPrintButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomRecordButton.cs">
+      <Link>Buttons\AtomRecordButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomSaveButton.cs">
+      <Link>Buttons\AtomSaveButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomSearchButton.cs">
+      <Link>Buttons\AtomSearchButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomStopButton.cs">
+      <Link>Buttons\AtomStopButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomSubmitButton.cs">
+      <Link>Buttons\AtomSubmitButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomTimeButton.cs">
+      <Link>Buttons\AtomTimeButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomUnapproveButton.cs">
+      <Link>Buttons\AtomUnapproveButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\AtomUnarchiveButton.cs">
+      <Link>Buttons\AtomUnarchiveButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\BaseAtomImageButton.cs">
+      <Link>Buttons\BaseAtomImageButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\ArrayToCSVConverter.cs">
+      <Link>Controls\ArrayToCSVConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomButton.cs">
+      <Link>Controls\AtomButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomCalculator.cs">
+      <Link>Controls\AtomCalculator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomCheckBox.cs">
+      <Link>Controls\AtomCheckBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomCheckBoxList.cs">
+      <Link>Controls\AtomCheckBoxList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomCheckBoxListItem.cs">
+      <Link>Controls\AtomCheckBoxListItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomCodeView.cs">
+      <Link>Controls\AtomCodeView.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomCodeViewer.cs">
+      <Link>Controls\AtomCodeViewer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomCollectionFilter.cs">
+      <Link>Controls\AtomCollectionFilter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomComboBox.cs">
+      <Link>Controls\AtomComboBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomComboTextBox.designer.cs">
+      <Link>Controls\AtomComboTextBox.designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomComboTextBox.xamlc.cs">
+      <Link>Controls\AtomComboTextBox.xamlc.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomCountryComboBox.cs">
+      <Link>Controls\AtomCountryComboBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomCurrencyTextBox.cs">
+      <Link>Controls\AtomCurrencyTextBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomDoubleTextBox.cs">
+      <Link>Controls\AtomDoubleTextBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomEmailTextBox.cs">
+      <Link>Controls\AtomEmailTextBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomEntityForm.cs">
+      <Link>Controls\AtomEntityForm.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomErrorDisplay.cs">
+      <Link>Controls\AtomErrorDisplay.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomFilterTextBox.cs">
+      <Link>Controls\AtomFilterTextBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomFlexibleGrid.cs">
+      <Link>Controls\AtomFlexibleGrid.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomForm.cs">
+      <Link>Controls\AtomForm.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomFormContainer.cs">
+      <Link>Controls\AtomFormContainer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomFormItemContainer.cs">
+      <Link>Controls\AtomFormItemContainer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomFormLayout.cs">
+      <Link>Controls\AtomFormLayout.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomFormTabItem.cs">
+      <Link>Controls\AtomFormTabItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomImageButton.cs">
+      <Link>Controls\AtomImageButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomIntegerTextBox.cs">
+      <Link>Controls\AtomIntegerTextBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomListBox.cs">
+      <Link>Controls\AtomListBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomNumberComboBox.cs">
+      <Link>Controls\AtomNumberComboBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomPasswordBox.cs">
+      <Link>Controls\AtomPasswordBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomPasswordBoxAgain.cs">
+      <Link>Controls\AtomPasswordBoxAgain.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomSplitView.designer.cs">
+      <Link>Controls\AtomSplitView.designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomSplitView.xamlc.cs">
+      <Link>Controls\AtomSplitView.xamlc.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomStackPanel.cs">
+      <Link>Controls\AtomStackPanel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomTask.cs">
+      <Link>Controls\AtomTask.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomTextBox.cs">
+      <Link>Controls\AtomTextBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomTextBoxWithRegEx.cs">
+      <Link>Controls\AtomTextBoxWithRegEx.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomTitleTextBox.cs">
+      <Link>Controls\AtomTitleTextBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomToggleButtonBar.cs">
+      <Link>Controls\AtomToggleButtonBar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomTraceView.cs">
+      <Link>Controls\AtomTraceView.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomUniformGrid.cs">
+      <Link>Controls\AtomUniformGrid.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomUnitHelper.cs">
+      <Link>Controls\AtomUnitHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomUsernameTextBox.cs">
+      <Link>Controls\AtomUsernameTextBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomValueDialogButton.cs">
+      <Link>Controls\AtomValueDialogButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomValueDialogWindow.cs">
+      <Link>Controls\AtomValueDialogWindow.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomViewPanel.cs">
+      <Link>Controls\AtomViewPanel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\AtomXAMLFormatter.cs">
+      <Link>Controls\AtomXAMLFormatter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Controls\IFormContainer.cs">
+      <Link>Controls\IFormContainer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\AtomCodeFormatter.cs">
+      <Link>Core\AtomCodeFormatter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\AtomCodeFormatterCS.cs">
+      <Link>Core\AtomCodeFormatterCS.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\AtomCodeFormatterXML.cs">
+      <Link>Core\AtomCodeFormatterXML.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\AtomCSVUtils.cs">
+      <Link>Core\AtomCSVUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\AtomDataItem.cs">
+      <Link>Core\AtomDataItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\AtomDesignAttribute.cs">
+      <Link>Core\AtomDesignAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\AtomGridWidthConverter.cs">
+      <Link>Core\AtomGridWidthConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\AtomHelper.cs">
+      <Link>Core\AtomHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\AtomRangeBase.cs">
+      <Link>Core\AtomRangeBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\AtomSizeFormatProvider.cs">
+      <Link>Core\AtomSizeFormatProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\AtomTrace.cs">
+      <Link>Core\AtomTrace.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\AtomTraceListener.cs">
+      <Link>Core\AtomTraceListener.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\AtomTreeWalker.cs">
+      <Link>Core\AtomTreeWalker.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\AtomUnitHelper.cs">
+      <Link>Core\AtomUnitHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\AtomUtils.cs">
+      <Link>Core\AtomUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\AtomValidatorControl.cs">
+      <Link>Core\AtomValidatorControl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\HorizontalAlignementToTextAlignmentConverter.cs">
+      <Link>Core\HorizontalAlignementToTextAlignmentConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\IAtomItemsFilter.cs">
+      <Link>Core\IAtomItemsFilter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\ListToVisibilityConverter.cs">
+      <Link>Core\ListToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\OppositeBooleanToVisibilityConverter.cs">
+      <Link>Core\OppositeBooleanToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\SimpleEvaluator.cs">
+      <Link>Core\SimpleEvaluator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\StringToDoubleConverter.cs">
+      <Link>Core\StringToDoubleConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Core\StringToVisibilityConverter.cs">
+      <Link>Core\StringToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Expressions\BaseMathExpression.cs">
+      <Link>Expressions\BaseMathExpression.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Expressions\MathDecimalExpression.cs">
+      <Link>Expressions\MathDecimalExpression.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Expressions\MathDoubleExpression.cs">
+      <Link>Expressions\MathDoubleExpression.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Expressions\MathIntegerExpression.cs">
+      <Link>Expressions\MathIntegerExpression.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\MathControls\AtomMath9Slice.cs">
+      <Link>MathControls\AtomMath9Slice.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\MathControls\AtomMathBrackets.cs">
+      <Link>MathControls\AtomMathBrackets.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\MathControls\AtomMathDisplay.cs">
+      <Link>MathControls\AtomMathDisplay.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\MathControls\AtomMathEquation.cs">
+      <Link>MathControls\AtomMathEquation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\MathControls\AtomMathExp.cs">
+      <Link>MathControls\AtomMathExp.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\MathControls\AtomMathFraction.cs">
+      <Link>MathControls\AtomMathFraction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\MathControls\AtomMathPanel.cs">
+      <Link>MathControls\AtomMathPanel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\MathControls\AtomMathReader.cs">
+      <Link>MathControls\AtomMathReader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\MathControls\AtomMathRoot.cs">
+      <Link>MathControls\AtomMathRoot.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\MathControls\AtomMathSymbol.cs">
+      <Link>MathControls\AtomMathSymbol.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\MathControls\AtomMathTeXParser.cs">
+      <Link>MathControls\AtomMathTeXParser.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\MathControls\XmlAliasAttribute.cs">
+      <Link>MathControls\XmlAliasAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\AtomAngleEditor.cs">
+      <Link>UnitControls\AtomAngleEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\AtomAreaEditor.cs">
+      <Link>UnitControls\AtomAreaEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\AtomEditorConverter.cs">
+      <Link>UnitControls\AtomEditorConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\AtomEnergyEditor.cs">
+      <Link>UnitControls\AtomEnergyEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\AtomLengthEditor.cs">
+      <Link>UnitControls\AtomLengthEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\AtomPowerEditor.cs">
+      <Link>UnitControls\AtomPowerEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\AtomPressureEditor.cs">
+      <Link>UnitControls\AtomPressureEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\AtomTemperatureEditor.cs">
+      <Link>UnitControls\AtomTemperatureEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\AtomTimeEditor.cs">
+      <Link>UnitControls\AtomTimeEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\AtomVelocityEditor.cs">
+      <Link>UnitControls\AtomVelocityEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\AtomVolumeEditor.cs">
+      <Link>UnitControls\AtomVolumeEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\AtomWeightEditor.cs">
+      <Link>UnitControls\AtomWeightEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\Units\AtomMeasurementUnit.cs">
+      <Link>UnitControls\Units\AtomMeasurementUnit.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Validation\AtomBooleanValidationRule.cs">
+      <Link>Validation\AtomBooleanValidationRule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Validation\AtomDataAnnotationValidationRule.cs">
+      <Link>Validation\AtomDataAnnotationValidationRule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Validation\AtomEmailValidationRule.cs">
+      <Link>Validation\AtomEmailValidationRule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Validation\AtomPasswordMatchValidationRule.cs">
+      <Link>Validation\AtomPasswordMatchValidationRule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Validation\AtomRegExValidationRule.cs">
+      <Link>Validation\AtomRegExValidationRule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Validation\AtomSelectionValidationRule.cs">
+      <Link>Validation\AtomSelectionValidationRule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Validation\AtomStringValidationRule.cs">
+      <Link>Validation\AtomStringValidationRule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Validation\AtomUsernameValidationRule.cs">
+      <Link>Validation\AtomUsernameValidationRule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Validation\AtomValidationError.cs">
+      <Link>Validation\AtomValidationError.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Validation\AtomValidationRule.cs">
+      <Link>Validation\AtomValidationRule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Validation\FormValidator.cs">
+      <Link>Validation\FormValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\VersionInfo.cs">
+      <Link>VersionInfo.cs</Link>
+    </Compile>
+    <Compile Include="Controls\ComboBox.cs" />
+    <Compile Include="Core\TraceListener.cs" />
+    <Compile Include="UnitControls\Units\Resources\ConversionResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConversionResource.resx</DependentUpon>
+    </Compile>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomCalculatorButton.Icon.png">
+      <Link>Buttons\Icons\AtomCalculatorButton.Icon.png</Link>
+    </Resource>
+    <Content Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\Units\Resources\Angle.xml">
+      <Link>UnitControls\Units\Resources\Angle.xml</Link>
+    </Content>
+    <Content Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\Units\Resources\Area.xml">
+      <Link>UnitControls\Units\Resources\Area.xml</Link>
+    </Content>
+    <Content Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\Units\Resources\DataRate.xml">
+      <Link>UnitControls\Units\Resources\DataRate.xml</Link>
+    </Content>
+    <Content Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\Units\Resources\DataStorage.xml">
+      <Link>UnitControls\Units\Resources\DataStorage.xml</Link>
+    </Content>
+    <Content Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\Units\Resources\Energy.xml">
+      <Link>UnitControls\Units\Resources\Energy.xml</Link>
+    </Content>
+    <Content Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\Units\Resources\Length.xml">
+      <Link>UnitControls\Units\Resources\Length.xml</Link>
+    </Content>
+    <Content Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\Units\Resources\Power.xml">
+      <Link>UnitControls\Units\Resources\Power.xml</Link>
+    </Content>
+    <Content Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\Units\Resources\Pressure.xml">
+      <Link>UnitControls\Units\Resources\Pressure.xml</Link>
+    </Content>
+    <Content Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\Units\Resources\Temperature.xml">
+      <Link>UnitControls\Units\Resources\Temperature.xml</Link>
+    </Content>
+    <Content Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\Units\Resources\Time.xml">
+      <Link>UnitControls\Units\Resources\Time.xml</Link>
+    </Content>
+    <Content Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\Units\Resources\Velocity.xml">
+      <Link>UnitControls\Units\Resources\Velocity.xml</Link>
+    </Content>
+    <Content Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\Units\Resources\Volume.xml">
+      <Link>UnitControls\Units\Resources\Volume.xml</Link>
+    </Content>
+    <Content Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\UnitControls\Units\Resources\Weight.xml">
+      <Link>UnitControls\Units\Resources\Weight.xml</Link>
+    </Content>
+    <Content Include="Controls\AtomForm.cs.txt" />
+    <Compile Include="Controls\AtomIcon.cs" />
+    <Compile Include="Controls\AtomTraceViewOld.cs" />
+    <Compile Include="Core\AtomNotifier.cs" />
+    <Compile Include="Core\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Core\StringFormatConverter.cs" />
+    <Compile Include="Dialogs\AtomCalculatorDialog.xaml.cs">
+      <DependentUpon>AtomCalculatorDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AtomDemoWindow.xaml.cs">
+      <DependentUpon>AtomDemoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomAddButton.Icon.png">
+      <Link>Buttons\Icons\AtomAddButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomApproveButton.Icon.png">
+      <Link>Buttons\Icons\AtomApproveButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomArchiveButton.Icon.png">
+      <Link>Buttons\Icons\AtomArchiveButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomAttachmentButton.Icon.png">
+      <Link>Buttons\Icons\AtomAttachmentButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomCopyButton.Icon.png">
+      <Link>Buttons\Icons\AtomCopyButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomDeleteButton.Icon.png">
+      <Link>Buttons\Icons\AtomDeleteButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomDownloadButton.Icon.png">
+      <Link>Buttons\Icons\AtomDownloadButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomEmail2Icon.png">
+      <Link>Buttons\Icons\AtomEmail2Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomEmailButton.Icon.png">
+      <Link>Buttons\Icons\AtomEmailButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomImageButton.Icon.png">
+      <Link>Buttons\Icons\AtomImageButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomModifyButton.Icon.png">
+      <Link>Buttons\Icons\AtomModifyButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomMoveDownButton.Icon.png">
+      <Link>Buttons\Icons\AtomMoveDownButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomMoveUpButton.Icon.png">
+      <Link>Buttons\Icons\AtomMoveUpButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomNextButton.Icon.png">
+      <Link>Buttons\Icons\AtomNextButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomOpenButton.Icon.png">
+      <Link>Buttons\Icons\AtomOpenButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomPasteButton.Icon.png">
+      <Link>Buttons\Icons\AtomPasteButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomPauseButton.Icon.png">
+      <Link>Buttons\Icons\AtomPauseButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomPlayButton.Icon.png">
+      <Link>Buttons\Icons\AtomPlayButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomPreviousButton.Icon.png">
+      <Link>Buttons\Icons\AtomPreviousButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomPrintButton.Icon.png">
+      <Link>Buttons\Icons\AtomPrintButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomRecordButton.Icon.png">
+      <Link>Buttons\Icons\AtomRecordButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomSaveButton.Icon.png">
+      <Link>Buttons\Icons\AtomSaveButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomSearchButton.Icon.png">
+      <Link>Buttons\Icons\AtomSearchButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomStopButton.Icon.png">
+      <Link>Buttons\Icons\AtomStopButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomSubmitButton.Icon.png">
+      <Link>Buttons\Icons\AtomSubmitButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomTimeButton.Icon.png">
+      <Link>Buttons\Icons\AtomTimeButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomUnapproveButton.Icon.png">
+      <Link>Buttons\Icons\AtomUnapproveButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\AtomUnarchiveButton.Icon.png">
+      <Link>Buttons\Icons\AtomUnarchiveButton.Icon.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\WindowCloseButton.gif">
+      <Link>Buttons\Icons\WindowCloseButton.gif</Link>
+    </Resource>
+    <Resource Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\Buttons\Icons\WindowCloseButton2.gif">
+      <Link>Buttons\Icons\WindowCloseButton2.gif</Link>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Dialogs\AtomCalculatorDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\AtomDemoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitControls\Units\Resources\ConversionResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConversionResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Countries.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Design\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\-flag.png" />
+    <Resource Include="CountryIcons\aa-flag.png" />
+    <Resource Include="CountryIcons\ac-flag.png" />
+    <Resource Include="CountryIcons\ae-flag.png" />
+    <Resource Include="CountryIcons\af-flag.png" />
+    <Resource Include="CountryIcons\ag-flag.png" />
+    <Resource Include="CountryIcons\aj-flag.png" />
+    <Resource Include="CountryIcons\al-flag.png" />
+    <Resource Include="CountryIcons\am-flag.png" />
+    <Resource Include="CountryIcons\an-flag.png" />
+    <Resource Include="CountryIcons\ao-flag.png" />
+    <Resource Include="CountryIcons\aq-flag.png" />
+    <Resource Include="CountryIcons\ar-flag.png" />
+    <Resource Include="CountryIcons\as-flag.png" />
+    <Resource Include="CountryIcons\at-flag.png" />
+    <Resource Include="CountryIcons\au-flag.png" />
+    <Resource Include="CountryIcons\av-flag.png" />
+    <Resource Include="CountryIcons\ax-flag.png" />
+    <Resource Include="CountryIcons\ay-flag.png" />
+    <Resource Include="CountryIcons\ba-flag.png" />
+    <Resource Include="CountryIcons\bb-flag.png" />
+    <Resource Include="CountryIcons\bc-flag.png" />
+    <Resource Include="CountryIcons\bd-flag.png" />
+    <Resource Include="CountryIcons\be-flag.png" />
+    <Resource Include="CountryIcons\bf-flag.png" />
+    <Resource Include="CountryIcons\bg-flag.png" />
+    <Resource Include="CountryIcons\bh-flag.png" />
+    <Resource Include="CountryIcons\bk-flag.png" />
+    <Resource Include="CountryIcons\bl-flag.png" />
+    <Resource Include="CountryIcons\bm-flag.png" />
+    <Resource Include="CountryIcons\bn-flag.png" />
+    <Resource Include="CountryIcons\bo-flag.png" />
+    <Resource Include="CountryIcons\bp-flag.png" />
+    <Resource Include="CountryIcons\bq-flag.png" />
+    <Resource Include="CountryIcons\br-flag.png" />
+    <Resource Include="CountryIcons\bs-flag.png" />
+    <Resource Include="CountryIcons\bt-flag.png" />
+    <Resource Include="CountryIcons\bu-flag.png" />
+    <Resource Include="CountryIcons\bv-flag.png" />
+    <Resource Include="CountryIcons\bx-flag.png" />
+    <Resource Include="CountryIcons\by-flag.png" />
+    <Resource Include="CountryIcons\ca-flag.png" />
+    <Resource Include="CountryIcons\cb-flag.png" />
+    <Resource Include="CountryIcons\cd-flag.png" />
+    <Resource Include="CountryIcons\ce-flag.png" />
+    <Resource Include="CountryIcons\cf-flag.png" />
+    <Resource Include="CountryIcons\cg-flag.png" />
+    <Resource Include="CountryIcons\ch-flag.png" />
+    <Resource Include="CountryIcons\ci-flag.png" />
+    <Resource Include="CountryIcons\cj-flag.png" />
+    <Resource Include="CountryIcons\ck-flag.png" />
+    <Resource Include="CountryIcons\cm-flag.png" />
+    <Resource Include="CountryIcons\cn-flag.png" />
+    <Resource Include="CountryIcons\co-flag.png" />
+    <Resource Include="CountryIcons\cq-flag.png" />
+    <Resource Include="CountryIcons\cr-flag.png" />
+    <Resource Include="CountryIcons\cs-flag.png" />
+    <Resource Include="CountryIcons\ct-flag.png" />
+    <Resource Include="CountryIcons\cu-flag.png" />
+    <Resource Include="CountryIcons\cv-flag.png" />
+    <Resource Include="CountryIcons\cw-flag.png" />
+    <Resource Include="CountryIcons\cy-flag.png" />
+    <Resource Include="CountryIcons\da-flag.png" />
+    <Resource Include="CountryIcons\dj-flag.png" />
+    <Resource Include="CountryIcons\do-flag.png" />
+    <Resource Include="CountryIcons\dr-flag.png" />
+    <Resource Include="CountryIcons\dx-flag.png" />
+    <Resource Include="CountryIcons\ec-flag.png" />
+    <Resource Include="CountryIcons\ee-flag.png" />
+    <Resource Include="CountryIcons\eg-flag.png" />
+    <Resource Include="CountryIcons\ei-flag.png" />
+    <Resource Include="CountryIcons\ek-flag.png" />
+    <Resource Include="CountryIcons\en-flag.png" />
+    <Resource Include="CountryIcons\er-flag.png" />
+    <Resource Include="CountryIcons\es-flag.png" />
+    <Resource Include="CountryIcons\et-flag.png" />
+    <Resource Include="CountryIcons\eu-flag.png" />
+    <Resource Include="CountryIcons\ez-flag.png" />
+    <Resource Include="CountryIcons\fg-flag.png" />
+    <Resource Include="CountryIcons\fi-flag.png" />
+    <Resource Include="CountryIcons\fj-flag.png" />
+    <Resource Include="CountryIcons\fk-flag.png" />
+    <Resource Include="CountryIcons\fm-flag.png" />
+    <Resource Include="CountryIcons\fo-flag.png" />
+    <Resource Include="CountryIcons\fp-flag.png" />
+    <Resource Include="CountryIcons\fr-flag.png" />
+    <Resource Include="CountryIcons\fs-flag.png" />
+    <Resource Include="CountryIcons\ga-flag.png" />
+    <Resource Include="CountryIcons\gb-flag.png" />
+    <Resource Include="CountryIcons\gg-flag.png" />
+    <Resource Include="CountryIcons\gh-flag.png" />
+    <Resource Include="CountryIcons\gi-flag.png" />
+    <Resource Include="CountryIcons\gj-flag.png" />
+    <Resource Include="CountryIcons\gk-flag.png" />
+    <Resource Include="CountryIcons\gl-flag.png" />
+    <Resource Include="CountryIcons\gm-flag.png" />
+    <Resource Include="CountryIcons\go-flag.png" />
+    <Resource Include="CountryIcons\gp-flag.png" />
+    <Resource Include="CountryIcons\gq-flag.png" />
+    <Resource Include="CountryIcons\gr-flag.png" />
+    <Resource Include="CountryIcons\gt-flag.png" />
+    <Resource Include="CountryIcons\gv-flag.png" />
+    <Resource Include="CountryIcons\gy-flag.png" />
+    <Resource Include="CountryIcons\gz-flag.png" />
+    <Resource Include="CountryIcons\ha-flag.png" />
+    <Resource Include="CountryIcons\hk-flag.png" />
+    <Resource Include="CountryIcons\hm-flag.png" />
+    <Resource Include="CountryIcons\ho-flag.png" />
+    <Resource Include="CountryIcons\hr-flag.png" />
+    <Resource Include="CountryIcons\hu-flag.png" />
+    <Resource Include="CountryIcons\ic-flag.png" />
+    <Resource Include="CountryIcons\id-flag.png" />
+    <Resource Include="CountryIcons\im-flag.png" />
+    <Resource Include="CountryIcons\in-flag.png" />
+    <Resource Include="CountryIcons\io-flag.png" />
+    <Resource Include="CountryIcons\ip-flag.png" />
+    <Resource Include="CountryIcons\ir-flag.png" />
+    <Resource Include="CountryIcons\is-flag.png" />
+    <Resource Include="CountryIcons\it-flag.png" />
+    <Resource Include="CountryIcons\iv-flag.png" />
+    <Resource Include="CountryIcons\iz-flag.png" />
+    <Resource Include="CountryIcons\ja-flag.png" />
+    <Resource Include="CountryIcons\je-flag.png" />
+    <Resource Include="CountryIcons\jm-flag.png" />
+    <Resource Include="CountryIcons\jn-flag.png" />
+    <Resource Include="CountryIcons\jo-flag.png" />
+    <Resource Include="CountryIcons\ju-flag.png" />
+    <Resource Include="CountryIcons\ke-flag.png" />
+    <Resource Include="CountryIcons\kg-flag.png" />
+    <Resource Include="CountryIcons\kn-flag.png" />
+    <Resource Include="CountryIcons\kr-flag.png" />
+    <Resource Include="CountryIcons\ks-flag.png" />
+    <Resource Include="CountryIcons\kt-flag.png" />
+    <Resource Include="CountryIcons\ku-flag.png" />
+    <Resource Include="CountryIcons\kv-flag.png" />
+    <Resource Include="CountryIcons\kz-flag.png" />
+    <Resource Include="CountryIcons\la-flag.png" />
+    <Resource Include="CountryIcons\le-flag.png" />
+    <Resource Include="CountryIcons\lg-flag.png" />
+    <Resource Include="CountryIcons\lh-flag.png" />
+    <Resource Include="CountryIcons\li-flag.png" />
+    <Resource Include="CountryIcons\lo-flag.png" />
+    <Resource Include="CountryIcons\ls-flag.png" />
+    <Resource Include="CountryIcons\lt-flag.png" />
+    <Resource Include="CountryIcons\lu-flag.png" />
+    <Resource Include="CountryIcons\ly-flag.png" />
+    <Resource Include="CountryIcons\ma-flag.png" />
+    <Resource Include="CountryIcons\mb-flag.png" />
+    <Resource Include="CountryIcons\mc-flag.png" />
+    <Resource Include="CountryIcons\md-flag.png" />
+    <Resource Include="CountryIcons\mf-flag.png" />
+    <Resource Include="CountryIcons\mg-flag.png" />
+    <Resource Include="CountryIcons\mh-flag.png" />
+    <Resource Include="CountryIcons\mi-flag.png" />
+    <Resource Include="CountryIcons\mj-flag.png" />
+    <Resource Include="CountryIcons\mk-flag.png" />
+    <Resource Include="CountryIcons\ml-flag.png" />
+    <Resource Include="CountryIcons\mn-flag.png" />
+    <Resource Include="CountryIcons\mo-flag.png" />
+    <Resource Include="CountryIcons\mp-flag.png" />
+    <Resource Include="CountryIcons\mr-flag.png" />
+    <Resource Include="CountryIcons\mt-flag.png" />
+    <Resource Include="CountryIcons\mu-flag.png" />
+    <Resource Include="CountryIcons\mv-flag.png" />
+    <Resource Include="CountryIcons\mx-flag.png" />
+    <Resource Include="CountryIcons\my-flag.png" />
+    <Resource Include="CountryIcons\mz-flag.png" />
+    <Resource Include="CountryIcons\nc-flag.png" />
+    <Resource Include="CountryIcons\ne-flag.png" />
+    <Resource Include="CountryIcons\nf-flag.png" />
+    <Resource Include="CountryIcons\ng-flag.png" />
+    <Resource Include="CountryIcons\nh-flag.png" />
+    <Resource Include="CountryIcons\ni-flag.png" />
+    <Resource Include="CountryIcons\nl-flag.png" />
+    <Resource Include="CountryIcons\no-flag.png" />
+    <Resource Include="CountryIcons\np-flag.png" />
+    <Resource Include="CountryIcons\nr-flag.png" />
+    <Resource Include="CountryIcons\ns-flag.png" />
+    <Resource Include="CountryIcons\nt-flag.png" />
+    <Resource Include="CountryIcons\nu-flag.png" />
+    <Resource Include="CountryIcons\nz-flag.png" />
+    <Resource Include="CountryIcons\os-flag.png" />
+    <Resource Include="CountryIcons\pa-flag.png" />
+    <Resource Include="CountryIcons\pc-flag.png" />
+    <Resource Include="CountryIcons\pe-flag.png" />
+    <Resource Include="CountryIcons\pf-flag.png" />
+    <Resource Include="CountryIcons\pg-flag.png" />
+    <Resource Include="CountryIcons\pk-flag.png" />
+    <Resource Include="CountryIcons\pl-flag.png" />
+    <Resource Include="CountryIcons\pm-flag.png" />
+    <Resource Include="CountryIcons\po-flag.png" />
+    <Resource Include="CountryIcons\pp-flag.png" />
+    <Resource Include="CountryIcons\ps-flag.png" />
+    <Resource Include="CountryIcons\pu-flag.png" />
+    <Resource Include="CountryIcons\qa-flag.png" />
+    <Resource Include="CountryIcons\re-flag.png" />
+    <Resource Include="CountryIcons\ri-flag.png" />
+    <Resource Include="CountryIcons\rm-flag.png" />
+    <Resource Include="CountryIcons\rn-flag.png" />
+    <Resource Include="CountryIcons\ro-flag.png" />
+    <Resource Include="CountryIcons\rp-flag.png" />
+    <Resource Include="CountryIcons\rq-flag.png" />
+    <Resource Include="CountryIcons\rs-flag.png" />
+    <Resource Include="CountryIcons\rw-flag.png" />
+    <Resource Include="CountryIcons\sa-flag.png" />
+    <Resource Include="CountryIcons\sb-flag.png" />
+    <Resource Include="CountryIcons\sc-flag.png" />
+    <Resource Include="CountryIcons\se-flag.png" />
+    <Resource Include="CountryIcons\sf-flag.png" />
+    <Resource Include="CountryIcons\sg-flag.png" />
+    <Resource Include="CountryIcons\sh-flag.png" />
+    <Resource Include="CountryIcons\si-flag.png" />
+    <Resource Include="CountryIcons\sl-flag.png" />
+    <Resource Include="CountryIcons\sm-flag.png" />
+    <Resource Include="CountryIcons\sn-flag.png" />
+    <Resource Include="CountryIcons\so-flag.png" />
+    <Resource Include="CountryIcons\sp-flag.png" />
+    <Resource Include="CountryIcons\st-flag.png" />
+    <Resource Include="CountryIcons\su-flag.png" />
+    <Resource Include="CountryIcons\sv-flag.png" />
+    <Resource Include="CountryIcons\sw-flag.png" />
+    <Resource Include="CountryIcons\sx-flag.png" />
+    <Resource Include="CountryIcons\sy-flag.png" />
+    <Resource Include="CountryIcons\sz-flag.png" />
+    <Resource Include="CountryIcons\tb-flag.png" />
+    <Resource Include="CountryIcons\td-flag.png" />
+    <Resource Include="CountryIcons\te-flag.png" />
+    <Resource Include="CountryIcons\th-flag.png" />
+    <Resource Include="CountryIcons\ti-flag.png" />
+    <Resource Include="CountryIcons\tk-flag.png" />
+    <Resource Include="CountryIcons\tl-flag.png" />
+    <Resource Include="CountryIcons\tn-flag.png" />
+    <Resource Include="CountryIcons\to-flag.png" />
+    <Resource Include="CountryIcons\tp-flag.png" />
+    <Resource Include="CountryIcons\ts-flag.png" />
+    <Resource Include="CountryIcons\tt-flag.png" />
+    <Resource Include="CountryIcons\tu-flag.png" />
+    <Resource Include="CountryIcons\tv-flag.png" />
+    <Resource Include="CountryIcons\tw-flag.png" />
+    <Resource Include="CountryIcons\tx-flag.png" />
+    <Resource Include="CountryIcons\tz-flag.png" />
+    <Resource Include="CountryIcons\uf-flag.png" />
+    <Resource Include="CountryIcons\ug-flag.png" />
+    <Resource Include="CountryIcons\uk-flag.png" />
+    <Resource Include="CountryIcons\um-flag.png" />
+    <Resource Include="CountryIcons\up-flag.png" />
+    <Resource Include="CountryIcons\us-flag.png" />
+    <Resource Include="CountryIcons\uv-flag.png" />
+    <Resource Include="CountryIcons\uy-flag.png" />
+    <Resource Include="CountryIcons\uz-flag.png" />
+    <Resource Include="CountryIcons\vc-flag.png" />
+    <Resource Include="CountryIcons\ve-flag.png" />
+    <Resource Include="CountryIcons\vi-flag.png" />
+    <Resource Include="CountryIcons\vm-flag.png" />
+    <Resource Include="CountryIcons\vq-flag.png" />
+    <Resource Include="CountryIcons\vt-flag.png" />
+    <Resource Include="CountryIcons\wa-flag.png" />
+    <Resource Include="CountryIcons\we-flag.png" />
+    <Resource Include="CountryIcons\wf-flag.png" />
+    <Resource Include="CountryIcons\wi-flag.png" />
+    <Resource Include="CountryIcons\wq-flag.png" />
+    <Resource Include="CountryIcons\ws-flag.png" />
+    <Resource Include="CountryIcons\wz-flag.png" />
+    <Resource Include="CountryIcons\yi-flag.png" />
+    <Resource Include="CountryIcons\ym-flag.png" />
+    <Resource Include="CountryIcons\za-flag.png" />
+    <Resource Include="CountryIcons\zi-flag.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

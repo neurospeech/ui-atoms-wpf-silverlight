@@ -1,0 +1,58 @@
+﻿<Window x:Class="ControlMetaData.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="4">
+            <StackPanel.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="MinWidth" Value="75"/>
+                    <Setter Property="Margin" Value="2"/>
+                </Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Margin" Value="2"/>
+                </Style>
+            </StackPanel.Resources>
+            <Button x:Name="openButton" Click="openButton_Click">Open</Button>
+            <Button x:Name="saveButton" Click="saveButton_Click">Save</Button>
+            <Button
+                Content="Refresh"
+                x:Name="refreshButton"
+                Click="refreshButton_Click"
+                />
+            <TextBox Text="{Binding Namespace,Mode=TwoWay}" MinWidth="150"/>
+        </StackPanel>
+        <DataGrid Grid.Row="1" Grid.RowSpan="6" x:Name="dataGrid1" ItemsSource="{Binding Controls}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn
+                    Binding="{Binding Active}"
+                    Header="Active" />
+                <DataGridTextColumn Binding="{Binding Name}" Header="Name"/>
+                <DataGridTextColumn Binding="{Binding BaseType}" Header="Base"/>
+                <DataGridCheckBoxColumn Binding="{Binding DefaultStyle}" Header="Style"/>
+                <DataGridTextColumn
+                    Binding="{Binding TParams}"
+                    Header="TParams" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <GridSplitter Grid.Column="1" Grid.Row="1" ResizeDirection="Columns" Grid.RowSpan="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <DataGrid Grid.Row="1" Grid.Column="2" ItemsSource="{Binding SelectedItem.Parts, ElementName=dataGrid1}" />
+        <GridSplitter Grid.Column="1" ResizeDirection="Rows" Grid.ColumnSpan="3" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <DataGrid Grid.Row="3" Grid.Column="2" ItemsSource="{Binding SelectedItem.AttachedProperties, ElementName=dataGrid1}" />
+        <GridSplitter Grid.Column="1" ResizeDirection="Rows" Grid.ColumnSpan="3" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <DataGrid Grid.Row="5" Grid.Column="2" ItemsSource="{Binding SelectedItem.Properties, ElementName=dataGrid1}" Grid.RowSpan="2"/>
+    </Grid>
+</Window>

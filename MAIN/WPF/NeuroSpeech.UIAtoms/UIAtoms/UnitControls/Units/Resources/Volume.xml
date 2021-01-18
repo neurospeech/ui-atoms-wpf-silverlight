@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Meter Cubed" Symbol="m³" ID="Meter_Cubed">
+  <Conversions>
+    <Conversion Name="Acre-Foot" Symbol="acre-foot" ID="acre-foot" SubType="based on U.S. survey foot" Factor="1.233489" Factor10="3" />
+    <Conversion Name="Barrel" Symbol="bbl" ID="barrel" SubType="for petroleum, 42 gallons U.S.)" Factor="1.589873" Factor10="-1" />
+    <Conversion Name="Bushel" Symbol="bu" ID="bushel" SubType="U.S." Factor="3.523907" Factor10="-2" />
+    <Conversion Name="Cord" Symbol="cord 128 ft^3" ID="cord" SubType="128 ft^3" Factor="3.624556" Factor10="0" />
+    <Conversion Name="Cubic Foot" Symbol="ft^3" ID="cubic_foot" Factor="2.831685" Factor10="-2" />
+    <Conversion Name="Cubic Inch" Symbol="in^3" ID="cubic_inch" Factor="1.638706" Factor10="-5" />
+    <Conversion Name="Cubic Mile" Symbol="mi^3" ID="cubic_mile" Factor="4.168182" Factor10="9" />
+    <Conversion Name="Cubic Yard" Symbol="yd^3" ID="cubic_yard" Factor="7.645549" Factor10="-1" />
+    <Conversion Name="Cup" Symbol="cup" ID="cup" SubType="U.S." Factor="2.365882" Factor10="-4" />
+    <Conversion Name="Fluid Ounce" Symbol="fl oz" ID="fluid_ounce" SubType="U.S." Factor="2.957353" Factor10="-5" />
+    <Conversion Name="Gallon" Symbol="gal" ID="gallon" SubType="U.S." Factor="3.785412" Factor10="-3" />
+    <Conversion Name="Gallon" Symbol="gal" ID="gallon" SubType="Canadian and U.K. (Imperial)" Factor="4.54609" Factor10="-3" />
+    <Conversion Name="Gill" Symbol="gi" ID="gill" SubType="Canadian and U.K. (Imperial)" Factor="1.420653" Factor10="-4" />
+    <Conversion Name="Gill" Symbol="gi" ID="gill" SubType="U.S." Factor="1.182941" Factor10="-4" />
+    <Conversion Name="Liter" Symbol="L" ID="liter" Factor="1" Factor10="-3" />
+    <Conversion Name="Ounce" Symbol="fl oz" ID="ounce" SubType="Canadian and U.K.Fluid (Imperial)" Factor="2.841306" Factor10="-5" />
+    <Conversion Name="Ounce" Symbol="fl oz" ID="ounce" SubType="U. S. Fluid" Factor="2.957353" Factor10="-5" />
+    <Conversion Name="Peck" Symbol="pk" ID="peck" SubType="U.S." Factor="8.809768" Factor10="-3" />
+    <Conversion Name="Pint" Symbol="dry pt" ID="pint" SubType="U.S. dry" Factor="5.506105" Factor10="-4" />
+    <Conversion Name="Pint" Symbol="liq pt" ID="pint" SubType="U.S. liquid" Factor="4.731765" Factor10="-4" />
+    <Conversion Name="Quart" Symbol="dry qt" ID="quart" SubType="U.S. dry" Factor="1.101221" Factor10="-3" />
+    <Conversion Name="Quart" Symbol="liq qt" ID="quart" SubType="U.S. liquid" Factor="9.463529" Factor10="-4" />
+    <Conversion Name="Stere" Symbol="st" ID="stere" Factor="1" Factor10="0" />
+    <Conversion Name="Tablespoon" Symbol="tablespoon" ID="tablespoon" Factor="1.478676" Factor10="-5" />
+    <Conversion Name="Teaspoon" Symbol="teaspoon" ID="teaspoon" Factor="4.928922" Factor10="-6" />
+    <Conversion Name="Ton, Register" Symbol="ton" ID="ton_register" Factor="2.831685" Factor10="0" />
+  </Conversions>
+</Unit>

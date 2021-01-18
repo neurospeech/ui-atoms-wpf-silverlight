@@ -1,0 +1,83 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.FormSamples.Validations.DataAnnotationValidation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+      xmlns:nsv="http://uiatoms.neurospeech.com/wpf/validations"
+      mc:Ignorable="d" 
+	  Title="DataAnnotationValidation">
+    
+    <Page.Resources>
+        <nsv:AtomDataAnnotationValidationRule x:Key="DAValidation"/>
+        <nsv:AtomEmailValidationRule x:Key="EmailValidation"/>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <ns:AtomForm>
+
+
+            <ns:AtomForm 
+                Width="700"
+                HorizontalAlignment="Center"
+                Header="Auto Generated Form - You have to set AutoGenerateField to true"
+                x:Name="rootForm"
+                AutoGenerateFields="True"
+                >
+                <ns:AtomForm.Footer>
+                    <ns:AtomButton 
+                        ValidationRootElement="rootForm"
+                        Grid.Row="1"
+                        HorizontalAlignment="Left"
+                        Content="Validate"
+                        />
+                </ns:AtomForm.Footer>
+            </ns:AtomForm>
+
+            <ns:AtomForm
+                HorizontalAlignment="Center"
+                Width="700"
+                Header="Manual Form"
+                x:Name="manualForm"
+                >
+                <TextBlock Text="The fields can be specified with simple one validation rule"/>
+                <ns:AtomTextBox
+                    ns:AtomForm.Label="First name:"
+                    WatermarkText="AtomTextBox with Watermark..."
+                    HorizontalAlignment="Stretch"
+                    Width="Auto"
+                    Text="{Binding Firstname, Mode=TwoWay}"
+                    >
+                    <ns:AtomForm.AtomValidator>
+                        <nsv:AtomPropertyValidator Property="Text" ValidationRule="{StaticResource DAValidation}"/>
+                    </ns:AtomForm.AtomValidator>
+                </ns:AtomTextBox>
+                <TextBox
+                    ns:AtomForm.Label="Last name:"
+                    Text="{Binding Lastname, Mode=TwoWay}"
+                    >
+                    <ns:AtomForm.AtomValidator>
+                        <nsv:AtomPropertyValidator Property="Text" ValidationRule="{StaticResource DAValidation}"/>
+                    </ns:AtomForm.AtomValidator>
+                </TextBox>
+                <TextBox
+                    ns:AtomForm.Label="Email:"
+                    Text="{Binding EmailAddress, Mode=TwoWay}"
+                    >
+                    <ns:AtomForm.AtomValidator>
+                        <nsv:AtomPropertyValidator Property="Text" ValidationRule="{StaticResource EmailValidation}"/>
+                    </ns:AtomForm.AtomValidator>
+                </TextBox>
+                <ns:AtomButton
+                    Content="Validate"
+                    ValidationRootElement="manualForm"
+                    HorizontalAlignment="Left"
+                    />
+            </ns:AtomForm>
+        </ns:AtomForm>
+    </Grid>
+</Page>

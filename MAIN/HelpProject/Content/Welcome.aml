@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="5e9fe7ae-a073-459d-b8db-2451a41d3263" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+      	Welcome to UIAtoms, Library of WPF/Silverlight Controls, created by
+	    NeuroSpeech Inc to support rapid development of Line of Business 
+	    Applications on WPF/Silverlight platforms.
+	  </para>
+    </introduction>
+    <section address="Section1">
+      <title>What is special about UIAtoms Controls?</title>
+      <content>
+        <para>
+        	UIAtoms are specially designed to create business forms quicker and
+        	with less code, in order to reduce the maintanence and design time
+        	overhead.
+        </para>
+        <para>
+        	You can download latest version of UIAtoms demo from
+        	<token>UIAtomsWebLink</token>
+        </para>
+      </content>
+    </section>
+    <section address="Section1">
+      <title>Benefits and Features</title>
+      <content>
+        <para>
+        	<list class="bullet">
+        		<listItem>Create Professional Business Forms in Minutes.</listItem>
+        		<listItem>Introducing Advanced Form Layout Panel</listItem>
+        		<listItem>Control Layout with advanced AtomFlexibleGrid.</listItem>
+        		<listItem>Completely Customizable Layout.</listItem>
+        		<listItem>MVVM, Prism, RIA Services and MEF supported.</listItem>
+        		<listItem>Advanced Validation Support.</listItem>
+        		<listItem>Easy Validation for 3rd Party Controls.</listItem>
+        		<listItem>Reduce UI Code by 70%.</listItem>
+        		<listItem>No need of Visual Editor.</listItem>
+        		<listItem>Reuse Existing Business Middleware.</listItem>
+        		<listItem>Error Proof Line of Business Controls</listItem>
+        	</list>
+        </para>
+        <para>
+			The key benefits of UI Atoms Controls are that applications can be 
+			built using simple tags and by setting simple attributes, instead 
+			of writing lengthy and repetitive code. The concise code 
+			dramatically reduces the possibilities of errors, and error 
+			resolution and debugging tasks become simple. UI Atoms is 
+			guaranteed to make programming of forms, and reporting screens, 
+			a breeze! Make your applications look professional and do it with 
+			the help of easy-to-use Controls of UI Atoms today!
+        </para>
+        <para>
+        After .NET 2.0, many enterprises already have lot of middleware designed
+        in .NET 2.0, along with new features of WPF and Silverlight, reusing 
+        them is little difficult as conventional WPF and Silverlight Databinding
+        and Validation model requires reprogramming of Data Layer. With UI Atoms,
+        you can use existing business middleware and enhance your UI to next level.
+        </para>
+      </content>
+    </section>
+  </developerConceptualDocument>
+</topic>

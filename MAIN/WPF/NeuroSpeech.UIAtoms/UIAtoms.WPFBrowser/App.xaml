@@ -1,0 +1,8 @@
+﻿<Application x:Class="UIAtoms.WPFBrowser.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="pack://application:,,,/UIAtoms.SampleLibrary;component/WPFSample.xaml">
+    <Application.Resources>
+        
+    </Application.Resources>
+</Application>

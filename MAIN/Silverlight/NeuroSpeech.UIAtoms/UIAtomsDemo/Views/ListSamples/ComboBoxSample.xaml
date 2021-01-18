@@ -1,0 +1,45 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.ListSamples.ComboBoxSample" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           Title="ComboBoxSample Page" 
+           xmlns:sys="clr-namespace:System;assembly=mscorlib"
+           xmlns:ns="http://uiatoms.neurospeech.com/silverlight">
+
+    <Grid x:Name="LayoutRoot">
+        <ns:AtomForm 
+            Name="colorForm" Width="700" LabelWidth="90" 
+            Header="ComboBox" HorizontalAlignment="Center">
+            
+            <ns:AtomComboBox 
+                Width="200" Height="25" Name="cbColor" IsFilterVisible="False"
+                ns:AtomForm.IsRequired="True" ns:AtomForm.Label="Select Color:" 
+                ns:AtomForm.MissingValueMessage="Please select color" 
+                HorizontalAlignment="Left">
+                    <sys:String>Red</sys:String>
+                    <sys:String>Green</sys:String>
+                    <sys:String>Blue</sys:String>
+                    <sys:String>Black</sys:String>
+                    <sys:String>Brown</sys:String>
+            </ns:AtomComboBox>
+
+            <Border Background=
+                    "{Binding SelectedItem, ElementName=cbColor, Mode=TwoWay}" 
+                    BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" 
+                    Width="200" Height="25" ns:AtomForm.Label="Selected Value:" >
+
+                <TextBlock Text="{Binding SelectedItem,ElementName=cbColor,Mode=TwoWay}" 
+                    Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+            
+            <ns:AtomButton 
+                Content="Submit" ValidationRootElement="colorForm" 
+                Name="processbutton" 
+                HorizontalAlignment="Left"/>
+
+        </ns:AtomForm>
+    </Grid>
+</navigation:Page>

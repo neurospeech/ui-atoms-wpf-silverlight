@@ -1,0 +1,18 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.FormSamples.AllButtonsSampleDesc" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="AllButtonsSampleDesc Page">
+    <Grid x:Name="LayoutRoot">
+        <TextBlock>
+            Commonly used buttons are bundled and provided alongwith the UIAtoms library to facilitate the building of forms.<LineBreak/>
+            These buttons come preset with their corresponding images properly formatted into the button.<LineBreak/>
+            Custom Advanced Buttons can be created by using your own .png image which can be set into the advanced button.<LineBreak/>
+            <LineBreak/>
+        </TextBlock>
+    </Grid>
+</navigation:Page>

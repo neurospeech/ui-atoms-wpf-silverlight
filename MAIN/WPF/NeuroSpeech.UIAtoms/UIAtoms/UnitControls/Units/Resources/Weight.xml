@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Kilogram" Symbol="kg" ID="Kilogram">
+  <Conversions>
+    <Conversion Name="Carat" Symbol="carat" ID="carat_metric" SubType="Metric" Factor="2" Factor10="-4" />
+    <Conversion Name="Grain" Symbol="gr" ID="grain" Factor="2" Factor10="-1" />
+    <Conversion Name="Hundredweight" Symbol="hundredweight" ID="hundredweight_long_112lb" SubType="long, 112 lb" Factor="5.080235" Factor10="1" />
+    <Conversion Name="Hundredweight" Symbol="hundredweight" ID="hundredweight_short_100lb" SubType="short, 100 lb" Factor="4.535924" Factor10="1" />
+    <Conversion Name="Kilogram-force second squared per meter" Symbol="kgf.s^2/m" ID="kilogram_force_second_squared_per_meter" Factor="9.80665" Factor10="0" />
+    <Conversion Name="Ounce" Symbol="oz" ID="ounce_avoirdupois" SubType="avoirdupois" Factor="2.834952" Factor10="-2" />
+    <Conversion Name="Ounce" Symbol="oz" ID="ounce_troy" SubType="Troy or apothecary" Factor="3.110348" Factor10="-2" />
+    <Conversion Name="Pennyweight" Symbol="dwt" ID="pennyweight" Factor="1.555174" Factor10="-3" />
+    <Conversion Name="Pound" Symbol="lb" ID="pound_avoirdupois" SubType="Avoirdupois" Factor="4.535924" Factor10="-1" />
+    <Conversion Name="Pound" Symbol="lb" ID="pound_troy" SubType="Troy or apothecary" Factor="3.732417" Factor10="-1" />
+    <Conversion Name="Pound Foot Squared" Symbol="lb.ft^2" ID="pound_foot_squared" Factor="4.214011" Factor10="-2" />
+    <Conversion Name="Pound Inch Squared" Symbol="lb.in^2" ID="pound_inch_squared" Factor="2.926397" Factor10="-4" />
+    <Conversion Name="Slug" Symbol="slug" ID="slug" Factor="1.45939" Factor10="1" />
+    <Conversion Name="Ton" Symbol="AT" ID="ton_assay" SubType="assay" Factor="2.916667" Factor10="-2" />
+    <Conversion Name="Ton" Symbol="ton" ID="ton_long" SubType="long, 2240 lb" Factor="1.016047" Factor10="3" />
+    <Conversion Name="Ton" Symbol="t" ID="ton_metric" SubType="metric" Factor="1" Factor10="3" />
+    <Conversion Name="Tonne" Symbol="t" ID="tonne" SubType="called Metric Ton in the U.S." Factor="1" Factor10="3" />
+    <Conversion Name="Ton" Symbol="ton" ID="ton_short" SubType="short, 2000 lb" Factor="9.071847" Factor10="2" />
+  </Conversions>
+</Unit>

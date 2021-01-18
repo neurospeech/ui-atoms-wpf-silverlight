@@ -1,0 +1,1557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55B84C29-6C27-4A10-85DB-B3A6B4DC2D5F}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NeuroSpeech.UIAtoms</RootNamespace>
+    <AssemblyName>NeuroSpeech.UIAtoms</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\NeuroSpeech.UIAtoms.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>
+    </DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugDemo|AnyCPU'">
+    <OutputPath>bin\DebugDemo\</OutputPath>
+    <DefineConstants>TRACE;DEMO</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <CodeAnalysisLogFile>bin\Release\NeuroSpeech.UIAtoms.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseDemo|AnyCPU'">
+    <OutputPath>bin\ReleaseDemo\</OutputPath>
+    <DefineConstants>TRACE;DEMO</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <CodeAnalysisLogFile>bin\Release\NeuroSpeech.UIAtoms.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>UIAtoms.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug4|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug4\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;DA;NET4</DefineConstants>
+    <DocumentationFile>bin\Debug\NeuroSpeech.UIAtoms.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <CodeAnalysisLogFile>bin\Debug\NeuroSpeech.UIAtoms.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugDemo4|AnyCPU'">
+    <OutputPath>bin\DebugDemo4\</OutputPath>
+    <DefineConstants>TRACE;DEMO;DA;NET4</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <CodeAnalysisLogFile>bin\Release\NeuroSpeech.UIAtoms.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release4|AnyCPU'">
+    <OutputPath>bin\Release4\</OutputPath>
+    <DefineConstants>TRACE;DA;NET4</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <CodeAnalysisLogFile>bin\Release\NeuroSpeech.UIAtoms.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseDemo4|AnyCPU'">
+    <OutputPath>bin\ReleaseDemo4\</OutputPath>
+    <DefineConstants>TRACE;DEMO;DA;NET4</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <CodeAnalysisLogFile>bin\Release\NeuroSpeech.UIAtoms.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseDemo|AnyCPU'">
+    <Reference Include="PresentationFramework.Aero">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <!--Reference Include="System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" /-->
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'DebugDemo|AnyCPU'">
+    <Reference Include="PresentationFramework.Aero">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <!--Reference Include="System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" /-->
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Reference Include="PresentationFramework.Aero">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <!--Reference Include="System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" /-->
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Reference Include="PresentationFramework.Aero">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <!--Reference Include="System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" /-->
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Debug4|AnyCPU'">
+    <Reference Include="PresentationFramework.Aero">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Release4|AnyCPU'">
+    <Reference Include="PresentationFramework.Aero">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseDemo4|AnyCPU'">
+    <Reference Include="PresentationFramework.Aero">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'DebugDemo4|AnyCPU'">
+    <Reference Include="PresentationFramework.Aero">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\AtomPrompt.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\AtomAccountsCalculator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\AtomDemoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\AtomScientificCalculator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AtomBindingHelper.cs" />
+    <Compile Include="Buttons\AtomPreviousButton.cs" />
+    <Compile Include="Controls\Atom2CBorder.cs" />
+    <Compile Include="Controls\AtomAccordion.cs" />
+    <Compile Include="Controls\AtomAccordionItem.cs" />
+    <Compile Include="Controls\AtomAccordionPanel.cs" />
+    <Compile Include="Controls\AtomBusyIndicator.cs" />
+    <Compile Include="Controls\AtomButton.cs" />
+    <Compile Include="Controls\AtomCalculator.cs" />
+    <Compile Include="Controls\AtomCheckBox.cs" />
+    <Compile Include="Controls\AtomCheckBoxList.cs" />
+    <Compile Include="Controls\AtomCheckBoxListItem.cs" />
+    <Compile Include="Controls\AtomClippingBorder.cs" />
+    <Compile Include="Controls\AtomCodeView.cs" />
+    <Compile Include="Controls\AtomCodeViewer.cs" />
+    <Compile Include="Controls\AtomCollectionFilter.cs" />
+    <Compile Include="Controls\AtomComboBox.cs" />
+    <Compile Include="Controls\AtomComboTextBox.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AtomComboTextBox.xamlc</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AtomComboTextBox.xamlc.cs" />
+    <Compile Include="Controls\AtomCountryCheckBoxList.cs" />
+    <Compile Include="Controls\AtomCountryComboBox.cs" />
+    <Compile Include="Controls\AtomErrorDisplay.cs" />
+    <Compile Include="Controls\AtomFileUploader.cs" />
+    <Compile Include="Controls\AtomFlexibleGrid.cs" />
+    <Compile Include="Controls\AtomFormContainer.cs" />
+    <Compile Include="Controls\AtomFormLayout.cs" />
+    <Compile Include="Controls\AtomFormTabItem.cs" />
+    <Compile Include="Controls\AtomSplitView.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AtomSplitView.xamlc</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AtomSplitView.xamlc.cs" />
+    <Compile Include="Controls\AtomTask.cs" />
+    <Compile Include="Controls\AtomTraceView.cs" />
+    <Compile Include="Controls\AtomUniformGrid.cs" />
+    <Compile Include="Controls\AtomUsernameTextBox.cs" />
+    <Compile Include="Controls\AtomValueDialogButton.cs" />
+    <Compile Include="Controls\AtomValueDialogWindow.cs" />
+    <Compile Include="Controls\AtomDoubleTextBox.cs" />
+    <Compile Include="Controls\AtomEnumComboBox.cs" />
+    <Compile Include="Controls\AtomFilterTextBox.cs" />
+    <Compile Include="Controls\AtomFormItemContainer.cs" />
+    <Compile Include="Controls\AtomIcon.cs" />
+    <Compile Include="Controls\AtomImageButton.cs" />
+    <Compile Include="Controls\AtomPrompt.xaml.cs">
+      <DependentUpon>AtomPrompt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AtomWidthToStretchConverter.cs" />
+    <Compile Include="Buttons\AtomAddButton.cs" />
+    <Compile Include="Buttons\AtomApproveButton.cs" />
+    <Compile Include="Buttons\AtomArchiveButton.cs" />
+    <Compile Include="Buttons\AtomAttachmentButton.cs" />
+    <Compile Include="Buttons\AtomCopyButton.cs" />
+    <Compile Include="Buttons\AtomDeleteButton.cs" />
+    <Compile Include="Buttons\AtomDownloadButton.cs" />
+    <Compile Include="Buttons\AtomEmailButton.cs" />
+    <Compile Include="Buttons\AtomImageButton.cs" />
+    <Compile Include="Buttons\AtomModifyButton.cs" />
+    <Compile Include="Buttons\AtomMoveDownButton.cs" />
+    <Compile Include="Buttons\AtomMoveUpButton.cs" />
+    <Compile Include="Buttons\AtomNextButton.cs" />
+    <Compile Include="Buttons\AtomOpenButton.cs" />
+    <Compile Include="Buttons\AtomPasteButton.cs" />
+    <Compile Include="Buttons\AtomPlayButton.cs" />
+    <Compile Include="Buttons\AtomPrintButton.cs" />
+    <Compile Include="Buttons\AtomRecordButton.cs" />
+    <Compile Include="Buttons\AtomSaveButton.cs" />
+    <Compile Include="Buttons\AtomSearchButton.cs" />
+    <Compile Include="Buttons\AtomStopButton.cs" />
+    <Compile Include="Buttons\AtomSubmitButton.cs" />
+    <Compile Include="Buttons\AtomTimeButton.cs" />
+    <Compile Include="Buttons\AtomUnapproveButton.cs" />
+    <Compile Include="Buttons\AtomUnarchiveButton.cs" />
+    <Compile Include="Buttons\BaseAtomImageButton.cs" />
+    <Compile Include="Controls\AtomXAMLFormatter.cs" />
+    <Compile Include="Controls\AtomUnitHelper.cs" />
+    <Compile Include="Controls\IFormContainer.cs" />
+    <Compile Include="Core\AtomCodeFormatter.cs" />
+    <Compile Include="Core\AtomCodeFormatterCS.cs" />
+    <Compile Include="Core\AtomCodeFormatterXML.cs" />
+    <Compile Include="Core\AtomDesignAttribute.cs" />
+    <Compile Include="Controls\AtomEntityForm.cs" />
+    <Compile Include="Core\AtomFocusManager.cs" />
+    <Compile Include="Controls\AtomStackPanel.cs" />
+    <Compile Include="Core\AtomGridWidthConverter.cs" />
+    <Compile Include="Core\AtomTrace.cs" />
+    <Compile Include="Core\AtomTraceListener.cs" />
+    <Compile Include="Core\AtomTreeWalker.cs" />
+    <Compile Include="Core\AtomUnitHelper.cs" />
+    <Compile Include="Controls\AtomWrapPanel.cs" />
+    <Compile Include="Core\BaseAtomTextBlock.cs" />
+    <Compile Include="Core\AtomCSVUtils.cs" />
+    <Compile Include="Controls\AtomCurrencyTextBox.cs" />
+    <Compile Include="Core\AtomDataItem.cs" />
+    <Compile Include="Controls\AtomEmailTextBox.cs" />
+    <Compile Include="Controls\AtomFileSizeLabel.cs" />
+    <Compile Include="Controls\AtomForm.cs" />
+    <Compile Include="Core\AtomRangeBase.cs" />
+    <Compile Include="Core\AtomValidatorControl.cs" />
+    <Compile Include="Core\AtomHelper.cs" />
+    <Compile Include="Controls\AtomIntegerTextBox.cs" />
+    <Compile Include="Controls\AtomListBox.cs" />
+    <Compile Include="Controls\AtomNumberComboBox.cs" />
+    <Compile Include="Controls\AtomPasswordBox.cs" />
+    <Compile Include="Controls\AtomPasswordBoxAgain.cs" />
+    <Compile Include="Core\AtomSizeFormatProvider.cs" />
+    <Compile Include="Controls\AtomTextBox.cs" />
+    <Compile Include="Controls\AtomTextBoxWithRegEx.cs" />
+    <Compile Include="Controls\AtomTitleTextBox.cs" />
+    <Compile Include="Controls\AtomToggleButtonBar.cs" />
+    <Compile Include="Core\AtomUtils.cs" />
+    <Compile Include="Controls\AtomViewPanel.cs" />
+    <Compile Include="Controls\ArrayToCSVConverter.cs" />
+    <Compile Include="Core\HorizontalAlignementToTextAlignmentConverter.cs" />
+    <Compile Include="Core\ListToVisibilityConverter.cs" />
+    <Compile Include="Core\IAtomItemsFilter.cs" />
+    <Compile Include="Core\OppositeBooleanToVisibilityConverter.cs" />
+    <Compile Include="Core\ScaleValueConverter.cs" />
+    <Compile Include="Core\SimpleEvaluator.cs" />
+    <Compile Include="Core\StringToDoubleConverter.cs" />
+    <Compile Include="Dialogs\AtomAccountsCalculator.xaml.cs">
+      <DependentUpon>AtomAccountsCalculator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AtomDemoWindow.xaml.cs">
+      <DependentUpon>AtomDemoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AtomScientificCalculator.xaml.cs">
+      <DependentUpon>AtomScientificCalculator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Expressions\BaseMathExpression.cs" />
+    <Compile Include="Expressions\MathDecimalExpression.cs" />
+    <Compile Include="Expressions\MathDoubleExpression.cs" />
+    <Compile Include="Expressions\MathIntegerExpression.cs" />
+    <Compile Include="ExpressionVisitor.cs" />
+    <Compile Include="MathControls\AtomMathDisplay.cs" />
+    <Compile Include="MathControls\AtomMathSymbol.cs" />
+    <Compile Include="MathControls\AtomMath9Slice.cs" />
+    <Compile Include="MathControls\AtomMathBrackets.cs" />
+    <Compile Include="MathControls\AtomMathEquation.cs" />
+    <Compile Include="MathControls\AtomMathExp.cs" />
+    <Compile Include="MathControls\AtomMathFraction.cs" />
+    <Compile Include="MathControls\AtomMathPanel.cs" />
+    <Compile Include="MathControls\AtomMathReader.cs" />
+    <Compile Include="MathControls\AtomMathRoot.cs" />
+    <Compile Include="MathControls\AtomMathTeXParser.cs" />
+    <Compile Include="MathControls\XmlAliasAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Core\StringToVisibilityConverter.cs" />
+    <Compile Include="UnitControls\AtomAngleEditor.cs" />
+    <Compile Include="UnitControls\AtomAreaEditor.cs" />
+    <Compile Include="UnitControls\AtomEditorConverter.cs" />
+    <Compile Include="UnitControls\AtomEnergyEditor.cs" />
+    <Compile Include="UnitControls\AtomLengthEditor.cs" />
+    <Compile Include="UnitControls\AtomPowerEditor.cs" />
+    <Compile Include="UnitControls\AtomPressureEditor.cs" />
+    <Compile Include="UnitControls\AtomTemperatureEditor.cs" />
+    <Compile Include="UnitControls\AtomVolumeEditor.cs" />
+    <Compile Include="UnitControls\AtomWeightEditor.cs" />
+    <Compile Include="UnitControls\Units\AtomMeasurementUnit.cs" />
+    <Compile Include="UnitControls\AtomTimeEditor.cs" />
+    <Compile Include="UnitControls\AtomVelocityEditor.cs" />
+    <Compile Include="UnitControls\Units\Resources\ConversionResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConversionResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\AtomBooleanValidationRule.cs" />
+    <Compile Include="Validation\AtomDataAnnotationValidationRule.cs" />
+    <Compile Include="Validation\AtomEmailValidationRule.cs" />
+    <Compile Include="Validation\AtomPasswordMatchValidationRule.cs" />
+    <Compile Include="Validation\AtomRegExValidationRule.cs" />
+    <Compile Include="Validation\AtomSelectionValidationRule.cs" />
+    <Compile Include="Validation\AtomStringValidationRule.cs" />
+    <Compile Include="Validation\AtomUsernameValidationRule.cs" />
+    <Compile Include="Validation\AtomValidationRule.cs" />
+    <Compile Include="Validation\FormValidator.cs" />
+    <Compile Include="Validation\AtomValidationError.cs" />
+    <Compile Include="VersionInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitControls\Units\Resources\ConversionResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConversionResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Controls\AtomClasses.cd" />
+    <None Include="Controls\AtomComboTextBox.xamlc">
+      <Generator>UIAtomsControlGenerator</Generator>
+      <LastGenOutput>AtomComboTextBox.designer.cs</LastGenOutput>
+    </None>
+    <None Include="Controls\AtomSplitView.xamlc">
+      <Generator>UIAtomsControlGenerator</Generator>
+      <LastGenOutput>AtomSplitView.designer.cs</LastGenOutput>
+    </None>
+    <None Include="Core\CoreClasses.cd" />
+    <None Include="CountryIcons\Thumbs.db" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="UIAtoms.snk" />
+    <None Include="Validation\Diagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Countries.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\aa-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ac-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ae-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\af-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ag-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\aj-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\al-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\am-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\an-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ao-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\aq-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ar-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\as-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\at-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\au-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\av-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ax-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ay-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ba-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bb-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bc-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bd-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\be-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bf-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bg-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bh-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bk-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bl-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bm-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bn-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bo-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bp-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bq-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\br-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bs-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bt-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bu-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bv-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\bx-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\by-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ca-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\cb-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\cd-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ce-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\cf-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\cg-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ch-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ci-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\cj-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ck-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\cm-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\cn-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\co-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\cq-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\cr-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\cs-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ct-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\cu-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\cv-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\cw-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\cy-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\da-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\dj-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\do-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\dr-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\dx-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ec-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ee-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\eg-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ei-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ek-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\en-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\er-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\es-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\et-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\eu-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ez-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\fg-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\fi-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\fj-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\fk-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\fm-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\fo-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\fp-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\fr-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\fs-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ga-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\gb-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\gg-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\gh-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\gi-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\gj-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\gk-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\gl-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\gm-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\go-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\gp-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\gq-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\gr-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\gt-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\gv-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\gy-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\gz-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ha-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\hk-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\hm-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ho-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\hr-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\hu-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ic-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\id-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\im-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\in-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\io-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ip-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ir-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\is-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\it-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\iv-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\iz-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ja-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\je-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\jm-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\jn-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\jo-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ju-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ke-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\kg-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\kn-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\kr-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ks-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\kt-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ku-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\kv-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\kz-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\la-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\le-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\lg-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\lh-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\li-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\lo-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ls-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\lt-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\lu-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ly-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ma-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mb-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mc-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\md-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mf-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mg-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mh-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mi-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mj-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mk-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ml-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mn-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mo-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mp-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mr-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mt-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mu-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mv-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mx-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\my-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\mz-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\nc-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ne-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\nf-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ng-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\nh-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ni-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\nl-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\no-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\np-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\nr-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ns-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\nt-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\nu-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\nz-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\os-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\pa-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\pc-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\pe-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\pf-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\pg-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\pk-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\pl-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\pm-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\po-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\pp-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ps-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\pu-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\qa-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\re-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ri-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\rm-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\rn-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ro-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\rp-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\rq-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\rs-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\rw-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\sa-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\sb-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\sc-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\se-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\sf-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\sg-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\sh-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\si-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\sl-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\sm-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\sn-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\so-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\sp-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\st-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\su-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\sv-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\sw-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\sx-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\sy-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\sz-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\tb-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\td-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\te-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\th-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ti-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\tk-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\tl-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\tn-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\to-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\tp-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ts-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\tt-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\tu-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\tv-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\tw-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\tx-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\tz-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\uf-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ug-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\uk-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\um-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\up-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\us-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\uv-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\uy-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\uz-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\vc-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ve-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\vi-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\vm-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\vq-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\vt-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\wa-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\we-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\wf-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\wi-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\wq-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ws-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\wz-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\yi-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\ym-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\za-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CountryIcons\zi-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Controls\BorderClippingCode.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Buttons\Icons\AtomAddButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomApproveButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomArchiveButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomAttachmentButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomCopyButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomDeleteButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomDownloadButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomEmail2Icon.png" />
+    <Resource Include="Buttons\Icons\AtomEmailButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomImageButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomModifyButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomMoveDownButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomMoveUpButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomNextButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomOpenButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomPasteButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomPrintButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomSaveButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomSearchButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomSubmitButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomTimeButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomUnapproveButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomUnarchiveButton.Icon.png" />
+    <Resource Include="Buttons\Icons\WindowCloseButton.gif" />
+    <Resource Include="Buttons\Icons\WindowCloseButton2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Buttons\Icons\AtomRecordButton.Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Buttons\Icons\AtomPlayButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomStopButton.Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Buttons\Icons\AtomPauseButton.Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Buttons\Icons\AtomPreviousButton.Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Buttons\Icons\AtomCalculatorButton.Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\Length.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\Volume.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\Weight.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\ConversionTemplate.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\Time.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\Velocity.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\DataRate.xml" />
+    <Resource Include="UnitControls\Units\Resources\DataStorage.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\Pressure.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\Angle.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\Area.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\Power.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\Energy.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\Temperature.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\Density.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\Electric_Current.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\Electric_Voltage.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnitControls\Units\Resources\Electric_Resistance.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

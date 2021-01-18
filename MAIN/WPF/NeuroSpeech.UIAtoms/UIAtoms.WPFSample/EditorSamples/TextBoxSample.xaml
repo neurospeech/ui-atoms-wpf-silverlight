@@ -1,0 +1,77 @@
+﻿<Page xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+      x:Class="UIAtoms.WPFSamples.BasicSamples.TextBoxSample"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      mc:Ignorable="d" 
+	  Title="TextBoxSample">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ns:AtomForm Header="TextBox" Width="700" HorizontalAlignment="Center">
+            <Border 
+                BorderBrush="Black" BorderThickness="1" 
+                Width="600" Height="150" Margin="0,20,0,10">
+                    <ns:AtomForm LabelWidth="100" x:Name="textfrom">
+
+                        <ns:AtomTextBox Name="textbox1" 
+                                        ns:AtomForm.Title="{Binding Text, 
+                                            Mode=TwoWay, ElementName=txttitle}"
+                                        ns:AtomForm.IsRequired="{Binding SelectedItem,
+                                            ElementName=isrequired,Mode=TwoWay}" 
+                                        ns:AtomForm.Label="{Binding Text,
+                                            Mode=TwoWay,ElementName=txtlabel}" 
+                                        WatermarkText="{Binding Text,
+                                            ElementName=txtwatermark,Mode=TwoWay}"
+                                        ns:AtomForm.Description="{Binding Text,
+                                            ElementName=txtdescription,Mode=TwoWay}" 
+                                        
+                                        ns:AtomForm.MissingValueMessage="TextBox 1 is required"/>
+                        
+                        <ns:AtomButton 
+                            Name="textbutton" ValidationRootElement="textfrom" 
+                            Content="Process" Margin="0,0,0,50"/>
+                    </ns:AtomForm>
+            </Border>
+       
+            <Border BorderBrush="Black" BorderThickness="1" 
+                    Width="600" Height="175" Grid.Row="1">
+                        <ns:AtomForm Name="custmizeform" RowLayout="1,1,2,2">
+                            <TextBlock Text="Customize TextBox1" FontSize="16" 
+                                       FontWeight="Bold" Margin="5"/>
+
+                            <ns:AtomTextBox 
+                                Text="TextBox 1 Title" ns:AtomForm.Label="Title:" 
+                                Name="txttitle" />
+
+                            <ns:AtomComboBox 
+                                ns:AtomForm.Label="IsRequired:" Name="isrequired" 
+                                
+                                Width="60" HorizontalAlignment="Left" IsFilterVisible="False">
+                                    <sys:Boolean>True</sys:Boolean>
+                                    <sys:Boolean>False</sys:Boolean>
+                            </ns:AtomComboBox>
+
+                            <ns:AtomTextBox 
+                                Text="TextBox 1 Label:" ns:AtomForm.Label="Label:" 
+                                Name="txtlabel"/>
+                            
+                            <ns:AtomTextBox 
+                                Text="TextBox 1 Watermark" ns:AtomForm.Label="Watermark:" 
+                                Name="txtwatermark"/>
+                            
+                            <ns:AtomTextBox 
+                                Text="TextBox 1 Description" ns:AtomForm.Label="Description:" 
+                                Name="txtdescription"/>
+                            
+                        </ns:AtomForm>
+            </Border>
+        </ns:AtomForm>
+    </Grid>
+</Page>

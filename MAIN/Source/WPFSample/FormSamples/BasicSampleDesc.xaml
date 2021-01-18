@@ -1,0 +1,20 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.FormSamples.BasicSampleDesc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="HomeBasicSampleDesc">
+<FlowDocumentScrollViewer>
+        <FlowDocument>
+            <Paragraph>
+                Today's basic forms look something like this sample here. A typical form today
+                consists of a combination of form elements like tabs and drop-down menus.
+            </Paragraph>
+            <Paragraph>
+                UI Atoms makes developing such forms a breeze!
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentScrollViewer>
+</Page>

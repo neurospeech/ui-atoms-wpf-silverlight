@@ -1,0 +1,169 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.Xml" #>
+<#@ assembly name="System.Xml.Linq" #>
+<#@ import namespace="System"#>
+<#@ import namespace="System.Xml.Linq"#>
+<#@ import namespace="System.Collections.Generic" #>
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.ComponentModel;
+using System.Diagnostics;
+using Microsoft.Windows.Design.Model;
+
+<# 
+	XDocument doc = XDocument.Load(@"D:\LiveProjects\NeuroSpeech\UIAtoms\MAIN\WPF\NeuroSpeech.UIAtoms\UIAtoms.Designers\Form\Designer\FormModel.xml");
+#>
+
+namespace <#=GetAttribute(doc.Root,"name")#>
+{
+
+<# 
+
+
+	
+	foreach(XElement e in doc.Root.Elements()){
+		
+		string className = GetAttribute(e,"name");
+		
+		List<string> prefixes = new List<string>();
+		
+		foreach(XElement p in e.Elements()){
+			string name = GetAttribute(p,"name");
+			string prefix = GetAttribute(p,"namePrefix");
+			if(prefix!=null){
+				if(!prefixes.Contains(prefix))
+					prefixes.Add(prefix);
+			}
+		}
+		
+		
+#>
+		public partial class <#=className#>  : ItemHolder<ModelItem>, INotifyPropertyChanged{
+		
+	        public event PropertyChangedEventHandler PropertyChanged;
+			
+		
+			public <#=className #>(ModelItem item, string prefix){
+				this.Item = item;
+				this.Prefix = prefix;
+			}
+			
+			partial void OnPropertyChanged(PropertyChangedEventArgs e);
+			
+			partial void OnItemSet();
+			
+			protected override void OnItemSet(ModelItem oldItem,ModelItem newItem){
+				if(oldItem!=null){
+					oldItem.PropertyChanged -= item_PropertyChanged;
+				}
+				if(newItem!=null){
+					newItem.PropertyChanged += item_PropertyChanged;
+				}
+				OnItemSet();
+			}
+		
+			#region void  item_PropertyChanged(object sender, PropertyChangedEventArgs e)
+			void item_PropertyChanged(object sender, PropertyChangedEventArgs e)
+			{
+				string propertyName = e.PropertyName;
+				//Trace.WriteLine(propertyName);
+				
+				<#
+					foreach(string prefix in prefixes){
+						#>
+					
+					if(propertyName.StartsWith("<#= prefix #>")){
+						propertyName = propertyName.Substring(<#= prefix.Length #>);
+					}
+					
+						<#
+					}
+				#>
+			
+				OnPropertyChanged(e);
+			
+				if (PropertyChanged != null) {
+					PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+				}
+			}
+			#endregion
+			
+			
+			<# 
+			foreach(XElement p in e.Elements()){
+				string name = GetAttribute(p,"name");
+				string type = GetAttribute(p,"type");
+				string prefix = GetAttribute(p,"namePrefix");
+				string trans = GetAttribute(p,"transform");
+				bool t = trans != null;
+				string field = prefix ==null ? name : prefix + name;
+				
+#>
+
+
+				#region Property <#= name #>
+				public <#= type #> <#= name #>{
+					get{
+						<# if(prefix==null){ #>
+						string field = "<#= name #>";
+						<# }else{ #>
+						string field = Prefix + "<#= name #>";
+						<# } #>
+						ModelProperty v = Item.Properties[field];
+						if(v.Value==null)
+							return default(<#= type #>);
+<# if(t){ #>
+						object objv = EnumValueConverter.ConvertTo(typeof(<#= type #>),v.Value.GetCurrentValue());
+<# }else{ #>
+						object objv = v.Value.GetCurrentValue();
+<# } #>
+						if(objv==null)
+							return default(<#= type #>);
+						return (<#= type #>)objv;
+					}
+					set{
+						<# if(prefix==null){ #>
+						string field = "<#= name #>";
+						<# }else{ #>
+						string field = Prefix + "<#= name #>";
+						<# } #>
+<# if(t){ #>
+						Item.Properties[field].SetValue(
+							EnumValueConverter.ConvertTo(Item.Properties[field].PropertyType, value)
+						);
+<# }else{ #>
+						Item.Properties[field].SetValue(value);
+<# } #>
+					}
+				}
+				#endregion
+				
+<#				
+				
+			}
+		#>
+			
+		}
+<#
+		
+	}
+	
+
+#>
+
+}
+
+<#+
+	
+	private string GetAttribute(XElement e, string name){
+		XAttribute x = e.Attribute(XName.Get(name));
+		if(x != null)
+			return x.Value;
+		return null;
+	}
+	
+#>

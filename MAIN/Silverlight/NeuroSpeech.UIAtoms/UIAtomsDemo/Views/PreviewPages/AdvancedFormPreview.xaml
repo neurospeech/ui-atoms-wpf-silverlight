@@ -1,0 +1,56 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="UIAtomsDemo.Views.PreviewPages.AdvancedFormPreview"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+	d:DesignWidth="640" d:DesignHeight="480">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="25"
+                   >Advanced Atom Form for Silverlight and WPF</TextBlock>
+        <Image Source="/UIAtomsDemo;component/Views/PreviewPages/FormPreview.PNG"
+               HorizontalAlignment="Right"
+               Stretch="None"
+               Margin="20" Grid.Row="1" />
+        <ItemsControl Grid.Column="1" VerticalAlignment="Center" Grid.Row="1">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="/UIAtomsDemo;component/Views/PreviewPages/AtomApproveButton.Icon.png" 
+                               Width="16" Height="16"
+                               />
+                        <ContentControl FontSize="20" Grid.Column="1" Content="{Binding}" />
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+            <sys:String>Rapid Design</sys:String>
+            <sys:String>AtomDataForm for RIA Services</sys:String>
+            <sys:String>AtomForm for UI and Code Behind Validation</sys:String>
+            <sys:String>Plain Vanilla AtomFormContainer just for Layout</sys:String>
+            <sys:String>Advanced Error Display</sys:String>
+            <sys:String>Inbuilt Calculator</sys:String>
+            <sys:String>Advanced Form Designer</sys:String>
+            <sys:String>Easy to Modify</sys:String>
+            <sys:String>MVVM, Prism and MEF Supported</sys:String>
+            <sys:String>Cascaded ComboBox Supported</sys:String>
+            <sys:String>Advanced Validation Methods</sys:String>
+            <sys:String>Code Behind Validation</sys:String>
+        </ItemsControl>
+    </Grid>
+</UserControl>

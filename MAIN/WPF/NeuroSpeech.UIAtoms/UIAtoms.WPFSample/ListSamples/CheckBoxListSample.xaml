@@ -1,0 +1,62 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.ListSamples.CheckBoxListSample"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+	  Title="CheckBoxListSample" Loaded="Page_Loaded">
+
+
+        <ns:AtomForm 
+            Width="700" Header="CheckBox List" 
+            HorizontalAlignment="Center"
+            x:Name="checkboxForm" RowLayout="2">
+            
+            <ns:AtomCheckBoxList 
+                ns:AtomForm.MissingValueMessage="Make a selection"
+                ns:AtomForm.IsRequired="True"
+                ns:AtomForm.Label="Options :" 
+                x:Name="seatcheckbox" ItemsSource="{Binding Path=SelectedItem.Options}" 
+                DisplayMemberPath="SeatTypeName" 
+                IsFilterVisible="False"  HorizontalAlignment="Left"
+                />
+            
+            <ns:AtomCheckBoxList 
+                ns:AtomForm.MissingValueMessage="Make a selection"
+                ns:AtomForm.IsRequired="True"
+                
+                x:Name="breakcheckbox" ItemsSource="{Binding Path=SelectedItem.Options}" 
+                DisplayMemberPath="BreakTypeName"  
+                IsFilterVisible="False" />
+            
+            <ns:AtomButton Content="Submit" ValidationRootElement="checkboxForm"/>
+            
+            <TextBlock 
+                Text="Selected Items" FontSize="16"   
+                VerticalAlignment="Center" FontWeight="Bold"/>
+
+
+            <StackPanel>
+                <ItemsControl ItemsSource="{Binding ElementName=seatcheckbox,Path=SelectedItems}" >
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding SeatTypeName}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <ItemsControl ItemsSource="{Binding ElementName=breakcheckbox,Path=SelectedItems}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding BreakTypeName}"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+
+        </ns:AtomForm>
+</Page>

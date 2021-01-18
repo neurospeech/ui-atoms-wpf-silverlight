@@ -1,0 +1,56 @@
+﻿<Page xmlns:ns="http://uiatoms.neurospeech.com/wpf" 
+      x:Class="UIAtoms.WPFSamples.EditorSamples.FileSizeSample"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UIAtoms.WPFSamples"
+      mc:Ignorable="d" Title="FileSizeSample" Loaded="Page_Loaded" MinHeight="400" MinWidth="600"> 
+
+    <ns:AtomForm 
+        Header="FileSize"
+        >
+
+        <TreeView Name="tv1"  VerticalAlignment="Stretch" 
+                  HorizontalAlignment="Stretch" Width="Auto" MinHeight="300" ns:AtomForm.Label="Explorer:">
+
+            <TreeView.Resources>
+                <HierarchicalDataTemplate DataType="{x:Type local:FileObject}" 
+                                          ItemsSource="{Binding Files}">
+                    <TextBlock Text="{Binding Name}"/>    
+                </HierarchicalDataTemplate>
+            </TreeView.Resources>
+
+            <TreeView.ItemContainerStyle>
+                <Style TargetType="{x:Type TreeViewItem}">
+                    <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}"/>
+                    <Setter Property="FontWeight" Value="Normal" />
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="FontWeight" Value="Bold"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TreeView.ItemContainerStyle>
+        </TreeView>
+        
+        <ItemsControl 
+            ns:AtomForm.Label="Files:"
+            ItemsSource="{Binding ElementName=tv1,
+                Path=SelectedItem.Files}" 
+            Grid.Column="1">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Name}"/>
+                            <ns:AtomFileSizeLabel Name="filesize" FileSize="{Binding Size}"
+                              HorizontalAlignment="Center" VerticalAlignment="Top"
+                              Width="100" Height="25"   
+                              />
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </ns:AtomForm>
+</Page>

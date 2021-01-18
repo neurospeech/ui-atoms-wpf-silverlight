@@ -1,0 +1,38 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.ListSamples.ComboBoxwithFilter"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+	  Title="ComboBoxwithFilter">
+
+    <Grid>
+        <ns:AtomForm 
+            Name="colorForm" Width="700" LabelWidth="90" 
+            Header="ComboBox with Filter" HorizontalAlignment="Center">
+
+            <ns:AtomComboBox 
+                Width="200" Name="cbColor" 
+                ns:AtomForm.IsRequired="True" ns:AtomForm.Label="Select Fruit:" 
+                ns:AtomForm.MissingValueMessage="Please select fruit" 
+                IsFilterVisible="True" HorizontalAlignment="Left">
+                <sys:String>Apple</sys:String>
+                <sys:String>Chokeberry</sys:String>
+                <sys:String>Loquat</sys:String>
+                <sys:String>Cherry</sys:String>
+                <sys:String>Blackberry</sys:String>
+                <sys:String>Grape</sys:String>
+            </ns:AtomComboBox>
+
+                <TextBlock Text="{Binding SelectedItem,
+                        ElementName=cbColor,Mode=TwoWay}" 
+                           ns:AtomForm.Label="Selected Value:"
+                        HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <ns:AtomButton 
+                HorizontalAlignment="Left"
+                Content="Submit" ValidationRootElement="colorForm" Name="processbutton" />
+        </ns:AtomForm>
+    </Grid>
+</Page>

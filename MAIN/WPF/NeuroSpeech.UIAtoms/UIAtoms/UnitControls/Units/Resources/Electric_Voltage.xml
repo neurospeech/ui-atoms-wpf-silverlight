@@ -1,0 +1,12 @@
+﻿<Unit
+  ID="volt"
+  Name="Volt"
+  Symbol="V"
+  >
+  <Conversions>
+    <Conversion ID="abvolt" Name="Abvolt" SubType="" Symbol="" Factor="1" Factor10="-08" />
+    <Conversion ID="EMU_of_electric_potential" Name="EMU of Electric Potential" SubType="" Symbol="" Factor="1" Factor10="-08" />
+    <Conversion ID="ESU_of_electric_potential" Name="ESU of Electric Potential" SubType="" Symbol="" Factor="2.997925" Factor10="2" />
+    <Conversion ID="statvolt" Name="Statvolt" SubType="" Symbol="" Factor="2.997925" Factor10="2" />
+  </Conversions>
+</Unit>

@@ -1,0 +1,27 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.ListSamples.RadioButtonDesc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="600"
+	Title="RadioButtonDesc">
+
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <List>
+                    <ListItem>
+                        <Paragraph>	The “Gender” field is a required field in this form. If the “Submit” button is clicked without making a selection, a customized error will be triggered.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	Once the selection is made, the control instantaneously returns the selected value and it is displayed in the “Selected Value” field.</Paragraph>
+                    </ListItem>
+                </List>
+
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Page>

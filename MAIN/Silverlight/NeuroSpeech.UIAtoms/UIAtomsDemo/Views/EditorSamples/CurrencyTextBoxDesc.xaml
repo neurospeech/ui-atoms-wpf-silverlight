@@ -1,0 +1,23 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.EditorSamples.CurrencyTextBoxDesc" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="CurrencyTextBoxDesc Page">
+    <Grid x:Name="LayoutRoot">
+        <StackPanel>
+            <TextBlock Text="•	The currency text box is an extension of the AtomDoubleTextBox so all the parameters of the AtomDoubleTextBox apply here." 
+                       FontWeight="Bold" TextWrapping="Wrap"/>
+            <TextBlock Text="•	A Currency symbol is prefixed to the display. This symbol can be preset as a string format within the control." 
+                       FontWeight="Bold" TextWrapping="Wrap"/>
+            <TextBlock Text="•	It also has a calculator available which can either be displayed, or kept hidden. If displayed, clicking the CAL button near the arrow keys triggers the calculator view." 
+                       FontWeight="Bold" TextWrapping="Wrap"/>
+            <TextBlock Text="•	The calculator can be used just like any normal calculator. Once the calcualted figure is arrived, clicking the OK button returns the calculated value directly into the Currency Text Box." 
+                       FontWeight="Bold" TextWrapping="Wrap"/>
+
+        </StackPanel>
+    </Grid>
+</navigation:Page>

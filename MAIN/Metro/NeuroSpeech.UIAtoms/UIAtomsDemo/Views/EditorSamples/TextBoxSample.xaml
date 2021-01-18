@@ -1,0 +1,42 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.EditorSamples.TextBoxSample" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           Title="TextBoxSample Page" 
+           xmlns:ns="http://uiatoms.neurospeech.com/silverlight"
+           xmlns:sys="clr-namespace:System;assembly=mscorlib"
+            >
+    
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ns:AtomForm Header="TextBox" MinWidth="700"
+                     HorizontalAlignment="Center">
+            <Border 
+                BorderBrush="Black" BorderThickness="1" 
+                Width="600" Height="150" Margin="0,20,0,10">
+                <ns:AtomForm LabelWidth="100" x:Name="textfrom">
+
+                    <ns:AtomTextBox Name="textbox1" 
+                                        ns:AtomForm.Title="TextBox 1 Title"
+                                        ns:AtomForm.IsRequired="True"
+                                        ns:AtomForm.Label="TextBox 1 Lable:"
+                                        WatermarkText="TextBox 1 Description"
+                                        ns:AtomForm.Description="TextBox 1 Description"
+                                        ns:AtomForm.MissingValueMessage="TextBox 1 is required"/>
+
+                    <ns:AtomButton 
+                            Name="textbutton" ValidationRootElement="textfrom" 
+                            Content="Process" HorizontalAlignment="Left"/>
+                </ns:AtomForm>
+            </Border>
+        </ns:AtomForm>
+    </Grid>
+</navigation:Page>

@@ -1,0 +1,37 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.LayoutSamples.ViewPanelDesc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="600"
+	Title="ViewPanelDesc">
+
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <List>
+                    <ListItem>
+                        <Paragraph>	View panels are typically bound with SelectedIndex, a parameter found in Controls like ToggleButtonBar, etc..</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	Selecting the ToggleButtonBar will trigger the view for that particular selection. The view will occupy the entire available screen.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	All the views are stacked on top of each other, and the current selected view is displayed.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	This is an alternative to the “Tabbed” view. The advantage here is that more of the screen is displayed as opposed to a typical tabbed view wherein the Tabs appear on the left side of the screen occupying a row to display the tabs.</Paragraph>
+                    </ListItem>
+                </List>
+
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Page>

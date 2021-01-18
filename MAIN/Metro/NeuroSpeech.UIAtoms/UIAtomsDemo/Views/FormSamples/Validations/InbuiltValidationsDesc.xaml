@@ -1,0 +1,19 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.FormSamples.Validations.InbuiltValidationsDesc" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="InbuiltValidationsDesc Page">
+    <Grid x:Name="LayoutRoot">
+        <StackPanel>
+            <TextBlock Text=" UIAtoms comes packed with inbuilt validations making form building easy. Some demonstrational samples are provided in this sample."
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+            <TextBlock Text=" All the validations for the parameters are preset by simply setting the parameters of the control to true."
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+        </StackPanel>
+
+    </Grid>
+</navigation:Page>

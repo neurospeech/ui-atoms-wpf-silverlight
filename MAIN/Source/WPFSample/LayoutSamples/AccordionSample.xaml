@@ -1,0 +1,171 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.LayoutSamples.AccordionPanelSample"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      mc:Ignorable="d" 
+      Width="820" Height="500" Background="White"
+	  Title="AccordionPanelSample" Loaded="Page_Loaded" 
+      xmlns:ns="http://uiatoms.neurospeech.com/wpf" 
+      DataContext="{Binding}" Style="{Binding RelativeSource={RelativeSource TemplatedParent}}">
+
+    <Page.Resources>
+        <ns:ArrayToCSVConverter x:Key="CSVConverter"/>
+    </Page.Resources>
+        <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="1.6*"/>
+        </Grid.ColumnDefinitions>
+            
+        <ns:AtomAccordion SelectedIndex="0" IsFilterVisible="False">
+            <HeaderedContentControl Header="Selected Car">
+                <StackPanel>
+                    <Border BorderThickness="2" BorderBrush="Black" 
+                            Width="300" Height="225" Margin="0,50,0,0">
+                                <Image Name="image1" Source=
+                                       "/UIAtoms.WPFSamples;component/Asset/mercedes-e-class-2009.jpg"
+                                />
+                    </Border>
+                    
+                    <TextBlock Text="Mercedes benz" FontWeight="Bold" 
+                               HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                </StackPanel>
+            </HeaderedContentControl>
+
+            <HeaderedContentControl Header="Fuel Type" HorizontalAlignment="Left">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.00001*"/>
+                        <RowDefinition Height="0.00001*"/>
+                        <RowDefinition Height="0.1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <ns:AtomRadioButtonList x:Name="cartyperadio" Grid.Column="0"  Grid.RowSpan="3"
+                        DisplayMemberPath="TypeName" HorizontalAlignment="Left" IsFilterVisible="False" />
+
+                    <TextBlock x:Name="cartypetext1" Grid.Column="1" Grid.Row="0" 
+                               HorizontalAlignment="Left" Text="Petrol - Vehicles fitted with petrol engines"/>
+
+                    <TextBlock x:Name="cartypetext2" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left"
+                        Text="Diesel - Vehicles fitted with diesel engines"/>
+
+                    <TextBlock x:Name="cartypetext3" Grid.Column="1" Grid.Row="2" Width="290" 
+                        TextWrapping="Wrap" HorizontalAlignment="Left" Text=
+                               "Hybrid - Vehicles fitted with elecrtric motors combined with petrol engines"
+                    />
+                </Grid>
+
+            </HeaderedContentControl>
+
+            <HeaderedContentControl Header="Choose your Options">
+                <StackPanel>
+                    <ns:AtomCheckBoxList 
+                        ns:AtomForm.Label="Choose your Options" 
+                        x:Name="seatcheckbox" DisplayMemberPath="Label" 
+                        IsFilterVisible="False">
+                    </ns:AtomCheckBoxList>
+                    
+                    <ItemsControl ItemsSource="{Binding ElementName=seatcheckbox,Path=SelectedItems}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Label}"/>
+                                    <TextBlock Text="{Binding Description}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+
+                </StackPanel>
+            </HeaderedContentControl>
+
+            <HeaderedContentControl Header="Entertainment Options">
+                <ns:AtomRadioButtonList IsFilterVisible="False" Name="entertainmentRadio"
+                                        DisplayMemberPath="TypeofEntertainment"/>
+            </HeaderedContentControl>
+        </ns:AtomAccordion>
+       
+        <GridSplitter Background="DarkGray" />
+        
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="0.3*"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="0.2*"/>
+                </Grid.RowDefinitions>
+                
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center"
+                               Text="Mercedes benz" FontWeight="Bold" Grid.Row="0" Grid.ColumnSpan="2"/>
+                
+                <Border BorderBrush="Black" BorderThickness="2" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Image Name="image3" 
+                           Source="/UIAtoms.WPFSamples;component/Asset/mercedes-e-class-2009.jpg"/>
+                </Border>
+                
+                <TextBlock Text="Selected Options" HorizontalAlignment="Center" VerticalAlignment="Center"
+                           Grid.Row="2" Grid.ColumnSpan="2"/>
+                
+                <ItemsControl Grid.Row="4" ItemsSource="{Binding ElementName=cartyperadio,Path=SelectedItems}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                            <TextBlock Grid.ColumnSpan="2" Text="Fuel Type"  HorizontalAlignment="Right"/>
+                            <TextBlock Grid.ColumnSpan="2" Text="{Binding Description}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <ItemsControl Grid.Row="5" ItemsSource="{Binding ElementName=seatcheckbox,Path=SelectedItems}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.ColumnSpan="2" Text="{Binding Label}" />
+                                <TextBlock Grid.ColumnSpan="2" Text="{Binding Description}" HorizontalAlignment="Right"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <ItemsControl Grid.Row="6" ItemsSource="{Binding ElementName=entertainmentRadio,Path=SelectedItems}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.ColumnSpan="2" Text="Fuel Type"  HorizontalAlignment="Right"/>
+                                <TextBlock Grid.ColumnSpan="2" Text="{Binding TypeofEntertainment}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+            </Grid>
+         </Border>
+    </Grid>
+</Page>

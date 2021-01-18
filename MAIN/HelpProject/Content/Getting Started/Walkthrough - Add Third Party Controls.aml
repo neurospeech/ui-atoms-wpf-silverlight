@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="b500248f-117f-4c1b-8755-a648f9b1756f" revisionNumber="1">
+  <developerHowToDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+    <introduction>
+    	<para>In this Walkthrough, we will show how to use UI Atoms Validation
+    	with third party Controls.</para>
+      <para>
+      	Conventional Validation in .NET does not offer UI Context while 
+      	validating the data, that limits the way UI is designed and adds more
+      	complexity in the code. While in UI Atoms Validation, a new class
+		<token>RefAtomValidationRule</token> offers UI Context and is used by
+		<token>RefAtomForm</token> to validate individual controls.
+      </para>
+    </introduction>
+    <!-- Optional procedures followed by optional code example but must have
+         at least one procedure or code example -->
+    <procedure>
+      <title>Add Third Party Controls in the Form</title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>Lets add simple TextBox control. And lets mark it as Required
+            by setting IsRequired to true. Now for third party controls, setting
+            IsRequired true will only display required asterix, but it will not
+            validate it, unless we set Validation Rule and Validation Property.
+            
+	            <code language="XAML">
+				<![CDATA[
+				
+	            <TextBox x:Name="tb"
+	                     ns:AtomForm.Label="Test:"
+	                     ns:AtomForm.IsRequired="True"
+	                     />
+				
+				]]>
+				</code>
+
+            </para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>Now <token>RefAtomForm</token> needs to be informed two things,
+            first which property to validate and second which rule to validate 
+            it with. There are two ways to do it, you can set validation rule
+            via resources or inline.</para>
+            <para>Via Resources</para>
+            
+	            <code language="XAML">
+				<![CDATA[
+				
+	            <TextBox x:Name="tb"
+	                     ns:AtomForm.Label="Test:"
+	                     ns:AtomForm.IsRequired="True"
+	                     ns:AtomForm.ValidationProperty="Text"
+	                     ns:AtomForm.ValidationRule="{StaticResource stringValidator}"
+	                     />
+				
+				]]>
+				</code>
+			<para>Via Inline</para>
+			
+	            <code language="XAML">
+				<![CDATA[
+				
+	            <TextBox x:Name="tb"
+	                     ns:AtomForm.Label="Test:"
+	                     ns:AtomForm.IsRequired="True"
+	                     ns:AtomForm.ValidationProperty="Text"
+	                     >
+	                <ns:AtomForm.ValidationRule>
+	                    <nsv:AtomStringValidationRule/>
+	                </ns:AtomForm.ValidationRule>
+	            </TextBox>
+				
+				]]>
+				</code>			
+			<para>
+			This sets Validation on for property Text of the TextBox. You can
+			create your own Validation Rule as well for any type of property.
+			</para>
+			<para>
+			You can see <token>RefAtomValidationRule</token> and its derived
+			classes to reuse them in your code.
+			</para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>The best way to use Third Party Control Validation is to 
+            derive from the control and set the Validation Rule in the 
+            constructor, so that you can reuse this control every time
+            redeclaring everything in XAML.</para>
+			<para>TextBoxWithValidation Class</para>
+			
+	            <code language="cs">
+				<![CDATA[
+
+                public class TextBoxWithValidation : TextBox
+                {
+                   public TextBoxWithValidation()
+                   {
+                      AtomForm.SetValidationProperty(this, "Text");
+                      AtomForm.SetValidationRule(this, 
+                          new AtomStringValidationRule());
+                   }
+                }
+
+				
+				]]>
+				</code>			
+            <para>Via Resources</para>
+            
+	            <code language="XAML">
+				<![CDATA[
+				
+	            <local:TextBoxWithValidation x:Name="tb"
+	                     ns:AtomForm.Label="Test:"
+	                     ns:AtomForm.IsRequired="True"
+	                     />
+				
+				]]>
+				</code>
+			<para>
+			This sets Validation on for property Text of the TextBox. You can
+			create your own Validation Rule as well for any type of property.
+			</para>
+			<para>
+			You can see <token>RefAtomValidationRule</token> and its derived
+			classes to reuse them in your code.
+			</para>
+          </content>
+        </step>
+      </steps>
+      <!-- <conclusion>Optional conclusion</conclusion> -->
+    </procedure>
+    <!-- <codeExample>Optional code example</codeExample> -->
+    <!-- <buildInstructions>Optional instructions for building a
+         code example.</buildInstructions> -->
+    <!-- <robustProgramming>Optional discussion of error handling and other
+         issues related to writing solid code.</robustProgramming> -->
+    <!-- <security>Optional discussion of security issues.</security> -->
+    <relatedTopics>
+    	<token>RefAtomForm</token>
+    	<token>RefAtomValidationRule</token>
+    </relatedTopics>
+  </developerHowToDocument>
+</topic>

@@ -1,0 +1,33 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.EditorSamples.FilePathEditorDesc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="600"
+	Title="FilePathEditorDesc">
+
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <List>
+                    <ListItem>
+                        <Paragraph>	The file path can be manually entered into the “File Path” field.</Paragraph>
+                    </ListItem>
+                </List>
+
+                <List>
+                    <ListItem>
+                        <Paragraph>	Alternatively, the file path can be selected through the “Browse” feature by clicking the “Browse” folder icon that appears on the right of the File Path field.</Paragraph>
+                    </ListItem>
+                </List>
+
+                <List>
+                    <ListItem>
+                        <Paragraph>	The RadioButton for FolderOnly  is set to false by default. This will display all the contents of the selected folder in the browse view. By setting the FolderOnly value to true, only the folders that are located within the selected folder will be displayed within the Browse view.</Paragraph>
+                    </ListItem>
+                </List>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Page>

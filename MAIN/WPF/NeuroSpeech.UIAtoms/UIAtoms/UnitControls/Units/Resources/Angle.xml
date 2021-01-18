@@ -1,0 +1,14 @@
+﻿<Unit
+  ID="radian"
+  Name="Radian"
+  Symbol="rad"
+  >
+  <Conversions>
+    <Conversion ID="degree" Name="Degree" SubType="" Symbol="°" Factor="1.745329" Factor10="-02" />
+    <Conversion ID="gon" Name="Gon" SubType="also called Grade" Symbol="gon" Factor="1.570796" Factor10="-02" />
+    <Conversion ID="mil" Name="Mil" SubType="" Symbol="mil" Factor="9.817477" Factor10="-04" />
+    <Conversion ID="minute" Name="Minute" SubType="" Symbol="'" Factor="2.908882" Factor10="-04" />
+    <Conversion ID="revolution" Name="Revolution" SubType="" Symbol="r" Factor="6.283185" Factor10="+00" />
+    <Conversion ID="second" Name="Second" SubType="" Symbol="''" Factor="4.848137" Factor10="-06" />
+  </Conversions>
+</Unit>

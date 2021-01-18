@@ -1,0 +1,353 @@
+﻿<AtomControlSet Name="" Namespace="NeuroSpeech.UIAtoms.Controls" xmlns="clr-namespace:ControlMetaData.Model;assembly=ControlMetaData" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <AtomControlSet.Controls>
+    <AtomControl Active="True" BaseType="AtomFormContainer" DefaultStyle="True" Name="AtomForm" TParams="">
+      <AtomControl.AttachedProperties>
+        <AtomAttachedProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms.Validation" DefaultValue="&quot;Field is required&quot;" Description="Missing Value Message" DisplayAttachedForChildren="True" GenerateChangeMethod="False" GenerateEvent="False" Name="MissingValueMessage" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomAttachedProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms.Validation" DefaultValue="&quot;Value is Invalid&quot;" Description="Invalid Value Message" DisplayAttachedForChildren="True" GenerateChangeMethod="False" GenerateEvent="False" Name="InvalidValueMessage" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomAttachedProperty DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" Category="Atoms" DefaultValue="null" Description="Validator" DisplayAttachedForChildren="True" GenerateChangeMethod="True" GenerateEvent="False" Name="AtomValidator" ObjectToStringConverter="False" OwnerType="" Type="AtomPropertyValidator" />
+        <AtomAttachedProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms.Form" DefaultValue="null" DisplayAttachedForChildren="True" GenerateChangeMethod="False" GenerateEvent="False" Name="Label" ObjectToStringConverter="False" OwnerType="" Type="Object" />
+        <AtomAttachedProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms.Form" DefaultValue="null" DisplayAttachedForChildren="True" GenerateChangeMethod="False" GenerateEvent="False" Name="Title" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomAttachedProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms.Form" DefaultValue="null" DisplayAttachedForChildren="True" GenerateChangeMethod="False" GenerateEvent="False" Name="Description" ObjectToStringConverter="False" OwnerType="" Type="Object" />
+        <AtomAttachedProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms.Form" DefaultValue="(bool)false" DisplayAttachedForChildren="True" GenerateChangeMethod="False" GenerateEvent="False" Name="IsRequired" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomAttachedProperty Category="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Never" DefaultValue="(bool)false" DisplayAttachedForChildren="False" GenerateChangeMethod="False" GenerateEvent="False" Name="HasError" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomAttachedProperty Category="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Never" DefaultValue="null" DisplayAttachedForChildren="False" GenerateChangeMethod="False" GenerateEvent="False" Name="ErrorMessage" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomAttachedProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" Category="Atoms.Validation" DefaultValue="null" DisplayAttachedForChildren="True" GenerateChangeMethod="False" GenerateEvent="False" Name="ValidationProperty" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomAttachedProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms.Validation" DefaultValue="null" DisplayAttachedForChildren="True" GenerateChangeMethod="False" GenerateEvent="False" Name="ValidationRule" ObjectToStringConverter="False" OwnerType="" Type="AtomValidationRule" />
+        <AtomAttachedProperty Category="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" DefaultValue="null" DisplayAttachedForChildren="True" GenerateChangeMethod="True" GenerateEvent="False" Name="ValidationError" ObjectToStringConverter="False" OwnerType="" Type="AtomValidationError" />
+        <AtomAttachedProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms.Form" DefaultValue="(bool)true" DisplayAttachedForChildren="False" GenerateChangeMethod="False" GenerateEvent="False" Name="ShowLabel" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomAttachedProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms.Form" DefaultValue="null" DisplayAttachedForChildren="False" GenerateChangeMethod="False" GenerateEvent="False" Name="CommandBox" ObjectToStringConverter="False" OwnerType="" Type="Object" />
+      </AtomControl.AttachedProperties>
+      <AtomControl.Parts>
+        <AtomTemplatePart ElementName="PART_Selector" Name="selector" Required="True" Type="Control" />
+      </AtomControl.Parts>
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="Tabs" ObjectToStringConverter="False" OwnerType="" Type="System.Collections.IList" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms.Validation" DefaultValue="(AtomFormValidationMode)AtomFormValidationMode.OnLostFocus" GenerateChangeMethod="False" GenerateEvent="True" Name="ValidationMode" ObjectToStringConverter="False" OwnerType="" Type="AtomFormValidationMode" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(bool)true" GenerateChangeMethod="False" GenerateEvent="True" Name="DisplayErrors" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomProperty Category="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Never" DefaultValue="(bool)false" GenerateChangeMethod="True" GenerateEvent="False" Name="HasErrors" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(bool)false" GenerateChangeMethod="False" GenerateEvent="False" Name="AutoGenerateFields" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;Errors&quot;" GenerateChangeMethod="False" GenerateEvent="False" Name="ErrorTitle" ObjectToStringConverter="False" OwnerType="" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="Button" DefaultStyle="False" Name="AtomButton" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(bool)false" Description="Display Verification Message Box" GenerateChangeMethod="False" GenerateEvent="False" Name="Verify" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;Are you sure?&quot;" Description="Verification Message displayed in MessageBox" GenerateChangeMethod="False" GenerateEvent="False" Name="VerificationMessage" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;Confirmation&quot;" Description="Title of Verification Message Box" GenerateChangeMethod="False" GenerateEvent="False" Name="VerificationTitle" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" Description="Root Element of Visual Tree to start Validation From" GenerateChangeMethod="False" GenerateEvent="False" Name="ValidationRootElement" ObjectToStringConverter="False" OwnerType="" Type="Object" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="Control" DefaultStyle="True" Name="AtomCalculator" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(Decimal)0" Description="Calculated Last Result" GenerateChangeMethod="True" GenerateEvent="True" Name="Value" ObjectToStringConverter="False" OwnerType="" Type="Decimal" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Never" Category="Atoms" DefaultValue="&quot;&quot;" GenerateChangeMethod="False" GenerateEvent="False" Name="ExpressionHistory" ObjectToStringConverter="False" OwnerType="" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="ListBox" DefaultStyle="True" Name="AtomListBox" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(bool)false" Description="This property decides whether or not the Filter is used for the particular ItemsControl" GenerateChangeMethod="False" GenerateEvent="False" Name="IsFilterVisible" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;&quot;" Description="FilterText accepts the text input from the user" GenerateChangeMethod="False" GenerateEvent="False" Name="FilterText" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(AtomTextFilterMode)AtomTextFilterMode.StartsWith" Description="FilterMode sets the mode with which to filter the text" GenerateChangeMethod="False" GenerateEvent="False" Name="FilterMode" ObjectToStringConverter="False" OwnerType="AtomFilterTextBox" Type="AtomTextFilterMode" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(StringComparison)StringComparison.CurrentCultureIgnoreCase" Description="FilterComparison - A String Comparison" GenerateChangeMethod="False" GenerateEvent="False" Name="FilterComparison" ObjectToStringConverter="False" OwnerType="AtomFilterTextBox" Type="StringComparison" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" Description="Filter Provider Parameter" GenerateChangeMethod="False" GenerateEvent="False" Name="FilterProviderParameter" ObjectToStringConverter="False" OwnerType="AtomFilterTextBox" Type="Object" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" Description="Filter Provider" GenerateChangeMethod="False" GenerateEvent="False" Name="FilterProvider" ObjectToStringConverter="False" OwnerType="AtomFilterTextBox" Type="IAtomItemsFilter" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" Description="Invalid Indices" GenerateChangeMethod="False" GenerateEvent="False" Name="InvalidIndices" ObjectToStringConverter="False" OwnerType="AtomSelectionValidationRule" Type="Int32[]" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="TextBox" DefaultStyle="True" Name="AtomTextBox" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Category="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Never" DefaultValue="(bool)false" Description="This is for internal use" GenerateChangeMethod="False" GenerateEvent="False" Name="HasText" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" Description="Displays watermark on the textbox when text is empty." GenerateChangeMethod="True" GenerateEvent="True" Name="WatermarkText" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="Brushes.LightGray" Description="This property defines the color of the displayed Watermark" GenerateChangeMethod="False" GenerateEvent="False" Name="WatermarkColor" ObjectToStringConverter="False" OwnerType="" Type="Brush" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(HorizontalAlignment)HorizontalAlignment.Left" Description="Controls Alignment of the Watermark inside Textbox" GenerateChangeMethod="False" GenerateEvent="False" Name="WatermarkAlign" ObjectToStringConverter="False" OwnerType="" Type="HorizontalAlignment" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" Description="Used internally" GenerateChangeMethod="True" GenerateEvent="True" Name="FormattedText" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Never" Category="Atoms" DefaultValue="(bool)false" Description="Used internally" GenerateChangeMethod="False" GenerateEvent="False" Name="HasFormattedText" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms.Validation" DefaultValue="(int)0" Description="0 or -1 means no limit" GenerateChangeMethod="False" GenerateEvent="True" Name="MinimumLength" ObjectToStringConverter="False" OwnerType="AtomStringValidationRule" Type="Int32" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms.Validation" DefaultValue="&quot;Text should have more then {0} characters&quot;" GenerateChangeMethod="False" GenerateEvent="True" Name="MinimumLengthErrorMessage" ObjectToStringConverter="False" OwnerType="AtomStringValidationRule" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomTextBox" DefaultStyle="True" Name="AtomFilterTextBox" TParams="">
+      <AtomControl.Parts>
+        <AtomTemplatePart ElementName="PART_DeleteButton" Name="PART_DeleteButton" Required="False" Type="Button" />
+      </AtomControl.Parts>
+      <AtomControl.Properties>
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" Description="The Control which is bound to the AtomFilterTextBox" GenerateChangeMethod="True" GenerateEvent="True" Name="ItemsControl" ObjectToStringConverter="False" OwnerType="" Type="ItemsControl" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(AtomTextFilterMode)AtomTextFilterMode.StartsWith" Description="This property describes how the filter should compare strings" GenerateChangeMethod="True" GenerateEvent="True" Name="FilterMode" ObjectToStringConverter="False" OwnerType="" Type="AtomTextFilterMode" />
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(StringComparison)StringComparison.CurrentCultureIgnoreCase" Description="FilterComparison property is a StringComparison which is used to compare strings" GenerateChangeMethod="True" GenerateEvent="True" Name="FilterComparison" ObjectToStringConverter="False" OwnerType="" Type="StringComparison" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="FilterProvider" ObjectToStringConverter="False" OwnerType="" Type="IAtomItemsFilter" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="FilterProviderParameter" ObjectToStringConverter="False" OwnerType="" Type="Object" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomButton" DefaultStyle="True" Name="AtomImageButton" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="ImageSource" ObjectToStringConverter="False" OwnerType="" Type="ImageSource" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomImageButton" DefaultStyle="False" Name="AtomValueDialogButton" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="DialogType" ObjectToStringConverter="False" OwnerType="" Type="Type" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="Value" ObjectToStringConverter="False" OwnerType="" Type="Object" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;&quot;" GenerateChangeMethod="False" GenerateEvent="False" Name="Title" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;&quot;" GenerateChangeMethod="False" GenerateEvent="False" Name="DialogTypeName" ObjectToStringConverter="False" OwnerType="" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomListBox" DefaultStyle="False" Name="AtomAccordion" TParams="">
+      <AtomControl.AttachedProperties>
+        <AtomAttachedProperty Category="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" DefaultValue="&quot;&quot;" DisplayAttachedForChildren="False" GenerateChangeMethod="False" GenerateEvent="False" Name="Header" ObjectToStringConverter="False" OwnerType="HeaderedContentControl" Type="Object" />
+      </AtomControl.AttachedProperties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="ListBoxItem" DefaultStyle="True" Name="AtomAccordionItem" TParams="">
+      <AtomControl.Parts>
+        <AtomTemplatePart ElementName="PART_Content" Name="contentPresenter" Required="True" Type="ContentPresenter" />
+        <AtomTemplatePart ElementName="PART_Header" Name="headerButton" Required="True" Type="ToggleButton" />
+      </AtomControl.Parts>
+      <AtomControl.Properties>
+        <AtomProperty Category="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" DefaultValue="(Object)0" GenerateChangeMethod="False" GenerateEvent="False" Name="Header" ObjectToStringConverter="False" OwnerType="" Type="Object" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomListBox" DefaultStyle="False" Name="AtomRadioButtonList" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="GroupName" ObjectToStringConverter="False" OwnerType="" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="ListBoxItem" DefaultStyle="True" Name="AtomRadioButtonListItem" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="GroupName" ObjectToStringConverter="False" OwnerType="" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="ComboBox" DefaultStyle="True" Name="AtomComboBox" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="InvalidIndices" ObjectToStringConverter="False" OwnerType="AtomSelectionValidationRule" Type="Int32[]" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(bool)false" GenerateChangeMethod="False" GenerateEvent="False" Name="IsFilterVisible" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;&quot;" GenerateChangeMethod="False" GenerateEvent="False" Name="FilterText" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(AtomTextFilterMode)AtomTextFilterMode.StartsWith" GenerateChangeMethod="False" GenerateEvent="False" Name="FilterMode" ObjectToStringConverter="False" OwnerType="" Type="AtomTextFilterMode" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(StringComparison)StringComparison.CurrentCultureIgnoreCase" GenerateChangeMethod="False" GenerateEvent="False" Name="FilterComparison" ObjectToStringConverter="False" OwnerType="" Type="StringComparison" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="FilterProvider" ObjectToStringConverter="False" OwnerType="" Type="IAtomItemsFilter" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="FilterProviderParameter" ObjectToStringConverter="False" OwnerType="" Type="Object" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="Control" DefaultStyle="True" Name="AtomErrorDisplay" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="ValidationError" ObjectToStringConverter="False" OwnerType="" Type="AtomValidationError" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Never" Category="Atoms" DefaultValue="(bool)false" GenerateChangeMethod="False" GenerateEvent="False" Name="IsPressed" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomTextBox" DefaultStyle="False" Name="AtomUsernameTextBox" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms.Validation" DefaultValue="&quot;Invalid Username, should only be alpha numeric and must start with an alphabet&quot;" GenerateChangeMethod="False" GenerateEvent="False" Name="InvalidUsernameErrorMessage" ObjectToStringConverter="False" OwnerType="AtomUsernameValidationRule" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomNumberContainerControl" DefaultStyle="False" Name="AtomRangeBase" TParams="&lt;T,StepT&gt;">
+      <AtomControl.Properties>
+        <AtomProperty Category="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" DefaultValue="default(T)" GenerateChangeMethod="True" GenerateEvent="False" Name="Minimum" ObjectToStringConverter="False" OwnerType="" Type="T" />
+        <AtomProperty Category="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" DefaultValue="default(T)" GenerateChangeMethod="True" GenerateEvent="False" Name="Maximum" ObjectToStringConverter="False" OwnerType="" Type="T" />
+        <AtomProperty Category="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" DefaultValue="default(T)" GenerateChangeMethod="True" GenerateEvent="False" Name="Value" ObjectToStringConverter="False" OwnerType="" Type="T" />
+        <AtomProperty Category="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" DefaultValue="default(StepT)" GenerateChangeMethod="False" GenerateEvent="False" Name="Step" ObjectToStringConverter="False" OwnerType="" Type="StepT" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomRangeBase&lt;double,double&gt;" DefaultStyle="False" Name="AtomDoubleTextBox" TParams="">
+      <AtomControl.Parts>
+        <AtomTemplatePart ElementName="PART_TextBox" Name="TB" Required="False" Type="AtomTextBox" />
+      </AtomControl.Parts>
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;{0:N2}&quot;" GenerateChangeMethod="True" GenerateEvent="True" Name="StringFormat" ObjectToStringConverter="False" OwnerType="" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomComboBox" DefaultStyle="False" Name="AtomEnumComboBox" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="True" GenerateEvent="True" Name="EnumType" ObjectToStringConverter="False" OwnerType="" Type="Type" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="ContentControl" DefaultStyle="True" Name="AtomFormItemContainer" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="PropertyValue" ObjectToStringConverter="False" OwnerType="" Type="Object" />
+        <AtomProperty Category="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" DefaultValue="(bool)false" GenerateChangeMethod="True" GenerateEvent="False" Name="IsContentInvalid" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomProperty Category="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="ErrorMessage" ObjectToStringConverter="False" OwnerType="" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="Window" DefaultStyle="False" Name="AtomPrompt" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;Please Enter The Text&quot;" GenerateChangeMethod="False" GenerateEvent="False" Name="PromptTitle" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;Please Enter The Text&quot;" GenerateChangeMethod="False" GenerateEvent="False" Name="PromptDescription" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;Undefined..&quot;" GenerateChangeMethod="False" GenerateEvent="False" Name="PromptValue" ObjectToStringConverter="False" OwnerType="" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomRangeBase&lt;decimal,decimal&gt;" DefaultStyle="True" Name="AtomCurrencyTextBox" TParams="">
+      <AtomControl.Parts>
+        <AtomTemplatePart ElementName="PART_TextBox" Name="TB" Required="True" Type="AtomTextBox" />
+      </AtomControl.Parts>
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;$ {0:#,###,##0.00}&quot;" GenerateChangeMethod="True" GenerateEvent="True" Name="StringFormat" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(Visibility)Visibility.Visible" GenerateChangeMethod="False" GenerateEvent="False" Name="CalculatorVisibility" ObjectToStringConverter="False" OwnerType="" Type="Visibility" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomTextBox" DefaultStyle="False" Name="AtomEmailTextBox" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(bool)false" GenerateChangeMethod="False" GenerateEvent="False" Name="AllowMultiple" ObjectToStringConverter="False" OwnerType="AtomEmailValidationRule" Type="Boolean" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomRangeBase&lt;int,int&gt;" DefaultStyle="False" Name="AtomIntegerTextBox" TParams="">
+      <AtomControl.Parts>
+        <AtomTemplatePart ElementName="PART_TextBox" Name="TB" Required="True" Type="AtomTextBox" />
+      </AtomControl.Parts>
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;{0:#,###,##0}&quot;" GenerateChangeMethod="True" GenerateEvent="True" Name="StringFormat" ObjectToStringConverter="False" OwnerType="" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomComboBox" DefaultStyle="False" Name="AtomNumberComboBox" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(Decimal)0" GenerateChangeMethod="True" GenerateEvent="True" Name="StartNumber" ObjectToStringConverter="False" OwnerType="" Type="Decimal" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(Decimal)10.0" GenerateChangeMethod="True" GenerateEvent="True" Name="EndNumber" ObjectToStringConverter="False" OwnerType="" Type="Decimal" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(Decimal)1.0" GenerateChangeMethod="True" GenerateEvent="True" Name="NumberStep" ObjectToStringConverter="False" OwnerType="" Type="Decimal" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomTextBox" DefaultStyle="False" Name="AtomTextBoxWithRegEx" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="ValidationRegEx" ObjectToStringConverter="False" OwnerType="AtomRegExValidationRule" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomTextBox" DefaultStyle="False" Name="AtomTitleTextBox" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(bool)false" GenerateChangeMethod="True" GenerateEvent="False" Name="CapitalizeAll" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;of, at, in, with, is, a, an, the&quot;" GenerateChangeMethod="False" GenerateEvent="True" Name="IgnoreWords" ObjectToStringConverter="False" OwnerType="" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="Control" DefaultStyle="False" Name="AtomEditorConverter" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Category="{x:Null}" DefaultValue="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" GenerateChangeMethod="False" GenerateEvent="False" Name="Value" ObjectToStringConverter="False" OwnerType="" Type="Double" />
+        <AtomProperty Category="{x:Null}" DefaultValue="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" GenerateChangeMethod="False" GenerateEvent="False" Name="ValueUnitID" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty Category="{x:Null}" DefaultValue="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" GenerateChangeMethod="False" GenerateEvent="False" Name="DisplayValue" ObjectToStringConverter="False" OwnerType="" Type="Double" />
+        <AtomProperty Category="{x:Null}" DefaultValue="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" GenerateChangeMethod="False" GenerateEvent="False" Name="DisplayUnitID" ObjectToStringConverter="False" OwnerType="" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="TextBox" DefaultStyle="True" Name="AtomComboTextBox" TParams="">
+      <AtomControl.Parts>
+        <AtomTemplatePart ElementName="listPresenter" Name="listPresenter" Required="True" Type="ContentControl" />
+        <AtomTemplatePart ElementName="popup" Name="popup" Required="True" Type="Popup" />
+        <AtomTemplatePart ElementName="watermark" Name="watermark" Required="True" Type="TextBlock" />
+        <AtomTemplatePart ElementName="toggleButton" Name="toggleButton" Required="True" Type="ToggleButton" />
+      </AtomControl.Parts>
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(int)-1" GenerateChangeMethod="True" GenerateEvent="True" Name="SelectedIndex" ObjectToStringConverter="False" OwnerType="" Type="Int32" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="True" GenerateEvent="False" Name="SelectedItem" ObjectToStringConverter="False" OwnerType="" Type="Object" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="True" GenerateEvent="False" Name="SelectedValue" ObjectToStringConverter="False" OwnerType="" Type="Object" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="True" GenerateEvent="False" Name="ItemsSource" ObjectToStringConverter="False" OwnerType="" Type="System.Collections.IEnumerable" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" Category="Atoms" DefaultValue="false" GenerateChangeMethod="True" GenerateEvent="False" Name="IsPopupOpen" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomProperty Category="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="DisplayMemberPath" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty Category="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="SelectedValuePath" ObjectToStringConverter="False" OwnerType="" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="HeaderedItemsControl" DefaultStyle="True" Name="AtomFormLayout" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(bool)true" GenerateChangeMethod="False" GenerateEvent="False" Name="ShowHeader" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(Double)75" GenerateChangeMethod="True" GenerateEvent="False" Name="LabelWidth" ObjectToStringConverter="False" OwnerType="" Type="Double" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(HorizontalAlignment)HorizontalAlignment.Right" GenerateChangeMethod="False" GenerateEvent="False" Name="LabelHorizontalAlignment" ObjectToStringConverter="False" OwnerType="" Type="HorizontalAlignment" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(VerticalAlignment)VerticalAlignment.Center" GenerateChangeMethod="False" GenerateEvent="False" Name="LabelVerticalAlignment" ObjectToStringConverter="False" OwnerType="" Type="VerticalAlignment" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;&quot;" GenerateChangeMethod="False" GenerateEvent="False" Name="RowLayout" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(Double)2" GenerateChangeMethod="False" GenerateEvent="False" Name="HorizontalGap" ObjectToStringConverter="False" OwnerType="" Type="Double" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(Double)2" GenerateChangeMethod="False" GenerateEvent="False" Name="VerticalGap" ObjectToStringConverter="False" OwnerType="" Type="Double" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="HeaderBackground" ObjectToStringConverter="False" OwnerType="" Type="Brush" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="Footer" ObjectToStringConverter="False" OwnerType="" Type="Object" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="ContentControl" DefaultStyle="False" Name="AtomTabContent" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="Header" ObjectToStringConverter="False" OwnerType="" Type="Object" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomFormContainer" DefaultStyle="True" Name="AtomDataForm" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Never" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="Errors" ObjectToStringConverter="False" OwnerType="" Type="System.Collections.IList" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(bool)false" GenerateChangeMethod="False" GenerateEvent="False" Name="AutoGenerateFields" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Never" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="SaveCommand" ObjectToStringConverter="False" OwnerType="" Type="ICommand" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Never" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="EditCommand" ObjectToStringConverter="False" OwnerType="" Type="ICommand" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Never" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="CancelCommand" ObjectToStringConverter="False" OwnerType="" Type="ICommand" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(bool)true" GenerateChangeMethod="False" GenerateEvent="False" Name="IsReadOnly" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;Errors&quot;" GenerateChangeMethod="False" GenerateEvent="False" Name="ErrorTitle" ObjectToStringConverter="False" OwnerType="" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="BaseAtomTextBlock" DefaultStyle="False" Name="AtomFileSizeLabel" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;&quot;" GenerateChangeMethod="True" GenerateEvent="True" Name="FileSizeText" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(ulong)0" GenerateChangeMethod="True" GenerateEvent="True" Name="FileSize" ObjectToStringConverter="False" OwnerType="" Type="UInt64" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="Border" DefaultStyle="False" Name="AtomPasswordBox" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="True" GenerateEvent="True" Name="Password" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(int)5" GenerateChangeMethod="False" GenerateEvent="False" Name="MinimumLength" ObjectToStringConverter="False" OwnerType="AtomStringValidationRule" Type="Int32" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;Password too small&quot;" GenerateChangeMethod="False" GenerateEvent="False" Name="MinimumLengthErrorMessage" ObjectToStringConverter="False" OwnerType="AtomStringValidationRule" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomPasswordBox" DefaultStyle="False" Name="AtomPasswordBoxAgain" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="False" GenerateEvent="False" Name="FirstPasswordBoxName" ObjectToStringConverter="False" OwnerType="" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="Panel" DefaultStyle="False" Name="AtomViewPanel" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(int)-1" GenerateChangeMethod="True" GenerateEvent="True" Name="SelectedIndex" ObjectToStringConverter="False" OwnerType="" Type="Int32" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="TextBlock" DefaultStyle="False" Name="BaseAtomTextBlock" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Category="{x:Null}" DefaultValue="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" GenerateChangeMethod="False" GenerateEvent="False" Name="IsRequired" ObjectToStringConverter="False" OwnerType="" Type="Boolean" />
+        <AtomProperty Category="{x:Null}" DefaultValue="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" GenerateChangeMethod="False" GenerateEvent="False" Name="Label" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty Category="{x:Null}" DefaultValue="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" GenerateChangeMethod="False" GenerateEvent="False" Name="Description" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty Category="{x:Null}" DefaultValue="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" GenerateChangeMethod="False" GenerateEvent="False" Name="Title" ObjectToStringConverter="False" OwnerType="" Type="String" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="Grid" DefaultStyle="False" Name="AtomSplitView" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Category="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" DefaultValue="(Orientation)Orientation.Horizontal" GenerateChangeMethod="True" GenerateEvent="True" Name="Orientation" ObjectToStringConverter="False" OwnerType="" Type="Orientation" />
+        <AtomProperty Category="{x:Null}" Description="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" DefaultValue="null" GenerateChangeMethod="True" GenerateEvent="True" Name="Items" ObjectToStringConverter="False" OwnerType="" Type="ObservableCollection&lt;UIElement&gt;" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="Panel" DefaultStyle="False" Name="AtomWrapPanel" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(int)4" GenerateChangeMethod="True" GenerateEvent="True" Name="HorizontalGap" ObjectToStringConverter="False" OwnerType="" Type="Int32" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(int)4" GenerateChangeMethod="True" GenerateEvent="True" Name="VerticalGap" ObjectToStringConverter="False" OwnerType="" Type="Int32" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="Panel" DefaultStyle="False" Name="AtomFlexibleGrid" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;&quot;" Description="Row layout can be specified simply by comma sperated numbers of number of items to be presented in each row e.g. 1,1,2,3,1 will put 2 items in 3rd row and 3 items on 4th row " GenerateChangeMethod="True" GenerateEvent="False" Name="RowLayout" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty Category="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" DefaultValue="(Double)2" Description="Horizontal Gap defines the horizontal gap between AtomFlexibleGrid" GenerateChangeMethod="True" GenerateEvent="False" Name="HorizontalGap" ObjectToStringConverter="False" OwnerType="" Type="Double" />
+        <AtomProperty Category="{x:Null}" DisplayName="{x:Null}" Bindable="False" BrowseMode="Default" DefaultValue="(Double)2" Description="VerticalGap sets the vertical gap between items in an AtomFlexibleGrid" GenerateChangeMethod="True" GenerateEvent="False" Name="VerticalGap" ObjectToStringConverter="False" OwnerType="" Type="Double" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(int)-1" GenerateChangeMethod="True" GenerateEvent="True" Name="SelectedIndex" ObjectToStringConverter="False" OwnerType="" Type="Int32" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="Panel" DefaultStyle="False" Name="AtomStackPanel" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(Double)2" GenerateChangeMethod="True" GenerateEvent="True" Name="HorizontalGap" ObjectToStringConverter="False" OwnerType="" Type="Double" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(Double)2" GenerateChangeMethod="True" GenerateEvent="True" Name="VerticalGap" ObjectToStringConverter="False" OwnerType="" Type="Double" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(Orientation)Orientation.Horizontal" GenerateChangeMethod="True" GenerateEvent="True" Name="Orientation" ObjectToStringConverter="False" OwnerType="" Type="Orientation" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="Panel" DefaultStyle="False" Name="AtomUniformGrid" TParams="">
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Never" Category="Atoms" DefaultValue="(int)0" GenerateChangeMethod="True" GenerateEvent="False" Name="FirstColumn" ObjectToStringConverter="False" OwnerType="" Type="Int32" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(int)0" GenerateChangeMethod="True" GenerateEvent="False" Name="Columns" ObjectToStringConverter="False" OwnerType="" Type="Int32" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(int)0" GenerateChangeMethod="True" GenerateEvent="False" Name="Rows" ObjectToStringConverter="False" OwnerType="" Type="Int32" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(int)4" GenerateChangeMethod="True" GenerateEvent="False" Name="HorizontalGap" ObjectToStringConverter="False" OwnerType="" Type="Int32" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="(int)4" GenerateChangeMethod="True" GenerateEvent="False" Name="VerticalGap" ObjectToStringConverter="False" OwnerType="" Type="Int32" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="AtomListBox" DefaultStyle="True" Name="AtomToggleButtonBar" TParams="" />
+    <AtomControl Active="True" BaseType="ListBoxItem" DefaultStyle="True" Name="AtomToggleButtonBarItem" TParams="" />
+    <AtomControl Active="True" BaseType="Control" DefaultStyle="True" Name="AtomCountryCheckBoxList" TParams="" />
+    <AtomControl Active="True" BaseType="ComboBoxItem" DefaultStyle="True" Name="AtomComboBoxItemWithFilter" TParams="" />
+    <AtomControl Active="True" BaseType="AtomComboBox" DefaultStyle="True" Name="AtomCountryComboBox" TParams="" />
+    <AtomControl Active="True" BaseType="AtomContainerControl" DefaultStyle="True" Name="AtomNumberContainerControl" TParams="" />
+    <AtomControl Active="True" BaseType="Control" DefaultStyle="True" Name="AtomCodeViewer" TParams="">
+      <AtomControl.Parts>
+        <AtomTemplatePart ElementName="PART_Code" Name="PART_Code" Required="True" Type="RichTextBox" />
+      </AtomControl.Parts>
+      <AtomControl.Properties>
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="&quot;&quot;" GenerateChangeMethod="True" GenerateEvent="True" Name="Text" ObjectToStringConverter="False" OwnerType="" Type="String" />
+        <AtomProperty Description="{x:Null}" DisplayName="{x:Null}" Bindable="True" BrowseMode="Default" Category="Atoms" DefaultValue="null" GenerateChangeMethod="True" GenerateEvent="True" Name="Formatter" ObjectToStringConverter="False" OwnerType="" Type="AtomCodeFormatter" />
+      </AtomControl.Properties>
+    </AtomControl>
+    <AtomControl Active="True" BaseType="Control" DefaultStyle="True" Name="AtomTraceView" TParams="" />
+  </AtomControlSet.Controls>
+</AtomControlSet>

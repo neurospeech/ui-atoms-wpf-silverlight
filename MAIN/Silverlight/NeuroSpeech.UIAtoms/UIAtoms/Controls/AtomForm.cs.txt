@@ -1,0 +1,762 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Shapes;
+using System.ComponentModel;
+using NeuroSpeech.UIAtoms.Validation;
+using System.Collections.ObjectModel;
+using System.Windows.Threading;
+using NeuroSpeech.UIAtoms.Core;
+
+namespace NeuroSpeech.UIAtoms.Controls
+{
+
+
+    public class AtomForm : HeaderedItemsControl
+    {
+        public AtomForm()
+        {
+            this.DefaultStyleKey = typeof(AtomForm);
+
+            
+        }
+
+        #region Attached Dependency Property Label
+        ///<summary>
+        ///Get Attached Property Label for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        [Category("Atoms.Form")]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public static string GetLabel(DependencyObject obj)
+        {
+            return (string)obj.GetValue(LabelProperty);
+        }
+
+        ///<summary>
+        ///Set Attached Property Label for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static void SetLabel(DependencyObject obj, string value)
+        {
+            obj.SetValue(LabelProperty, value);
+        }
+
+        ///<summary>
+        /// Using a DependencyProperty as the backing store for Label.  This enables animation, styling, binding, etc...
+        ///</summary>
+        public static readonly DependencyProperty LabelProperty =
+            DependencyProperty.RegisterAttached("Label", typeof(string), typeof(AtomForm), new PropertyMetadata("", OnLabelChanged));
+
+        private static void OnLabelChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            UIElement ui = sender as UIElement;
+            AtomUtils.InvaliteParent(ui);
+        }
+
+        #endregion
+
+        #region Attached Dependency Property IsRequired
+        ///<summary>
+        ///Get Attached Property IsRequired for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        [Category("Atoms.Form")]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public static bool GetIsRequired(DependencyObject obj)
+        {
+            return (bool)obj.GetValue(IsRequiredProperty);
+        }
+
+        ///<summary>
+        ///Set Attached Property IsRequired for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static void SetIsRequired(DependencyObject obj, bool value)
+        {
+            obj.SetValue(IsRequiredProperty, value);
+        }
+
+        ///<summary>
+        /// Using a DependencyProperty as the backing store for IsRequired.  This enables animation, styling, binding, etc...
+        ///</summary>
+        public static readonly DependencyProperty IsRequiredProperty =
+            DependencyProperty.RegisterAttached("IsRequired", typeof(bool), typeof(AtomForm), new PropertyMetadata(false, OnIsRequiredChanged));
+
+        private static void OnIsRequiredChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+
+        }
+        #endregion
+
+        #region Attached Dependency Property Title
+        ///<summary>
+        ///Get Attached Property Title for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        [Category("Atoms.Form")]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public static string GetTitle(DependencyObject obj)
+        {
+            return (string)obj.GetValue(TitleProperty);
+        }
+
+        ///<summary>
+        ///Set Attached Property Title for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static void SetTitle(DependencyObject obj, string value)
+        {
+            obj.SetValue(TitleProperty, value);
+        }
+
+        ///<summary>
+        /// Using a DependencyProperty as the backing store for Title.  This enables animation, styling, binding, etc...
+        ///</summary>
+        public static readonly DependencyProperty TitleProperty =
+            DependencyProperty.RegisterAttached("Title", typeof(string), typeof(AtomForm), new PropertyMetadata(null, OnTitleChanged));
+
+        private static void OnTitleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+
+        }
+        #endregion
+
+        #region Attached Dependency Property Description
+        ///<summary>
+        ///Get Attached Property Description for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        [Category("Atoms.Form")]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public static string GetDescription(DependencyObject obj)
+        {
+            return (string)obj.GetValue(DescriptionProperty);
+        }
+
+        ///<summary>
+        ///Set Attached Property Description for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static void SetDescription(DependencyObject obj, string value)
+        {
+            obj.SetValue(DescriptionProperty, value);
+        }
+
+        ///<summary>
+        /// Using a DependencyProperty as the backing store for Description.  This enables animation, styling, binding, etc...
+        ///</summary>
+        public static readonly DependencyProperty DescriptionProperty =
+            DependencyProperty.RegisterAttached("Description", typeof(string), typeof(AtomForm), new PropertyMetadata(null));
+        #endregion
+
+
+
+
+        #region Attached Dependency Property ValidationProperty
+        ///<summary>
+        ///Get Attached Property ValidationProperty for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        [Category("Atoms.Validation")]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public static string GetValidationProperty(DependencyObject obj)
+        {
+            return (string)obj.GetValue(ValidationPropertyProperty);
+        }
+
+        ///<summary>
+        ///Set Attached Property ValidationProperty for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static void SetValidationProperty(DependencyObject obj, string value)
+        {
+            obj.SetValue(ValidationPropertyProperty, value);
+        }
+
+        ///<summary>
+        /// Using a DependencyProperty as the backing store for ValidationProperty.  This enables animation, styling, binding, etc...
+        ///</summary>
+        public static readonly DependencyProperty ValidationPropertyProperty =
+            DependencyProperty.RegisterAttached("ValidationProperty", typeof(string), typeof(AtomForm), new PropertyMetadata(null));
+        #endregion
+
+
+        #region Attached Dependency Property ValidationRule
+        ///<summary>
+        ///Get Attached Property ValidationRule for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        [Category("Atoms.Validation")]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public static AtomValidationRule GetValidationRule(DependencyObject obj)
+        {
+            return (AtomValidationRule)obj.GetValue(ValidationRuleProperty);
+        }
+
+        ///<summary>
+        ///Set Attached Property ValidationRule for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static void SetValidationRule(DependencyObject obj, AtomValidationRule value)
+        {
+            obj.SetValue(ValidationRuleProperty, value);
+        }
+
+        ///<summary>
+        /// Using a DependencyProperty as the backing store for ValidationRule.  This enables animation, styling, binding, etc...
+        ///</summary>
+        public static readonly DependencyProperty ValidationRuleProperty =
+            DependencyProperty.RegisterAttached("ValidationRule", typeof(AtomValidationRule), typeof(AtomForm), new PropertyMetadata(null));
+        #endregion
+
+
+        #region Attached Dependency Property ValidationGroup
+        ///<summary>
+        ///Get Attached Property ValidationGroup for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        [Category("Atoms.Validation")]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public static string GetValidationGroup(DependencyObject obj)
+        {
+            return (string)obj.GetValue(ValidationGroupProperty);
+        }
+
+        ///<summary>
+        ///Set Attached Property ValidationGroup for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static void SetValidationGroup(DependencyObject obj, string value)
+        {
+            obj.SetValue(ValidationGroupProperty, value);
+        }
+
+        ///<summary>
+        /// Using a DependencyProperty as the backing store for ValidationGroup.  This enables animation, styling, binding, etc...
+        ///</summary>
+        public static readonly DependencyProperty ValidationGroupProperty =
+            DependencyProperty.RegisterAttached("ValidationGroup", typeof(string), typeof(AtomForm), new PropertyMetadata(null));
+        #endregion
+
+
+
+
+        #region Attached Dependency Property IsRowShared
+        ///<summary>
+        ///Get Attached Property IsRowShared for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        [Category("Atoms.Form")]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public static bool GetIsRowShared(DependencyObject obj)
+        {
+            return (bool)obj.GetValue(IsRowSharedProperty);
+        }
+
+        ///<summary>
+        ///Set Attached Property IsRowShared for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static void SetIsRowShared(DependencyObject obj, bool value)
+        {
+            obj.SetValue(IsRowSharedProperty, value);
+        }
+
+        ///<summary>
+        /// Using a DependencyProperty as the backing store for IsRowShared.  This enables animation, styling, binding, etc...
+        ///</summary>
+        public static readonly DependencyProperty IsRowSharedProperty =
+            DependencyProperty.RegisterAttached("IsRowShared", typeof(bool), typeof(AtomForm), new PropertyMetadata(false, OnIsRowSharedChanged));
+
+        private static void OnIsRowSharedChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            AtomUtils.InvaliteParent(sender as UIElement);
+        }
+        #endregion
+
+
+        #region Attached Dependency Property StartNewRow
+        ///<summary>
+        ///Get Attached Property StartNewRow for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        [Category("Atoms.Form")]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public static bool GetStartNewRow(DependencyObject obj)
+        {
+            return (bool)obj.GetValue(StartNewRowProperty);
+        }
+
+        ///<summary>
+        ///Set Attached Property StartNewRow for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static void SetStartNewRow(DependencyObject obj, bool value)
+        {
+            obj.SetValue(StartNewRowProperty, value);
+        }
+
+        ///<summary>
+        /// Using a DependencyProperty as the backing store for StartNewRow.  This enables animation, styling, binding, etc...
+        ///</summary>
+        public static readonly DependencyProperty StartNewRowProperty =
+            DependencyProperty.RegisterAttached("StartNewRow", typeof(bool), typeof(AtomForm), new PropertyMetadata(false, OnStartNewRowChanged));
+
+        private static void OnStartNewRowChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            AtomUtils.InvaliteParent(sender as UIElement);
+        }
+        #endregion
+
+
+
+        #region Attached Dependency Property InvalidValueMessage
+        ///<summary>
+        ///Get Attached Property InvalidValueMessage for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        [Category("Atoms.Validation")]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public static string GetInvalidValueMessage(DependencyObject obj)
+        {
+            return (string)obj.GetValue(InvalidValueMessageProperty);
+        }
+
+        ///<summary>
+        ///Set Attached Property InvalidValueMessage for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static void SetInvalidValueMessage(DependencyObject obj, string value)
+        {
+            obj.SetValue(InvalidValueMessageProperty, value);
+        }
+
+        ///<summary>
+        /// Using a DependencyProperty as the backing store for InvalidValueMessage.  This enables animation, styling, binding, etc...
+        ///</summary>
+        public static readonly DependencyProperty InvalidValueMessageProperty =
+            DependencyProperty.RegisterAttached("InvalidValueMessage", typeof(string), typeof(AtomForm), new PropertyMetadata("Invalid Value"));
+        #endregion
+
+        #region Attached Dependency Property RequiredErrorMessage
+        ///<summary>
+        ///Get Attached Property RequiredErrorMessage for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        [Category("Atoms.Validation")]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public static string GetRequiredErrorMessage(DependencyObject obj)
+        {
+            return (string)obj.GetValue(RequiredErrorMessageProperty);
+        }
+
+        ///<summary>
+        ///Set Attached Property RequiredErrorMessage for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static void SetRequiredErrorMessage(DependencyObject obj, string value)
+        {
+            obj.SetValue(RequiredErrorMessageProperty, value);
+        }
+
+        ///<summary>
+        /// Using a DependencyProperty as the backing store for RequiredErrorMessage.  This enables animation, styling, binding, etc...
+        ///</summary>
+        public static readonly DependencyProperty RequiredErrorMessageProperty =
+            DependencyProperty.RegisterAttached("RequiredErrorMessage", typeof(string), typeof(AtomForm), new PropertyMetadata("Field is required", OnRequiredErrorMessageChanged));
+
+        private static void OnRequiredErrorMessageChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+
+        }
+        #endregion
+
+
+
+        #region Attached Dependency Property HasError
+        ///<summary>
+        ///Get Attached Property HasError for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        [System.ComponentModel.Category("Atoms")]
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        public static bool GetHasError(DependencyObject obj)
+        {
+            return (bool)obj.GetValue(HasErrorProperty);
+        }
+
+        ///<summary>
+        ///Set Attached Property HasError for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static void SetHasError(DependencyObject obj, bool value)
+        {
+            obj.SetValue(HasErrorProperty, value);
+        }
+
+        ///<summary>
+        /// Using a DependencyProperty as the backing store for HasError.  This enables animation, styling, binding, etc...
+        ///</summary>
+        public static readonly DependencyProperty HasErrorProperty =
+            DependencyProperty.RegisterAttached("HasError", typeof(bool), typeof(AtomForm), new PropertyMetadata(false));
+        #endregion
+
+
+        #region Attached Dependency Property ErrorMessage
+        ///<summary>
+        ///Get Attached Property ErrorMessage for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        [System.ComponentModel.Category("Atoms")]
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        public static string GetErrorMessage(DependencyObject obj)
+        {
+            return (string)obj.GetValue(ErrorMessageProperty);
+        }
+
+        ///<summary>
+        ///Set Attached Property ErrorMessage for DependencyObject
+        ///</summary>
+        /// <param name="obj"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static void SetErrorMessage(DependencyObject obj, string value)
+        {
+            obj.SetValue(ErrorMessageProperty, value);
+        }
+
+        ///<summary>
+        /// Using a DependencyProperty as the backing store for ErrorMessage.  This enables animation, styling, binding, etc...
+        ///</summary>
+        public static readonly DependencyProperty ErrorMessageProperty =
+            DependencyProperty.RegisterAttached("ErrorMessage", typeof(string), typeof(AtomForm), new PropertyMetadata(null));
+        #endregion
+
+
+        #region Dependency Property LabelWidth
+        /// <summary>
+        /// 
+        /// </summary>
+        [Category("Atoms.Form")]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public double LabelWidth
+        {
+            get { return (double)GetValue(LabelWidthProperty); }
+            set { SetValue(LabelWidthProperty, value); }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static readonly DependencyProperty LabelWidthProperty =
+            DependencyProperty.Register("LabelWidth", typeof(double), typeof(AtomForm), new PropertyMetadata((double)75, new PropertyChangedCallback(LabelWidthChangedCallback)));
+
+        public event DependencyPropertyChangedEventHandler LabelWidthChanged;
+
+        protected void OnLabelWidthChanged(DependencyPropertyChangedEventArgs e)
+        {
+            AtomUtils.Invalite(this);
+            if (this.LabelWidthChanged != null)
+            {
+                this.LabelWidthChanged(this, e);
+            }
+        }
+
+        private static void LabelWidthChangedCallback(DependencyObject sender, DependencyPropertyChangedEventArgs e)
+        {
+            AtomForm obj = sender as AtomForm;
+            obj.OnLabelWidthChanged(e);
+        }
+
+        #endregion
+
+
+        #region Dependency Property HorizontalGap
+        ///<summary>
+        ///
+        ///</summary>
+        [Category("Atoms.Form")]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public double HorizontalGap
+        {
+            get { return (double)GetValue(HorizontalGapProperty); }
+            set { SetValue(HorizontalGapProperty, value); }
+        }
+
+        ///<summary>
+        ///
+        ///</summary>
+        public static readonly DependencyProperty HorizontalGapProperty =
+            DependencyProperty.Register("HorizontalGap", typeof(double), typeof(AtomForm), new PropertyMetadata((double)2, new PropertyChangedCallback(HorizontalGapChangedCallback)));
+
+        public event DependencyPropertyChangedEventHandler HorizontalGapChanged;
+
+        protected void OnHorizontalGapChanged(DependencyPropertyChangedEventArgs e)
+        {
+            AtomUtils.Invalite(this);
+            if (this.HorizontalGapChanged != null)
+            {
+                this.HorizontalGapChanged(this, e);
+            }
+        }
+
+        private static void HorizontalGapChangedCallback(DependencyObject sender, DependencyPropertyChangedEventArgs e)
+        {
+            AtomForm obj = sender as AtomForm;
+            obj.OnHorizontalGapChanged(e);
+        }
+
+        #endregion
+
+        #region Dependency Property VerticalGap
+        ///<summary>
+        ///
+        ///</summary>
+        [Category("Atoms.Form")]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public double VerticalGap
+        {
+            get { return (double)GetValue(VerticalGapProperty); }
+            set { SetValue(VerticalGapProperty, value); }
+        }
+
+        ///<summary>
+        ///
+        ///</summary>
+        public static readonly DependencyProperty VerticalGapProperty =
+            DependencyProperty.Register("VerticalGap", typeof(double), typeof(AtomForm), new PropertyMetadata((double)2, new PropertyChangedCallback(VerticalGapChangedCallback)));
+
+        public event DependencyPropertyChangedEventHandler VerticalGapChanged;
+
+        protected void OnVerticalGapChanged(DependencyPropertyChangedEventArgs e)
+        {
+            AtomUtils.Invalite(this);
+            if (this.VerticalGapChanged != null)
+            {
+                this.VerticalGapChanged(this, e);
+            }
+        }
+
+        private static void VerticalGapChangedCallback(DependencyObject sender, DependencyPropertyChangedEventArgs e)
+        {
+            AtomForm obj = sender as AtomForm;
+            obj.OnVerticalGapChanged(e);
+        }
+
+        #endregion
+
+        ///<summary>
+        /// Property Errors
+        ///</summary>
+        #region Property Errors
+        public ObservableCollection<AtomValidationError> Errors
+        {
+            get
+            {
+                return _Errors;
+            }
+        }
+        private ObservableCollection<AtomValidationError> _Errors = new ObservableCollection<AtomValidationError>();
+
+        #endregion
+
+
+
+        internal bool ValidateForm(string group)
+        {
+            List<AtomValidationError> results = new List<AtomValidationError>();
+
+
+            AtomValidationManager.ValidateElement(
+                this,
+                results,
+                group);
+
+
+            lock (Errors)
+            {
+                Errors.Clear();
+                foreach (AtomValidationError error in results)
+                {
+                    RegisterForErrorPolling(error.Source);
+                    Errors.Add(error);
+                }
+            }
+
+            return results.Count == 0;
+        }
+        DispatcherTimer pollingTimer = null;
+
+        private void RegisterForErrorPolling(DependencyObject source)
+        {
+            if (pollingTimer == null)
+            {
+                // create..
+                pollingTimer = new DispatcherTimer();
+                pollingTimer.Tick += new EventHandler(pollingTimer_Tick);
+                pollingTimer.Interval = new TimeSpan(0, 0, 1);
+                pollingTimer.Start();
+            }
+        }
+
+        void pollingTimer_Tick(object sender, EventArgs e)
+        {
+
+            lock (Errors)
+            {
+                List<AtomValidationError> noerrors = new List<AtomValidationError>();
+                foreach (AtomValidationError error in Errors)
+                {
+                    object bError = error.Source.GetValue(HasErrorProperty);
+                    if (bError == DependencyProperty.UnsetValue || ((bool)bError == false))
+                    {
+                        noerrors.Add(error);
+                    }
+                    else
+                    {
+                        string msg = GetErrorMessage(error.Source);
+                        if (msg != error.Message)
+                        {
+                            error.Message = msg;
+                        }
+                    }
+                }
+
+                foreach (AtomValidationError obj in noerrors)
+                {
+                    Errors.Remove(obj);
+                }
+
+                if (Errors.Count == 0)
+                {
+                    pollingTimer.Stop();
+                    pollingTimer.Tick -= new EventHandler(pollingTimer_Tick);
+                    pollingTimer = null;
+                }
+            }
+
+
+
+        }
+
+
+        private static DispatcherTimer ValidationTimer = null;
+
+        internal static Dictionary<UIElement, string> Timers = new Dictionary<UIElement, string>();
+
+        internal static void RegisterValidationTimer(UIElement e, string group)
+        {
+            string timer = null;
+            if (Timers.TryGetValue(e, out timer))
+                return;
+
+
+            // setup... timer
+            lock (Timers)
+            {
+                Timers[e] = group;
+
+                if (ValidationTimer == null)
+                {
+                    ValidationTimer = new DispatcherTimer();
+                    ValidationTimer.Tick += new EventHandler(ValidationTimer_Tick);
+                    ValidationTimer.Interval = new TimeSpan(0, 0, 1);
+                    ValidationTimer.Start();
+                }
+
+            }
+        }
+
+        static void ValidationTimer_Tick(object sender, EventArgs e)
+        {
+            lock (Timers)
+            {
+
+                List<AtomValidationError> errors = new List<AtomValidationError>();
+
+                foreach (KeyValuePair<UIElement, string> info in Timers)
+                {
+                    AtomValidationManager.ValidateElement(info.Key, errors, info.Value);
+                }
+
+                List<UIElement> toRemove = new List<UIElement>();
+
+                foreach (UIElement e1 in Timers.Keys)
+                {
+                    if (errors.Count((t) => t.Source == e1) == 0)
+                    {
+                        toRemove.Add(e1);
+                    }
+                }
+
+                foreach (UIElement e1 in toRemove)
+                    Timers.Remove(e1);
+
+                if (Timers.Count == 0)
+                {
+                    ValidationTimer.Stop();
+                    ValidationTimer.Tick -= new EventHandler(ValidationTimer_Tick);
+                    ValidationTimer = null;
+                }
+            }
+
+        }
+
+        protected override bool IsItemItsOwnContainerOverride(object item)
+        {
+            return (item is AtomFormItemContainer || item is AtomForm);
+        }
+
+        protected override DependencyObject GetContainerForItemOverride()
+        {
+            return new AtomFormItemContainer();
+        }
+
+        
+    }
+}

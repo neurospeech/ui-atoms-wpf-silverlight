@@ -1,0 +1,56 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.EditorSamples.TextBoxDesc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="600"
+	Title="TextBoxDesc">
+
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <List>
+                    <ListItem>
+                        <Paragraph>	The TextBox is an AtomForm item which has multiple parameters of its own as well as those which it inherits from the AtomForm.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	The text box in the first box is a demonstration of what the AtomTextBox will appear like in a form.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	The values in the second box are available to customize the appearance of the AtomTextBox in the first box.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	Setting the value for “Title:” in the second box will customize the title displayed for the Sample TextBox displayed in the upper box.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	Setting the value for “Label:” in the second box will customize the label displayed for the Sample TextBox displayed in the upper box.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	Setting the value for “Watermark:” in the second box will customize the watermark displayed for the Sample TextBox displayed in the upper box.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	Setting the value for “Description:” in the second box will customize the description displayed for the Sample TextBox displayed in the upper box.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	Setting the IsRequired to true will display a red asterisk against the TextBox label and invoke the validation rule for IsRequired. Clicking the “Process” button without inputting a value into the TextBox will trigger the validation error.</Paragraph>
+                    </ListItem>
+                </List>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Page>

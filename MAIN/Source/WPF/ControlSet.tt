@@ -1,0 +1,202 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ assembly name="D:\LiveProjects\NeuroSpeech\UIAtoms\MAIN\Metro\UIAtoms\ControlMetaData\bin\Debug\ControlMetaData.exe" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Xml" #>
+<#@ assembly name="System.Xaml" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="ControlMetaData.Model" #>
+<#@ import namespace="System.Xaml" #>
+<#@ output extension=".cs" #>
+
+<#
+	
+	AtomControlSet Container = (AtomControlSet)XamlServices.Load(@"D:\LiveProjects\NeuroSpeech\UIAtoms\MAIN\Metro\UIAtoms\UIAtoms\ControlSet.xamlc");
+
+#>
+
+// This code was generated using T4 template with AtomControlSet, do not use this code for reference and formatting.
+
+using System;
+using System.Collections.ObjectModel;
+
+#if NETFX_CORE
+	using Windows.UI.Xaml;
+	using Windows.UI.Xaml.Markup;
+	using Windows.UI.Xaml.Controls;	
+#else
+	using System.Net;
+	using System.Windows;
+	using System.Windows.Controls;
+	using System.Windows.Controls.Primitives;
+	using System.Windows.Documents;
+	using System.Windows.Ink;
+	using System.Windows.Input;
+	using System.Windows.Media;
+	using System.Windows.Media.Animation;
+	using System.Windows.Shapes;
+#endif
+
+
+using NeuroSpeech.UIAtoms.Core;
+using NeuroSpeech.UIAtoms.Validation;
+
+	namespace <#=Container.Namespace#>{
+
+	<# foreach(var control in Container.Controls.Where(x=>x.Active)){ 
+		
+			string typeName = control.Name + control.TParams;
+		
+		#>
+
+
+		<# foreach(var part in control.Parts) {#>
+			[TemplatePart(Name="<#=part.Name#>",Type=typeof(<#=part.Type#>))]
+		<#}#>
+		public partial class <#= typeName #> : <#=control.BaseType#> {
+
+			<# if(control.BaseType != "Window"){ #>
+
+			public <#=control.Name#>(){
+			
+				#if NETFX_CORE || SILVERLIGHT
+				<#if(control.DefaultStyle){#>
+					this.DefaultStyleKey = typeof(<#=control.Name#>);
+				<#}#>
+				#endif
+				OnCreate();
+			}
+			
+			static <#= control.Name #>(){
+				#if NETFX_CORE || SILVERLIGHT
+				#else
+				<# if(control.DefaultStyle){ #>
+				DefaultStyleKeyProperty.OverrideMetadata(
+					typeof(<#= control.Name #>),
+					new FrameworkPropertyMetadata(typeof(<#= control.Name #>)));
+				<# } #>
+				#endif
+				OnCreateStatic();
+			}
+			
+			static partial void OnCreateStatic();
+			
+			partial void OnCreate();
+			<# } #>
+
+			<# foreach(var part in control.Parts) {#>
+				protected <#=part.Type#> <#=part.Name#>;
+			<#}#>
+
+			public override void OnApplyTemplate(){
+				base.OnApplyTemplate();
+
+				<# foreach(var part in control.Parts) {#>
+					<#=part.Name#> = GetTemplateChild("<#=part.GetElementName()#>") as <#=part.Type#>;
+					<# if(part.Required){ #>
+						if(<#= part.Name #> == null)
+							throw new InvalidOperationException("Part <#= part.GetElementName() #>(<#= part.Type #>) is not defined in template of <#= control.Name #>");
+					<# } #>
+				<#}#>
+
+				OnAfterTemplateApplied();
+
+			}
+
+			partial void OnAfterTemplateApplied();
+
+			<# foreach(var part in control.Properties) {#>
+				<# if(part.RequiresChangeDelegate()) { #>
+					#if NETFX_CORE || SILVERLIGHT
+					public static DependencyProperty <#=part.Name#>Property = DependencyProperty.Register("<#=part.Name#>",typeof(<#=part.Type#>),typeof(<#=typeName#>), new PropertyMetadata(<#=part.GetDefaultValue()#>,On<#=part.Name#>Changed));
+					#else
+					public static DependencyProperty <#=part.Name#>Property = DependencyProperty.Register("<#=part.Name#>",typeof(<#=part.Type#>),typeof(<#=typeName#>), new FrameworkPropertyMetadata(<#=part.GetDefaultValue()#>,On<#=part.Name#>Changed));
+					#endif
+
+					private static void On<#=part.Name#>Changed(DependencyObject sender, DependencyPropertyChangedEventArgs e){
+						((<#=typeName#>)sender).On<#=part.Name#>Changed(e);
+					}
+
+					protected virtual void On<#=part.Name#>Changed(DependencyPropertyChangedEventArgs e){
+					<# if(part.GenerateChangeMethod){ #>
+						OnAfter<#=part.Name#>Changed(e);
+					<#}#>
+					<# if(part.GenerateEvent){ #>
+						if(<#=part.Name#>Changed!=null)
+							<#=part.Name#>Changed(this,e);
+					<#}#>
+					}
+
+					<# if(part.GenerateChangeMethod){ #>
+					partial void OnAfter<#=part.Name#>Changed(DependencyPropertyChangedEventArgs e);
+					<#}#>
+					<# if(part.GenerateEvent){ #>
+					#if NETFX_CORE || SILVERLIGHT
+						public event EventHandler<DependencyPropertyChangedEventArgs> <#=part.Name#>Changed;
+					#else
+						public event DependencyPropertyChangedEventHandler <#=part.Name#>Changed;
+					#endif
+					<#}#>
+
+				<# } else { #>
+				#if NETFX_CORE || SILVERLIGHT
+				<# if(!string.IsNullOrWhiteSpace(part.OwnerType)) {#>
+				public static DependencyProperty <#=part.Name#>Property = <#=part.OwnerType #>.<#=part.Name#>Property;
+				#else
+				public static DependencyProperty <#=part.Name#>Property = <#=part.OwnerType #>.<#=part.Name#>Property.AddOwner(typeof(<#= typeName #>));
+				<# }else{ #>
+				public static DependencyProperty <#=part.Name#>Property = DependencyProperty.Register("<#=part.Name#>",typeof(<#=part.Type#>),typeof(<#=typeName#>), new PropertyMetadata(<#=part.GetDefaultValue()#>));
+				#else
+				public static DependencyProperty <#=part.Name#>Property = DependencyProperty.Register("<#=part.Name#>",typeof(<#=part.Type#>),typeof(<#=typeName#>), new FrameworkPropertyMetadata(<#=part.GetDefaultValue()#>));
+				<# } #>
+				#endif
+				<# } #>
+
+				public <#=part.Type#> <#=part.Name#>{
+					get{
+						return (<#=part.Type#>)GetValue(<#=part.Name#>Property);
+					}
+					set{
+						SetValue(<#=part.Name#>Property,value);
+					}
+				}
+
+			<#}#>
+
+			<# foreach(var part in control.AttachedProperties) {#>
+				<# if(part.RequiresChangeDelegate()) { #>
+					
+					#if NETFX_CORE || SILVERLIGHT
+					public static DependencyProperty <#=part.Name#>Property = DependencyProperty.RegisterAttached("<#=part.Name#>",typeof(<#=part.Type#>),typeof(<#=typeName#>), new PropertyMetadata(<#=part.GetDefaultValue()#>,On<#=part.Name#>Changed));
+					#else
+					public static DependencyProperty <#=part.Name#>Property = DependencyProperty.RegisterAttached("<#=part.Name#>",typeof(<#=part.Type#>),typeof(<#=typeName#>), new FrameworkPropertyMetadata(<#=part.GetDefaultValue()#>,On<#=part.Name#>Changed));
+					#endif
+
+					private static void On<#=part.Name#>Changed(DependencyObject sender, DependencyPropertyChangedEventArgs e){
+						OnAfter<#=part.Name#>Changed(sender, e);
+					}
+
+					<# if(part.GenerateChangeMethod){ #>
+					static partial void OnAfter<#=part.Name#>Changed(DependencyObject sender, DependencyPropertyChangedEventArgs e);
+					<#}#>
+
+
+				<# } else { #>
+				#if NETFX_CORE || SILVERLIGHT
+				public static DependencyProperty <#=part.Name#>Property = DependencyProperty.RegisterAttached("<#=part.Name#>",typeof(<#=part.Type#>),typeof(<#=typeName#>), new PropertyMetadata(<#=part.GetDefaultValue()#>));
+				#else
+				public static DependencyProperty <#=part.Name#>Property = DependencyProperty.RegisterAttached("<#=part.Name#>",typeof(<#=part.Type#>),typeof(<#=typeName#>), new FrameworkPropertyMetadata(<#=part.GetDefaultValue()#>));
+				#endif
+				<# } #>
+
+				public static <#=part.Type#> Get<#=part.Name#>(DependencyObject owner){
+					return 	(<#=part.Type#>)owner.GetValue(<#=part.Name#>Property);
+				}
+				public static void Set<#=part.Name#>(DependencyObject owner, <#=part.Type#> value){
+					owner.SetValue(<#=part.Name#>Property,value);
+				}
+			<#}#>
+		}
+	<# } #>
+	}

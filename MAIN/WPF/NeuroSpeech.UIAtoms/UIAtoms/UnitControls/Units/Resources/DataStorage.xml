@@ -1,0 +1,69 @@
+﻿<Unit
+  ID="byte"
+  Name="byte"
+  Symbol="B"
+  >
+  <Conversions>
+    <Conversion ID="bits" Name="Bits" SubType="" Symbol="b" Factor="8" Factor10="0" />
+    <Conversion ID="crumbs" Name="Crumbs" SubType="" Symbol="c" Factor="4" Factor10="0" />
+    <Conversion ID="nybbles" Name="Nybbles" SubType="" Symbol="n" Factor="2" Factor10="0" />
+    <Conversion ID="shorts" Name="Shorts" SubType="" Symbol="s" Factor="0.5" Factor10="0" />
+    <Conversion ID="longs" Name="Longs" SubType="" Symbol="l" Factor="0.25" Factor10="0" />
+    <Conversion ID="singles" Name="Singles" SubType="" Symbol="f" Factor="0.25" Factor10="0" />
+    <Conversion ID="doubles" Name="Doubles" SubType="" Symbol="d" Factor="0.125" Factor10="0" />
+    <Conversion ID="paragraphs" Name="Paragraphs" SubType="" Symbol="paragraphs" Factor="0.0625" Factor10="0" />
+    <Conversion ID="pages" Name="Pages" SubType="" Symbol="pages" Factor="0.0039062" Factor10="0" />
+    <Conversion ID="sectors" Name="Sectors" SubType="" Symbol="sectors" Factor="0.0019531" Factor10="0" />
+    <Conversion ID="chapters" Name="Chapters" SubType="" Symbol="chapters" Factor="0.00024414" Factor10="0" />
+    <Conversion ID="planes" Name="Planes" SubType="" Symbol="p" Factor="1.5259" Factor10="-05" />
+
+    <Conversion ID="kilobytes" Name="Kilobytes" SubType="" Symbol="KB" Factor="0.00097656" Factor10="0" />
+    <Conversion ID="megabytes" Name="Megabytes" SubType="" Symbol="MB" Factor="9.5367" Factor10="-07" />
+    <Conversion ID="gigabytes" Name="Gigabytes" SubType="" Symbol="GB" Factor="9.3132" Factor10="-10" />
+    <Conversion ID="terabytes" Name="Terabytes" SubType="" Symbol="TB" Factor="9.0949" Factor10="-13" />
+    <Conversion ID="petabytes" Name="Petabytes" SubType="" Symbol="PB" Factor="8.8818" Factor10="-16" />
+    <Conversion ID="exabytes" Name="Exabytes" SubType="" Symbol="EB" Factor="8.6736" Factor10="-19" />
+    <Conversion ID="zettabytes" Name="Zettabytes" SubType="" Symbol="ZB" Factor="8.4703" Factor10="-22" />
+    <Conversion ID="yottabytes" Name="Yottabytes" SubType="" Symbol="YB" Factor="8.2718" Factor10="-25" />
+
+    <Conversion ID="metric_kilobytes" Name="Metric Kilobytes" SubType="" Symbol="kb" Factor="0.001" Factor10="0" />
+    <Conversion ID="metric_megabytes" Name="Metric Megabytes" SubType="" Symbol="mb" Factor="1" Factor10="-06" />
+    <Conversion ID="metric_gigabytes" Name="Metric Gigabytes" SubType="" Symbol="gb" Factor="1" Factor10="-09" />
+    <Conversion ID="metric_terabytes" Name="Metric Terabytes" SubType="" Symbol="tb" Factor="1" Factor10="-12" />
+    <Conversion ID="metric_petabytes" Name="Metric Petabytes" SubType="" Symbol="pb" Factor="1" Factor10="-15" />
+    <Conversion ID="metric_exabytes" Name="Metric Exabytes" SubType="" Symbol="eb" Factor="1" Factor10="-18" />
+    <Conversion ID="metric_zettabytes" Name="Metric Zettabytes" SubType="" Symbol="zb" Factor="1" Factor10="-21" />
+    <Conversion ID="metric_yottabytes" Name="Metric Yottabytes" SubType="" Symbol="yb" Factor="1" Factor10="-24" />
+    
+    <Conversion ID="kilobits" Name="Kilobits" SubType="" Symbol="Kb" Factor="0.0078125" Factor10="0" />
+    <Conversion ID="megabits" Name="Megabits" SubType="" Symbol="Mb" Factor="7.6294" Factor10="-06" />
+    <Conversion ID="gigabits" Name="Gigabits" SubType="" Symbol="Gb" Factor="7.4506" Factor10="-09" />
+    <Conversion ID="terabits" Name="Terabits" SubType="" Symbol="Tb" Factor="7.276" Factor10="-12" />
+    <Conversion ID="petabits" Name="Petabits" SubType="" Symbol="Pb" Factor="7.1054" Factor10="-15" />
+    <Conversion ID="exabits" Name="Exabits" SubType="" Symbol="Eb" Factor="6.9389" Factor10="-18" />
+    <Conversion ID="zettabits" Name="Zettabits" SubType="" Symbol="Zb" Factor="6.7763" Factor10="-21" />
+    <Conversion ID="yottabits" Name="Yottabits" SubType="" Symbol="Yb" Factor="6.6174" Factor10="-24" />
+    
+    <Conversion ID="16bit_memory_banks" Name="16Bit Memory Banks" SubType="" Symbol="16bit Memory Banks" Factor="1.5259" Factor10="-05" />
+    <Conversion ID="24bit_memory_banks" Name="24Bit Memory Banks" SubType="" Symbol="24bit Memory Banks" Factor="5.9605" Factor10="-08" />
+    <Conversion ID="32bit_memory_banks" Name="32bit Memory Banks" SubType="" Symbol="32bit Memory Banks" Factor="2.3283" Factor10="-10" />
+    <Conversion ID="apple_II_floppies" Name="Apple II Floppies" SubType="" Symbol="Apple II Floppies" Factor="6.9754" Factor10="-06" />
+    <Conversion ID="single_sided_MFM_floppies" Name="Single Sided MFM Floppies" SubType="" Symbol="Single Sided MFM Floppies" Factor="2.7127" Factor10="-06" />
+    <Conversion ID="single_sided_GCR_floppies" Name="Single Sided GCR Floppies" SubType="" Symbol="Single Sided GCR Floppies" Factor="2.4414" Factor10="-06" />
+    <Conversion ID="double_sided_MFM_floppies" Name="Double Sided MFM Floppies" SubType="" Symbol="Double Sided MFM Floppies" Factor="1.3563" Factor10="-06" />
+    <Conversion ID="double_sided_GCR_floppies" Name="Double Sided GCR Floppies" SubType="" Symbol="Double Sided GCR Floppies" Factor="1.2207" Factor10="-06" />
+    <Conversion ID="high_density_MFM_floppies" Name="High Density MFM Floppies" SubType="" Symbol="High Density MFM Floppies" Factor="6.7817" Factor10="-07" />
+    <Conversion ID="high_density_GCR_floppies" Name="High Density GCR Floppies" SubType="" Symbol="High Density GCR Floppies" Factor="6.1035" Factor10="-07" />
+    <Conversion ID="32MB_ProDOS_volumes" Name="32MB ProDOS Volumes" SubType="" Symbol="32MB ProDOS Volumes" Factor="2.9802" Factor10="-08" />
+    <Conversion ID="100MB_Iomega_Zip_Disks" Name="100MB Iomega Zip Disks" SubType="" Symbol="100MB Iomega Zip Disks" Factor="9.5367" Factor10="-09" />
+    <Conversion ID="120MB_Superfloppies" Name="120MB Superfloppies" SubType="" Symbol="120MB Superfloppies" Factor="7.9473" Factor10="-09" />
+    <Conversion ID="650MB_CDs" Name="650MB CDs" SubType="" Symbol="650MB CDs" Factor="1.4672" Factor10="-09" />
+    <Conversion ID="700MB_CDs" Name="700MB CDs" SubType="" Symbol="700MB CDs" Factor="1.3624" Factor10="-09" />
+    <Conversion ID="1GB_Iomega_Jaz_Disks" Name="1GB Iomega Jaz Disks" SubType="" Symbol="1GB Iomega Jaz Disks" Factor="9.3132" Factor10="-10" />
+    <Conversion ID="2.6GB_DVDs" Name="2.6GB DVDs" SubType="" Symbol="2.6GB DVDs" Factor="3.582" Factor10="-10" />
+    <Conversion ID="4.7GB_DVDs" Name="4.7GB DVDs" SubType="" Symbol="4.7GB DVDs" Factor="1.9815" Factor10="-10" />
+    
+    <!--<Conversion ID="Internets" Name="Internets" SubType="" Symbol="Internets" Factor="0" Factor10="0" />-->
+
+  </Conversions>
+</Unit>

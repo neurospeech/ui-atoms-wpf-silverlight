@@ -1,0 +1,15 @@
+<Unit 
+  Name="Ampere" 
+  Symbol="A" 
+  ID="ampere"
+  >
+  
+  <Conversions>
+    <Conversion Name="Abampere" Symbol="abampere" ID="abampere" Factor="1" Factor10="1" />
+    <Conversion Name="Biot" Symbol="Bi" ID="biot" Factor="1" Factor10="1" />
+    <Conversion Name="EMU of Current" Symbol="EMU" ID="EMU_of_current" SubType="abampere" Factor="1" Factor10="1" />
+    <Conversion Name="ESU of Current" ID="ESU_of_current" SubType="statampere" Factor="3.335641" Factor10="-10" />
+    <Conversion Name="Gilbert" Symbol="Gi" ID="gilbert" Factor="7.957747" Factor10="-1" />
+    <Conversion Name="Statampere" ID="statampere" Factor="3.335641" Factor10="-10" />
+  </Conversions>
+</Unit>

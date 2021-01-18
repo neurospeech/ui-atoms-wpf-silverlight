@@ -1,0 +1,22 @@
+﻿<Control 
+	Name="AtomSplitView" 
+	BaseType="System.Windows.Controls.Grid" 
+	Namespace="NeuroSpeech.UIAtoms.Controls" 
+	xmlns="http://uiatoms.neurospeech.com/core">
+        
+    <DependencyProperty 
+            Name="Orientation" 
+            Type="System.Windows.Controls.Orientation" 
+            GenerateChangedMethod="True" 
+						GenerateEvent="True"
+            Default="System.Windows.Controls.Orientation.Horizontal"
+                        />
+
+  <DependencyProperty
+          Name="Items"
+          Type="System.Collections.ObjectModel.ObservableCollection&lt;UIElement&gt;"
+          GenerateChangedMethod="True"
+          GenerateEvent="True"
+          ReadOnly="true"
+                        />
+</Control>

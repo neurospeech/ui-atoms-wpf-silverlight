@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<content xml:space="preserve" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <item id="DotNet35SP1"><ddue:externalLink xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">
+    <ddue:linkText>.NET Framework 3.5 SP1</ddue:linkText>
+    <ddue:linkUri>http://www.microsoft.com/downloads/details.aspx?FamilyID=ab99342f-5d1a-413d-8319-81da479ab0d7&amp;DisplayLang=en</ddue:linkUri>
+    </ddue:externalLink></item>
+  <item id="Example">Token content</item>
+  <item id="RefAtomButton"><ddue:codeEntityReference xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">T:NeuroSpeech.UIAtoms.Controls.AtomButton</ddue:codeEntityReference></item>
+  <item id="RefAtomComboBox"><ddue:codeEntityReference xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">T:NeuroSpeech.UIAtoms.Controls.AtomComboBox</ddue:codeEntityReference></item>
+  <item id="RefAtomEmailTextBox"><ddue:codeEntityReference xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">T:NeuroSpeech.UIAtoms.Controls.AtomEmailTextBox</ddue:codeEntityReference></item>
+  <item id="RefAtomFilterTextBox"><ddue:codeEntityReference xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">T:NeuroSpeech.UIAtoms.Controls.AtomFilterTextBox</ddue:codeEntityReference></item>
+  <item id="RefAtomForm"><ddue:codeEntityReference xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">T:NeuroSpeech.UIAtoms.Controls.AtomForm</ddue:codeEntityReference></item>
+  <item id="RefAtomListBox"><ddue:codeEntityReference xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">T:NeuroSpeech.UIAtoms.Controls.AtomListBox</ddue:codeEntityReference></item>
+  <item id="RefAtomStringValidationRule"><ddue:codeEntityReference xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">T:NeuroSpeech.UIAtoms.Validation.AtomStringValidationRule</ddue:codeEntityReference></item>
+  <item id="RefAtomTextBox"><ddue:codeEntityReference xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">T:NeuroSpeech.UIAtoms.Controls.AtomTextBox</ddue:codeEntityReference></item>
+  <item id="RefAtomValidationError"><ddue:codeEntityReference xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">T:NeuroSpeech.UIAtoms.Validation.AtomValidationError</ddue:codeEntityReference></item>
+  <item id="RefAtomValidationRule"><ddue:codeEntityReference xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">T:NeuroSpeech.UIAtoms.Validation.AtomValidationRule</ddue:codeEntityReference></item>
+  <item id="SHFB"><ddue:externalLink xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">
+    <ddue:linkText>Sandcastle Help File Builder</ddue:linkText>
+    <ddue:linkUri>http://SHFB.CodePlex.com</ddue:linkUri>
+    </ddue:externalLink></item>
+  <item id="UIAtomsSLWarning"><ddue:alert class="caution" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">
+  <ddue:para>Silverlight Edition of UIAtoms require UIAtoms.Core.dll and 
+  NeuroSpeech.UIAtoms.Silverlight.dll both to be referenced in the project 
+  in order to work correctly.</ddue:para>
+</ddue:alert></item>
+  <item id="UIAtomsWebLink"><ddue:externalLink xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">
+    <ddue:linkText>UIAtoms Download Page</ddue:linkText>
+    <ddue:linkUri>http://uiatoms.neurospeech.com</ddue:linkUri>
+    </ddue:externalLink></item>
+  <item id="UIAtomsWPFNamespace"><ddue:code language="XAML" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">
+<![CDATA[
+<Window
+    ...
+    xmlns:ns="xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+    ...
+    />    
+    
+<Page
+    ...
+    xmlns:ns="xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+    ...
+    />
+    
+<UserControl
+    ...
+    xmlns:ns="xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+    ...
+    />
+]]>
+</ddue:code></item>
+  <item id="VSLink"><ddue:externalLink xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">
+    <ddue:linkText>Any Version of Visual Studio 2008 SP1 or Visual Studio 2010 RC (or Later)</ddue:linkText>
+    <ddue:linkUri>http://msdn.microsoft.com/en-us/vstudio/default.aspx</ddue:linkUri>
+    </ddue:externalLink></item>
+  <item id="RefListBox"><ddue:codeEntityReference xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">T:System.Windows.Controls.ListBox</ddue:codeEntityReference></item>
+</content>

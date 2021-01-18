@@ -1,0 +1,1037 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20949010-A71C-405F-9D96-C21DDBFD69DF}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UIAtomsDemo</RootNamespace>
+    <AssemblyName>UIAtomsDemo</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>%24/UIAtoms/MAIN/Metro/NeuroSpeech.UIAtoms/UIAtomsDemo</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>http://tfs.800casting.com:8080/tfs/neurospeech</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugDemo|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugDemo\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT DEMO</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Debug\UIAtomsDemo.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseDemo|AnyCPU'">
+    <OutputPath>bin\ReleaseDemo\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT DEMO</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Release\UIAtomsDemo.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug5|AnyCPU'">
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug5\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Debug\UIAtomsDemo.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugDemo5|AnyCPU'">
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugDemo5\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT DEMO</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Debug\UIAtomsDemo.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release5|AnyCPU'">
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <OutputPath>bin\Release5\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Release\UIAtomsDemo.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseDemo5|AnyCPU'">
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <OutputPath>bin\ReleaseDemo5\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT DEMO</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Release\UIAtomsDemo.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=2.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Data.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Navigation, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Xml.Linq, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Serialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="NeuroSpeech.UIAtoms.Silverlight" Condition="'$(Configuration)'=='ReleaseDemo'">
+      <HintPath>..\UIAtoms\Bin\ReleaseDemo\NeuroSpeech.UIAtoms.Silverlight.dll</HintPath>
+    </Reference>
+    <Reference Include="NeuroSpeech.UIAtoms.Silverlight" Condition="'$(Configuration)'=='Release'">
+      <HintPath>..\UIAtoms\Bin\Release\NeuroSpeech.UIAtoms.Silverlight.dll</HintPath>
+    </Reference>
+    <Reference Include="NeuroSpeech.UIAtoms.Silverlight" Condition="'$(Configuration)'=='DebugDemo'">
+      <HintPath>..\UIAtoms\Bin\DebugDemo\NeuroSpeech.UIAtoms.Silverlight.dll</HintPath>
+    </Reference>
+    <Reference Include="NeuroSpeech.UIAtoms.Silverlight" Condition="'$(Configuration)'=='Debug'">
+      <HintPath>..\UIAtoms\Bin\Debug\NeuroSpeech.UIAtoms.Silverlight.dll</HintPath>
+    </Reference>
+    <Reference Include="NeuroSpeech.UIAtoms.Silverlight" Condition="'$(Configuration)'=='ReleaseDemo5'">
+      <HintPath>..\UIAtoms\Bin\ReleaseDemo5\NeuroSpeech.UIAtoms.Silverlight.dll</HintPath>
+    </Reference>
+    <Reference Include="NeuroSpeech.UIAtoms.Silverlight" Condition="'$(Configuration)'=='Release5'">
+      <HintPath>..\UIAtoms\Bin\Release5\NeuroSpeech.UIAtoms.Silverlight.dll</HintPath>
+    </Reference>
+    <Reference Include="NeuroSpeech.UIAtoms.Silverlight" Condition="'$(Configuration)'=='DebugDemo5'">
+      <HintPath>..\UIAtoms\Bin\DebugDemo5\NeuroSpeech.UIAtoms.Silverlight.dll</HintPath>
+    </Reference>
+    <Reference Include="NeuroSpeech.UIAtoms.Silverlight" Condition="'$(Configuration)'=='Debug5'">
+      <HintPath>..\UIAtoms\Bin\Debug5\NeuroSpeech.UIAtoms.Silverlight.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms\VersionInfo.cs">
+      <Link>VersionInfo.cs</Link>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\LocalFrame.cs" />
+    <Compile Include="Common\OpenTreeView.cs" />
+    <Compile Include="Common\Utils.cs" />
+    <Compile Include="HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageNode.cs" />
+    <Compile Include="SamplesViewModel.cs" />
+    <Compile Include="Service References\LicenseManager\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SourceResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SourceResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BlankPage.xaml.cs">
+      <DependentUpon>BlankPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\Calculator.xaml.cs">
+      <DependentUpon>Calculator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\CalculatorDesc.xaml.cs">
+      <DependentUpon>CalculatorDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\CurrencyTextBoxDesc.xaml.cs">
+      <DependentUpon>CurrencyTextBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\CurrencyTextBoxSample.xaml.cs">
+      <DependentUpon>CurrencyTextBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\DoubleTextBox.xaml.cs">
+      <DependentUpon>DoubleTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\DoubleTextBoxDesc.xaml.cs">
+      <DependentUpon>DoubleTextBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\EmailTextBoxDesc.xaml.cs">
+      <DependentUpon>EmailTextBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\EmailTextBoxSample.xaml.cs">
+      <DependentUpon>EmailTextBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\FilterTextBoxDesc.xaml.cs">
+      <DependentUpon>FilterTextBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\FilterTextBoxSample.xaml.cs">
+      <DependentUpon>FilterTextBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\IntegerTextBoxDesc.xaml.cs">
+      <DependentUpon>IntegerTextBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\IntegerTextBoxSample.xaml.cs">
+      <DependentUpon>IntegerTextBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\NumberComboBoxDesc.xaml.cs">
+      <DependentUpon>NumberComboBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\NumberComboBoxSample.xaml.cs">
+      <DependentUpon>NumberComboBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\PasswordBoxDesc.xaml.cs">
+      <DependentUpon>PasswordBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\PasswordBoxSample.xaml.cs">
+      <DependentUpon>PasswordBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\RepeatPasswordBox.xaml.cs">
+      <DependentUpon>RepeatPasswordBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\RepeatPasswordBoxDesc.xaml.cs">
+      <DependentUpon>RepeatPasswordBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\TextBoxDesc.xaml.cs">
+      <DependentUpon>TextBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\TextBoxSample.xaml.cs">
+      <DependentUpon>TextBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\TextBoxWithRegExDesc.xaml.cs">
+      <DependentUpon>TextBoxWithRegExDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\TextBoxWithRegExSample.xaml.cs">
+      <DependentUpon>TextBoxWithRegExSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\TitleTextBoxDesc.xaml.cs">
+      <DependentUpon>TitleTextBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditorSamples\TitleTextBoxSample.xaml.cs">
+      <DependentUpon>TitleTextBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\AllButtonsSample.xaml.cs">
+      <DependentUpon>AllButtonsSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\AllButtonsSampleDesc.xaml.cs">
+      <DependentUpon>AllButtonsSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\BasicSample.xaml.cs">
+      <DependentUpon>BasicSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\FormGroupSample.xaml.cs">
+      <DependentUpon>FormGroupSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\FormGroupSampleDesc.xaml.cs">
+      <DependentUpon>FormGroupSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\FormLabelAlignmentDesc.xaml.cs">
+      <DependentUpon>FormLabelAlignmentDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\FormLabelAlignment.xaml.cs">
+      <DependentUpon>FormLabelAlignment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\FormLayoutSample.xaml.cs">
+      <DependentUpon>FormLayoutSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\FormLayoutSampleDesc.xaml.cs">
+      <DependentUpon>FormLayoutSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\BusinessSample.xaml.cs">
+      <DependentUpon>BusinessSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\BusinessSampleDesc.xaml.cs">
+      <DependentUpon>BusinessSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\FormRowSample.xaml.cs">
+      <DependentUpon>FormRowSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\FormRowSampleDesc.xaml.cs">
+      <DependentUpon>FormRowSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\LambdaBindingSample.xaml.cs">
+      <DependentUpon>LambdaBindingSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\LambdaBindingSampleDesc.xaml.cs">
+      <DependentUpon>LambdaBindingSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\SignupSample.xaml.cs">
+      <DependentUpon>SignupSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\SignupSampleDesc.xaml.cs">
+      <DependentUpon>SignupSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\BasicSampleDesc.xaml.cs">
+      <DependentUpon>BasicSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\ComplexSample.xaml.cs">
+      <DependentUpon>ComplexSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\ComplexSampleDesc.xaml.cs">
+      <DependentUpon>ComplexSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\DataService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\Validations\CodeBehindValidation.xaml.cs">
+      <DependentUpon>CodeBehindValidation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\Validations\CodeBehindValidationDesc.xaml.cs">
+      <DependentUpon>CodeBehindValidationDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\Validations\CustomValidationRule.xaml.cs">
+      <DependentUpon>CustomValidationRule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\Validations\CustomValidationRuleDesc.xaml.cs">
+      <DependentUpon>CustomValidationRuleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\Validations\DataAnnotationValidation.xaml.cs">
+      <DependentUpon>DataAnnotationValidation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\Validations\DataAnnotationValidationDesc.xaml.cs">
+      <DependentUpon>DataAnnotationValidationDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\Validations\InbuiltValidationPropertyChanged.xaml.cs">
+      <DependentUpon>InbuiltValidationPropertyChanged.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\Validations\InbuiltValidationPropertyChangedDesc.xaml.cs">
+      <DependentUpon>InbuiltValidationPropertyChangedDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\Validations\InbuiltValidations.xaml.cs">
+      <DependentUpon>InbuiltValidations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\Validations\InbuiltValidationsDesc.xaml.cs">
+      <DependentUpon>InbuiltValidationsDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\Validations\ThirdPartyInbuiltValidation.xaml.cs">
+      <DependentUpon>ThirdPartyInbuiltValidation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\Validations\ThirdPartyInbuiltValidationDesc.xaml.cs">
+      <DependentUpon>ThirdPartyInbuiltValidationDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormSamples\_blank.xaml.cs">
+      <DependentUpon>_blank.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LayoutSamples\ButtonDesc.xaml.cs">
+      <DependentUpon>ButtonDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LayoutSamples\ButtonSample.xaml.cs">
+      <DependentUpon>ButtonSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LayoutSamples\FlexibleGridSample.xaml.cs">
+      <DependentUpon>FlexibleGridSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LayoutSamples\FlexibleGridSampleDesc.xaml.cs">
+      <DependentUpon>FlexibleGridSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LayoutSamples\StackPanelDesc.xaml.cs">
+      <DependentUpon>StackPanelDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LayoutSamples\StackPanelSample.xaml.cs">
+      <DependentUpon>StackPanelSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LayoutSamples\ToggleButtonDesc.xaml.cs">
+      <DependentUpon>ToggleButtonDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LayoutSamples\ToggleButtonSample.xaml.cs">
+      <DependentUpon>ToggleButtonSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LayoutSamples\UniformGrid.xaml.cs">
+      <DependentUpon>UniformGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LayoutSamples\UniformGridDesc.xaml.cs">
+      <DependentUpon>UniformGridDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LayoutSamples\ViewPanelSample.xaml.cs">
+      <DependentUpon>ViewPanelSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LayoutSamples\ViewPanelSampleDesc.xaml.cs">
+      <DependentUpon>ViewPanelSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListSamples\CheckBoxListDesc.xaml.cs">
+      <DependentUpon>CheckBoxListDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListSamples\CheckBoxListSample.xaml.cs">
+      <DependentUpon>CheckBoxListSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListSamples\ComboBoxDesc.xaml.cs">
+      <DependentUpon>ComboBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListSamples\ComboBoxSample.xaml.cs">
+      <DependentUpon>ComboBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListSamples\ComboBoxwithFilter.xaml.cs">
+      <DependentUpon>ComboBoxwithFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListSamples\ComboBoxwithFilterDesc.xaml.cs">
+      <DependentUpon>ComboBoxwithFilterDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListSamples\CountryComboBoxDesc.xaml.cs">
+      <DependentUpon>CountryComboBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListSamples\CountryComboBoxSample.xaml.cs">
+      <DependentUpon>CountryComboBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListSamples\CustomizedFilter.xaml.cs">
+      <DependentUpon>CustomizedFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListSamples\CustomizedFilterDesc.xaml.cs">
+      <DependentUpon>CustomizedFilterDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListSamples\ListBoxDesc.xaml.cs">
+      <DependentUpon>ListBoxDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListSamples\ListBoxSample.xaml.cs">
+      <DependentUpon>ListBoxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListSamples\ListBoxwithFilter.xaml.cs">
+      <DependentUpon>ListBoxwithFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListSamples\ListBoxwithFilterDesc.xaml.cs">
+      <DependentUpon>ListBoxwithFilterDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListSamples\RadioButtonListDesc.xaml.cs">
+      <DependentUpon>RadioButtonListDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListSamples\RadioButtonListSample.xaml.cs">
+      <DependentUpon>RadioButtonListSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PreviewPage.xaml.cs">
+      <DependentUpon>PreviewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PreviewPages\AdvancedFormDesigner.xaml.cs">
+      <DependentUpon>AdvancedFormDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PreviewPages\AdvancedFormPreview.xaml.cs">
+      <DependentUpon>AdvancedFormPreview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PreviewPages\AdvancedLayoutControls.xaml.cs">
+      <DependentUpon>AdvancedLayoutControls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PreviewPages\AdvancedValidations.xaml.cs">
+      <DependentUpon>AdvancedValidations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PreviewPages\MeasurementControls.xaml.cs">
+      <DependentUpon>MeasurementControls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TraceSample\TraceSample.xaml.cs">
+      <DependentUpon>TraceSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TraceSample\TraceSampleDesc.xaml.cs">
+      <DependentUpon>TraceSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UnitSamples\AllUnitsSample.xaml.cs">
+      <DependentUpon>AllUnitsSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UnitSamples\AllUnitsSampleDesc.xaml.cs">
+      <DependentUpon>AllUnitsSampleDesc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UnitSamples\LengthSample.xaml.cs">
+      <DependentUpon>LengthSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UnitSamples\LengthSampleDesc.xaml.cs">
+      <DependentUpon>LengthSampleDesc.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StyleResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\BlankPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\Calculator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\CalculatorDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\CurrencyTextBoxDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\CurrencyTextBoxSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\DoubleTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\DoubleTextBoxDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\EmailTextBoxDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\EmailTextBoxSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\FilterTextBoxDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\FilterTextBoxSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\IntegerTextBoxDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\IntegerTextBoxSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\NumberComboBoxDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\NumberComboBoxSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\PasswordBoxDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\PasswordBoxSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\RepeatPasswordBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\RepeatPasswordBoxDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\TextBoxDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\TextBoxSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\TextBoxWithRegExDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\TextBoxWithRegExSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\TitleTextBoxDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditorSamples\TitleTextBoxSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\AllButtonsSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\AllButtonsSampleDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\BasicSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\FormGroupSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\FormGroupSampleDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\FormLabelAlignmentDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\FormLabelAlignment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\FormLayoutSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\FormLayoutSampleDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\BusinessSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\FormSamples\BusinessSampleDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\FormSamples\FormRowSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\FormRowSampleDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\LambdaBindingSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\LambdaBindingSampleDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\SignupSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\SignupSampleDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\FormSamples\BasicSampleDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\FormSamples\ComplexSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\ComplexSampleDesc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\Validations\CodeBehindValidation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\Validations\CodeBehindValidationDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\Validations\CustomValidationRule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\Validations\CustomValidationRuleDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\Validations\DataAnnotationValidation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\Validations\DataAnnotationValidationDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\Validations\InbuiltValidationPropertyChanged.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\Validations\InbuiltValidationPropertyChangedDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\Validations\InbuiltValidations.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\Validations\InbuiltValidationsDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\Validations\ThirdPartyInbuiltValidation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\Validations\ThirdPartyInbuiltValidationDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FormSamples\_blank.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LayoutSamples\ButtonDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LayoutSamples\ButtonSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LayoutSamples\FlexibleGridSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LayoutSamples\FlexibleGridSampleDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LayoutSamples\StackPanelDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LayoutSamples\StackPanelSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LayoutSamples\ToggleButtonDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LayoutSamples\ToggleButtonSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LayoutSamples\UniformGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LayoutSamples\UniformGridDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LayoutSamples\ViewPanelSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LayoutSamples\ViewPanelSampleDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ListSamples\CheckBoxListDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ListSamples\CheckBoxListSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ListSamples\ComboBoxDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ListSamples\ComboBoxSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ListSamples\ComboBoxwithFilter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ListSamples\ComboBoxwithFilterDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ListSamples\CountryComboBoxDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ListSamples\CountryComboBoxSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ListSamples\CustomizedFilter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ListSamples\CustomizedFilterDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ListSamples\ListBoxDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ListSamples\ListBoxSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ListSamples\ListBoxwithFilter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ListSamples\ListBoxwithFilterDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ListSamples\RadioButtonListDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ListSamples\RadioButtonListSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PreviewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PreviewPages\AdvancedFormDesigner.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PreviewPages\AdvancedFormPreview.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PreviewPages\AdvancedLayoutControls.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PreviewPages\AdvancedValidations.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PreviewPages\MeasurementControls.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\TraceSample\TraceSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TraceSample\TraceSampleDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UnitSamples\AllUnitsSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UnitSamples\AllUnitsSampleDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UnitSamples\LengthSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UnitSamples\LengthSampleDesc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\PreviewPages\AtomFormLayout.PNG" />
+    <Resource Include="Views\PreviewPages\Validations.PNG" />
+    <Resource Include="Views\PreviewPages\MeasurementControlPart1.png" />
+    <Resource Include="Views\PreviewPages\FormDesigner.png" />
+    <Resource Include="Views\PreviewPages\AtomApproveButton.Icon.png" />
+    <Resource Include="Views\PreviewPages\FormPreview.PNG" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Resources\Samples.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DataService\EmployeeWebService.wsdl" />
+    <None Include="Service References\LicenseManager\LicenseService.wsdl" />
+    <None Include="Service References\LicenseManager\UIAtomsDemo.LicenseManager.WSResultOfString.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <Resource Include="Asset\gridImag1.jpg" />
+    <Resource Include="Asset\gridImag2.jpg" />
+    <Resource Include="Asset\gridImag3.jpg" />
+    <Resource Include="Asset\gridImag4.jpg" />
+    <Resource Include="Asset\gridImag5.jpg" />
+    <Resource Include="Asset\gridImag6.jpg" />
+    <Resource Include="Asset\gridImag7.jpg" />
+    <Resource Include="Asset\gridImag8.jpg" />
+    <Resource Include="Asset\mercedes-e-class-2009.jpg" />
+    <Resource Include="Resources\BG.png" />
+    <Resource Include="Resources\Logo.png" />
+    <Resource Include="Resources\DownloadButton.png" />
+    <Resource Include="Resources\BottomBG.png" />
+    <Resource Include="Resources\NSLogo.png" />
+    <Resource Include="Resources\facebook.jpg" />
+    <Resource Include="Resources\CompareButton.png" />
+    <Resource Include="Resources\ContactButton.png" />
+    <Content Include="Resources\Samples.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Resource Include="Resources\SLSmallLogo.png" />
+    <None Include="Service References\LicenseManager\LicenseService.disco" />
+    <None Include="Service References\LicenseManager\configuration91.svcinfo" />
+    <None Include="Service References\LicenseManager\configuration.svcinfo" />
+    <None Include="Service References\LicenseManager\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="ServiceReferences.ClientConfig" />
+    <None Include="Service References\DataService\UIAtomsDemo.DataService.WSResultOfEmployee.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UIAtoms\UIAtoms.csproj">
+      <Project>{8498857F-71D7-4617-AC96-739C2F6E7ACA}</Project>
+      <Name>UIAtoms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\DataService\" />
+    <WCFMetadataStorage Include="Service References\LicenseManager\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DataService\EmployeeWebService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DataService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DataService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DataService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SourceResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SourceResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v1.0\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

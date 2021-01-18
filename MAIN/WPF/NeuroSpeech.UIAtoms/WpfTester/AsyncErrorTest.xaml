@@ -1,0 +1,65 @@
+﻿<Page x:Class="WpfTester.AsyncErrorTest"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+        xmlns:nsb="http://uiatoms.neurospeech.com/wpf/buttons"
+        xmlns:nsv="http://uiatoms.neurospeech.com/wpf/validations"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+	Title="AsyncErrorTest" mc:Ignorable="d" d:DesignHeight="334" d:DesignWidth="397">
+
+    <Grid>
+        <ns:AtomForm 
+            x:Name="rootForm" Header="Employee Registration Form" LabelWidth="100" VerticalGap="2" >
+
+            <ns:AtomTextBox 
+                ns:AtomForm.Label="First Name:" 
+                ns:AtomForm.IsRequired="True" 
+                />
+
+            <ns:AtomTextBox 
+                ns:AtomForm.Label="Last Name:" 
+                ns:AtomForm.IsRequired="True" 
+
+                />
+
+            <ns:AtomEmailTextBox 
+                ns:AtomForm.Label="Email Address:" 
+                ns:AtomForm.IsRequired="True" 
+                />
+
+            <ns:AtomToggleButtonBar
+                ns:AtomForm.Label="Gender:"
+                
+                >
+                <sys:String>Male</sys:String>
+                <sys:String>Female</sys:String>
+            </ns:AtomToggleButtonBar>
+
+            <ns:AtomPasswordBox  
+                x:Name="pb1" 
+                
+                ns:AtomForm.IsRequired="True" 
+                ns:AtomForm.Label="Password:" />
+
+            <ns:AtomPasswordBoxAgain 
+                FirstPasswordBoxName="pb1" ns:AtomForm.Label="Password:" 
+                 ns:AtomForm.IsRequired="True" />
+
+
+            <ns:AtomCurrencyTextBox 
+                x:Name="cur"
+                ns:AtomForm.Label="Salary:"
+                ns:AtomForm.Description="Click on Calculator icon to start in built calculator"
+                Width="150" />
+
+            <ns:AtomButton
+                HorizontalAlignment="Left"
+                Content="Register"
+                ValidationRootElement="rootForm" ns:AtomForm.IsRequired="False" />
+            <Button x:Name="reportButton" Click="reportButton_Click">Report Error</Button>
+            <Button x:Name="removeButton" Click="removeButton_Click">Remove Error</Button>
+        </ns:AtomForm>
+    </Grid>
+</Page>

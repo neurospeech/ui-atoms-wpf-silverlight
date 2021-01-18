@@ -1,0 +1,23 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.LayoutSamples.ViewPanelSampleDesc" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="ViewPanelSampleDesc Page">
+    <Grid x:Name="LayoutRoot">
+        <TextBlock>
+            View panels are typically bound with SelectedIndex, a parameter found in Controls like ToggleButtonBar, etc..
+            <LineBreak/>
+            Selecting the ToggleButtonBar will trigger the view for that particular selection. The view will occupy the entire available screen.
+            <LineBreak/>
+            All the views are stacked on top of each other, and the current selected view is displayed.
+            <LineBreak/>
+            This is an alternative to the “Tabbed” view. The advantage here is that more of the screen is displayed as opposed <LineBreak/>to a typical tabbed view wherein the Tabs appear on the left side of the screen occupying a row to display the tabs.            
+            <LineBreak/>
+            
+        </TextBlock>
+    </Grid>
+</navigation:Page>

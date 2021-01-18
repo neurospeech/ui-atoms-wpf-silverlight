@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Square Meter" Symbol="m²" ID="square_meter">
+  <Conversions>
+    <Conversion Name="Acre" Symbol="acre" ID="acre" SubType="based on U.S. survey foot" Factor="4.046873" Factor10="3" />
+    <Conversion Name="Are" Symbol="a" ID="are" Factor="1" Factor10="2" />
+    <Conversion Name="Barn" Symbol="b" ID="barn" Factor="1" Factor10="-28" />
+    <Conversion Name="Circular Mil" Symbol="circular mil" ID="circular_mil" Factor="5.067075" Factor10="-10" />
+    <Conversion Name="Hectare" Symbol="ha" ID="hectare" Factor="1" Factor10="4" />
+    <Conversion Name="Square Foot" Symbol="ft^2" ID="sq_ft" Factor="9.290304" Factor10="-2" />
+    <Conversion Name="Square Inch" Symbol="in^2" ID="sq_in" Factor="6.4516" Factor10="-4" />
+    <Conversion Name="Square Mile" Symbol="mi^2" ID="sq_mi" Factor="2.589988" Factor10="6" />
+    <Conversion Name="Square Mile" Symbol="mi^2" ID="sq_mi_US_Survey_ft" SubType="based on the US Survey Foot" Factor="2.589998" Factor10="6" />
+    <Conversion Name="Square Yard" Symbol="yd^2" ID="sq_yd" Factor="8.361274" Factor10="-1" />
+  </Conversions>
+</Unit>

@@ -1,0 +1,106 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.FormSamples.FormLayoutSample" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:ns="http://uiatoms.neurospeech.com/silverlight"
+           xmlns:sys="clr-namespace:System;assembly=mscorlib"
+           xmlns:nsv="clr-namespace:NeuroSpeech.UIAtoms.Validation;assembly=NeuroSpeech.UIAtoms.Silverlight"
+           xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           Title="FormLayoutSample Page">
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <ns:AtomForm
+            Header="Layout Sample"
+            Width="850"
+            HorizontalAlignment="Center">
+            <!-- Testing Single Line Comment...-->
+            <ComboBox
+                SelectedIndex="0"
+                ns:AtomForm.Label="Row Layout:"
+                x:Name="layoutCB"
+                SelectionChanged="layoutCB_SelectionChanged">
+                <sys:String>1,1,1,1,1,1</sys:String>
+                <sys:String>2,2,3</sys:String>
+                <sys:String>2,1,2,1</sys:String>
+                <sys:String>2,3,3</sys:String>
+            </ComboBox>
+            <!-- Testing Multi Line 
+        Comment...-->
+            <ns:AtomForm
+                Header="Form Items"
+                x:Name="formItems"
+                RowLayout="{Binding SelectedItem, ElementName=layoutCB}">
+                <TextBox
+                    ns:AtomForm.Label="Item 1:"
+                    Text="1" />
+                <TextBox
+                    ns:AtomForm.Label="Item 2:"
+                    Text="2" />
+                <TextBox
+                    ns:AtomForm.Label="Item 3:"
+                    Text="3" />
+                <TextBox
+                    ns:AtomForm.Label="Item 4:"
+                    Text="4" />
+                <TextBox
+                    ns:AtomForm.Label="Item 5:"
+                    Text="5" />
+                <TextBox
+                    ns:AtomForm.Label="Item 6:"
+                    Text="6" />
+                <TextBox
+                    ns:AtomForm.Label="Item 7:"
+                    Text="7" />
+                <TextBox
+                    ns:AtomForm.Label="Item 8:"
+                    Text="8" />
+            </ns:AtomForm>
+        </ns:AtomForm>
+
+
+        <ns:AtomForm Grid.Row="1" Header="Form with Grid Layout">
+            <ns:AtomForm.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                    </Grid>
+                </ItemsPanelTemplate>
+            </ns:AtomForm.ItemsPanel>
+
+            <TextBox
+                ns:AtomForm.Label="First Name:"
+                Grid.Row="0"
+                Grid.Column="0" />
+            <TextBox
+                ns:AtomForm.Label="Last Name:"
+                Grid.Row="0"
+                Grid.Column="1" />
+            <TextBox
+                ns:AtomForm.Label="Email:"
+                Grid.Row="1"
+                Grid.Column="0" />
+            <TextBox
+                ns:AtomForm.Label="Phone:"
+                Grid.Row="1"
+                Grid.Column="1" />
+
+        </ns:AtomForm>
+
+
+    </Grid>
+</navigation:Page>

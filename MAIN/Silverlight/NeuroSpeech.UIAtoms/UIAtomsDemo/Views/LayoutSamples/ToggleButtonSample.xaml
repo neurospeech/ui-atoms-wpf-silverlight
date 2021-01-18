@@ -1,0 +1,26 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.LayoutSamples.ToggleButtonSample" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           Title="ToggleButtonSample Page" 
+           xmlns:sys="clr-namespace:System;assembly=mscorlib"
+           xmlns:ns="http://uiatoms.neurospeech.com/silverlight">
+
+    <Grid x:Name="LayoutRoot">
+        <ns:AtomForm LabelWidth="100" 
+                     Header="ToggleButton Bar" Width="700">
+            
+            <ns:AtomToggleButtonBar 
+                ns:AtomForm.Label="Gender:" Name="togglebutton1" Margin="0,0,0,30">
+                    <sys:String>Male</sys:String>
+                    <sys:String>Female</sys:String>
+            </ns:AtomToggleButtonBar>
+
+            <TextBlock Text="{Binding ElementName=togglebutton1,Path=SelectedItem}" 
+                           ns:AtomForm.Label="Selected Value:"  Margin="0,-2,0,0"/>
+        </ns:AtomForm>
+    </Grid>
+</navigation:Page>

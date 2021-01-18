@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4200CD6F-66F9-48AF-8230-BAAEAEB6C8AF}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NeuroSpeech.UIAtoms</RootNamespace>
+    <AssemblyName>NeuroSpeech.UIAtoms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\AtomPrompt.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Calculator\AtomCalculator.WPF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\AtomAccountsCalculator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dialogs\AtomDemoWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dialogs\AtomScientificCalculator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Themes\Generic.Silverlight.xaml">
+      <Link>Themes\Generic1.xaml</Link>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Metro\UIAtoms\UIAtoms\ControlSet.cs">
+      <Link>ControlSet.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlSet.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AtomBindingHelper.cs" />
+    <Compile Include="Buttons\AtomAddButton.cs" />
+    <Compile Include="Buttons\AtomApproveButton.cs" />
+    <Compile Include="Buttons\AtomArchiveButton.cs" />
+    <Compile Include="Buttons\AtomAttachmentButton.cs" />
+    <Compile Include="Buttons\AtomCopyButton.cs" />
+    <Compile Include="Buttons\AtomDeleteButton.cs" />
+    <Compile Include="Buttons\AtomDownloadButton.cs" />
+    <Compile Include="Buttons\AtomEmailButton.cs" />
+    <Compile Include="Buttons\AtomImageButton.cs" />
+    <Compile Include="Buttons\AtomModifyButton.cs" />
+    <Compile Include="Buttons\AtomMoveDownButton.cs" />
+    <Compile Include="Buttons\AtomMoveUpButton.cs" />
+    <Compile Include="Buttons\AtomNextButton.cs" />
+    <Compile Include="Buttons\AtomOpenButton.cs" />
+    <Compile Include="Buttons\AtomPasteButton.cs" />
+    <Compile Include="Buttons\AtomPlayButton.cs" />
+    <Compile Include="Buttons\AtomPreviousButton.cs" />
+    <Compile Include="Buttons\AtomPrintButton.cs" />
+    <Compile Include="Buttons\AtomRecordButton.cs" />
+    <Compile Include="Buttons\AtomSaveButton.cs" />
+    <Compile Include="Buttons\AtomSearchButton.cs" />
+    <Compile Include="Buttons\AtomStopButton.cs" />
+    <Compile Include="Buttons\AtomSubmitButton.cs" />
+    <Compile Include="Buttons\AtomTimeButton.cs" />
+    <Compile Include="Buttons\AtomUnapproveButton.cs" />
+    <Compile Include="Buttons\AtomUnarchiveButton.cs" />
+    <Compile Include="Buttons\BaseAtomImageButton.cs" />
+    <Compile Include="Controls\ArrayToCSVConverter.cs" />
+    <Compile Include="Controls\AtomAccordion.cs" />
+    <Compile Include="Controls\AtomAccordionItem.cs" />
+    <Compile Include="Controls\AtomAccordionPanel.cs" />
+    <Compile Include="Controls\AtomButton.cs" />
+    <Compile Include="Controls\Calculator\AtomCalculator.cs" />
+    <Compile Include="Controls\AtomCheckBox.cs" />
+    <Compile Include="Controls\AtomCheckBoxList.cs" />
+    <Compile Include="Controls\AtomCheckBoxListItem.cs" />
+    <Compile Include="Controls\AtomClippingBorder.cs" />
+    <Compile Include="Controls\AtomCodeViewer.cs" />
+    <Compile Include="Controls\AtomCollectionFilter.cs" />
+    <Compile Include="Controls\AtomComboBox.cs" />
+    <Compile Include="Controls\AtomComboTextBox.cs" />
+    <Compile Include="Controls\AtomCountryCheckBoxList.cs" />
+    <Compile Include="Controls\AtomCountryComboBox.cs" />
+    <Compile Include="Controls\AtomCurrencyTextBox.cs" />
+    <Compile Include="Controls\AtomDoubleTextBox.cs" />
+    <Compile Include="Controls\AtomEmailTextBox.cs" />
+    <Compile Include="Controls\AtomEntityForm.cs" />
+    <Compile Include="Controls\AtomEnumComboBox.cs" />
+    <Compile Include="Controls\AtomErrorDisplay.cs" />
+    <Compile Include="Controls\AtomFileSizeLabel.cs" />
+    <Compile Include="Controls\AtomFilterTextBox.cs" />
+    <Compile Include="Controls\AtomFlexibleGrid.cs" />
+    <Compile Include="Controls\AtomForm.cs" />
+    <Compile Include="Controls\AtomFormContainer.cs" />
+    <Compile Include="Controls\AtomFormItemContainer.cs" />
+    <Compile Include="Controls\AtomFormLayout.cs" />
+    <Compile Include="Controls\AtomFormTabItem.cs" />
+    <Compile Include="Controls\AtomIcon.cs" />
+    <Compile Include="Controls\AtomImageButton.cs" />
+    <Compile Include="Controls\AtomIntegerTextBox.cs" />
+    <Compile Include="Controls\AtomListBox.cs" />
+    <Compile Include="Controls\AtomNumberComboBox.cs" />
+    <Compile Include="Controls\AtomPasswordBox.cs" />
+    <Compile Include="Controls\AtomPasswordBoxAgain.cs" />
+    <Compile Include="Controls\AtomPrompt.xaml.cs">
+      <DependentUpon>AtomPrompt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AtomSplitView.cs" />
+    <Compile Include="Controls\AtomStackPanel.cs" />
+    <Compile Include="Controls\AtomTextBox.cs" />
+    <Compile Include="Controls\AtomTextBoxWithRegEx.cs" />
+    <Compile Include="Controls\AtomTitleTextBox.cs" />
+    <Compile Include="Controls\AtomToggleButtonBar.cs" />
+    <Compile Include="Controls\AtomTraceView.cs" />
+    <Compile Include="Controls\AtomUniformGrid.cs" />
+    <Compile Include="Controls\AtomUsernameTextBox.cs" />
+    <Compile Include="Controls\AtomValueDialogButton.cs" />
+    <Compile Include="Controls\AtomValueDialogWindow.cs" />
+    <Compile Include="Controls\AtomViewPanel.cs" />
+    <Compile Include="Controls\AtomWidthToStretchConverter.cs" />
+    <Compile Include="Controls\AtomWrapPanel.cs" />
+    <Compile Include="Controls\IFormContainer.cs" />
+    <Compile Include="Core\AtomCodeFormatter.cs" />
+    <Compile Include="Core\AtomCodeFormatterCS.cs" />
+    <Compile Include="Core\AtomCodeFormatterXML.cs" />
+    <Compile Include="Core\AtomCSVUtils.cs" />
+    <Compile Include="Core\AtomDataItem.cs" />
+    <Compile Include="Core\AtomDesignAttribute.cs" />
+    <Compile Include="Core\AtomFocusManager.cs" />
+    <Compile Include="Core\AtomGridWidthConverter.cs" />
+    <Compile Include="Core\AtomHelper.cs" />
+    <Compile Include="Core\AtomRangeBase.cs" />
+    <Compile Include="Core\AtomSizeFormatProvider.cs" />
+    <Compile Include="Core\AtomTrace.cs" />
+    <Compile Include="Core\AtomTraceListener.cs" />
+    <Compile Include="Core\AtomTreeWalker.cs" />
+    <Compile Include="Core\AtomUnitHelper.cs" />
+    <Compile Include="Core\AtomUtils.cs" />
+    <Compile Include="Core\AtomValidatorControl.cs" />
+    <Compile Include="Core\BaseAtomTextBlock.cs" />
+    <Compile Include="Core\DependencyPropertyEventHandler.cs" />
+    <Compile Include="Core\HorizontalAlignementToTextAlignmentConverter.cs" />
+    <Compile Include="Core\IAtomItemsFilter.cs" />
+    <Compile Include="Core\ListToVisibilityConverter.cs" />
+    <Compile Include="Core\OppositeBooleanToVisibilityConverter.cs" />
+    <Compile Include="Core\ScaleValueConverter.cs" />
+    <Compile Include="Core\SimpleEvaluator.cs" />
+    <Compile Include="Core\StringToDoubleConverter.cs" />
+    <Compile Include="Core\StringToVisibilityConverter.cs" />
+    <Compile Include="Dialogs\AtomAccountsCalculator.xaml.cs">
+      <DependentUpon>AtomAccountsCalculator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AtomDemoWindow.xaml.cs">
+      <DependentUpon>AtomDemoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AtomScientificCalculator.xaml.cs">
+      <DependentUpon>AtomScientificCalculator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Expressions\BaseMathExpression.cs" />
+    <Compile Include="Expressions\MathDecimalExpression.cs" />
+    <Compile Include="Expressions\MathDoubleExpression.cs" />
+    <Compile Include="Expressions\MathIntegerExpression.cs" />
+    <Compile Include="ExpressionVisitor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Validation\AtomBooleanValidationRule.cs" />
+    <Compile Include="Validation\AtomDataAnnotationValidationRule.cs" />
+    <Compile Include="Validation\AtomEmailValidationRule.cs" />
+    <Compile Include="Validation\AtomPasswordMatchValidationRule.cs" />
+    <Compile Include="Validation\AtomRegExValidationRule.cs" />
+    <Compile Include="Validation\AtomSelectionValidationRule.cs" />
+    <Compile Include="Validation\AtomStringValidationRule.cs" />
+    <Compile Include="Validation\AtomUsernameValidationRule.cs" />
+    <Compile Include="Validation\AtomValidationError.cs" />
+    <Compile Include="Validation\AtomValidationRule.cs" />
+    <Compile Include="Validation\FormValidator.cs" />
+    <Compile Include="VersionInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="..\..\..\Metro\UIAtoms\UIAtoms\ControlSet.tt">
+      <Link>ControlSet.tt</Link>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ControlSet.cs</LastGenOutput>
+    </None>
+    <None Include="..\..\..\Metro\UIAtoms\UIAtoms\ControlSet.xamlc">
+      <Link>ControlSet.xamlc</Link>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Countries.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Buttons\Icons\AtomAddButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomApproveButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomArchiveButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomAttachmentButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomCalculatorButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomCopyButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomDeleteButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomDownloadButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomEmail2Icon.png" />
+    <Resource Include="Buttons\Icons\AtomEmailButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomImageButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomModifyButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomMoveDownButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomMoveUpButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomNextButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomOpenButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomPasteButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomPauseButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomPlayButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomPreviousButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomPrintButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomRecordButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomSaveButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomSearchButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomStopButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomSubmitButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomTimeButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomUnapproveButton.Icon.png" />
+    <Resource Include="Buttons\Icons\AtomUnarchiveButton.Icon.png" />
+    <Resource Include="Buttons\Icons\WindowCloseButton.gif" />
+    <Resource Include="Buttons\Icons\WindowCloseButton2.gif" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="CountryIcons\-flag.gif" />
+    <Resource Include="CountryIcons\aa-flag.gif" />
+    <Resource Include="CountryIcons\ac-flag.gif" />
+    <Resource Include="CountryIcons\ae-flag.gif" />
+    <Resource Include="CountryIcons\af-flag.gif" />
+    <Resource Include="CountryIcons\ag-flag.gif" />
+    <Resource Include="CountryIcons\aj-flag.gif" />
+    <Resource Include="CountryIcons\al-flag.gif" />
+    <Resource Include="CountryIcons\am-flag.gif" />
+    <Resource Include="CountryIcons\an-flag.gif" />
+    <Resource Include="CountryIcons\ao-flag.gif" />
+    <Resource Include="CountryIcons\aq-flag.gif" />
+    <Resource Include="CountryIcons\ar-flag.gif" />
+    <Resource Include="CountryIcons\as-flag.gif" />
+    <Resource Include="CountryIcons\at-flag.gif" />
+    <Resource Include="CountryIcons\au-flag.gif" />
+    <Resource Include="CountryIcons\av-flag.gif" />
+    <Resource Include="CountryIcons\ax-flag.gif" />
+    <Resource Include="CountryIcons\ay-flag.gif" />
+    <Resource Include="CountryIcons\ba-flag.gif" />
+    <Resource Include="CountryIcons\bb-flag.gif" />
+    <Resource Include="CountryIcons\bc-flag.gif" />
+    <Resource Include="CountryIcons\bd-flag.gif" />
+    <Resource Include="CountryIcons\be-flag.gif" />
+    <Resource Include="CountryIcons\bf-flag.gif" />
+    <Resource Include="CountryIcons\bg-flag.gif" />
+    <Resource Include="CountryIcons\bh-flag.gif" />
+    <Resource Include="CountryIcons\bk-flag.gif" />
+    <Resource Include="CountryIcons\bl-flag.gif" />
+    <Resource Include="CountryIcons\bm-flag.gif" />
+    <Resource Include="CountryIcons\bn-flag.gif" />
+    <Resource Include="CountryIcons\bo-flag.gif" />
+    <Resource Include="CountryIcons\bp-flag.gif" />
+    <Resource Include="CountryIcons\bq-flag.gif" />
+    <Resource Include="CountryIcons\br-flag.gif" />
+    <Resource Include="CountryIcons\bs-flag.gif" />
+    <Resource Include="CountryIcons\bt-flag.gif" />
+    <Resource Include="CountryIcons\bu-flag.gif" />
+    <Resource Include="CountryIcons\bv-flag.gif" />
+    <Resource Include="CountryIcons\bx-flag.gif" />
+    <Resource Include="CountryIcons\by-flag.gif" />
+    <Resource Include="CountryIcons\ca-flag.gif" />
+    <Resource Include="CountryIcons\cb-flag.gif" />
+    <Resource Include="CountryIcons\cd-flag.gif" />
+    <Resource Include="CountryIcons\ce-flag.gif" />
+    <Resource Include="CountryIcons\cf-flag.gif" />
+    <Resource Include="CountryIcons\cg-flag.gif" />
+    <Resource Include="CountryIcons\ch-flag.gif" />
+    <Resource Include="CountryIcons\ci-flag.gif" />
+    <Resource Include="CountryIcons\cj-flag.gif" />
+    <Resource Include="CountryIcons\ck-flag.gif" />
+    <Resource Include="CountryIcons\cm-flag.gif" />
+    <Resource Include="CountryIcons\cn-flag.gif" />
+    <Resource Include="CountryIcons\co-flag.gif" />
+    <Resource Include="CountryIcons\cq-flag.gif" />
+    <Resource Include="CountryIcons\cr-flag.gif" />
+    <Resource Include="CountryIcons\cs-flag.gif" />
+    <Resource Include="CountryIcons\ct-flag.gif" />
+    <Resource Include="CountryIcons\cu-flag.gif" />
+    <Resource Include="CountryIcons\cv-flag.gif" />
+    <Resource Include="CountryIcons\cw-flag.gif" />
+    <Resource Include="CountryIcons\cy-flag.gif" />
+    <Resource Include="CountryIcons\da-flag.gif" />
+    <Resource Include="CountryIcons\dj-flag.gif" />
+    <Resource Include="CountryIcons\do-flag.gif" />
+    <Resource Include="CountryIcons\dr-flag.gif" />
+    <Resource Include="CountryIcons\dx-flag.gif" />
+    <Resource Include="CountryIcons\ec-flag.gif" />
+    <Resource Include="CountryIcons\ee-flag.gif" />
+    <Resource Include="CountryIcons\eg-flag.gif" />
+    <Resource Include="CountryIcons\ei-flag.gif" />
+    <Resource Include="CountryIcons\ek-flag.gif" />
+    <Resource Include="CountryIcons\en-flag.gif" />
+    <Resource Include="CountryIcons\er-flag.gif" />
+    <Resource Include="CountryIcons\es-flag.gif" />
+    <Resource Include="CountryIcons\et-flag.gif" />
+    <Resource Include="CountryIcons\eu-flag.gif" />
+    <Resource Include="CountryIcons\ez-flag.gif" />
+    <Resource Include="CountryIcons\fg-flag.gif" />
+    <Resource Include="CountryIcons\fi-flag.gif" />
+    <Resource Include="CountryIcons\fj-flag.gif" />
+    <Resource Include="CountryIcons\fk-flag.gif" />
+    <Resource Include="CountryIcons\fm-flag.gif" />
+    <Resource Include="CountryIcons\fo-flag.gif" />
+    <Resource Include="CountryIcons\fp-flag.gif" />
+    <Resource Include="CountryIcons\fr-flag.gif" />
+    <Resource Include="CountryIcons\fs-flag.gif" />
+    <Resource Include="CountryIcons\ga-flag.gif" />
+    <Resource Include="CountryIcons\gb-flag.gif" />
+    <Resource Include="CountryIcons\gg-flag.gif" />
+    <Resource Include="CountryIcons\gh-flag.gif" />
+    <Resource Include="CountryIcons\gi-flag.gif" />
+    <Resource Include="CountryIcons\gj-flag.gif" />
+    <Resource Include="CountryIcons\gk-flag.gif" />
+    <Resource Include="CountryIcons\gl-flag.gif" />
+    <Resource Include="CountryIcons\gm-flag.gif" />
+    <Resource Include="CountryIcons\go-flag.gif" />
+    <Resource Include="CountryIcons\gp-flag.gif" />
+    <Resource Include="CountryIcons\gq-flag.gif" />
+    <Resource Include="CountryIcons\gr-flag.gif" />
+    <Resource Include="CountryIcons\gt-flag.gif" />
+    <Resource Include="CountryIcons\gv-flag.gif" />
+    <Resource Include="CountryIcons\gy-flag.gif" />
+    <Resource Include="CountryIcons\gz-flag.gif" />
+    <Resource Include="CountryIcons\ha-flag.gif" />
+    <Resource Include="CountryIcons\hk-flag.gif" />
+    <Resource Include="CountryIcons\hm-flag.gif" />
+    <Resource Include="CountryIcons\ho-flag.gif" />
+    <Resource Include="CountryIcons\hr-flag.gif" />
+    <Resource Include="CountryIcons\hu-flag.gif" />
+    <Resource Include="CountryIcons\ic-flag.gif" />
+    <Resource Include="CountryIcons\id-flag.gif" />
+    <Resource Include="CountryIcons\im-flag.gif" />
+    <Resource Include="CountryIcons\in-flag.gif" />
+    <Resource Include="CountryIcons\io-flag.gif" />
+    <Resource Include="CountryIcons\ip-flag.gif" />
+    <Resource Include="CountryIcons\ir-flag.gif" />
+    <Resource Include="CountryIcons\is-flag.gif" />
+    <Resource Include="CountryIcons\it-flag.gif" />
+    <Resource Include="CountryIcons\iv-flag.gif" />
+    <Resource Include="CountryIcons\iz-flag.gif" />
+    <Resource Include="CountryIcons\ja-flag.gif" />
+    <Resource Include="CountryIcons\je-flag.gif" />
+    <Resource Include="CountryIcons\jm-flag.gif" />
+    <Resource Include="CountryIcons\jn-flag.gif" />
+    <Resource Include="CountryIcons\jo-flag.gif" />
+    <Resource Include="CountryIcons\ju-flag.gif" />
+    <Resource Include="CountryIcons\ke-flag.gif" />
+    <Resource Include="CountryIcons\kg-flag.gif" />
+    <Resource Include="CountryIcons\kn-flag.gif" />
+    <Resource Include="CountryIcons\kr-flag.gif" />
+    <Resource Include="CountryIcons\ks-flag.gif" />
+    <Resource Include="CountryIcons\kt-flag.gif" />
+    <Resource Include="CountryIcons\ku-flag.gif" />
+    <Resource Include="CountryIcons\kv-flag.gif" />
+    <Resource Include="CountryIcons\kz-flag.gif" />
+    <Resource Include="CountryIcons\la-flag.gif" />
+    <Resource Include="CountryIcons\le-flag.gif" />
+    <Resource Include="CountryIcons\lg-flag.gif" />
+    <Resource Include="CountryIcons\lh-flag.gif" />
+    <Resource Include="CountryIcons\li-flag.gif" />
+    <Resource Include="CountryIcons\lo-flag.gif" />
+    <Resource Include="CountryIcons\ls-flag.gif" />
+    <Resource Include="CountryIcons\lt-flag.gif" />
+    <Resource Include="CountryIcons\lu-flag.gif" />
+    <Resource Include="CountryIcons\ly-flag.gif" />
+    <Resource Include="CountryIcons\ma-flag.gif" />
+    <Resource Include="CountryIcons\mb-flag.gif" />
+    <Resource Include="CountryIcons\mc-flag.gif" />
+    <Resource Include="CountryIcons\md-flag.gif" />
+    <Resource Include="CountryIcons\mf-flag.gif" />
+    <Resource Include="CountryIcons\mg-flag.gif" />
+    <Resource Include="CountryIcons\mh-flag.gif" />
+    <Resource Include="CountryIcons\mi-flag.gif" />
+    <Resource Include="CountryIcons\mj-flag.gif" />
+    <Resource Include="CountryIcons\mk-flag.gif" />
+    <Resource Include="CountryIcons\ml-flag.gif" />
+    <Resource Include="CountryIcons\mn-flag.gif" />
+    <Resource Include="CountryIcons\mo-flag.gif" />
+    <Resource Include="CountryIcons\mp-flag.gif" />
+    <Resource Include="CountryIcons\mr-flag.gif" />
+    <Resource Include="CountryIcons\mt-flag.gif" />
+    <Resource Include="CountryIcons\mu-flag.gif" />
+    <Resource Include="CountryIcons\mv-flag.gif" />
+    <Resource Include="CountryIcons\mx-flag.gif" />
+    <Resource Include="CountryIcons\my-flag.gif" />
+    <Resource Include="CountryIcons\mz-flag.gif" />
+    <Resource Include="CountryIcons\nc-flag.gif" />
+    <Resource Include="CountryIcons\ne-flag.gif" />
+    <Resource Include="CountryIcons\nf-flag.gif" />
+    <Resource Include="CountryIcons\ng-flag.gif" />
+    <Resource Include="CountryIcons\nh-flag.gif" />
+    <Resource Include="CountryIcons\ni-flag.gif" />
+    <Resource Include="CountryIcons\nl-flag.gif" />
+    <Resource Include="CountryIcons\no-flag.gif" />
+    <Resource Include="CountryIcons\np-flag.gif" />
+    <Resource Include="CountryIcons\nr-flag.gif" />
+    <Resource Include="CountryIcons\ns-flag.gif" />
+    <Resource Include="CountryIcons\nt-flag.gif" />
+    <Resource Include="CountryIcons\nu-flag.gif" />
+    <Resource Include="CountryIcons\nz-flag.gif" />
+    <Resource Include="CountryIcons\os-flag.gif" />
+    <Resource Include="CountryIcons\pa-flag.gif" />
+    <Resource Include="CountryIcons\pc-flag.gif" />
+    <Resource Include="CountryIcons\pe-flag.gif" />
+    <Resource Include="CountryIcons\pf-flag.gif" />
+    <Resource Include="CountryIcons\pg-flag.gif" />
+    <Resource Include="CountryIcons\pk-flag.gif" />
+    <Resource Include="CountryIcons\pl-flag.gif" />
+    <Resource Include="CountryIcons\pm-flag.gif" />
+    <Resource Include="CountryIcons\po-flag.gif" />
+    <Resource Include="CountryIcons\pp-flag.gif" />
+    <Resource Include="CountryIcons\ps-flag.gif" />
+    <Resource Include="CountryIcons\pu-flag.gif" />
+    <Resource Include="CountryIcons\qa-flag.gif" />
+    <Resource Include="CountryIcons\re-flag.gif" />
+    <Resource Include="CountryIcons\ri-flag.gif" />
+    <Resource Include="CountryIcons\rm-flag.gif" />
+    <Resource Include="CountryIcons\rn-flag.gif" />
+    <Resource Include="CountryIcons\ro-flag.gif" />
+    <Resource Include="CountryIcons\rp-flag.gif" />
+    <Resource Include="CountryIcons\rq-flag.gif" />
+    <Resource Include="CountryIcons\rs-flag.gif" />
+    <Resource Include="CountryIcons\rw-flag.gif" />
+    <Resource Include="CountryIcons\sa-flag.gif" />
+    <Resource Include="CountryIcons\sb-flag.gif" />
+    <Resource Include="CountryIcons\sc-flag.gif" />
+    <Resource Include="CountryIcons\se-flag.gif" />
+    <Resource Include="CountryIcons\sf-flag.gif" />
+    <Resource Include="CountryIcons\sg-flag.gif" />
+    <Resource Include="CountryIcons\sh-flag.gif" />
+    <Resource Include="CountryIcons\si-flag.gif" />
+    <Resource Include="CountryIcons\sl-flag.gif" />
+    <Resource Include="CountryIcons\sm-flag.gif" />
+    <Resource Include="CountryIcons\sn-flag.gif" />
+    <Resource Include="CountryIcons\so-flag.gif" />
+    <Resource Include="CountryIcons\sp-flag.gif" />
+    <Resource Include="CountryIcons\st-flag.gif" />
+    <Resource Include="CountryIcons\su-flag.gif" />
+    <Resource Include="CountryIcons\sv-flag.gif" />
+    <Resource Include="CountryIcons\sw-flag.gif" />
+    <Resource Include="CountryIcons\sx-flag.gif" />
+    <Resource Include="CountryIcons\sy-flag.gif" />
+    <Resource Include="CountryIcons\sz-flag.gif" />
+    <Resource Include="CountryIcons\tb-flag.gif" />
+    <Resource Include="CountryIcons\td-flag.gif" />
+    <Resource Include="CountryIcons\te-flag.gif" />
+    <Resource Include="CountryIcons\th-flag.gif" />
+    <Resource Include="CountryIcons\ti-flag.gif" />
+    <Resource Include="CountryIcons\tk-flag.gif" />
+    <Resource Include="CountryIcons\tl-flag.gif" />
+    <Resource Include="CountryIcons\tn-flag.gif" />
+    <Resource Include="CountryIcons\to-flag.gif" />
+    <Resource Include="CountryIcons\tp-flag.gif" />
+    <Resource Include="CountryIcons\ts-flag.gif" />
+    <Resource Include="CountryIcons\tt-flag.gif" />
+    <Resource Include="CountryIcons\tu-flag.gif" />
+    <Resource Include="CountryIcons\tv-flag.gif" />
+    <Resource Include="CountryIcons\tw-flag.gif" />
+    <Resource Include="CountryIcons\tx-flag.gif" />
+    <Resource Include="CountryIcons\tz-flag.gif" />
+    <Resource Include="CountryIcons\uf-flag.gif" />
+    <Resource Include="CountryIcons\ug-flag.gif" />
+    <Resource Include="CountryIcons\uk-flag.gif" />
+    <Resource Include="CountryIcons\um-flag.gif" />
+    <Resource Include="CountryIcons\up-flag.gif" />
+    <Resource Include="CountryIcons\us-flag.gif" />
+    <Resource Include="CountryIcons\uv-flag.gif" />
+    <Resource Include="CountryIcons\uy-flag.gif" />
+    <Resource Include="CountryIcons\uz-flag.gif" />
+    <Resource Include="CountryIcons\vc-flag.gif" />
+    <Resource Include="CountryIcons\ve-flag.gif" />
+    <Resource Include="CountryIcons\vi-flag.gif" />
+    <Resource Include="CountryIcons\vm-flag.gif" />
+    <Resource Include="CountryIcons\vq-flag.gif" />
+    <Resource Include="CountryIcons\vt-flag.gif" />
+    <Resource Include="CountryIcons\wa-flag.gif" />
+    <Resource Include="CountryIcons\we-flag.gif" />
+    <Resource Include="CountryIcons\wf-flag.gif" />
+    <Resource Include="CountryIcons\wi-flag.gif" />
+    <Resource Include="CountryIcons\wq-flag.gif" />
+    <Resource Include="CountryIcons\ws-flag.gif" />
+    <Resource Include="CountryIcons\wz-flag.gif" />
+    <Resource Include="CountryIcons\yi-flag.gif" />
+    <Resource Include="CountryIcons\ym-flag.gif" />
+    <Resource Include="CountryIcons\za-flag.gif" />
+    <Resource Include="CountryIcons\zi-flag.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

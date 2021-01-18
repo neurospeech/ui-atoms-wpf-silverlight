@@ -1,0 +1,61 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.LayoutSamples.UniformGridSample"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+      Title="UniformGridSample">
+
+    <Grid>
+        <ns:AtomForm LabelWidth="120" Header="UniformGrid" RowLayout="2,1"
+                     Width="800"
+                     >
+            <Slider
+            ns:AtomForm.Label="Horizontal Gap:"
+            Minimum="0" Maximum="40" Value="5" Name="hSlider" />
+            <Slider
+            ns:AtomForm.Label="Vertical Gap:" Name="vSlider" 
+            Minimum="0" Maximum="40" Value="5"
+            />
+            <ns:AtomUniformGrid 
+                ns:AtomForm.Label="Atom Uniform Grid:"
+                VerticalGap="{Binding Value,ElementName=vSlider}" 
+                HorizontalGap="{Binding Value,ElementName=hSlider}"
+                Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" 
+                VerticalAlignment="Top">
+                    
+                <Border  Width="100" Height="100">
+                    <Image Name="gridimg1" Source=
+                        "/UIAtoms.WPFSamples;component/Asset/gridImag1.jpg"/>
+                </Border>
+                    
+                <Border  Height="100" Width="100" BorderBrush="Black" BorderThickness="1">
+                    <Image Name="gridimg2" Source=
+                        "/UIAtoms.WPFSamples;component/Asset/gridImag2.jpg"/>
+                </Border>
+                    
+                <Border  Height="100" Width="100" BorderBrush="Black" BorderThickness="1">
+                    <Image Name="gridimg3" Source=
+                        "/UIAtoms.WPFSamples;component/Asset/gridImag3.jpg"/>
+                </Border>
+                    
+                <Border  Height="100" Width="100" BorderBrush="Black" BorderThickness="1">   
+                    <Image Name="gridimg4" Source=
+                        "/UIAtoms.WPFSamples;component/Asset/gridImag4.jpg"/>
+                </Border>
+                    
+                <Border  Height="100" Width="100" BorderBrush="Black" BorderThickness="1">
+                    <Image Name="gridimg5" Source=
+                        "/UIAtoms.WPFSamples;component/Asset/gridImag5.jpg"/>
+                </Border>
+                    
+                <Border Width="100" Height="100" BorderBrush="Black" BorderThickness="1">
+                    <Image Name="gridimg6" Source=
+                        "/UIAtoms.WPFSamples;component/Asset/gridImag6.jpg"/>
+                </Border>
+                    
+            </ns:AtomUniformGrid>
+        </ns:AtomForm>
+    </Grid>
+</Page>

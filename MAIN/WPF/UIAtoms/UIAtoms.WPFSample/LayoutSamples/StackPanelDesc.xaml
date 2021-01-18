@@ -1,0 +1,28 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.LayoutSamples.StackPanelDesc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="600"
+	Title="StackPanelDesc">
+
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <List>
+                    <ListItem>
+                        <Paragraph>	On selecting the stack orientation, either Vertical or Horizontal, the data will be displayed in a Vertical or Horizontal Stack under the heading “Stack”.</Paragraph>
+                    </ListItem>
+                </List>
+                
+                <List>
+                    <ListItem>
+                        <Paragraph>	The data items can be evenly spaced apart by entering a simple padding value in pixels. A slider is provided for making the selection in this sample.</Paragraph>
+                    </ListItem>
+                </List>
+                
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Page>

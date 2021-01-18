@@ -1,0 +1,20 @@
+﻿<Unit
+  ID="meter_per_second"
+  Name="Meter Per Second"
+  Symbol="m/s"
+  >
+  <Conversions>
+    <Conversion ID="foot_per_hour" Name="Foot per hour" SubType="" Symbol="ft/h" Factor="8.466667" Factor10="-05" />
+    <Conversion ID="foot_per_minute" Name="Foot per minute" SubType="" Symbol="ft/min" Factor="5.08" Factor10="-03" />
+    <Conversion ID="foot_per_second" Name="Foot per second" SubType="" Symbol="ft/s" Factor="3.048" Factor10="-01" />
+    <Conversion ID="inch_per_second" Name="Inch per second" SubType="" Symbol="in/s" Factor="2.54" Factor10="-02" />
+    <Conversion ID="kilometer_per_hour" Name="Kilometer per hour" SubType="" Symbol="km/h" Factor="2.777778" Factor10="-01" />
+    <Conversion ID="knot" Name="Knot" SubType="nautical mile per hour" Symbol="knot" Factor="5.144444" Factor10="-01" />
+    <Conversion ID="mile_per_hour" Name="Mile per hour" SubType="" Symbol="mi/h" Factor="4.4704" Factor10="-01" />
+    <Conversion ID="mile_per_minute" Name="Mile per minute" SubType="" Symbol="mi/min" Factor="2.68224" Factor10="1" />
+    <Conversion ID="mile_per_second" Name="Mile per second" SubType="" Symbol="mi/s" Factor="1.609344" Factor10="3" />
+
+    <!--This requires an input of radian per second (rad/s) 
+    <Conversion ID="revolution_per_minute" Name="Revolution per minute" SubType="RPM" Symbol="r/min" Factor="1.047198" Factor10="-01" /-->
+  </Conversions>
+</Unit>

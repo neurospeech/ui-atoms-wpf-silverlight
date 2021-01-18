@@ -1,0 +1,27 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.EditorSamples.FilePathEditorSampe"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      mc:Ignorable="d" 
+	  Title="FilePathEditorSampe" xmlns:ns="http://uiatoms.neurospeech.com/wpf">
+
+    <Grid>
+        <ns:AtomForm 
+            LabelWidth="100" Width="700" Header="File Path">
+
+            <ns:AtomFilePathEditor ns:AtomForm.Label="File Path:" Name="filepath" 
+                MinWidth="400" FolderOnly="{Binding ElementName=isfolderonly,Path=SelectedItem}" />
+
+            <ns:AtomRadioButtonList 
+                ns:AtomForm.Label="Folder Only:" Name="isfolderonly" 
+                MinWidth="400" IsFilterVisible="False"
+                >
+                <sys:String>True</sys:String>
+                <sys:String>False</sys:String>
+            </ns:AtomRadioButtonList>
+
+        </ns:AtomForm>
+    </Grid>
+</Page>

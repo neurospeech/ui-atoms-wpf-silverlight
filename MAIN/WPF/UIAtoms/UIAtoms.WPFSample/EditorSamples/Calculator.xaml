@@ -1,0 +1,22 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.EditorSamples.Calculator"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+      mc:Ignorable="d" 
+	  Title="Calculator">
+
+    <Grid>
+        <ns:AtomForm Header="Inbuilt Calculator for Silverlight and WPF" Width="700" LabelWidth="120">
+            <TextBlock>
+                Inbuilt calculator offers quick calculation of decimal based on financial calculator.
+                <LineBreak/>
+                The calculator correctly calculates "%" values which you will find on any <LineBreak/>
+                commercial electronic financial calculator.
+            </TextBlock>
+            <ns:AtomCalculator ns:AtomForm.Label="Calculator" x:Name="calc" Width="300" HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding Value,ElementName=calc}" ns:AtomForm.Label="Calculated Value:"/>
+        </ns:AtomForm>
+    </Grid>
+</Page>

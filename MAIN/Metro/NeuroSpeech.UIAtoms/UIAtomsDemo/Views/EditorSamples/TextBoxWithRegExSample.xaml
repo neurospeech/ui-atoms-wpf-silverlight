@@ -1,0 +1,31 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.EditorSamples.TextBoxWithRegExSample" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           Title="TextBoxWithRegExSample Page" 
+           xmlns:ns="http://uiatoms.neurospeech.com/silverlight">
+    
+    <Grid x:Name="LayoutRoot">
+        
+        <ns:AtomForm 
+            x:Name="signupForm" LabelWidth="110" 
+            MinWidth="700" Header="TextBox with RegEx"
+            HorizontalAlignment="Center">
+            
+            <ns:AtomTextBoxWithRegEx 
+                ns:AtomForm.Label="Login:" ns:AtomForm.Title="Username" 
+                x:Name="username" Width="200" 
+                ns:AtomForm.IsRequired="True" ns:AtomForm.MissingValueMessage="Username is required" 
+                WatermarkText="alpha numeric only" ValidationRegEx="[a-zA-Z0-9]+"/>
+
+            <ns:AtomButton 
+                Content="Submit" ValidationRootElement="signupForm" 
+                x:Name="signupButton" HorizontalAlignment="Left"
+                />
+
+        </ns:AtomForm>
+    </Grid>
+</navigation:Page>

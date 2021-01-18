@@ -1,0 +1,105 @@
+﻿<Window x:Class="UnitEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+        xmlns:nsb="http://uiatoms.neurospeech.com/wpf/buttons"
+        xmlns:nsm="http://uiatoms.neurospeech.com/wpf/mathcontrols"
+        xmlns:local="clr-namespace:UnitEditor"
+        xmlns:dg="http://schemas.microsoft.com/wpf/2008/toolkit"
+        Title="Unit Editor 1.0" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="_File">
+                <MenuItem Header="_Open" Click="OpenMenu_Click" />
+                <MenuItem Header="_Save"  Click="SaveMenu_Click"/>
+                <MenuItem Header="Save _As"  Click="SaveAsMenu_Click"/>
+                <MenuItem Header="E_xit" Click="ExitMenu_Click" />
+            </MenuItem>
+        </Menu>
+        
+        <ns:AtomForm Margin="5" Grid.Row="1" RowLayout="2,2" Header="Base Unit">
+            <TextBox ns:AtomForm.Label="ID" Text="{Binding ID, Mode=TwoWay}" />
+            <TextBox ns:AtomForm.Label="Name" Text="{Binding Name, Mode=TwoWay}"/>
+            <TextBox ns:AtomForm.Label="Symbol" Text="{Binding Symbol, Mode=TwoWay}"/>
+        </ns:AtomForm>
+        <ns:AtomStackPanel Margin="5" Grid.Row="2" Orientation="Horizontal">
+            <nsb:AtomAddButton Content="Add" Click="AddButton_Click" />
+            <nsb:AtomDeleteButton Content="Delete" Click="DeleteButton_Click" />
+            <nsb:AtomSaveButton Content="Save" Click="SaveMenu_Click" />
+        </ns:AtomStackPanel>
+        <dg:DataGrid Margin="5" Grid.Row="3" x:Name="conversionItems" AutoGenerateColumns="False" AlternatingRowBackground="#FFF0F0F0">
+            <dg:DataGrid.Columns>
+                <dg:DataGridTemplateColumn Header="ID" Width="200">
+                    <dg:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Text="{Binding ID,Mode=TwoWay}"/>
+                        </DataTemplate>
+                    </dg:DataGridTemplateColumn.CellTemplate>
+                </dg:DataGridTemplateColumn>
+                <dg:DataGridTemplateColumn Header="Name" Width="200">
+                    <dg:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Text="{Binding Name,Mode=TwoWay}"/>
+                        </DataTemplate>
+                    </dg:DataGridTemplateColumn.CellTemplate>
+                </dg:DataGridTemplateColumn>
+                <dg:DataGridTemplateColumn Header="SubType" Width="250">
+                    <dg:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Text="{Binding SubType,Mode=TwoWay}">
+                                <TextBox.ToolTip>
+                                    <nsm:AtomMathDisplay EquationText="{Binding SubType}"  EquationLanguage="TeX" />
+                                </TextBox.ToolTip>
+                            </TextBox>
+                        </DataTemplate>
+                    </dg:DataGridTemplateColumn.CellTemplate>
+                </dg:DataGridTemplateColumn>
+                <dg:DataGridTemplateColumn Header="Symbol" Width="250">
+                    <dg:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Text="{Binding Symbol,Mode=TwoWay}">
+                                <TextBox.ToolTip>
+                                    <nsm:AtomMathDisplay EquationText="{Binding Symbol}" EquationLanguage="TeX" />
+                                </TextBox.ToolTip>
+                            </TextBox>
+                        </DataTemplate>
+                    </dg:DataGridTemplateColumn.CellTemplate>
+                </dg:DataGridTemplateColumn>
+                <dg:DataGridTemplateColumn Header="Factor">
+                    <dg:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Text="{Binding Factor,Mode=TwoWay}"/>
+                        </DataTemplate>
+                    </dg:DataGridTemplateColumn.CellTemplate>
+                </dg:DataGridTemplateColumn>
+                <dg:DataGridTemplateColumn Header="Factor10">
+                    <dg:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Text="{Binding Factor10,Mode=TwoWay}"/>
+                        </DataTemplate>
+                    </dg:DataGridTemplateColumn.CellTemplate>
+                </dg:DataGridTemplateColumn>
+                <dg:DataGridTemplateColumn Header="FormulaFromBase">
+                    <dg:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Text="{Binding FormulaFromBase,Mode=TwoWay}"/>
+                        </DataTemplate>
+                    </dg:DataGridTemplateColumn.CellTemplate>
+                </dg:DataGridTemplateColumn>
+                <dg:DataGridTemplateColumn Header="FormulaToBase">
+                    <dg:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Text="{Binding FormulaToBase,Mode=TwoWay}"/>
+                        </DataTemplate>
+                    </dg:DataGridTemplateColumn.CellTemplate>
+                </dg:DataGridTemplateColumn>
+            </dg:DataGrid.Columns>
+        </dg:DataGrid>
+    </Grid>
+</Window>

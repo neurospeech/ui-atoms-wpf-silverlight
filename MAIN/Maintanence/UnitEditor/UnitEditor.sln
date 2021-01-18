@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitEditor", "UnitEditor\UnitEditor.csproj", "{EC611793-34C7-450B-AA24-DF1C04000222}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.1.224:8080/tfs/neurospeech
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = UnitEditor\\UnitEditor.csproj
+		SccProjectName1 = UnitEditor
+		SccLocalPath1 = UnitEditor
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC611793-34C7-450B-AA24-DF1C04000222}.Debug|x86.ActiveCfg = Debug|x86
+		{EC611793-34C7-450B-AA24-DF1C04000222}.Debug|x86.Build.0 = Debug|x86
+		{EC611793-34C7-450B-AA24-DF1C04000222}.Release|x86.ActiveCfg = Release|x86
+		{EC611793-34C7-450B-AA24-DF1C04000222}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

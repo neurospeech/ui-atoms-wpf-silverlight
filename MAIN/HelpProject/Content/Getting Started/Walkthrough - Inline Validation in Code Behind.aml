@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="23c9cd2d-c3cf-4c8f-97a3-633e184d07cf" revisionNumber="1">
+  <developerHowToDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+    <introduction>
+      <para>Creating too many validation rules can be very tedious for
+      business logic that is not reusable. And also in order to make one time
+      business rule coding very simpler, we also provide AfterValidate event
+      of <token>RefAtomForm</token> that can be used to validate the form in
+      the Code Behind file.</para>
+    </introduction>
+    <!-- Optional procedures followed by optional code example but must have
+         at least one procedure or code example -->
+    <procedure>
+      <title>Validation Without Rule in Code Behind</title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>Let us assume, we want to validate a TextBox, and we want to 
+            check if it is empty or not. So lets create Form as shown below.</para>
+            <code language="XAML">
+				<![CDATA[
+        <ns:AtomForm 
+            x:Name="rootForm" LabelWidth="100" VerticalGap="2"
+            >
+
+            <TextBox 
+                x:Name="tbUsername"
+                ns:AtomForm.Label="Username:" 
+                ns:AtomForm.IsRequired="True"
+                />
+
+        </ns:AtomForm>
+                ]]>
+            </code>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>Now lets add an event handler for AfterValidated event of
+            <token>RefAtomForm</token> as shown below.</para>
+            
+            <code language="XAML">
+				<![CDATA[
+        <ns:AtomForm 
+            x:Name="rootForm" LabelWidth="100" VerticalGap="2"
+            AfterValidate="rootForm_AfterValidate"
+            ...
+                ]]>
+            </code>    
+            
+            
+			<code language="cs">
+			        private void rootForm_AfterValidate(object sender, 
+			        	AtomValidationEventArgs e)
+			        {
+			            if (tbUsername.Text == "") {
+			                e.Errors.Add(new AtomValidationError { 
+			                    Message= AtomForm.GetMissingValueMessage(tbUsername),
+			                    Source=tbUsername,
+			                    Property=TextBox.TextProperty
+			                });
+			            }
+			        }
+			</code>
+
+			<para>
+			You can see that we can simply check the property of control via 
+			conditional logic and we can add new <token>RefAtomValidationError</token> 
+			in "Errors" property of event arguement.
+			</para>
+			
+			<para>
+			<token>RefAtomForm</token> keeps track of all errors reported by Source
+			and Property fields, and errors are automatically cleared later on.
+			</para>
+			
+			
+<alert class="note">
+  <para>Please do not put any blocking code in AfterValidate event, as it 
+  may block the UI thread.</para>
+</alert>
+
+            
+          </content>
+        </step>
+      </steps>
+      <!-- <conclusion>Optional conclusion</conclusion> -->
+    </procedure>
+    <!-- <codeExample>Optional code example</codeExample> -->
+    <!-- <buildInstructions>Optional instructions for building a
+         code example.</buildInstructions> -->
+    <!-- <robustProgramming>Optional discussion of error handling and other
+         issues related to writing solid code.</robustProgramming> -->
+    <!-- <security>Optional discussion of security issues.</security> -->
+    <relatedTopics>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID">Link text</link>
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on CodePlex</linkText>
+          <linkAlternateText>Go to CodePlex</linkAlternateText>
+          <linkUri>http://shfb.codeplex.com</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerHowToDocument>
+</topic>

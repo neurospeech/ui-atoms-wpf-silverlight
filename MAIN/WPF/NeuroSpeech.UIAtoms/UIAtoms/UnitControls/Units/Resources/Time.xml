@@ -1,0 +1,19 @@
+﻿<Unit
+  ID="second"
+  Name="Second"
+  Symbol="s"
+  >
+  <Conversions>
+    <Conversion ID="day" Name="Day" SubType="" Symbol="d" Factor="8.64" Factor10="4" />
+    <Conversion ID="day_sidereal" Name="Day" SubType="sidereal" Symbol="sidereal" Factor="8.616409" Factor10="4" />
+    <Conversion ID="hour" Name="Hour" SubType="" Symbol="h" Factor="3.6" Factor10="3" />
+    <Conversion ID="hour_sidereal" Name="Hour" SubType="sidereal" Symbol="h" Factor="3.590170" Factor10="3" />
+    <Conversion ID="minute" Name="Minute" SubType="" Symbol="min" Factor="6.0" Factor10="1" />
+    <Conversion ID="minute_sidereal" Name="Minute" SubType="sidereal" Symbol="min" Factor="5.983617" Factor10="1" />
+    <Conversion ID="second_sidereal" Name="Second" SubType="sidereal" Symbol="s" Factor="9.972696" Factor10="-1" />
+    <Conversion ID="shake" Name="Shake" SubType="" Symbol="shake" Factor="1" Factor10="-08" />
+    <Conversion ID="year_365" Name="Year" SubType="365 days" Symbol="year" Factor="3.1536" Factor10="7" />
+    <Conversion ID="year_sidereal" Name="Year" SubType="sidereal" Symbol="year" Factor="3.155815" Factor10="7" />
+    <Conversion ID="year_tropical" Name="Year" SubType="tropical" Symbol="year" Factor="3.155693" Factor10="7" />
+  </Conversions>
+</Unit>

@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical">
+  <Class Name="NeuroSpeech.UIAtoms.Controls.ArrayToCSVConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\ArrayToCSVConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomAccordion" Collapsed="true">
+    <Position X="0.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgQAAAAIAAAEAQBAEAAAAAAAAAAAAAQAQCAAA=</HashCode>
+      <FileName>Controls\AtomAccordion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomAccordionItem" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAARAAAAAAAAQAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomAccordionItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomAccordionPanel" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomAccordionPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomButton" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAEAAAAQAAAAQAAAAAAAiACAABQAAAgAAAAAAAAABA=</HashCode>
+      <FileName>Controls\AtomButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomCheckBox" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomCheckBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomCheckBoxList" Collapsed="true">
+    <Position X="5.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Controls\AtomCheckBoxList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomRadioButtonList" Collapsed="true">
+    <Position X="7.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Controls\AtomCheckBoxList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomCheckBoxListItem" Collapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomCheckBoxListItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomRadioButtonListItem" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomCheckBoxListItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomClippingBorder" Collapsed="true">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAJAAAAAAAAAAAgAAAAAAAAAAoAAAAAA=</HashCode>
+      <FileName>Controls\AtomClippingBorder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomCollectionFilter" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomCollectionFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomComboBox" Collapsed="true">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACEBAAAAAgAAAUAEAEAAAAAAAAAAAAAUACDA=</HashCode>
+      <FileName>Controls\AtomComboBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomComboBoxItemWithFilter" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomComboBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomCountryCheckBoxList" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomCountryCheckBoxList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomCountryComboBox" Collapsed="true">
+    <Position X="5.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomCountryComboBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.NSCountryItem" Collapsed="true">
+    <Position X="19.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICAEAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAABAACAAAI=</HashCode>
+      <FileName>Controls\AtomCountryComboBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomCurrencyTextBox" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAgACACABAAAAAAAAAIAgAEgAgAAEACAEAABAQAAA=</HashCode>
+      <FileName>Controls\AtomCurrencyTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomDoubleTextBox" Collapsed="true">
+    <Position X="18" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAgACACABAAAAAAAAAIAgAEgAgAAEACAEAABAQAAA=</HashCode>
+      <FileName>Controls\AtomDoubleTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomEmailTextBox" Collapsed="true">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQCAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomEmailTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomEnumComboBox" Collapsed="true">
+    <Position X="0.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAgBAAAAAAAAAAAAAAAAAAAAgCAQQAAAAA=</HashCode>
+      <FileName>Controls\AtomEnumComboBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomFilePathEditor" Collapsed="true">
+    <Position X="19.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAAAAAAAAABAAAAAAAAAAgAAAAAAAgAAAARgAAAAAAA=</HashCode>
+      <FileName>Controls\AtomFilePathEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomFileSizeLabel" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgBACAAAAAAAIAAAAAAAAAkCAAACEAA=</HashCode>
+      <FileName>Controls\AtomFileSizeLabel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomFilterTextBox" Collapsed="true">
+    <Position X="7.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAICAAEBAEYAAwAACGAAADCEQBAABCAAAAACIAHE=</HashCode>
+      <FileName>Controls\AtomFilterTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomFilterItemEventArgs" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACBAAAAAAgIAAAAAEAAAAAAAAACAAAAAAACA=</HashCode>
+      <FileName>Controls\AtomFilterTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomForm" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQQjEUQBEEQEHMKmCCtkwhEhBAIQIQIAQADRFBUA=</HashCode>
+      <FileName>Controls\AtomForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.ValidationEventArgs" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomFormItemContainer" Collapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAQCEABgAEAAAAEAAIhgAABEAAACAMAIAAIAAAA=</HashCode>
+      <FileName>Controls\AtomFormItemContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomFormPanel" Collapsed="true">
+    <Position X="18" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEQAAIAQAAAAEAAIEACAgQkEAAAEQACAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomFormPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomIcon" Collapsed="true">
+    <Position X="19.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAEAAAAAQASQAgAAABBIAQAAAAAAAAAIAAAIAAAAAI=</HashCode>
+      <FileName>Controls\AtomIcon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomImageButton" Collapsed="true">
+    <Position X="0.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomImageButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomIntegerTextBox" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAgACACABAAAAAAAAAIAgAEgAgAAEACAEAABAQAAA=</HashCode>
+      <FileName>Controls\AtomIntegerTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomListBox" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACEAAAAAAgAAAUAAAEAAAAAAAAAAAAAQCCDA=</HashCode>
+      <FileName>Controls\AtomListBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.CSVToArrayTypeConverter" Collapsed="true">
+    <Position X="18" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomListBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomNumberComboBox" Collapsed="true">
+    <Position X="3" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAAAEgABAIAgCAAAAAAAgACIAAAAAwCAACAAiAAAA=</HashCode>
+      <FileName>Controls\AtomNumberComboBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomPasswordBox" Collapsed="true">
+    <Position X="8.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAgAAAEEAAAEAgAAAAAAABACCAAAAAAAACA=</HashCode>
+      <FileName>Controls\AtomPasswordBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomPasswordBoxAgain" Collapsed="true">
+    <Position X="8.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAQAAAAAAAAAAAAEAAAAAAAE=</HashCode>
+      <FileName>Controls\AtomPasswordBoxAgain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomPrompt" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAICAAIAAAAACEAAAAAAACgABAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Controls\AtomPrompt.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomStackPanel" Collapsed="true">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAEQAAEAWAAAAAAAIAACBAQAAIAAAAAAIAIAASAAAA=</HashCode>
+      <FileName>Controls\AtomStackPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomTextBox" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cBAAAAAAAAAAAABBIMZAAAAAAAAAQAAgiAEAAAAAIAA=</HashCode>
+      <FileName>Controls\AtomTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomTextBoxWithRegEx" Collapsed="true">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomTextBoxWithRegEx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomTitleTextBox" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAgAAAAAAYAAAAAAAQAAAACAAAEAAAAAAAAAADAA=</HashCode>
+      <FileName>Controls\AtomTitleTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomToggleButtonBar" Collapsed="true">
+    <Position X="3" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAABAAAAQAAAA=</HashCode>
+      <FileName>Controls\AtomToggleButtonBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomToggleButtonBarItem" Collapsed="true">
+    <Position X="18" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomToggleButtonBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomUniformGrid" Collapsed="true">
+    <Position X="19.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAEQAAAAQAAAEChAIAASAAQAAAAABAAAEAAAAiAAAA=</HashCode>
+      <FileName>Controls\AtomUniformGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomValueDialogButton" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAgACAAAAAABAAAAgAAAAAAA=</HashCode>
+      <FileName>Controls\AtomValueDialogButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomViewPanel" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAFAAAAQAAAAAAAAAAAAQAQAAAACAAAAIBQAAAAAAA=</HashCode>
+      <FileName>Controls\AtomViewPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomWidthToStretchConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomWidthToStretchConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NeuroSpeech.UIAtoms.Controls.AtomWrapPanel" Collapsed="true">
+    <Position X="16.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEQAAAAWAAAAAAAIAACBAAAAAAAAAAAIAIAAQAAAA=</HashCode>
+      <FileName>Controls\AtomWrapPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="NeuroSpeech.UIAtoms.Controls.IAtomValueProvider" Collapsed="true">
+    <Position X="11" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Controls\AtomValueDialogWindow.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="NeuroSpeech.UIAtoms.Controls.AtomTextFilterMode" Collapsed="true">
+    <Position X="11" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAQA=</HashCode>
+      <FileName>Controls\AtomFilterTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="NeuroSpeech.UIAtoms.Controls.ValidationEventHandler" Collapsed="true">
+    <Position X="11" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\AtomForm.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

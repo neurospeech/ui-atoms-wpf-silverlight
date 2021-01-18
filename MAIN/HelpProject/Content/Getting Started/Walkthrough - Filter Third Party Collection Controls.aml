@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="26f8a82b-076a-488e-859d-fd507fc25d6a" revisionNumber="1">
+  <developerWalkthroughDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+           titles.  Specify a numeric value as the inner text to limit it to
+           a specific number of sub-topics when creating the outline.  Specify
+           zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+      <para><token>RefAtomFilterTextBox</token> can be used to filter any other 
+      Data Collection control such as DataGrid or any third party ItemsControl.
+      In this example, we will show how you can use <token>RefAtomFilterTextBox</token>
+      to filter items of inbuilt <token>RefListBox</token>.
+      
+<alert class="note">
+  <para>Please note, For Silverlight Projects, you will have to turn off the Virtualization
+  of Panel controls to support filtering.</para>
+</alert>
+
+      </para>
+    </introduction>
+    <!-- <prerequisites><content>Optional prerequisites info</content></prerequisites> -->
+    <!-- One or more procedure or section with procedure -->
+    <procedure>
+      <title>Placing controls on the UserControl or Page for Silverlight Project.</title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>Create normal ListBox with ViewModel binding of your choice.
+            And give it name "countryListBox1" as shown below. As it is silverlight project
+            we will have to change its ItemsPanel to contain normal StackPanel to turn off
+            virtualization.
+            
+<code language="xaml">
+<![CDATA[
+            <ListBox 
+                Height="400"
+                ns:AtomForm.Label="Countries:"
+                x:Name="countryListBox1"
+                DisplayMemberPath="CountryName"
+                ItemsSource="{Binding Countries,Source={StaticResource viewModel}}">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+            </ListBox>
+]]>
+</code>
+
+            </para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>Let's add <token>RefAtomFilterTextBox</token>, you will have to choose layout of some sort
+            of grid to make it appear before the <token>RefListBox</token>.
+
+<code language="xaml">
+<![CDATA[
+            <ns:AtomFilterTextBox
+                ItemsControl="{Binding ElementName=countryListBox1}"
+                />
+]]>
+</code>
+			Let's review the bindings of <token>RefAtomFilterTextBox</token>.
+			
+<list class="bullet">
+  <listItem>ItemsControl is bound to countryListBox1 element, which indicates which list to filter.</listItem>
+</list>
+
+            </para>
+          </content>
+        </step>
+      </steps>
+      <!-- <conclusion>Optional conclusion</conclusion> -->
+    </procedure>
+    
+    <procedure>
+      <title>Placing controls on the UserControl or Page for WPF Project.</title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>Create normal ListBox with ViewModel binding of your choice.
+            And give it name "countryListBox1" as shown below.
+            
+<code language="xaml">
+<![CDATA[
+            <ListBox 
+                Height="400"
+                ns:AtomForm.Label="Countries:"
+                x:Name="countryListBox1"
+                DisplayMemberPath="CountryName"
+                ItemsSource="{Binding Countries,Source={StaticResource viewModel}}"/>
+]]>
+</code>
+
+            </para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>Let's add <token>RefAtomFilterTextBox</token>, you will have to choose layout of some sort
+            of grid to make it appear before the <token>RefListBox</token>.
+
+<code language="xaml">
+<![CDATA[
+            <ns:AtomFilterTextBox
+                ItemsControl="{Binding ElementName=countryListBox1}"
+                />
+]]>
+</code>
+			Let's review the bindings of <token>RefAtomFilterTextBox</token>.
+			
+<list class="bullet">
+  <listItem>ItemsControl is bound to countryListBox1 element, which indicates which list to filter.</listItem>
+</list>
+
+            </para>
+          </content>
+        </step>
+      </steps>
+      <!-- <conclusion>Optional conclusion</conclusion> -->
+    </procedure>
+
+	<quote>
+	You can filter any third party control that is derived from ItemsControl.</quote>
+    
+    <!-- Optional additional procedure or section with procedure -->
+    <!-- Optional next steps info
+    <nextSteps>
+      <content><para>Next steps info goes here</para></content>
+    </nextSteps>
+    -->
+    <relatedTopics>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID">Link text</link>
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on CodePlex</linkText>
+          <linkAlternateText>Go to CodePlex</linkAlternateText>
+          <linkUri>http://shfb.codeplex.com</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerWalkthroughDocument>
+</topic>

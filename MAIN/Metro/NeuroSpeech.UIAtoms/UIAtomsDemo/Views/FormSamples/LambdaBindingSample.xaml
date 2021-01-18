@@ -1,0 +1,78 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.FormSamples.LambdaBindingSample" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="600"
+           Title="LambdaBindingSample Page"
+    xmlns:ns="http://uiatoms.neurospeech.com/silverlight">
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition
+                Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <ns:AtomForm
+            Name="atomForm1"
+            RowLayout="2"
+            LabelWidth="110"
+            Margin="5">
+            <ns:AtomFormGroup
+                Header="Bind Extension Method">
+                <TextBox
+                    ns:AtomForm.Label="First Name:"
+                    x:Name="firstName" />
+                <TextBox
+                    ns:AtomForm.Label="Last Name:"
+                    x:Name="lastName" />
+
+                <TextBlock
+                    x:Name="fullName"
+                    ns:AtomForm.Label="Full Name:" />
+
+
+            </ns:AtomFormGroup>
+            
+            <ns:AtomFormRow
+                Header="BindVisibility Extension Method">
+                <TextBox ns:AtomForm.Label="Personal Info:" />
+                <CheckBox
+                    x:Name="showDetails"
+                    Content="Show Details" />
+
+                <ns:AtomTextBox
+                    ns:AtomForm.Label="Social Security:"
+                    x:Name="socialSecurity" />
+
+                <ns:AtomTextBox
+                    ns:AtomForm.Label="Passport Number:"
+                    x:Name="passportNumber" />
+
+
+            </ns:AtomFormRow>
+
+        </ns:AtomForm>
+        <ns:AtomForm
+            Grid.Row="2"
+            Header="Dynamic Expressions"
+            Margin="5">
+            <TextBlock>
+                Dynamic expressions are not allowed in Lambda, so we have created extension properties<LineBreak />
+                that can help you to incorporate dynamic properties.<LineBreak />
+                <LineBreak />
+                Assume you have FirstName and LastName property in your Model you want to bind them.
+                <LineBreak />
+                Following will be the binding expression,<LineBreak />
+                <LineBreak />
+                fullName.Bind(TextBlock.TextProperty, <LineBreak />()=> this.DataContext.Property("FirstName") + " " <LineBreak />+ this.DataContext.Property("LastName") );
+                <LineBreak />
+                <LineBreak />
+                In case if Property is boolean and you want to compare, you can easily type cast as follow,<LineBreak />
+                passportNumber.BindVisibility( <LineBreak />()=> this.DataContext.Property&lt;bool&gt;("HasPassport") );
+            </TextBlock>
+        </ns:AtomForm>
+    </Grid>
+</navigation:Page>

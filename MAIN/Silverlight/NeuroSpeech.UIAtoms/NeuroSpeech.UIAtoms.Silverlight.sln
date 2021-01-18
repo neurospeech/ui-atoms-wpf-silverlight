@@ -1,0 +1,144 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIAtoms", "UIAtoms\UIAtoms.csproj", "{8498857F-71D7-4617-AC96-739C2F6E7ACA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIAtoms.V4.Design", "UIAtoms.VisualStudio.Design\UIAtoms.V4.Design.csproj", "{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA} = {8498857F-71D7-4617-AC96-739C2F6E7ACA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIAtomsDemo", "UIAtomsDemo\UIAtomsDemo.csproj", "{20949010-A71C-405F-9D96-C21DDBFD69DF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8} = {1ECACE01-3487-4E82-A0FF-DF7FC03784B8}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIAtomsDemo.Web", "UIAtomsDemo.Web\UIAtomsDemo.Web.csproj", "{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}"
+	ProjectSection(ProjectDependencies) = postProject
+		{20949010-A71C-405F-9D96-C21DDBFD69DF} = {20949010-A71C-405F-9D96-C21DDBFD69DF}
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA} = {8498857F-71D7-4617-AC96-739C2F6E7ACA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIAtoms.Designers", "..\..\WPF\NeuroSpeech.UIAtoms\UIAtoms.Designers\UIAtoms.Designers.csproj", "{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA} = {8498857F-71D7-4617-AC96-739C2F6E7ACA}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.800casting.com:8080/tfs/neurospeech
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = UIAtoms.VisualStudio.Design\\UIAtoms.V4.Design.csproj
+		SccProjectName1 = UIAtoms.VisualStudio.Design
+		SccLocalPath1 = UIAtoms.VisualStudio.Design
+		SccProjectUniqueName2 = UIAtomsDemo\\UIAtomsDemo.csproj
+		SccProjectName2 = UIAtomsDemo
+		SccLocalPath2 = UIAtomsDemo
+		SccProjectUniqueName3 = UIAtomsDemo.Web\\UIAtomsDemo.Web.csproj
+		SccProjectName3 = UIAtomsDemo.Web
+		SccLocalPath3 = UIAtomsDemo.Web
+		SccProjectUniqueName4 = UIAtoms\\UIAtoms.csproj
+		SccProjectName4 = UIAtoms
+		SccLocalPath4 = UIAtoms
+		SccProjectUniqueName5 = ..\\..\\WPF\\NeuroSpeech.UIAtoms\\UIAtoms.Designers\\UIAtoms.Designers.csproj
+		SccProjectName5 = ../../WPF/NeuroSpeech.UIAtoms/UIAtoms.Designers
+		SccLocalPath5 = ..\\..\\WPF\\NeuroSpeech.UIAtoms\\UIAtoms.Designers
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug5|Any CPU = Debug5|Any CPU
+		DebugDemo|Any CPU = DebugDemo|Any CPU
+		DebugDemo5|Any CPU = DebugDemo5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Release5|Any CPU = Release5|Any CPU
+		ReleaseDemo|Any CPU = ReleaseDemo|Any CPU
+		ReleaseDemo5|Any CPU = ReleaseDemo5|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA}.Debug5|Any CPU.ActiveCfg = Debug5|Any CPU
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA}.Debug5|Any CPU.Build.0 = Debug5|Any CPU
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA}.DebugDemo|Any CPU.ActiveCfg = DebugDemo|Any CPU
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA}.DebugDemo|Any CPU.Build.0 = DebugDemo|Any CPU
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA}.DebugDemo5|Any CPU.ActiveCfg = DebugDemo5|Any CPU
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA}.DebugDemo5|Any CPU.Build.0 = DebugDemo5|Any CPU
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA}.Release5|Any CPU.ActiveCfg = Release5|Any CPU
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA}.Release5|Any CPU.Build.0 = Release5|Any CPU
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA}.ReleaseDemo|Any CPU.ActiveCfg = ReleaseDemo|Any CPU
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA}.ReleaseDemo|Any CPU.Build.0 = ReleaseDemo|Any CPU
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA}.ReleaseDemo5|Any CPU.ActiveCfg = ReleaseDemo5|Any CPU
+		{8498857F-71D7-4617-AC96-739C2F6E7ACA}.ReleaseDemo5|Any CPU.Build.0 = ReleaseDemo5|Any CPU
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}.Debug5|Any CPU.ActiveCfg = Debug5|Any CPU
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}.Debug5|Any CPU.Build.0 = Debug5|Any CPU
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}.DebugDemo|Any CPU.ActiveCfg = DebugDemo|Any CPU
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}.DebugDemo|Any CPU.Build.0 = DebugDemo|Any CPU
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}.DebugDemo5|Any CPU.ActiveCfg = DebugDemo5|Any CPU
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}.DebugDemo5|Any CPU.Build.0 = DebugDemo5|Any CPU
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}.Release5|Any CPU.ActiveCfg = Release5|Any CPU
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}.Release5|Any CPU.Build.0 = Release5|Any CPU
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}.ReleaseDemo|Any CPU.ActiveCfg = ReleaseDemo|Any CPU
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}.ReleaseDemo|Any CPU.Build.0 = ReleaseDemo|Any CPU
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}.ReleaseDemo5|Any CPU.ActiveCfg = ReleaseDemo5|Any CPU
+		{1ECACE01-3487-4E82-A0FF-DF7FC03784B8}.ReleaseDemo5|Any CPU.Build.0 = ReleaseDemo5|Any CPU
+		{20949010-A71C-405F-9D96-C21DDBFD69DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20949010-A71C-405F-9D96-C21DDBFD69DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20949010-A71C-405F-9D96-C21DDBFD69DF}.Debug5|Any CPU.ActiveCfg = Debug5|Any CPU
+		{20949010-A71C-405F-9D96-C21DDBFD69DF}.Debug5|Any CPU.Build.0 = Debug5|Any CPU
+		{20949010-A71C-405F-9D96-C21DDBFD69DF}.DebugDemo|Any CPU.ActiveCfg = DebugDemo|Any CPU
+		{20949010-A71C-405F-9D96-C21DDBFD69DF}.DebugDemo|Any CPU.Build.0 = DebugDemo|Any CPU
+		{20949010-A71C-405F-9D96-C21DDBFD69DF}.DebugDemo5|Any CPU.ActiveCfg = DebugDemo5|Any CPU
+		{20949010-A71C-405F-9D96-C21DDBFD69DF}.DebugDemo5|Any CPU.Build.0 = DebugDemo5|Any CPU
+		{20949010-A71C-405F-9D96-C21DDBFD69DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20949010-A71C-405F-9D96-C21DDBFD69DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20949010-A71C-405F-9D96-C21DDBFD69DF}.Release5|Any CPU.ActiveCfg = Release5|Any CPU
+		{20949010-A71C-405F-9D96-C21DDBFD69DF}.Release5|Any CPU.Build.0 = Release5|Any CPU
+		{20949010-A71C-405F-9D96-C21DDBFD69DF}.ReleaseDemo|Any CPU.ActiveCfg = ReleaseDemo|Any CPU
+		{20949010-A71C-405F-9D96-C21DDBFD69DF}.ReleaseDemo|Any CPU.Build.0 = ReleaseDemo|Any CPU
+		{20949010-A71C-405F-9D96-C21DDBFD69DF}.ReleaseDemo5|Any CPU.ActiveCfg = ReleaseDemo5|Any CPU
+		{20949010-A71C-405F-9D96-C21DDBFD69DF}.ReleaseDemo5|Any CPU.Build.0 = ReleaseDemo5|Any CPU
+		{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}.Debug5|Any CPU.ActiveCfg = Debug5|Any CPU
+		{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}.Debug5|Any CPU.Build.0 = Debug5|Any CPU
+		{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}.DebugDemo|Any CPU.ActiveCfg = DebugDemo|Any CPU
+		{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}.DebugDemo|Any CPU.Build.0 = DebugDemo|Any CPU
+		{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}.DebugDemo5|Any CPU.ActiveCfg = DebugDemo5|Any CPU
+		{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}.DebugDemo5|Any CPU.Build.0 = DebugDemo5|Any CPU
+		{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}.Release5|Any CPU.ActiveCfg = Release5|Any CPU
+		{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}.Release5|Any CPU.Build.0 = Release5|Any CPU
+		{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}.ReleaseDemo|Any CPU.ActiveCfg = ReleaseDemo|Any CPU
+		{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}.ReleaseDemo|Any CPU.Build.0 = ReleaseDemo|Any CPU
+		{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}.ReleaseDemo5|Any CPU.ActiveCfg = ReleaseDemo5|Any CPU
+		{E4B5ABA0-6FA7-4510-97CE-9EB7AEB4C862}.ReleaseDemo5|Any CPU.Build.0 = ReleaseDemo5|Any CPU
+		{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}.Debug5|Any CPU.ActiveCfg = Debug5|Any CPU
+		{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}.Debug5|Any CPU.Build.0 = Debug5|Any CPU
+		{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}.DebugDemo|Any CPU.ActiveCfg = Debug|Any CPU
+		{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}.DebugDemo|Any CPU.Build.0 = Debug|Any CPU
+		{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}.DebugDemo5|Any CPU.ActiveCfg = DebugDemo5|Any CPU
+		{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}.DebugDemo5|Any CPU.Build.0 = DebugDemo5|Any CPU
+		{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}.Release5|Any CPU.ActiveCfg = Release5|Any CPU
+		{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}.Release5|Any CPU.Build.0 = Release5|Any CPU
+		{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}.ReleaseDemo|Any CPU.ActiveCfg = Release|Any CPU
+		{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}.ReleaseDemo|Any CPU.Build.0 = Release|Any CPU
+		{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}.ReleaseDemo5|Any CPU.ActiveCfg = ReleaseDemo5|Any CPU
+		{01F97CD9-DACE-4A32-B6DE-22AB03C1AE78}.ReleaseDemo5|Any CPU.Build.0 = ReleaseDemo5|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

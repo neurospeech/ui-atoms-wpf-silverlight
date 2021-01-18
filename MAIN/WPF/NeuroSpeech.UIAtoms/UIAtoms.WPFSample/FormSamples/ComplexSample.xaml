@@ -1,0 +1,120 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.BasicSamples.ComplexSample"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      mc:Ignorable="d" 
+	  Title="HomePremiumSample" 
+      xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+      xmlns:nsb="http://uiatoms.neurospeech.com/wpf/buttons"
+      >
+
+    <Grid>
+        <ns:AtomForm
+            Header="Car Details (Form with Tabs)"
+            x:Name="complexForm"
+            Width="850"
+            HorizontalAlignment="Center">
+            <ns:AtomFormTab
+                Header="Details">
+
+                <ns:AtomTextBox
+                    ns:AtomForm.IsRequired="True"
+                    ns:AtomForm.Label="Manufacturer:"
+                    ns:AtomForm.MissingValueMessage="Manufacturer is required" />
+
+                <ns:AtomFormRow>
+                    <ns:AtomTextBox
+                        ns:AtomForm.IsRequired="True"
+                        ns:AtomForm.Label="Model:"
+                        ns:AtomForm.MissingValueMessage="Model is required" />
+
+                    <ns:AtomComboBox
+                        ns:AtomForm.MissingValueMessage="Please select category"
+                        ns:AtomForm.IsRequired="True"
+                        ns:AtomForm.Label="Category:"
+                        IsFilterVisible="False">
+
+                        <sys:String>Sports</sys:String>
+                        <sys:String>Sloon</sys:String>
+                        <sys:String>Truck</sys:String>
+
+                    </ns:AtomComboBox>
+
+                </ns:AtomFormRow>
+
+
+                <TextBlock>AtomFormTab can contain AtomFormRow and AtomFormGroup in which you can customize each tab.</TextBlock>
+
+                <ns:AtomFormRow
+                    Header="Price (AtomFormRow: Hosting Two Equally Sized Controls)">
+                    <ns:AtomCurrencyTextBox
+                        ns:AtomForm.Label="Max Retail Price:" />
+                    <ns:AtomCurrencyTextBox
+                        ns:AtomForm.Label="Deailer Price:" />
+
+                </ns:AtomFormRow>
+                <ns:AtomFormGroup
+                    Header="Sample Links (AtomFormGroup: Row Layout 2,1)"
+                    RowLayout="2,1">
+                    <Button
+                        ns:AtomForm.Label="Link 1:">http://www3.mercedes-benz.com
+                    </Button>
+
+                    <Button
+                        ns:AtomForm.Label="Link 2:">http://www3.mercedes-benz.com
+                    </Button>
+                    <Button
+                        ns:AtomForm.Label="Link 3:">http://www3.mercedes-benz.com
+                    </Button>
+
+                </ns:AtomFormGroup>
+
+            </ns:AtomFormTab>
+
+
+            <ns:AtomFormTab
+                Header="Performance">
+                <ns:AtomDoubleTextBox
+                    ns:AtomForm.Label="Capacity:" />
+
+                <ns:AtomFormRow>
+                    <ns:AtomDoubleTextBox
+                        ns:AtomForm.Label="HP:" />
+
+                    <ns:AtomDoubleTextBox
+                        ns:AtomForm.Label="Cyl:" />
+                </ns:AtomFormRow>
+                <ns:AtomFormRow>
+                    <ns:AtomDoubleTextBox
+                        ns:AtomForm.Label="MPG City:" />
+
+                    <ns:AtomDoubleTextBox
+                        ns:AtomForm.Label="MPG Hightway:" />
+                </ns:AtomFormRow>
+                <ns:AtomDoubleTextBox
+                    ns:AtomForm.Label="# of Gears:" />
+
+            </ns:AtomFormTab>
+
+
+            <ns:AtomTabContent
+                Header="Description">
+                <ns:AtomTextBox
+                    AcceptsReturn="True"
+                    Width="Auto"
+                    HorizontalAlignment="Stretch"
+                    Height="Auto"
+                    VerticalAlignment="Stretch"
+                    TextWrapping="Wrap"
+                    VerticalScrollBarVisibility="Auto" />
+            </ns:AtomTabContent>
+            <ns:AtomForm.Footer>
+                <nsb:AtomSubmitButton
+                    Content="Submit"
+                    ValidationRootElement="complexForm" />
+            </ns:AtomForm.Footer>
+        </ns:AtomForm>
+    </Grid>
+</Page>

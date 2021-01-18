@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<namespace name="NeuroSpeech.UIAtoms.Designers.Form.Designer">
+  <class name="FormItemModel">
+    <property name="Label" type="string" namePrefix="AtomForm." />
+    <property name="Description" type="string" namePrefix="AtomForm." />
+    <property name="IsRequired" type="bool" namePrefix="AtomForm." />
+    <property name="Title" type="string" namePrefix="AtomForm." />
+    <property name="InvalidValueMessage" type="string" namePrefix="AtomForm." />
+    <property name="MissingValueMessage" type="string" namePrefix="AtomForm." />
+    <property name="HorizontalAlignment" transform="true" type="System.Windows.HorizontalAlignment" />
+    <property name="VerticalAlignment"  transform="true" type="System.Windows.VerticalAlignment" />
+    <property name="Width" type="double" />
+  </class>
+  <class name="FormModel">
+    <property name="Header" type="string" />
+    <property name="RowLayout" type="string" />
+    <property name="LabelWidth" type="double" />
+    <property name="ActualHeight" type="double" />
+    <property name="ActualWidth" type="double" />
+  </class>
+  <!--<class name="EntityFormItemModel">
+    <property name="Label" type="string" namePrefix="AtomEntityForm." />
+    <property name="Description" type="string" namePrefix="AtomEntityForm." />
+    <property name="IsRequired" type="bool" namePrefix="AtomEntityForm." />
+    <property name="Title" type="string" namePrefix="AtomEntityForm." />
+    <property name="HorizontalAlignment" transform="true" type="System.Windows.HorizontalAlignment" />
+    <property name="VerticalAlignment"  transform="true" type="System.Windows.VerticalAlignment" />
+    <property name="Width" type="double" />
+  </class>
+  <class name="EntityFormModel">
+    <property name="Header" type="string" />
+    <property name="RowLayout" type="string" />
+    <property name="LabelWidth" type="double" />
+    <property name="ActualHeight" type="double" />
+    <property name="ActualWidth" type="double" />
+  </class>-->
+</namespace>

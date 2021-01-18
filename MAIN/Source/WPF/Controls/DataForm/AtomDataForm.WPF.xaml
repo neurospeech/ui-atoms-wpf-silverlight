@@ -1,0 +1,147 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:NeuroSpeech.UIAtoms.Controls"
+                    >
+    <Style
+        TargetType="{x:Type local:AtomDataForm}"
+        BasedOn="{StaticResource {x:Type ItemsControl}}">
+        <Setter
+            Property="HeaderBackground">
+            <Setter.Value>
+                <LinearGradientBrush
+                    EndPoint="0.5,1"
+                    StartPoint="0.5,0">
+                    <GradientStop
+                        Color="#FF74A1FF"
+                        Offset="0" />
+                    <GradientStop
+                        Color="#FF9EBDFF"
+                        Offset="1" />
+                    <GradientStop
+                        Color="#FF98B9FF"
+                        Offset="0.478" />
+                    <GradientStop
+                        Color="#FF86ADFF"
+                        Offset="0.47" />
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter
+            Property="BorderBrush">
+            <Setter.Value>
+                <SolidColorBrush
+                    Color="#FF9EBDFF" />
+            </Setter.Value>
+        </Setter>
+        <Setter
+            Property="BorderThickness"
+            Value="1" />
+        <Setter
+            Property="Template">
+            <Setter.Value>
+                <ControlTemplate
+                    TargetType="{x:Type local:AtomDataForm}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition
+                                Height="Auto" />
+                            <RowDefinition
+                                Height="Auto" />
+                            <RowDefinition />
+                            <RowDefinition
+                                Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition
+                                Width="Auto" />
+                            <ColumnDefinition />
+                            <ColumnDefinition
+                                Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Rectangle
+                            StrokeThickness="{TemplateBinding BorderThickness}"
+                            Stroke="{TemplateBinding BorderBrush}"
+                            Fill="{TemplateBinding Background}"
+                            VerticalAlignment="Stretch"
+                            Height="Auto"
+                            Grid.RowSpan="3"
+                            RadiusX="5"
+                            RadiusY="5"
+                            x:Name="PART_Box"
+                            Grid.ColumnSpan="3" />
+                        <Border
+                            x:Name="PART_HeaderBorder"
+                            Padding="5"
+                            CornerRadius="5"
+                            Background="{TemplateBinding HeaderBackground}"
+                            Grid.ColumnSpan="3">
+                            <ContentPresenter
+                                ContentSource="Header" />
+                        </Border>
+                        <local:AtomToggleButtonBar
+                            Grid.Row="1"
+                            Grid.ColumnSpan="2"
+                            x:Name="PART_Selector" />
+                        <ScrollViewer
+                            Grid.Row="2"
+                            Grid.ColumnSpan="2"
+                            Margin="5"
+                            BorderThickness="0"
+                            VerticalScrollBarVisibility="Auto">
+                            <ItemsPresenter />
+                        </ScrollViewer>
+
+
+                        <HeaderedItemsControl
+                            Grid.Row="2"
+                            Header="Errors"
+                            x:Name="PART_Errors"
+                            Margin="5,5,-5,0"
+                            Style="{StaticResource ErrorsControlStyle}"
+                            Grid.Column="2"
+                            VerticalAlignment="Top"
+                            MaxWidth="200" />
+                        <Border
+                            Grid.Row="3"
+                            Width="{TemplateBinding LabelWidth}" />
+                        <ContentControl
+                            x:Name="PART_Footer"
+                            Grid.Column="1"
+                            HorizontalAlignment="Left"
+                            Margin="20,0,0,4"
+                            Grid.Row="3">
+                            <local:AtomStackPanel
+                                Grid.Row="3"
+                                Grid.Column="1"
+                                Orientation="Horizontal"
+                                Margin="5"
+                                HorizontalAlignment="Left">
+                                <Button
+                                    Content="Edit"
+                                    x:Name="PART_Edit"
+                                    Width="75" />
+                                <Button
+                                    Content="Save"
+                                    x:Name="PART_Save"
+                                    Width="75" />
+                                <Button
+                                    Content="Cancel"
+                                    x:Name="PART_Cancel"
+                                    Width="75" />
+                            </local:AtomStackPanel>
+                        </ContentControl>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter
+            Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <local:AtomFlexibleGrid
+                        IsItemsHost="True" />
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

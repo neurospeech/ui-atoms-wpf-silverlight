@@ -1,0 +1,65 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:NeuroSpeech.UIAtoms.Controls"
+                    >
+    <Style
+        TargetType="{x:Type local:AtomNumberContainerControl}">
+        <Setter
+            Property="Template">
+            <Setter.Value>
+                <ControlTemplate
+                    TargetType="{x:Type local:AtomNumberContainerControl}">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition
+                                    Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <local:AtomTextBox
+                                x:Name="PART_TextBox"
+                                TextAlignment="Right"
+                                Grid.RowSpan="2"
+                                HorizontalAlignment="Stretch"
+                                Width="Auto" />
+                            <Button
+                                Grid.Column="1"
+                                IsTabStop="False"
+                                Command="{x:Static Slider.IncreaseLarge}"
+                                CommandTarget="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}">
+                                <Path
+                                    Fill="Black"
+                                    Stretch="Fill"
+                                    Stroke="Black"
+                                    Width="8"
+                                    Height="4"
+                                    Data="M0,4 L4,0 8,4 z" />
+                            </Button>
+                            <Button
+                                Grid.Column="1"
+                                Grid.Row="1"
+                                IsTabStop="False"
+                                Command="{x:Static Slider.DecreaseLarge}"
+                                CommandTarget="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}">
+                                <Path
+                                    Fill="Black"
+                                    Stretch="Fill"
+                                    Stroke="Black"
+                                    Width="8"
+                                    Height="4"
+                                    Data="M0,0 L4,4 8,0 z" />
+                            </Button>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

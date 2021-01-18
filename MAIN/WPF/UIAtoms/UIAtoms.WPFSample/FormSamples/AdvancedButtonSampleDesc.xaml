@@ -1,0 +1,34 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.FormSamples.AdvancedButtonSampleDesc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="AdvancedButtonSampleDesc">
+<FlowDocumentScrollViewer>
+        <FlowDocument>
+            <List>
+                <ListItem>
+                    <Paragraph>
+                    Commonly used buttons are bundled and provided alongwith the UIAtoms library to facilitate the building of forms.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <List>
+                <ListItem>
+                    <Paragraph>
+                    These buttons come preset with their corresponding images properly formatted into the button.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <List>
+                <ListItem>
+                    <Paragraph>
+                    Custom Advanced Buttons can be created by using your own .png image which can be set into the advanced button.
+                    </Paragraph>
+                </ListItem>
+            </List>
+        </FlowDocument>
+    </FlowDocumentScrollViewer>
+</Page>

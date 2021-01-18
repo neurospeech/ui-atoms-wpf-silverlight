@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Joule" Symbol="J" ID="joule">
+  <Conversions>
+    <Conversion Name="British Thermal Unit" Symbol="Btu_IT" ID="British_Thermal_Unit_IT" SubType="IT" Factor="1.055056" Factor10="3" />
+    <Conversion Name="British Thermal Unit" Symbol="Btu_th" ID="British_Thermal_Unit_th" SubType="th" Factor="1.05435" Factor10="3" />
+    <Conversion Name="British Thermal Unit" Symbol="Btu" ID="British_Thermal_Unit_mean" SubType="mean" Factor="1.05587" Factor10="3" />
+    <Conversion Name="British Thermal Unit" Symbol="Btu" ID="British_Thermal_Unit_39F" SubType="39°F" Factor="1.05967" Factor10="3" />
+    <Conversion Name="British Thermal Unit" Symbol="Btu" ID="British_Thermal_Unit_59F" SubType="59°F" Factor="1.0548" Factor10="3" />
+    <Conversion Name="British Thermal Unit" Symbol="Btu" ID="British_Thermal_Unit_60F" SubType="60°F" Factor="1.05468" Factor10="3" />
+    <Conversion Name="Calorie" Symbol="cal_IT" ID="calorie_IT" SubType="IT" Factor="4.1868" Factor10="0" />
+    <Conversion Name="Calorie" Symbol="cal_th" ID="calorie_th" SubType="th" Factor="4.184" Factor10="0" />
+    <Conversion Name="Calorie" Symbol="cal" ID="calorie_mean" SubType="mean" Factor="4.19002" Factor10="0" />
+    <Conversion Name="Calorie" Symbol="cal_15" ID="calorie_15F" SubType="15°C" Factor="4.1858" Factor10="0" />
+    <Conversion Name="Calorie" Symbol="cal_20" ID="calorie_20F" SubType="20°C" Factor="4.1819" Factor10="0" />
+    <Conversion Name="Calorie" Symbol="calories_IT" ID="calorie_IT_nutrition" SubType="IT - Kilogram (nutrition)" Factor="4.1868" Factor10="3" />
+    <Conversion Name="Calorie" Symbol="calories_th" ID="calorie_th_nutrition" SubType="th - Kilogram (nutrition)" Factor="4.184" Factor10="3" />
+    <Conversion Name="Calorie" Symbol="calories" ID="calorie_mean_nutrition" SubType="mean - Kilogram (nutrition)" Factor="4.19002" Factor10="2" />
+    <Conversion Name="Electronvolt" Symbol="eV" ID="electronvolt" Factor="1.602176" Factor10="-19" />
+    <Conversion Name="Erg" Symbol="erg" ID="erg" Factor="1" Factor10="-7" />
+    <Conversion Name="Foot Poundal" Symbol="foot poundal" ID="foot_poundal" Factor="4.214011" Factor10="-2" />
+    <Conversion Name="Foot pound force" Symbol="ft.lbf" ID="foot_pound_force" Factor="1.355818" Factor10="0" />
+    <Conversion Name="Kilocalorie" Symbol="kcal_IT" ID="kilocalorie_IT" SubType="IT" Factor="4.1868" Factor10="3" />
+    <Conversion Name="Kilocalorie" Symbol="kcal_th" ID="kilocalorie_th" SubType="th" Factor="4.184" Factor10="3" />
+    <Conversion Name="Kilocalorie" Symbol="kcal" ID="kilocalorie_mean" SubType="mean" Factor="4.19002" Factor10="3" />
+    <Conversion Name="Kilowatt hour" Symbol="kW.h" ID="kilowatt_hour" Factor="3.6" Factor10="6" />
+    <Conversion Name="Quad" Symbol="quad" ID="quad" SubType="10^15 Btu_IT" Factor="1.055056" Factor10="18" />
+    <Conversion Name="Therm" Symbol="therm_EC" ID="therm_EC" SubType="EC" Factor="1.05506" Factor10="8" />
+    <Conversion Name="Therm" Symbol="therm_US" ID="therm_US" SubType="US" Factor="1.054804" Factor10="8" />
+    <Conversion Name="Ton of TNT" Symbol="ton of TNT" ID="ton_of_TNT" SubType="Energy Equivalent" Factor="4.184" Factor10="9" />
+    <Conversion Name="Watt Hour" Symbol="W.h" ID="watt_hour" Factor="3.6" Factor10="3" />
+    <Conversion Name="Watt Second" Symbol="W.s" ID="watt_second" Factor="1" Factor10="0" />
+  </Conversions>
+</Unit>

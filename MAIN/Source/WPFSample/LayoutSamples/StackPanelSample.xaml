@@ -1,0 +1,59 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.LayoutSamples.StackPanelSample"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+	Title="StackPanelSample">
+
+    <ns:AtomForm LabelWidth="155" Header="Stack Panel" RowLayout="1,2,1"
+                 Width="900">
+            <ns:AtomRadioButtonList ns:AtomForm.Label="Orientation:"
+                                    HorizontalAlignment="Left" Grid.ColumnSpan="2"
+                                    SelectedIndex="0"
+                                    x:Name="radioButtonOrientation">
+                <ns:AtomRadioButtonList.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <ns:AtomStackPanel IsItemsHost="True" Orientation="Horizontal" HorizontalGap="10"/>
+                    </ItemsPanelTemplate>
+                </ns:AtomRadioButtonList.ItemsPanel>
+                <sys:String>Horizontal</sys:String>
+            <sys:String>Vertical</sys:String>
+        </ns:AtomRadioButtonList>
+
+            <Slider
+            ns:AtomForm.Label="Horizontal Gap:"
+            Minimum="0" Maximum="40" Value="5" Name="hSlider" />
+            <Slider
+            ns:AtomForm.Label="Vertical Gap:" Name="vSlider" 
+            Minimum="0" Maximum="40" Value="5"
+            />
+
+            <ns:AtomStackPanel 
+                    ns:AtomForm.Label="Atom Stack Panel:"
+                    VerticalGap="{Binding Value,ElementName=vSlider}" 
+                    HorizontalGap="{Binding Value,ElementName=hSlider}"
+                    Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" 
+                    Orientation="{Binding SelectedItem,ElementName=radioButtonOrientation}"
+                    VerticalAlignment="Center">
+
+                <Border  Height="200" Width="200" BorderBrush="Black" BorderThickness="1">
+                    <Image Name="gridimg4" Source=
+                            "/UIAtoms.WPFSamples;component/Asset/gridImag4.jpg"/>
+                </Border>
+
+                <Border  Height="200" Width="200" BorderBrush="Black" BorderThickness="1">
+                    <Image Name="gridimg5" Source=
+                            "/UIAtoms.WPFSamples;component/Asset/gridImag5.jpg"/>
+                </Border>
+
+                <Border Width="200" Height="200" BorderBrush="Black" BorderThickness="1">
+                    <Image Name="gridimg6" Source=
+                            "/UIAtoms.WPFSamples;component/Asset/gridImag6.jpg"/>
+                </Border>
+
+            </ns:AtomStackPanel>
+    </ns:AtomForm>
+</Page>

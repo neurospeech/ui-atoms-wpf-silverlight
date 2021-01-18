@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="PageNode" nillable="true" type="PageNode" />
+  <xs:complexType name="PageNode">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Children" type="ArrayOfPageNode" />
+    </xs:sequence>
+    <xs:attribute name="Name" type="xs:string" />
+    <xs:attribute name="Source" type="xs:string" />
+    <xs:attribute name="Introduction" type="xs:string" />
+    <xs:attribute name="DescriptionSource" type="xs:string" />
+    <xs:attribute name="XAMLName" type="xs:string" />
+    <xs:attribute name="HasChildren" type="xs:boolean"/>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfPageNode">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PageNode" nillable="true" type="PageNode" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

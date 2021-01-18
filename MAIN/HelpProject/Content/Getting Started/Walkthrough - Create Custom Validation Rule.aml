@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="1ae1a8b4-70c9-4d72-9fbc-904ee58c3838" revisionNumber="1">
+  <developerHowToDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+    <introduction>
+      <para>Lets create custom validation rule to validate <codeInline>SelectedDate</codeInline>
+      property of <codeInline>DatePicker</codeInline> class of Toolkit Library.
+      </para>
+    </introduction>
+    <!-- Optional procedures followed by optional code example but must have
+         at least one procedure or code example -->
+    <procedure>
+      <title>Create Custom Validation Rule</title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>Create a class named 
+            <application>ToolkitDateValidationRule</application> as shown
+            below. And add namespaces as shown below.
+            </para>
+			<code language="cs">
+				using System.Windows;
+				using NeuroSpeech.UIAtoms.Validation;
+				using NeuroSpeech.UIAtoms.Controls;
+
+			    public class ToolkitDateValidationRule
+			        : AtomValidationRule
+			    {
+			    }
+			</code>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>As <token>RefAtomValidationRule</token> is an abstract class
+            you must implement its Validate method as shown below.
+            </para>
+            
+			<code language="cs">	
+				using System.Windows;
+				using NeuroSpeech.UIAtoms.Validation;
+				using NeuroSpeech.UIAtoms.Controls;
+				
+			    public class ToolkitDateValidationRule
+			        : AtomValidationRule
+			    {
+			        public override AtomValidationError 
+			            Validate(
+			                UIElement e, 
+			                DependencyProperty property, 
+			                object value)
+			        {
+			            throw new NotImplementedException();
+			        }
+			    }
+			</code>
+
+          </content>
+        </step>
+        
+        <step>
+          <content>
+            <para>Validate method must return null value if validation was 
+            successful. Otherwise it must return an object of type 
+            <token>RefAtomValidationError</token> along with its properties 
+            correctly initialized.
+            </para>
+            
+			<code language="cs">
+
+		        public override AtomValidationError 
+		            Validate(
+		                UIElement e, 
+		                DependencyProperty property, 
+		                object value)
+		        {
+		            DatePicker dp = e as DatePicker;
+		            if (dp.SelectedValue.HasValue)
+		                return null;
+		            return new AtomValidationError 
+		                { 
+		                    Property=property,
+		                    Source=e,
+		                    Message=
+		                        AtomForm.GetMissingValueMessage(e)
+		                };
+		        }
+
+			</code>
+			<para>The logic specified here is very simple as it only 
+			returns Message to be displayed in case of empty value. 
+			<token>RefAtomForm</token> has two attached properties for validation
+			error messages. Both can be customized for every individual controls.</para>
+          </content>
+          
+          
+			<alert class="note">
+			  <para>It is important to fill <token>RefAtomValidationError</token> correctly
+			  because that is used by <token>RefAtomForm</token> to display error message and
+			  keep track of invalid items and controls.</para>
+			</alert>
+
+          
+        </step>
+        
+    
+        <step>
+          <content>
+            <para>Now in your XAML file, you can use following code to use
+            newly created <codeInline>ToolkitDateValidationRule</codeInline> 
+            class as shown below.
+            </para>
+            
+	            <code language="XAML">
+				<![CDATA[
+				
+	            <DatePicker x:Name="tb"
+	                     ns:AtomForm.Label="Test:"
+	                     ns:AtomForm.IsRequired="True"
+	                     ns:AtomForm.ValidationProperty="SelectedDate"
+	                     SelectedDate="{Binding BirthDate}"
+	                     >
+	                <ns:AtomForm.AtomValidator>
+	                	<nsv:AtomPropertyValidator Property="SelectedDate">
+	                		<nsv:AtomPropertyValidator.ValidationRule>
+	                    		<local:ToolkitDateValidationRule/>
+	                    	</nsv:AtomPropertyValidator.ValidationRule>
+	                    </nsv:AtomPropertyValidator>
+	                </ns:AtomForm.AtomValidator>
+	            </TextBox>
+				
+				]]>
+				</code>
+				
+				<para>See carefully, we need to specify Validation Rule, 
+				as well as the property to be validated. You can either
+				use inline form or resource key to set Validation Rule.
+				</para>
+
+				
+				<alert class="note">
+				  <para>
+				  ValidationProperty is should not be confused with
+				  binding path, as ValidationProperty is property of control
+				  to be validated and it has no connection with binding path.
+				  This is helpful in case of binding to existing middleware 
+				  which does not support data validations.
+				  </para>
+				</alert>
+				
+            
+          </content>
+          
+        </step>        
+        </steps>
+      <!-- <conclusion>Optional conclusion</conclusion> -->
+    </procedure>
+    <!-- <codeExample>Optional code example</codeExample> -->
+    <!-- <buildInstructions>Optional instructions for building a
+         code example.</buildInstructions> -->
+    <!-- <robustProgramming>Optional discussion of error handling and other
+         issues related to writing solid code.</robustProgramming> -->
+    <!-- <security>Optional discussion of security issues.</security> -->
+    <relatedTopics>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID">Link text</link>
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on CodePlex</linkText>
+          <linkAlternateText>Go to CodePlex</linkAlternateText>
+          <linkUri>http://shfb.codeplex.com</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerHowToDocument>
+</topic>

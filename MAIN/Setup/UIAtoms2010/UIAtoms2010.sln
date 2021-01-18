@@ -1,0 +1,109 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "UIAtomsForWPF", "UIAtoms2010ForWPF\UIAtoms2010ForWPF.vdproj", "{D8CB7703-B5DF-4447-8F57-77C1199CD102}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5025574C-439C-4697-8117-2B21F3271961} = {5025574C-439C-4697-8117-2B21F3271961}
+		{C31430B4-FEA2-4281-9EE1-E8F26E1C2714} = {C31430B4-FEA2-4281-9EE1-E8F26E1C2714}
+		{4B0E1CCF-5203-479C-8BF9-3D6A2157D66B} = {4B0E1CCF-5203-479C-8BF9-3D6A2157D66B}
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "UIAtomsDemo", "UIAtoms2010Demo\UIAtoms2010.vdproj", "{070179B7-0BF5-4DD0-A24F-58E6DD1748BC}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "UIAtomsForSL", "UIAtomsForSL\UIAtomsForSL.vdproj", "{F09B5B8D-D593-450D-923D-8AF9AF8665A3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5025574C-439C-4697-8117-2B21F3271961} = {5025574C-439C-4697-8117-2B21F3271961}
+		{C31430B4-FEA2-4281-9EE1-E8F26E1C2714} = {C31430B4-FEA2-4281-9EE1-E8F26E1C2714}
+		{4B0E1CCF-5203-479C-8BF9-3D6A2157D66B} = {4B0E1CCF-5203-479C-8BF9-3D6A2157D66B}
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "UIAtomsSuite", "UIAtomsSuite\UIAtomsSuite.vdproj", "{53D38F31-DBE2-46D3-AA9F-E91E7B6A9E23}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5025574C-439C-4697-8117-2B21F3271961} = {5025574C-439C-4697-8117-2B21F3271961}
+		{C31430B4-FEA2-4281-9EE1-E8F26E1C2714} = {C31430B4-FEA2-4281-9EE1-E8F26E1C2714}
+		{4B0E1CCF-5203-479C-8BF9-3D6A2157D66B} = {4B0E1CCF-5203-479C-8BF9-3D6A2157D66B}
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "UIAtomsSuiteSourceCode", "UIAtomsSuiteSourceCode\UIAtomsSuiteSourceCode.vdproj", "{F56940BD-D96C-4041-85A4-AD04BDDC23C7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5025574C-439C-4697-8117-2B21F3271961} = {5025574C-439C-4697-8117-2B21F3271961}
+		{C31430B4-FEA2-4281-9EE1-E8F26E1C2714} = {C31430B4-FEA2-4281-9EE1-E8F26E1C2714}
+		{4B0E1CCF-5203-479C-8BF9-3D6A2157D66B} = {4B0E1CCF-5203-479C-8BF9-3D6A2157D66B}
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ModuleSL", "ModuleSL\ModuleSL.vdproj", "{C31430B4-FEA2-4281-9EE1-E8F26E1C2714}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ModuleWPF", "ModuleWPF\ModuleWPF.vdproj", "{5025574C-439C-4697-8117-2B21F3271961}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ModuleCommon", "ModuleCommon\ModuleCommon.vdproj", "{4B0E1CCF-5203-479C-8BF9-3D6A2157D66B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.1.224:8080/tfs/neurospeech
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = UIAtoms2010ForWPF\\UIAtoms2010ForWPF.vdproj
+		SccProjectName1 = UIAtoms2010ForWPF
+		SccLocalPath1 = UIAtoms2010ForWPF
+		SccProjectUniqueName2 = UIAtoms2010Demo\\UIAtoms2010.vdproj
+		SccProjectName2 = UIAtoms2010Demo
+		SccLocalPath2 = UIAtoms2010Demo
+		SccProjectUniqueName3 = UIAtomsForSL\\UIAtomsForSL.vdproj
+		SccProjectName3 = UIAtomsForSL
+		SccLocalPath3 = UIAtomsForSL
+		SccProjectUniqueName4 = UIAtomsSuite\\UIAtomsSuite.vdproj
+		SccProjectName4 = UIAtomsSuite
+		SccLocalPath4 = UIAtomsSuite
+		SccProjectUniqueName5 = UIAtomsSuiteSourceCode\\UIAtomsSuiteSourceCode.vdproj
+		SccProjectName5 = UIAtomsSuiteSourceCode
+		SccLocalPath5 = UIAtomsSuiteSourceCode
+		SccProjectUniqueName6 = ModuleSL\\ModuleSL.vdproj
+		SccProjectName6 = ModuleSL
+		SccLocalPath6 = ModuleSL
+		SccProjectUniqueName7 = ModuleWPF\\ModuleWPF.vdproj
+		SccProjectName7 = ModuleWPF
+		SccLocalPath7 = ModuleWPF
+		SccProjectUniqueName8 = ModuleCommon\\ModuleCommon.vdproj
+		SccProjectName8 = ModuleCommon
+		SccLocalPath8 = ModuleCommon
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8CB7703-B5DF-4447-8F57-77C1199CD102}.Debug|Default.ActiveCfg = Debug
+		{D8CB7703-B5DF-4447-8F57-77C1199CD102}.Debug|Default.Build.0 = Debug
+		{D8CB7703-B5DF-4447-8F57-77C1199CD102}.Release|Default.ActiveCfg = Release
+		{D8CB7703-B5DF-4447-8F57-77C1199CD102}.Release|Default.Build.0 = Release
+		{070179B7-0BF5-4DD0-A24F-58E6DD1748BC}.Debug|Default.ActiveCfg = Debug
+		{070179B7-0BF5-4DD0-A24F-58E6DD1748BC}.Debug|Default.Build.0 = Debug
+		{070179B7-0BF5-4DD0-A24F-58E6DD1748BC}.Release|Default.ActiveCfg = Release
+		{070179B7-0BF5-4DD0-A24F-58E6DD1748BC}.Release|Default.Build.0 = Release
+		{F09B5B8D-D593-450D-923D-8AF9AF8665A3}.Debug|Default.ActiveCfg = Debug
+		{F09B5B8D-D593-450D-923D-8AF9AF8665A3}.Debug|Default.Build.0 = Debug
+		{F09B5B8D-D593-450D-923D-8AF9AF8665A3}.Release|Default.ActiveCfg = Release
+		{53D38F31-DBE2-46D3-AA9F-E91E7B6A9E23}.Debug|Default.ActiveCfg = Debug
+		{53D38F31-DBE2-46D3-AA9F-E91E7B6A9E23}.Debug|Default.Build.0 = Debug
+		{53D38F31-DBE2-46D3-AA9F-E91E7B6A9E23}.Release|Default.ActiveCfg = Release
+		{F56940BD-D96C-4041-85A4-AD04BDDC23C7}.Debug|Default.ActiveCfg = Debug
+		{F56940BD-D96C-4041-85A4-AD04BDDC23C7}.Debug|Default.Build.0 = Debug
+		{F56940BD-D96C-4041-85A4-AD04BDDC23C7}.Release|Default.ActiveCfg = Release
+		{C31430B4-FEA2-4281-9EE1-E8F26E1C2714}.Debug|Default.ActiveCfg = Debug
+		{C31430B4-FEA2-4281-9EE1-E8F26E1C2714}.Debug|Default.Build.0 = Debug
+		{C31430B4-FEA2-4281-9EE1-E8F26E1C2714}.Release|Default.ActiveCfg = Release
+		{C31430B4-FEA2-4281-9EE1-E8F26E1C2714}.Release|Default.Build.0 = Release
+		{5025574C-439C-4697-8117-2B21F3271961}.Debug|Default.ActiveCfg = Debug
+		{5025574C-439C-4697-8117-2B21F3271961}.Debug|Default.Build.0 = Debug
+		{5025574C-439C-4697-8117-2B21F3271961}.Release|Default.ActiveCfg = Release
+		{5025574C-439C-4697-8117-2B21F3271961}.Release|Default.Build.0 = Release
+		{4B0E1CCF-5203-479C-8BF9-3D6A2157D66B}.Debug|Default.ActiveCfg = Debug
+		{4B0E1CCF-5203-479C-8BF9-3D6A2157D66B}.Debug|Default.Build.0 = Debug
+		{4B0E1CCF-5203-479C-8BF9-3D6A2157D66B}.Release|Default.ActiveCfg = Release
+		{4B0E1CCF-5203-479C-8BF9-3D6A2157D66B}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

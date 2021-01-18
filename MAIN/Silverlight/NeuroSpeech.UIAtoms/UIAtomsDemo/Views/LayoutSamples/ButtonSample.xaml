@@ -1,0 +1,31 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.LayoutSamples.ButtonSample" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           Title="ButtonSample Page" 
+           xmlns:ns="http://uiatoms.neurospeech.com/silverlight">
+    
+    <Grid x:Name="LayoutRoot">
+        <ns:AtomForm 
+            Name="buttonForm" Header="Button" 
+            Width="700">
+
+            <TextBlock>
+                This button can verify by giving alert to user before executing<LineBreak/>
+                Click event handler or corresponding command.
+            </TextBlock>
+
+            <TextBlock Name="txtbSubmit"  Width="100" Height="25" HorizontalAlignment="Left" />
+
+            <ns:AtomButton 
+                HorizontalAlignment="Left"
+                Content="Button" Width="100" Verify="True" 
+                Name="btnSubmit" Click="btnSubmit_Click"
+                VerificationTitle="Confirmation"/>
+
+        </ns:AtomForm>
+    </Grid>
+</navigation:Page>

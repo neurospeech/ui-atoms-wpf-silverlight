@@ -1,0 +1,85 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.FormSamples.Validations.InbuiltValidationPropertyChanged" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="740" d:DesignHeight="480"
+           Title="InbuiltValidations Page" 
+           xmlns:sys="clr-namespace:System;assembly=mscorlib"
+           xmlns:ns="http://uiatoms.neurospeech.com/silverlight">
+
+    <ns:AtomForm x:Name="theForm"
+                 Header="Inbuilt Validation with Validation Mode set to Property Changed"
+                 Width="700"
+                 
+                 >
+        <TextBlock>
+            Validation will be triggered as soon as you modify any content of following fields.
+        </TextBlock>
+        <ns:AtomTextBoxWithRegEx 
+            ns:AtomForm.MissingValueMessage="Username is required"
+            ns:AtomForm.Label="Username:" 
+            ns:AtomForm.IsRequired="True" 
+            ValidationRegEx="[a-zA-Z0-9]+"
+            ns:AtomForm.Description="Inbuilt validation for alphanumeric text"
+            />
+
+        <ns:AtomPasswordBox
+            ns:AtomForm.MissingValueMessage="Password is required"
+            ns:AtomForm.Label="Password:"
+            ns:AtomForm.IsRequired="True"
+            ns:AtomForm.Description="Inbuilt validation of non empty text"
+            x:Name="passwordBox"
+            />
+
+        <ns:AtomPasswordBoxAgain
+            ns:AtomForm.MissingValueMessage="Password is required"
+            ns:AtomForm.Label="Password:"
+            ns:AtomForm.IsRequired="True"
+            ns:AtomForm.Description="Inbuilt validation of password matching with first password box"
+            FirstPasswordBoxName="passwordBox"
+            />
+
+        <ns:AtomEmailTextBox
+            ns:AtomForm.MissingValueMessage="Email is required"
+            ns:AtomForm.Label="Email:"
+            ns:AtomForm.IsRequired="True"
+            ns:AtomForm.Description="Inbuilt validation of single valid email address"
+            />
+
+        <ns:AtomEmailTextBox
+            ns:AtomForm.MissingValueMessage="Email is required"
+            AllowMultiple="True"
+            ns:AtomForm.Label="Emails:"
+            ns:AtomForm.IsRequired="True"
+            ns:AtomForm.Description="Inbuilt validation of multiple email address"
+            />
+
+        <ns:AtomComboBox 
+            ns:AtomForm.MissingValueMessage="Please select gender"
+            ns:AtomForm.IsRequired="True" 
+            ns:AtomForm.Description="Inbuilt validation of Selected Index of ComboBox/ListBox etc" ns:AtomForm.Label="Gender:"
+            HorizontalAlignment="Left"
+            >
+            <sys:String>Male</sys:String>
+            <sys:String>Female</sys:String>
+        </ns:AtomComboBox>
+
+        <ns:AtomCheckBox 
+            ns:AtomForm.MissingValueMessage="Agreement is required"
+            Content="Agree to Terms"  
+            ns:AtomForm.Description="Inbuilt validation of accepting checkbox value" 
+            ns:AtomForm.IsRequired="True"/>
+
+        <ns:AtomButton
+            HorizontalAlignment="Left"
+            Content="Submit"
+            ValidationRootElement="theForm"
+            ns:AtomForm.Description="Click button to validate the form"
+            />
+
+    </ns:AtomForm>
+</navigation:Page>
+

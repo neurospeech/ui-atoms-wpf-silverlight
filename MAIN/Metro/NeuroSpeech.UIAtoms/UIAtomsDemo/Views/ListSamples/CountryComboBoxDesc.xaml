@@ -1,0 +1,23 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.ListSamples.CountryComboBoxDesc" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="CountryComboBoxDesc Page">
+    <Grid x:Name="LayoutRoot">
+        <StackPanel>
+            <TextBlock Text="•	The 'Please Select Country' is a required field. Clicking the 'Validate' button without making a selection will trigger a customized error message for IsRequired."
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+            <TextBlock Text="•	The list of countries is readily available within the control, and the selections will display the list of countries along with the flags of the countries."
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+            <TextBlock Text="•	There is a 'Search' TextBox provided on the top of the list. It acts as a filter for the content of the ComboBox. Inputting a few characters will filter the list of names to display the countries with names that have that string of characters. (This filter feature can be used in all types of ListBoxes)"
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+            <TextBlock Text="•	Once a selection is made, the system will instantaneously return the selected value by displaying the result in the 'Selected Country' field."
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+        </StackPanel>
+
+    </Grid>
+</navigation:Page>

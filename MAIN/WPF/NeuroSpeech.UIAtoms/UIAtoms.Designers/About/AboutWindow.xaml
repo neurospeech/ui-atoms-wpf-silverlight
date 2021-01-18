@@ -1,0 +1,39 @@
+﻿<Window x:Class="NeuroSpeech.UIAtoms.Design.About.AboutWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             Title="About UI Atoms 2011"
+             mc:Ignorable="d" 
+             Width="500" Height="270" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition  />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Image Width="463" Height="103" HorizontalAlignment="Left" Source="/NeuroSpeech.UIAtoms.Designers;component/About/UIAtomsHeader.png" />
+        <TextBlock Grid.Row="1" Margin="5">
+            License: <Run FontWeight="Bold" x:Name="licenseType"/><LineBreak/>
+            <LineBreak/>
+            Support: 
+            <Hyperlink NavigateUri="mailto:uiatoms@neurospeech.com">uiatoms@neurospeech.com</Hyperlink><LineBreak/>
+            <LineBreak/>
+            Website: <Hyperlink NavigateUri="http://go.neurospeech.com/2" TargetName="_blank">http://uiatoms.neurospeech.com</Hyperlink>
+        </TextBlock>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Buy Now" Width="75" Margin="5" x:Name="buyNowButton" Click="buyNowButton_Click">
+                <Button.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF62FF03" Offset="1" />
+                        <GradientStop Color="White" Offset="0.081" />
+                    </RadialGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="OK" Width="75" Margin="5" Click="Button_Click" />
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBlock>(C) Copyrights Reserved, 2011</TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>

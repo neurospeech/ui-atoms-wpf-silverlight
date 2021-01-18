@@ -1,0 +1,31 @@
+﻿<Page xmlns:ns="http://uiatoms.neurospeech.com/wpf" 
+      x:Class="UIAtoms.WPFSamples.ListSamples.RadioButtonList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      mc:Ignorable="d" 
+   	  Title="RadioButtonList" Loaded="Page_Loaded">
+
+    <Grid>
+        <ns:AtomForm 
+            Name="rbl" LabelWidth="100" Width="700" 
+            Header="RadioButton List" 
+            HorizontalAlignment="Center">
+            
+            <ns:AtomRadioButtonList 
+                ns:AtomForm.Label="Gender:" ns:AtomForm.IsRequired="True" 
+                BorderThickness="0" Name="radiogender" DisplayMemberPath="GenderType"
+                SelectedValuePath="GenderType" 
+                ns:AtomForm.MissingValueMessage="Please select gender" IsFilterVisible="False" />
+            
+            <ns:AtomButton 
+                HorizontalAlignment="Left"
+                Name="Validate" Content="Submit" 
+                ValidationRootElement="rbl" Margin="0,20,0,20"/>
+
+            <TextBlock Text="{Binding ElementName=radiogender,Path=SelectedItem.GenderType}"/>
+        </ns:AtomForm>
+    </Grid>
+</Page>

@@ -1,0 +1,225 @@
+﻿<Window xmlns:my="clr-namespace:NeuroSpeech.UIAtoms.Designers.Form.Designer"  
+        x:Class="NeuroSpeech.UIAtoms.Designers.Form.Generator.AtomFormGenerator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Form Designer - NeuroSpeech UIAtoms" Height="500" Width="800"
+        xmlns:buttons="clr-namespace:NeuroSpeech.UIAtoms.Designers.Form.Designer"
+        x:Name="generator" xmlns:my1="clr-namespace:NeuroSpeech.UIAtoms.Designers.Form.Generator">
+    <Window.Resources>
+        <Style TargetType="ListViewItem">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition  />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <ToolBar>
+            <Button 
+                Command="{Binding OpenTypeCommand}" Margin="5">
+                <StackPanel Orientation="Horizontal">
+                    <Image 
+                         Width="16" Height="16"
+                        Margin="2"
+                        Source="/NeuroSpeech.UIAtoms.Designers;component/Icons/Objects.png" 
+                           />
+                    <TextBlock>Generate From Type</TextBlock>
+                </StackPanel>
+            </Button>
+            <Separator/>
+            <TextBlock VerticalAlignment="Center" Margin="5" Text="{Binding DefaultType.Name}" Width="100"/>
+            <Button Command="{Binding ChangeDefaultTypeCommand}">
+                <StackPanel Orientation="Horizontal">
+                    <Image 
+                         Width="16" Height="16"
+                        Margin="2"
+                        Source="/NeuroSpeech.UIAtoms.Designers;component/Icons/Refresh.png" 
+                           />
+                    <TextBlock>Change</TextBlock>
+                </StackPanel>
+            </Button>
+            <Separator/>
+            <Button Command="{Binding AddNewItemCommand}" Margin="5">
+                <StackPanel Orientation="Horizontal">
+                    <Image 
+                         Width="16" Height="16"
+                        Margin="2"
+                        Source="/NeuroSpeech.UIAtoms.Designers;component/Icons/AtomAddButton.Icon.png" 
+                           />
+                    <TextBlock>Add Control</TextBlock>
+                </StackPanel>
+            </Button>
+        </ToolBar>
+        <StackPanel Grid.Row="1">
+            <my:FormItemControl Header="Header" >
+                <TextBox Text="{Binding FormModel.Header,Mode=TwoWay}"/>
+            </my:FormItemControl>
+            <my:FormItemControl Header="LabelWidth" >
+                <TextBox Text="{Binding FormModel.LabelWidth,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+            </my:FormItemControl>
+            <my:FormItemControl Header="RowLayout" >
+                <TextBox Text="{Binding FormModel.RowLayout,Mode=TwoWay}"/>
+            </my:FormItemControl>
+        </StackPanel>
+        <ListView Grid.Row="2" ItemsSource="{Binding Items}">
+            <ListView.View>
+                <GridView x:Name="itemListView">
+                    <GridView.Columns>
+                        <GridViewColumn>
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <buttons:MoveUpButton
+                                        Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=my1:AtomFormGenerator, AncestorLevel=1}, Path=DataContext.MoveUpCommand}"
+                                        CommandParameter="{Binding}"
+                                        />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn>
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <buttons:MoveDownButton
+                                        Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=my1:AtomFormGenerator, AncestorLevel=1}, Path=DataContext.MoveDownCommand}"
+                                        CommandParameter="{Binding}"
+                                        />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn>
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <buttons:DeleteButton
+                                        Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=my1:AtomFormGenerator, AncestorLevel=1}, Path=DataContext.DeleteCommand}"
+                                        CommandParameter="{Binding}"
+                                        />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Type">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Text="{Binding Item.ItemType.Name}" Margin="0,0,4,0" />
+                                        <Button
+                                        Grid.Column="1"
+                                        Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=my1:AtomFormGenerator, AncestorLevel=1}, Path=DataContext.ChangeTypeCommand}"
+                                        CommandParameter="{Binding}"
+                                            ToolTip="Change type of this Control"
+                                            >
+                                            <Image 
+                                                Width="16" Height="16"
+                                                Source="/NeuroSpeech.UIAtoms.Designers;component/Icons/Refresh.png" />
+                                        </Button>
+                                    </Grid>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Label" Width="Auto">
+                            <GridViewColumn.CellTemplate >
+                                <DataTemplate>
+                                    <TextBox 
+                                        MinWidth="100"
+                                        Text="{Binding Label,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="*" >
+                            <GridViewColumn.CellTemplate >
+                                <DataTemplate>
+                                    <CheckBox 
+                                        IsChecked="{Binding IsRequired,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Property">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <ComboBox
+                                            ItemsSource="{Binding Binding.PropertyCollection}"
+                                            SelectedItem="{Binding Binding.SelectedProperty}"
+                                            IsEditable="True"
+                                            />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Binding">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBox
+                                        Grid.Column="1"
+                                        Text="{Binding Binding.TargetName}"
+                                        />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="TwoWay">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <CheckBox
+                                        Grid.Column="1"
+                                        IsChecked="{Binding Binding.TwoWay}"
+                                        />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Width" Width="Auto">
+                            <GridViewColumn.CellTemplate >
+                                <DataTemplate>
+                                    <my:WidthControl 
+                                        Value="{Binding ItemWidth,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Missing" Width="Auto" x:Name="missingColumn">
+                            <GridViewColumn.CellTemplate >
+                                <DataTemplate>
+                                    <TextBox 
+                                        MinWidth="100"
+                                        Text="{Binding MissingValueMessage,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Invalid" Width="Auto" x:Name="invalidColumn">
+                            <GridViewColumn.CellTemplate >
+                                <DataTemplate>
+                                    <TextBox 
+                                        MinWidth="100"
+                                        Text="{Binding InvalidValueMessage,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Description" Width="Auto">
+                            <GridViewColumn.CellTemplate >
+                                <DataTemplate>
+                                    <TextBox 
+                                        MinWidth="150"
+                                        Text="{Binding Description,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Title" Width="Auto">
+                            <GridViewColumn.CellTemplate >
+                                <DataTemplate>
+                                    <TextBox 
+                                        MinWidth="100"
+                                        Text="{Binding Title,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <StackPanel Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Right">
+            <buttons:SaveButton Margin="4" Width="100" x:Name="closeButton" Click="closeButton_Click">Save</buttons:SaveButton>
+            <Button Margin="4" Width="100" Name="cancelButton" Click="cancelButton_Click">Cancel</Button>
+        </StackPanel>
+    </Grid>
+</Window>

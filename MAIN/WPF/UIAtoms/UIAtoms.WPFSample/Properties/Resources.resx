@@ -1,0 +1,598 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AccordionDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\accordiondesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AccordionDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\accordiondesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AccordionSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\accordionsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AccordionSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\accordionsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AdvancedButtonSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\advancedbuttonsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AdvancedButtonSampleDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\advancedbuttonsampledesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AdvancedButtonSampleDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\advancedbuttonsampledesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AdvancedButtonSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\advancedbuttonsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtomStackPanelSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\atomstackpanelsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtomStackPanelSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\atomstackpanelsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BasicSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\basicsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BasicSampleDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\basicsampledesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BasicSampleDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\basicsampledesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BasicSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\basicsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BusinessSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\businesssample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BusinessSampleDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\businesssampledesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BusinessSampleDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\businesssampledesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BusinessSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\businesssample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ButtonSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\buttonsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ButtonSampleDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\buttonsampledesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ButtonSampleDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\buttonsampledesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ButtonSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\buttonsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Calculator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\calculator.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CalculatorDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\calculatordesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CalculatorDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\calculatordesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Calculator_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\calculator.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CheckBoxListDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\checkboxlistdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CheckBoxListDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\checkboxlistdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CheckBoxListSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\checkboxlistsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CheckBoxListSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\checkboxlistsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CodeBehindValidation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\codebehindvalidation.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CodeBehindValidationDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\codebehindvalidationdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CodeBehindValidationDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\codebehindvalidationdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CodeBehindValidation_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\codebehindvalidation.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ComboBoxDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\comboboxdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ComboBoxDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\comboboxdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ComboBoxSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\comboboxsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ComboBoxSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\comboboxsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ComboBoxwithFilter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\comboboxwithfilter.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ComboBoxWithFilterDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\comboboxwithfilterdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ComboBoxWithFilterDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\comboboxwithfilterdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ComboBoxwithFilter_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\comboboxwithfilter.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ComplexSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\complexsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ComplexSampleDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\complexsampledesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ComplexSampleDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\complexsampledesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ComplexSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\complexsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CountryComboBoxDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\countrycomboboxdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CountryComboBoxDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\countrycomboboxdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CountryComboBoxSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\countrycomboboxsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CountryComboBoxSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\countrycomboboxsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CurrencyTextBoxDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\currencytextboxdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CurrencyTextBoxDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\currencytextboxdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CurrencyTextBoxSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\currencytextboxsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CurrencyTextBoxSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\currencytextboxsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CustomValidationRule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\customvalidationrule.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CustomValidationRuleDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\customvalidationruledesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CustomValidationRuleDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\customvalidationruledesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CustomValidationRule_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\customvalidationrule.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DataAnnotationValidation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\dataannotationvalidation.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DataAnnotationValidationDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\dataannotationvalidationdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DataAnnotationValidationDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\dataannotationvalidationdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DataAnnotationValidation_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\dataannotationvalidation.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DoubleTextBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\doubletextbox.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DoubleTextBoxDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\doubletextboxdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DoubleTextBoxDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\doubletextboxdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DoubleTextBox_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\doubletextbox.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmailTextBoxDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\emailtextboxdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmailTextBoxDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\emailtextboxdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmailTextBoxSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\emailtextboxsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmailTextBoxSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\emailtextboxsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FileSizeDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\filesizedesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FileSizeDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\filesizedesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FileSizeSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\filesizesample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FileSizeSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\filesizesample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FilterTextBoxDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\filtertextboxdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FilterTextBoxDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\filtertextboxdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FilterTextBoxSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\filtertextboxsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FilterTextBoxSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\filtertextboxsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InbuiltValidations" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\inbuiltvalidations.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InbuiltValidationsDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\inbuiltvalidationsdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InbuiltValidationsDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\inbuiltvalidationsdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InbuiltValidations_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\inbuiltvalidations.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="IntegerTextBoxDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\integertextboxdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="IntegerTextBoxDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\integertextboxdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="IntegerTextBoxSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\integertextboxsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="IntegerTextBoxSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\integertextboxsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\list.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ListBoxDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\listboxdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ListBoxDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\listboxdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ListBoxwithFilter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\listboxwithfilter.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ListBoxWithFilterDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\listboxwithfilterdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ListBoxWithFilterDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\listboxwithfilterdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ListBoxwithFilter_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\listboxwithfilter.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="List_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\list.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="NumberComboBoxDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\numbercomboboxdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="NumberComboBoxDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\numbercomboboxdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="NumberComboBoxSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\numbercomboboxsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="NumberComboBoxSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\numbercomboboxsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PasswordBoxAgain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\passwordboxagain.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PasswordBoxAgainDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\passwordboxagaindesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PasswordBoxAgainDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\passwordboxagaindesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PasswordBoxAgain_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\passwordboxagain.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PasswordBoxDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\passwordboxdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PasswordBoxDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\passwordboxdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PasswordBoxSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\passwordboxsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PasswordBoxSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\passwordboxsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RadioButtonDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\radiobuttondesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RadioButtonDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\radiobuttondesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RadioButtonList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\radiobuttonlist.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RadioButtonList_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\listsamples\radiobuttonlist.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Samples" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\samples.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="SignupSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\signupsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SignupSampleDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\signupsampledesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SignupSampleDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\signupsampledesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SignupSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\signupsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="StackPanelDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\stackpaneldesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="StackPanelDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\stackpaneldesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="StackPanelSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\stackpanelsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="StackPanelSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\stackpanelsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TextBoxDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\textboxdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TextBoxDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\textboxdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TextBoxSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\textboxsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TextBoxSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\textboxsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TextBoxWithRegExDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\textboxwithregexdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TextBoxWithRegExDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\textboxwithregexdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TextBoxWithRegExSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\textboxwithregexsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TextBoxWithRegExSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\textboxwithregexsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ThirdPartyInbuiltValidation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\thirdpartyinbuiltvalidation.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ThirdPartyInbuiltValidationDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\thirdpartyinbuiltvalidationdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ThirdPartyInbuiltValidationDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\thirdpartyinbuiltvalidationdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ThirdPartyInbuiltValidation_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\thirdpartyinbuiltvalidation.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TitleTextBoxDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\titletextboxdesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TitleTextBoxDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\titletextboxdesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TitleTextBoxSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\titletextboxsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TitleTextBoxSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\editorsamples\titletextboxsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ToggleButtonBarDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\togglebuttonbardesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ToggleButtonBarDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\togglebuttonbardesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ToggleButtonBarSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\togglebuttonbarsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ToggleButtonBarSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\togglebuttonbarsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UniformGridDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\uniformgriddesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UniformGridDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\uniformgriddesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UniformGridSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\uniformgridsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UniformGridSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\uniformgridsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ViewPanelDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\viewpaneldesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ViewPanelDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\viewpaneldesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ViewPanelSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\viewpanelsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ViewPanelSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\viewpanelsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InbuiltValidationPropertyChanged" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\inbuiltvalidationpropertychanged.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InbuiltValidationPropertyChangedDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\inbuiltvalidationpropertychangeddesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InbuiltValidationPropertyChangedDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\inbuiltvalidationpropertychangeddesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InbuiltValidationPropertyChanged_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\validations\inbuiltvalidationpropertychanged.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormLayoutSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\formlayoutsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormLayoutSampleDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\formlayoutsampledesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormLayoutSampleDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\formlayoutsampledesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormLayoutSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\formsamples\formlayoutsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FlexibleGridSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\flexiblegridsample.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FlexibleGridSampleDesc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\flexiblegridsampledesc.xaml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FlexibleGridSampleDesc_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\flexiblegridsampledesc.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FlexibleGridSample_xaml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\layoutsamples\flexiblegridsample.xaml.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+</root>

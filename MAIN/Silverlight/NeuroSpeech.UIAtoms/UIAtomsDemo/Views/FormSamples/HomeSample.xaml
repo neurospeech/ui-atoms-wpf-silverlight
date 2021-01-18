@@ -1,0 +1,31 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.FormSamples.HomeSample" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           Title="HomeSample Page" 
+           xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms.Silverlight"
+           xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                 >
+    <Grid x:Name="LayoutRoot">
+        <ns:AtomForm x:Name="signupForm" Margin="0,50,0,0" LabelWidth="110" Width="700" Header="LoginForm">
+            <ns:AtomTextBoxWithRegEx ns:AtomForm.Label="Username:" x:Name="username" ns:AtomForm.IsRequired="True" Width="250"  
+                                     ns:AtomForm.RequiredErrorMessage="Username is required" Watermark="alpha numeric only"
+                                     ValidationRegEx="[a-zA-Z0-9]+"/>
+            <ns:AtomPasswordBox ns:AtomForm.Label="Password" x:Name="passwordBox" ns:AtomForm.IsRequired="True" Width="200" />
+            <ns:AtomEmailTextBox ns:AtomForm.Label="Email Address:" ns:AtomForm.IsRequired="True" Width="250"/>
+            <ns:AtomToggleButtonBar ns:AtomForm.Label="Gender:" ns:AtomForm.IsRequired="True">
+                <sys:String>Male</sys:String>
+                <sys:String>Female</sys:String>
+            </ns:AtomToggleButtonBar>
+            <StackPanel ns:AtomForm.Label="Country:" Width="250" HorizontalAlignment="Left">
+                <ns:AtomCountryComboBox x:Name="cn" SelectedValue="US"/>
+                <TextBlock Text="{Binding SelectedValue, ElementName=cn}"/>
+            </StackPanel>
+            <ns:AtomButton Content="Signup" ValidationRootElement="signupForm" 
+                               x:Name="signupButton" Verify="True" HorizontalAlignment="Left"/>
+        </ns:AtomForm>
+    </Grid>
+</navigation:Page>

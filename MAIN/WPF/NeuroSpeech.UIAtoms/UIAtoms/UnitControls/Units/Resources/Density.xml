@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Kilogram per cubic meter" Symbol="kg/m^3" ID="kilogram_per_cubic_mtr">
+  <Conversions>
+    <Conversion Name="Grain per Gallon" Symbol="gr/gal" ID="grain_per_gallon_US" SubType="US" Factor="1.711806" Factor10="-2" />
+    <Conversion Name="Gram per cubic centimeter" Symbol="g/cm^3" ID="gram_per_cubic_cm" Factor="1" Factor10="3" />
+    <Conversion Name="Ounce" Symbol="oz/in^3" ID="ounce_avoirdupois_per_cubic_inch" SubType="avoirdupois per cubic inch" Factor="1.729994" Factor10="3" />
+    <Conversion Name="Ounce" Symbol="oz/gal" ID="ounce_avoirdupois_per_gallon_UK" SubType="avoirdupous per gallon - Canadian &amp; UK Imperial" Factor="6.236023" Factor10="0" />
+    <Conversion Name="Ounce" Symbol="oz/gal" ID="ounce_avoirdupois_per_gallon_US" SubType="avoirdupois per gallon - US" Factor="7.489152" Factor10="0" />
+    <Conversion Name="Pound per cubic foot" Symbol="lb/ft^3" ID="pound_per_cubic_foot" Factor="1.601846" Factor10="1" />
+    <Conversion Name="Pound per cubic inch" Symbol="lb/in^3" ID="pound_per_cubic_inch" Factor="2.76799" Factor10="4" />
+    <Conversion Name="Pound per cubic yard" Symbol="lb/yd^3" ID="pound_per_cubic_yard" Factor="5.932764" Factor10="-1" />
+    <Conversion Name="Pound per gallon" Symbol="lb/gal" ID="pound_per_gallon_UK" SubType="Canadian &amp; UK Imperial" Factor="9.977637" Factor10="1" />
+    <Conversion Name="Pound per gallon" Symbol="lb/gal" ID="pound_per_gallon_US" SubType="US" Factor="1.198264" Factor10="2" />
+    <Conversion Name="Slug per cubic foot" Symbol="slug/ft^3" ID="slug_per_cubic_foot" Factor="5.153788" Factor10="2" />
+    <Conversion Name="Ton, Long per cubic yard" ID="ton_long_per_cubic_yard" Factor="1.328939" Factor10="3" />
+    <Conversion Name="Ton, Short per cubic yard" ID="ton_short_per_cubic_yard" Factor="1.186553" Factor10="3" />
+  </Conversions>
+</Unit>

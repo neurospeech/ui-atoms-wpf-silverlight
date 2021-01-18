@@ -1,0 +1,35 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:NeuroSpeech.UIAtoms.Controls"
+                    >
+    <Style
+        TargetType="{x:Type local:AtomCountryComboBox}"
+        BasedOn="{StaticResource {x:Type local:AtomComboBox}}">
+        <Setter
+            Property="TextSearch.TextPath"
+            Value="CountryName" />
+        <Setter
+            Property="ItemTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition
+                                Width="20" />
+                            <ColumnDefinition
+                                Width="5" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Image
+                            Source="{Binding ImageUri}"
+                            Height="20"
+                            MaxWidth="20" />
+                        <TextBlock
+                            Text="{Binding CountryName}"
+                            Grid.Column="2" />
+                    </Grid>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,61 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.LayoutSamples.FlexibleGridSample"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="750"
+	Title="FlexibleGridSample">
+
+    <ns:AtomForm Header="Atom Flexible Grid" LabelWidth="100" RowLayout="1,2" Width="700">
+        <TextBlock>
+            Atom Flexible Grid offers Item Independent Layout. <LineBreak/>
+            Usually we specify the layout related attributes in the child elements.<LineBreak/>
+            However, Flexible Grid manages layout based on RowLayout property.<LineBreak/>
+            This offers different layout management based on resources.
+        </TextBlock>
+        <Slider
+            ns:AtomForm.Label="Horizontal Gap:"
+            Minimum="0" Maximum="40" Value="5" Name="hSlider" />
+        <Slider
+            ns:AtomForm.Label="Vertical Gap:" Name="vSlider" 
+            Minimum="0" Maximum="40" Value="5"
+            />
+
+        <ComboBox 
+            SelectedIndex="0"
+            ns:AtomForm.Label="Row Layout:"
+            x:Name="layoutCB"
+            >
+            <sys:String>4,3,2,1</sys:String>
+            <sys:String>1,1,1,1,1,1</sys:String>
+            <sys:String>2,2,3</sys:String>
+            <sys:String>2,1,2,1</sys:String>
+            <sys:String>2,3,3</sys:String>
+        </ComboBox>
+        
+        <ns:AtomFlexibleGrid 
+            Height="220" 
+            ns:AtomForm.Label="Flexible Grid:" 
+            x:Name="grid"
+            RowLayout="{Binding SelectedItem,ElementName=layoutCB}"
+            HorizontalGap="{Binding Value,ElementName=hSlider}"
+            VerticalGap="{Binding Value,ElementName=vSlider}"
+            >
+            <TextBlock Text="1" Background="LightGreen" TextAlignment="Center"/>
+            <TextBlock Text="2" Background="LightGreen" TextAlignment="Center"/>
+            <TextBlock Text="3" Background="LightGreen" TextAlignment="Center"/>
+            <TextBlock Text="4" Background="LightGreen" TextAlignment="Center"/>
+            <TextBlock Text="5" Background="LightGreen" TextAlignment="Center"/>
+            <TextBlock Text="6" Background="LightGreen" TextAlignment="Center"/>
+            <TextBlock Text="7" Background="LightGreen" TextAlignment="Center"/>
+            <TextBlock Text="8" Background="LightGreen" TextAlignment="Center"/>
+            <TextBlock Text="9" Background="LightGreen" TextAlignment="Center"/>
+            <TextBlock Text="10" Background="LightGreen" TextAlignment="Center"/>
+            <TextBlock Text="11" Background="LightGreen" TextAlignment="Center"/>
+            <TextBlock Text="12" Background="LightGreen" TextAlignment="Center"/>
+        </ns:AtomFlexibleGrid>
+    </ns:AtomForm>
+</Page>

@@ -1,0 +1,157 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.LayoutSamples.ViewPanelSample" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:ns="http://uiatoms.neurospeech.com/silverlight"
+           xmlns:sys="clr-namespace:System;assembly=mscorlib"
+           d:DesignWidth="740" d:DesignHeight="480"
+           Title="ViewPanelSample Page">
+    <ns:AtomForm LabelWidth="120">
+        <ns:AtomToggleButtonBar 
+            x:Name="tb" 
+            HorizontalAlignment="Center" ns:AtomForm.Label="Toggle Button Bar:">
+            <sys:String>Image</sys:String>
+            <sys:String>Uniform Grid</sys:String>
+            <sys:String>Flexible Grid</sys:String>
+        </ns:AtomToggleButtonBar>
+
+        <ns:AtomViewPanel 
+            ns:AtomForm.Label="Atom View Panel:"
+            SelectedIndex="{Binding SelectedIndex,ElementName=tb}" Height="400" >
+            <Border BorderThickness="2" BorderBrush="Black"
+                Width="800" Height="330">
+                <Image Name="image1" Source=
+                                       "/UIAtomsDemo;component/Asset/mercedes-e-class-2009.jpg"/>
+            </Border>
+
+            <ns:AtomForm LabelWidth="120" Header="UniformGrid" RowLayout="2,1"
+                     Width="800"
+                     >
+                <Slider
+            ns:AtomForm.Label="Horizontal Gap:"
+            Minimum="0" Maximum="40" Value="5" Name="hSlider" />
+                <Slider
+            ns:AtomForm.Label="Vertical Gap:" Name="vSlider" 
+            Minimum="0" Maximum="40" Value="5"
+            />
+                <ns:AtomUniformGrid 
+                ns:AtomForm.Label="Atom Uniform Grid:"
+                VerticalGap="{Binding Value,ElementName=vSlider}" 
+                HorizontalGap="{Binding Value,ElementName=hSlider}"
+                Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" 
+                VerticalAlignment="Top">
+
+                    <Border  Width="100" Height="100">
+                        <Image Name="gridimg1" Source=
+                        "/UIAtomsDemo;component/Asset/gridImag1.jpg"/>
+                    </Border>
+
+                    <Border  Height="100" Width="100" BorderBrush="Black" BorderThickness="1">
+                        <Image Name="gridimg2" Source=
+                        "/UIAtomsDemo;component/Asset/gridImag2.jpg"/>
+                    </Border>
+
+                    <Border  Height="100" Width="100" BorderBrush="Black" BorderThickness="1">
+                        <Image Name="gridimg3" Source=
+                        "/UIAtomsDemo;component/Asset/gridImag3.jpg"/>
+                    </Border>
+
+                    <Border  Height="100" Width="100" BorderBrush="Black" BorderThickness="1">
+                        <Image Name="gridimg4" Source=
+                        "/UIAtomsDemo;component/Asset/gridImag4.jpg"/>
+                    </Border>
+
+                    <Border  Height="100" Width="100" BorderBrush="Black" BorderThickness="1">
+                        <Image Name="gridimg5" Source=
+                        "/UIAtomsDemo;component/Asset/gridImag5.jpg"/>
+                    </Border>
+
+                    <Border Width="100" Height="100" BorderBrush="Black" BorderThickness="1">
+                        <Image Name="gridimg6" Source=
+                        "/UIAtomsDemo;component/Asset/gridImag6.jpg"/>
+                    </Border>
+
+                </ns:AtomUniformGrid>
+            </ns:AtomForm>
+
+            <ns:AtomForm Header="Atom Flexible Grid" LabelWidth="100" RowLayout="1,2" Width="700">
+                <TextBlock>
+            Atom Flexible Grid offers Item Independent Layout. <LineBreak/>
+            Usually we specify the layout related attributes in the child elements.<LineBreak/>
+            However, Flexible Grid manages layout based on RowLayout property.<LineBreak/>
+            This offers different layout management based on resources.
+                </TextBlock>
+                <Slider
+            ns:AtomForm.Label="Horizontal Gap:"
+            Minimum="0" Maximum="40" Value="5" Name="hSlider2"  />
+                <Slider
+            ns:AtomForm.Label="Vertical Gap:" Value="5" Name="vSlider2" 
+            Minimum="0" Maximum="40" 
+            />
+
+                <ComboBox 
+            SelectedIndex="0"
+            ns:AtomForm.Label="Row Layout:"
+            x:Name="layoutCB"
+            >
+                    <sys:String>4,3,2,1</sys:String>
+                    <sys:String>1,1,1,1,1,1</sys:String>
+                    <sys:String>2,2,3</sys:String>
+                    <sys:String>2,1,2,1</sys:String>
+                    <sys:String>2,3,3</sys:String>
+                </ComboBox>
+
+                <ns:AtomFlexibleGrid 
+            Height="220" 
+            ns:AtomForm.Label="Flexible Grid:" 
+            x:Name="grid"
+            RowLayout="{Binding SelectedItem,ElementName=layoutCB}"
+            HorizontalGap="{Binding Value,ElementName=hSlider2}"
+            VerticalGap="{Binding Value,ElementName=vSlider2}"
+            >
+                    <Border Background="LightGreen">
+                        <TextBlock Text="1" TextAlignment="Center"/>
+                    </Border>
+                    <Border Background="LightGreen">
+                        <TextBlock Text="2" TextAlignment="Center"/>
+                    </Border>
+                    <Border Background="LightGreen">
+                        <TextBlock Text="3" TextAlignment="Center"/>
+                    </Border>
+                    <Border Background="LightGreen">
+                        <TextBlock Text="4" TextAlignment="Center"/>
+                    </Border>
+                    <Border Background="LightGreen">
+                        <TextBlock Text="5" TextAlignment="Center"/>
+                    </Border>
+                    <Border Background="LightGreen">
+                        <TextBlock Text="6" TextAlignment="Center"/>
+                    </Border>
+                    <Border Background="LightGreen">
+                        <TextBlock Text="7" TextAlignment="Center"/>
+                    </Border>
+                    <Border Background="LightGreen">
+                        <TextBlock Text="8" TextAlignment="Center"/>
+                    </Border>
+                    <Border Background="LightGreen">
+                        <TextBlock Text="9" TextAlignment="Center"/>
+                    </Border>
+                    <Border Background="LightGreen">
+                        <TextBlock Text="10" TextAlignment="Center"/>
+                    </Border>
+                    <Border Background="LightGreen">
+                        <TextBlock Text="11" TextAlignment="Center"/>
+                    </Border>
+                    <Border Background="LightGreen">
+                        <TextBlock Text="12" TextAlignment="Center"/>
+                    </Border>
+                </ns:AtomFlexibleGrid>
+            </ns:AtomForm>
+
+        </ns:AtomViewPanel>
+
+    </ns:AtomForm>
+</navigation:Page>

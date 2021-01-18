@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<SchemaObjectSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Namespace="UIAtomsDemo.Web.Data">
+  <NotifyPropertyChange>false</NotifyPropertyChange>
+  <DatabaseType>MSSQL</DatabaseType>
+  <ConnectionString>Data Source=nsserver;Initial Catalog=UIAtomsSampleDB;User ID=UIAtomsSampleDB;Password=atom$789</ConnectionString>
+  <ErpObjects />
+</SchemaObjectSet>

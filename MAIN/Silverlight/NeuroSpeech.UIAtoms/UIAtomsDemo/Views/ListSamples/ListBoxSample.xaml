@@ -1,0 +1,49 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.ListSamples.ListBoxSample" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:System="clr-namespace:System;assembly=mscorlib"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           Title="ListBoxSample Page" 
+           xmlns:ns="http://uiatoms.neurospeech.com/silverlight">
+
+    <Grid x:Name="LayoutRoot">
+        
+        <ns:AtomForm 
+            x:Name="form" Width="700" Header="ListBox"
+            HorizontalAlignment="Center">
+
+            <ns:AtomListBox 
+                Width="100" ns:AtomForm.Label="Select Color:" 
+                ns:AtomForm.IsRequired="True" HorizontalAlignment="Left"
+                ns:AtomForm.MissingValueMessage="Please select color">
+                    <ListBoxItem Content="Red"/>
+                    <ListBoxItem Content="Blue"/>
+                    <ListBoxItem Content="Green"/>
+            </ns:AtomListBox>
+            
+            <ns:AtomListBox Width="100" 
+                            x:Name="invalidItemsList"
+                            ns:AtomForm.Label="Select Type:" 
+                    ns:AtomForm.IsRequired="True"  HorizontalAlignment="Left"
+                    ns:AtomForm.MissingValueMessage="Please select type">
+
+                        <ListBoxItem Content="List Controls" Foreground="Gray"/>
+                        <ListBoxItem Content="ListBox"/>
+                        <ListBoxItem Content="ComboBox"/>
+                        <ListBoxItem Content="Data Controls" Foreground="Gray"/>
+                        <ListBoxItem Content="TextBox"/>
+                        <ListBoxItem Content="Button"/>
+                
+            </ns:AtomListBox>
+            
+            <ns:AtomButton 
+                HorizontalAlignment="Left"
+                Content="Submit" ValidationRootElement="form"
+                />
+            
+        </ns:AtomForm>
+    </Grid>
+</navigation:Page>

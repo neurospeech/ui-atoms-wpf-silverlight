@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Pascal" Symbol="Pa" ID="pascal">
+  <Conversions>
+    <Conversion Name="Atmosphere" Symbol="atm" ID="atmosphere_standard" SubType="Standard" Factor="1.01325" Factor10="5" />
+    <Conversion Name="Atmosphere" Symbol="at" ID="atmosphere_technical" SubType="Technical" Factor="9.80665" Factor10="4" />
+    <Conversion Name="Bar" Symbol="bar" ID="bar" Factor="1" Factor10="5" />
+    <Conversion Name="Centimeter of Mercury" Symbol="cm of mercury" ID="cm_of_mercury" SubType="0°C" Factor="1.33322" Factor10="3" />
+    <Conversion Name="Centimeter of Mercury" Symbol="cmHg" ID="cm_of_mercury_conventional" SubType="Conventional" Factor="1.333224" Factor10="3" />
+    <Conversion Name="Centimeter of Water" Symbol="cm of water" ID="cm_of_water" SubType="4°C" Factor="9.80638" Factor10="1" />
+    <Conversion Name="Centimeter of Water" Symbol="cmH_2 O" ID="cm_of_water_conventional" SubType="Conventional" Factor="9.80665" Factor10="1" />
+    <Conversion Name="Dyne per square Centimeter" Symbol="dyn/cm^2" ID="dyne_per_sq_cm" Factor="1" Factor10="-1" />
+    <Conversion Name="Foot of Mercury" Symbol="ftHg" ID="ft_of_mercury_conventional" SubType="Conventional" Factor="4.063666" Factor10="4" />
+    <Conversion Name="Foot of Water" Symbol="Ft of water" ID="ft_of_water" SubType="39.2°F" Factor="2.98898" Factor10="3" />
+    <Conversion Name="Foot of Water" Symbol="ftH_2 O" ID="ft_of_water_conventional" SubType="Conventional" Factor="2.989067" Factor10="3" />
+    <Conversion Name="Gram-force per square Centimeter" Symbol="gf/cm^2" ID="gm_frc_per_sq_cm" Factor="9.80665" Factor10="1" />
+    <Conversion Name="Inch of Mercury" Symbol="inch of mercury" ID="inch_of_mercury" SubType="32°F" Factor="3.38638" Factor10="3" />
+    <Conversion Name="Inch of Mercury" Symbol="inch of mercury" ID="inch_of_mercury_60F" SubType="60°F" Factor="3.37685" Factor10="3" />
+    <Conversion Name="Inch of Mercury" Symbol="inHg" ID="inch_of_mercury_conventional" SubType="Conventional" Factor="3.386389" Factor10="3" />
+    <Conversion Name="Inch of Water" Symbol="inH_2 O" ID="inch_of_water_392F" SubType="39.2°F" Factor="2.49082" Factor10="2" />
+    <Conversion Name="Inch of Water" Symbol="inH_2 O" ID="inch_of_water_60F" SubType="60°F" Factor="2.4884" Factor10="2" />
+    <Conversion Name="Inch of Water" Symbol="inH_2 O" ID="inch_of_water_conventional" SubType="Conventional" Factor="2.490889" Factor10="2" />
+    <Conversion Name="Kilogram-force per square centimeter" Symbol="kgf/cm^2" ID="kg_frc_per_sq_cm" Factor="9.80665" Factor10="4" />
+    <Conversion Name="Kilogram-force per square meter" Symbol="kgf/m^2" ID="kg_frc_per_sq_m" Factor="9.80665" Factor10="0" />
+    <Conversion Name="Kilogram-force per square millimeter" Symbol="kgf/mm^2" ID="kg_frc_per_sq_mm" Factor="9.80665" Factor10="6" />
+    <Conversion Name="Kip per square Inch" Symbol="kip/in^2" ID="kip_per_sq_inch" SubType="ksi" Factor="6.894757" Factor10="6" />
+    <Conversion Name="Millibar" Symbol="mbar" ID="millibar" Factor="1" Factor10="2" />
+    <Conversion Name="Millimeter of Mercury" Symbol="mmHg" ID="mm_of_mercury_conventional" SubType="Conventional" Factor="1.333224" Factor10="2" />
+    <Conversion Name="Millimeter of Water" Symbol="mmH_2 O" ID="mm_of_water_conventional" SubType="Conventional" Factor="9.80665" Factor10="0" />
+    <Conversion Name="Poundal per square foot" Symbol="poundal/sq ft" ID="poundal_per_sq_ft" SubType="1.488164" Factor="1.488164" Factor10="0" />
+    <Conversion Name="Pound-force per square foot" Symbol="lbf/ft^2" ID="pound_force_per_sq_ft" Factor="4.788026" Factor10="1" />
+    <Conversion Name="Pound-force per square inch" Symbol="psi - lbf/in^2" ID="pound_force_per_sq_in" SubType="psi" Factor="6.894757" Factor10="3" />
+    <Conversion Name="Torr" Symbol="Torr" ID="torr" Factor="1.333224" Factor10="2" />
+  </Conversions>
+</Unit>

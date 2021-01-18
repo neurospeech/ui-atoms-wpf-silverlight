@@ -1,0 +1,24 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.EditorSamples.IntegerTextBoxSample" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           Title="IntegerTextBoxSample Page"
+           xmlns:ns="http://uiatoms.neurospeech.com/silverlight">
+
+    <Grid x:Name="LayoutRoot">
+        <ns:AtomForm 
+            Name="integertextboxValidation" Width="700" 
+            Header="IntegerTextBox">
+            
+            <ns:AtomIntegerTextBox 
+                ns:AtomForm.Title="Integer Input" 
+                ns:AtomForm.Label="Input Value:" 
+                HorizontalAlignment="Left"  
+                ns:AtomForm.MissingValueMessage="Integer values only" 
+                Width="200"/>
+        </ns:AtomForm>
+    </Grid>
+</navigation:Page>

@@ -1,0 +1,18 @@
+﻿<Unit
+  ID="watt"
+  Name="Watt"
+  Symbol="W"
+  >
+  <Conversions>
+    <Conversion ID="erg_per_second" Name="Erg per second" SubType="" Symbol="erg/s" Factor="1.0" Factor10="-07" />
+    <Conversion ID="foot_pd-frc_pr_hr" Name="Foot Pound-Force per hour" SubType="" Symbol="ft.lbf/h" Factor="3.766161" Factor10="-04" />
+    <Conversion ID="foot_pd-frc_pr_min" Name="Foot Pound-Force per minute" SubType="" Symbol="ft.lbf/min" Factor="2.259697" Factor10="-02" />
+    <Conversion ID="foot_pd-frc_pr_sec" Name="Foot Pound-Force per second" SubType="" Symbol="ft/lbf/s" Factor="1.355818" Factor10="+00" />
+    <Conversion ID="horsepower_ftlbfps" Name="Horsepower" SubType="550 ft.lbf/s" Symbol="" Factor="7.456999" Factor10="+02" />
+    <Conversion ID="horsepower_boiler" Name="Horsepower" SubType="Boiler" Symbol="" Factor="9.80950" Factor10="+03" />
+    <Conversion ID="horsepower_elec" Name="Horsepower" SubType="Electric" Symbol="" Factor="7.46" Factor10="+02" />
+    <Conversion ID="horsepower_metric" Name="Horsepower" SubType="Metric" Symbol="" Factor="7.354988" Factor10="+02" />
+    <Conversion ID="horsepower_UK" Name="Horsepower" SubType="U.K." Symbol="" Factor="7.4570" Factor10="+02" />
+    <Conversion ID="horsepower_water" Name="Horsepower" SubType="Water" Symbol="" Factor="7.46043" Factor10="+02" />
+  </Conversions>
+</Unit>

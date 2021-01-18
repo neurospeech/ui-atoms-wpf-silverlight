@@ -1,0 +1,42 @@
+﻿<Page xmlns:ns="http://uiatoms.neurospeech.com/wpf"  
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      x:Class="UIAtoms.WPFSamples.ListSamples.ComboBoxSample"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+	  Title="ComboBoxSample" Loaded="Page_Loaded">
+
+    <Grid>
+            <ns:AtomForm 
+            Name="colorForm" Width="700" LabelWidth="90" 
+            Header="ComboBox" HorizontalAlignment="Center">
+
+            <ns:AtomComboBox 
+                Width="200" Name="cbColor" 
+                ns:AtomForm.IsRequired="True" ns:AtomForm.Label="Select Color:" 
+                ns:AtomForm.MissingValueMessage="Please select color" 
+                IsFilterVisible="False" HorizontalAlignment="Left">
+                    <sys:String>Red</sys:String>    
+                    <sys:String>Green</sys:String>
+                    <sys:String>Blue</sys:String>
+                    <sys:String>Black</sys:String>
+                    <sys:String>Brown</sys:String>
+        </ns:AtomComboBox>
+            
+        <Border Background="{Binding SelectedItem,ElementName=cbColor,Mode=TwoWay}" 
+                BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left"
+                Width="200" ns:AtomForm.Label="Selected Value:" Margin="0,0,0,30">
+            
+                    <TextBlock Text="{Binding SelectedItem,
+                            ElementName=cbColor,Mode=TwoWay}" 
+                        Foreground="White" 
+                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+           <ns:AtomButton 
+               HorizontalAlignment="Left"
+               Content="Submit" ValidationRootElement="colorForm" Name="processbutton" />
+        </ns:AtomForm>
+    </Grid>
+</Page>

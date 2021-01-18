@@ -1,0 +1,104 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.UnitSamples.AllUnitsSample"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+      xmlns:nsu="http://uiatoms.neurospeech.com/wpf/unitcontrols"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="750"
+	Title="AllUnitsSample">
+
+    <ns:AtomForm 
+        LabelWidth="100"
+        Header="Measurement Unit Converters/Editors"
+        Width="700"
+        >
+        <TextBlock>
+            You can change the corresponding unit to see the converted value in desired unit.
+        </TextBlock>
+        <nsu:AtomLengthEditor
+            x:Name="lengthEditor"
+            ns:AtomForm.Label="Length:"
+            Width="300"
+            HorizontalAlignment="Left"
+            />
+        <TextBlock Text="{Binding Value,ElementName=lengthEditor}" ns:AtomForm.Label="In Meters:"/>
+        <Rectangle/>
+        <nsu:AtomTemperatureEditor
+            x:Name="temperatureEditor"
+            ns:AtomForm.Label="Temperature:"
+            HorizontalAlignment="Left"
+            Width="300"
+            />
+        <TextBlock Text="{Binding Value,ElementName=temperatureEditor}" ns:AtomForm.Label="In Kelvin:"/>
+        <Rectangle/>
+        <nsu:AtomTimeEditor
+            x:Name="timeEditor"
+            ns:AtomForm.Label="Time:"
+            HorizontalAlignment="Left"
+            Width="300"
+            />
+        <TextBlock Text="{Binding Value,ElementName=timeEditor}" ns:AtomForm.Label="In Seconds:"/>
+        <Rectangle/>
+        <nsu:AtomVelocityEditor
+            x:Name="velocityEditor"
+            ns:AtomForm.Label="Velocity:"
+            HorizontalAlignment="Left"
+            Width="300"
+            />
+        <TextBlock Text="{Binding Value,ElementName=velocityEditor}" ns:AtomForm.Label="In m/s:"/>
+        <Rectangle/>
+        <nsu:AtomVolumeEditor
+            x:Name="volumeEditor"
+            ns:AtomForm.Label="Volume:"
+            HorizontalAlignment="Left"
+            Width="300"
+            />
+        <TextBlock Text="{Binding Value,ElementName=volumeEditor}" ns:AtomForm.Label="In m³:"/>
+        <Rectangle/>
+        <nsu:AtomWeightEditor
+            x:Name="weightEditor"
+            ns:AtomForm.Label="Weight:"
+            HorizontalAlignment="Left"
+            Width="300"
+            />
+        <TextBlock Text="{Binding Value,ElementName=weightEditor}" ns:AtomForm.Label="In Kilograms:"/>
+        <Rectangle Width="Auto" Height="4" Fill="Black"/>
+        <nsu:AtomAngleEditor
+            x:Name="angleEditor"
+            ns:AtomForm.Label="Angle:"
+            HorizontalAlignment="Left"
+            Width="300"
+            />
+        <TextBlock Text="{Binding Value,ElementName=angleEditor}" ns:AtomForm.Label="In Radians:"/>
+        <nsu:AtomAreaEditor
+            x:Name="areaEditor"
+            ns:AtomForm.Label="Area:"
+            HorizontalAlignment="Left"
+            Width="300"
+            />
+        <TextBlock Text="{Binding Value,ElementName=areaEditor}" ns:AtomForm.Label="In m²:"/>
+        <nsu:AtomEnergyEditor
+            x:Name="energyEditor"
+            ns:AtomForm.Label="Energy:"
+            HorizontalAlignment="Left"
+            Width="300"
+            />
+        <TextBlock Text="{Binding Value,ElementName=energyEditor}" ns:AtomForm.Label="In Joule:"/>
+        <nsu:AtomPowerEditor
+            x:Name="powerEditor"
+            ns:AtomForm.Label="Power:"
+            HorizontalAlignment="Left"
+            Width="300"
+            />
+        <TextBlock Text="{Binding Value,ElementName=powerEditor}" ns:AtomForm.Label="In Watt:"/>
+        <nsu:AtomPressureEditor
+            x:Name="pressureEditor"
+            ns:AtomForm.Label="Pressure:"
+            HorizontalAlignment="Left"
+            Width="300"
+            />
+        <TextBlock Text="{Binding Value,ElementName=pressureEditor}" ns:AtomForm.Label="In Pa:"/>
+    </ns:AtomForm>
+</Page>

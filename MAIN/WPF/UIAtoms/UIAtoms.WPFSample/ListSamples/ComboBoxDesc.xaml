@@ -1,0 +1,27 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.ListSamples.ComboBoxDesc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+      d:DesignHeight="300" d:DesignWidth="600"
+	Title="ComboBoxDesc">
+    
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <List>
+                    <ListItem>
+                        <Paragraph>	The Select Color ComboBox is a required field for this sample form. Clicking the “Submit” button will fire the customized error stating “Please select color”.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	Making a selection will instantaneously return the selected value to the form, which is displayed for demonstration purposes in the “Selected Value” field. Making the selection will also automatically remove the validation error that was fired.</Paragraph>
+                    </ListItem>
+                </List>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Page>

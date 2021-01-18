@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PageNode HasChildren="true">
+  <Children>
+
+    <PageNode 
+      Name="UI Atoms"
+      HasChildren="false"
+      Introduction="UI Atoms 2010 Business Controls Suite"
+      Source="/Views/PreviewPage.xaml"
+      XAMLName="PreviewPage"
+      />
+
+    <PageNode 
+              Name="Form Samples"
+              HasChildren="true"
+              >
+
+      <Children>
+        
+        <PageNode
+          Name="Simple Signup Form"
+          Introduction="This is a sample of a simple Sign Up Form"
+          Source="/Views/FormSamples/SignupSample.xaml"
+          DescriptionSource="/Views/FormSamples/SignupSampleDesc.xaml"
+          XAMLName="SignupSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="Tabbed Form Sample"
+          Introduction="Forms with increasing complexities designed using AtomFormTab"
+          Source="/Views/FormSamples/ComplexSample.xaml"
+          DescriptionSource="/Views/FormSamples/ComplexSampleDesc.xaml"
+          XAMLName="ComplexSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="Lambda Binding Sample"
+          Introduction="Introducing Lambda Expression Binding for WPF and Silverlight"
+          Source="/Views/FormSamples/LambdaBindingSample.xaml"
+          DescriptionSource="/Views/FormSamples/LambdaBindingSampleDesc.xaml"
+          XAMLName="LambdaBindingSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="Form Row Sample"
+          Introduction="Forms with Form Rows dynamically adjusting its cells"
+          Source="/Views/FormSamples/FormRowSample.xaml"
+          DescriptionSource="/Views/FormSamples/FormRowSampleDesc.xaml"
+          XAMLName="FormRowSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="Form Group Sample"
+          Introduction="Forms with Form Groups with Form Rows giving you completely flexible layout"
+          Source="/Views/FormSamples/FormGroupSample.xaml"
+          DescriptionSource="/Views/FormSamples/FormGroupSampleDesc.xaml"
+          XAMLName="FormGroupSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="Row Layout Sample"
+          Introduction="How easy it is to control form layout"
+          Source="/Views/FormSamples/FormLayoutSample.xaml"
+          DescriptionSource="/Views/FormSamples/FormLayoutSampleDesc.xaml"
+          XAMLName="FormLayoutSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="Label Alignment Sample"
+          Introduction="Advanced Form Alignment Facility"
+          Source="/Views/FormSamples/FormLabelAlignment.xaml"
+          DescriptionSource="/Views/FormSamples/FormLabelAlignmentDesc.xaml"
+          XAMLName="FormLabelAlignment"
+          HasChildren="false"/>
+        
+        <PageNode
+          Name="Basic Form Sample"
+          Introduction="UIAtoms Controls used to design a typical business application form"
+          Source="/Views/FormSamples/BasicSample.xaml"
+          DescriptionSource="/Views/FormSamples/BasicSampleDesc.xaml"
+          XAMLName="BasicSample"
+          HasChildren="false"/>
+        
+
+        <PageNode
+          Name="Business Form Sample"
+          Introduction="A Sample of a typical Business Application Form"
+          Source="/Views/FormSamples/BusinessSample.xaml"
+          DescriptionSource="/Views/FormSamples/BusinessSampleDesc.xaml"
+          XAMLName="BusinessSample"
+          HasChildren="false"/>
+
+
+        <PageNode
+          Name="Button"
+          Introduction="This is a sample of a UIAtom Button and its functionalities"
+          Source="/Views/LayoutSamples/ButtonSample.xaml"
+          DescriptionSource="/Views/LayoutSamples/ButtonDesc.xaml"
+          XAMLName="ButtonSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="All Buttons"
+          Introduction="A set of reusable buttons..."
+          Source="/Views/FormSamples/AllButtonsSample.xaml"
+          DescriptionSource="/Views/FormSamples/AllButtonsSampleDesc.xaml"
+          XAMLName="AllButtonsSample"
+          HasChildren="false"/>
+
+      </Children>
+      
+    </PageNode>
+
+    <PageNode
+          Name="Form Validations"
+          HasChildren="true"
+              >
+
+      <Children>
+        <PageNode
+          Name="Inbuilt Validations"
+          Introduction="All Controls that support inbuilt validation are listed below."
+          Source="/Views/FormSamples/Validations/InbuiltValidations.xaml"
+          XAMLName="InbuiltValidations"
+          DescriptionSource="/Views/FormSamples/Validations/InbuiltValidationsDesc.xaml"
+          HasChildren="false"
+          />
+
+        <PageNode
+          Name="Third Party Inbuilt Validations"
+          Introduction="Using inbuilt validation rules in third party controls."
+          Source="/Views/FormSamples/Validations/ThirdPartyInbuiltValidation.xaml"
+          XAMLName="ThirdPartyInbuiltValidation"
+          DescriptionSource="/Views/FormSamples/Validations/ThirdPartyInbuiltValidationDesc.xaml"
+          HasChildren="false"
+          />
+        <PageNode
+          Name="Custom Validation Rule"
+          Introduction="This sample illustrates how to create and apply custom validation rule."
+          Source="/Views/FormSamples/Validations/CustomValidationRule.xaml"
+          XAMLName="CustomValidationRule"
+          DescriptionSource="/Views/FormSamples/Validations/CustomValidationRuleDesc.xaml"
+          HasChildren="false"
+          />
+        <PageNode
+          Name="Validation in Code Behind"
+          Introduction="This sample illustrates how to apply validation in code behind, the simplest way of all."
+          Source="/Views/FormSamples/Validations/CodeBehindValidation.xaml"
+          XAMLName="CodeBehindValidation"
+          DescriptionSource="/Views/FormSamples/Validations/CodeBehindValidationDesc.xaml"
+          HasChildren="false"
+          />
+        <PageNode
+          Name="Data Annotation Validations"
+          Introduction="The AtomForm can also work with Data Annotation."
+          Source="/Views/FormSamples/Validations/DataAnnotationValidation.xaml"
+          XAMLName="DataAnnotationValidation"
+          DescriptionSource="/Views/FormSamples/Validations/DataAnnotationValidationDesc.xaml"
+          HasChildren="false"
+          />
+
+      </Children>
+
+    </PageNode>
+
+
+    <PageNode
+          Name="Measurement Unit Controls"
+          HasChildren="true"
+              >
+      <Children>
+        
+        <PageNode
+          Name="Unit Controls"
+          Introduction="Measurement Unit Controls"
+          Source="/Views/UnitSamples/AllUnitsSample.xaml"
+          DescriptionSource="/Views/UnitSamples/AllUnitsSampleDesc.xaml"
+          XAMLName="AllUnitsSample"
+          HasChildren="false"/>
+        
+      </Children>
+    </PageNode>
+
+    <PageNode
+      Name="Trace Sample"
+          Introduction="Display Tracing in the View"
+          Source="/Views/TraceSample/TraceSample.xaml"
+          DescriptionSource="/Views/TraceSample/TraceSampleDesc.xaml"
+          XAMLName="TraceSample"
+          HasChildren="false"/>
+
+      <PageNode
+          Name="List Samples"
+          HasChildren="true"
+              >
+
+      <Children>
+
+        <PageNode
+          Name="ComboBox"
+          Introduction="UIAtom AtomComboBox is a powerful drop-down list control. It is optimized for environments with high data requirements."
+          Source="/Views/ListSamples/ComboBoxSample.xaml"
+          DescriptionSource="/Views/ListSamples/ComboBoxDesc.xaml"
+          XAMLName="ComboBoxSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="ComboBox with Filter"
+          Introduction="UIAtom AtomComboBox is a powerful drop-down list control. It is optimized for environments with high data requirements."
+          Source="/Views/ListSamples/ComboBoxwithFilter.xaml"
+          DescriptionSource="/Views/ListSamples/ComboBoxwithFilterDesc.xaml"         
+          XAMLName="ComboBoxwithFilter"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="ListBox"
+          Introduction="UIAtom ListBox is a powerful control that displays a list of items from which a selection can be made."
+          Source="/Views/ListSamples/ListBoxSample.xaml"
+          DescriptionSource="/Views/ListSamples/ListBoxDesc.xaml"
+          XAMLName="ListBoxSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="ListBox with Filter"
+          Introduction="UIAtom ListBox is a powerful control that displays a list of items from which a selection can be made."
+          Source="/Views/ListSamples/ListBoxwithFilter.xaml"
+          DescriptionSource="/Views/ListSamples/ListBoxwithFilterDesc.xaml"
+          XAMLName="ListBoxwithFilter"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="Customizing Filter"
+          Introduction="You can use AtomFilterTextBox and combination of IAtomItemsFilter to filter the list of items displayed in any ItemsControl."
+          Source="/Views/ListSamples/CustomizedFilter.xaml"
+          DescriptionSource="/Views/ListSamples/CustomizedFilterDesc.xaml"
+          XAMLName="CustomizedFilter"
+          HasChildren="false"/>
+
+
+        <PageNode
+          Name="Number ComboBox"
+          Introduction="A drop down with a range of numbers incremented equally is generated once the control receives a StartNumber, EndNumber and IncrementBy input. "
+          Source="/Views/EditorSamples/NumberComboBoxSample.xaml"
+          DescriptionSource="/Views/EditorSamples/NumberComboBoxDesc.xaml"
+          XAMLName="NumberComboBoxSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="CheckBox List"
+          Introduction="UIAtom AtomCheckBoxList is a powerful List Control with check boxes for each data item."
+          Source="/Views/ListSamples/CheckBoxListSample.xaml"
+          DescriptionSource="/Views/ListSamples/CheckBoxListDesc.xaml"
+          XAMLName="CheckBoxListSample"
+          HasChildren="false"/>
+        
+        <PageNode
+          Name="RadioButton List"
+          Introduction="UIAtom AtomRadioButtonList is an advanced List Control which allows for one selection out of multiple data options."
+          Source="/Views/ListSamples/RadioButtonListSample.xaml"
+          DescriptionSource="/Views/ListSamples/RadioButtonListDesc.xaml"
+          XAMLName="RadioButtonListSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="CountryComboBox"
+          Introduction="This is a sample of a simple Sign Up Form"
+          Source="/Views/ListSamples/CountryComboBoxSample.xaml"
+          DescriptionSource="/Views/ListSamples/CountryComboBoxDesc.xaml"         
+          XAMLName="CountryComboBoxSample"
+          HasChildren="false"/>
+
+      </Children>
+
+    </PageNode>
+    
+    <PageNode
+              Name="Layout Samples"
+              HasChildren="true"
+              >
+
+      <Children>
+
+
+        <PageNode
+          Name="Stack Panel"
+          Introduction="UIAtom AtomStackPanel is an advanced layout feature which displays content in an advanced stack."
+          Source="/Views/LayoutSamples/StackPanelSample.xaml"
+          DescriptionSource="/Views/LayoutSamples/StackPanelDesc.xaml"         
+          XAMLName="StackPanelSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="Uniform Grid"
+          Introduction="UIAtom AtomUniformGrid is a powerful layout control which places data items in a grid layout in specified rows and columns."
+          Source="/Views/LayoutSamples/UniformGrid.xaml"
+          DescriptionSource="/Views/LayoutSamples/UniformGridDesc.xaml"
+          XAMLName="UniformGrid"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="Flexible Grid"
+          Introduction="UIAtoms AtomFlexibleGrid is an advanced layout feature which displays content in an flexible row format."
+          Source="/Views/LayoutSamples/FlexibleGridSample.xaml"
+          DescriptionSource="/Views/LayoutSamples/FlexibleGridSampleDesc.xaml"
+          XAMLName="FlexibleGridSample"
+          HasChildren="false"/>
+        
+        <PageNode
+          Name="ToggleButton Bar"
+          Introduction="UIAtoms AtomToggleButtonBar is a simple but powerful control which displays a menu in the format of a toggle button bar."
+          Source="/Views/LayoutSamples/ToggleButtonSample.xaml"
+          DescriptionSource="/Views/LayoutSamples/ToggleButtonDesc.xaml"         
+          XAMLName="ToggleButtonSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="View Panel"
+          Introduction="UIAtoms AtomViewPanel is a powerful View Panel used to display data and is usually used in association with the AtomToggleButtonBar control."
+          Source="/Views/LayoutSamples/ViewPanelSample.xaml"
+          DescriptionSource="/Views/LayoutSamples/ViewPanelSampleDesc.xaml"
+          XAMLName="ViewPanelSample"
+          HasChildren="false"/>
+        
+      </Children>
+
+    </PageNode>
+
+    <PageNode
+          Name="Editor Samples"
+          HasChildren="true"
+              >
+
+      <Children>
+
+        <PageNode
+          Name="TextBox"
+          Introduction="UIAtom AtomTextBox is a highly sophisticated and advanced Text Box with a variety of options."
+          Source="/Views/EditorSamples/TextBoxSample.xaml"
+          DescriptionSource="/Views/EditorSamples/TextBoxDesc.xaml"
+          XAMLName="TextBoxSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="EmailTextBox"
+          Introduction="This is an advanced AtomTextBox with a preset validation to only accept inputs which are properly formatted email addresses."
+          Source="/Views/EditorSamples/EmailTextBoxSample.xaml"
+          DescriptionSource="/Views/EditorSamples/EmailTextBoxDesc.xaml"
+          XAMLName="EmailTextBoxSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="DoubleTextBox"
+          Introduction="This is an advanced AtomTextBox with a preset validation to only accept inputs in Double format."
+          Source="/Views/EditorSamples/DoubleTextBox.xaml"
+          DescriptionSource="/Views/EditorSamples/DoubleTextBoxDesc.xaml"
+          XAMLName="DoubleTextBox"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="Calculator"
+          Introduction="This is Calculator."
+          Source="/Views/EditorSamples/Calculator.xaml"
+          DescriptionSource="/Views/EditorSamples/CalculatorDesc.xaml"
+          XAMLName="Calculator"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="CurrencyTextBox"
+          Introduction="This is an advanced AtomDoubleTextBox which prefixes the double input with the currency symbol, as predefined."
+          Source="/Views/EditorSamples/CurrencyTextBoxSample.xaml"
+          DescriptionSource="/Views/EditorSamples/CurrencyTextBoxDesc.xaml"
+          XAMLName="CurrencyTextBoxSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="IntegerTextBox"
+          Introduction="UIAtom AtomIntegerTextBox is an advanced AtomDoubleTextBox such that it only accepts integer inputs."
+          Source="/Views/EditorSamples/IntegerTextBoxSample.xaml"
+          DescriptionSource="/Views/EditorSamples/IntegerTextBoxDesc.xaml"
+          XAMLName="IntegerTextBoxSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="PasswordBox"
+          Introduction="UIAtom AtomPasswordBox is an advanced AtomTextBox which will automatically mask any input provided into the TextBox."
+          Source="/Views/EditorSamples/PasswordBoxSample.xaml"
+          DescriptionSource="/Views/EditorSamples/PasswordBoxDesc.xaml"
+          XAMLName="PasswordBoxSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="Repeat PasswordBox"
+          Introduction="This is an extension of the AtomPasswordBox and functions in the same way, with the addition of comparing the inputs of the two fields for accuracy."
+          Source="/Views/EditorSamples/RepeatPasswordBox.xaml"
+          DescriptionSource="/Views/EditorSamples/RepeatPasswordBoxDesc.xaml"
+          XAMLName="RepeatPasswordBox"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="TextBoxwithRegEx"
+          Introduction="This is an extension of the AtomTextBox where the TextBox will only accept input in the format of the regular expression provided."
+          Source="/Views/EditorSamples/TextBoxWithRegExSample.xaml"
+          DescriptionSource="/Views/EditorSamples/TextBoxWithRegExDesc.xaml"
+          XAMLName="TextBoxWithRegExSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="TitleTextBox"
+          Introduction="UIAtoms AtomTitleTextBox is an extension of the AtomTextBox. This control converts all text input into Title Case. A setting is also available wherein all the text can be converted to upper case."
+          Source="/Views/EditorSamples/TitleTextBoxSample.xaml"
+          DescriptionSource="/Views/EditorSamples/TitleTextBoxDesc.xaml"
+          XAMLName="TitleTextBoxSample"
+          HasChildren="false"/>
+
+        <PageNode
+          Name="FilterTextBox"
+          Introduction="This is a sample of a simple Sign Up Form"
+          Source="/Views/EditorSamples/FilterTextBoxSample.xaml"
+          DescriptionSource="/Views/EditorSamples/FilterTextBoxDesc.xaml"
+          XAMLName="FilterTextBoxSample"
+          HasChildren="false"/>
+
+
+      </Children>
+
+    </PageNode>
+
+  </Children>
+</PageNode>

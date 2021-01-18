@@ -1,0 +1,29 @@
+﻿<Unit
+  ID="byte_per_second"
+  Name="Byte Per Second"
+  Symbol="Bps"
+  >
+  <Conversions>
+    <Conversion ID="bits_per_second" Name="Bits per second" SubType="" Symbol="bps" Factor="8" Factor10="0" />
+    <Conversion ID="kilobits_per_second" Name="Kilobits per second" SubType="" Symbol="kbps" Factor="0.0078125" Factor10="0" />
+    <Conversion ID="kilobytes_per_second" Name="Kilobytes per second" SubType="" Symbol="KBps" Factor="0.00097656" Factor10="0" />
+    <Conversion ID="megabits_per_second" Name="Megabits per second" SubType="" Symbol="mbps" Factor="7.6294" Factor10="-06" />
+    <Conversion ID="megabytes_per_second" Name="Megabytes per second" SubType="" Symbol="MBps" Factor="9.5367" Factor10="-07" />
+    <Conversion ID="gigabits_per_second" Name="Gigabits per second" SubType="" Symbol="gbps" Factor="7.4506" Factor10="-09" />
+    <Conversion ID="gigabytes_per_second" Name="Gigabytes per second" SubType="" Symbol="GBps" Factor="9.3132" Factor10="-10" />
+    <Conversion ID="terabits_per_second" Name="Terabits per second" SubType="" Symbol="tbps" Factor="7.276" Factor10="-12" />
+    <Conversion ID="terabytes_per_second" Name="Terabytes per second" SubType="" Symbol="TBps" Factor="9.0949" Factor10="-13" />
+
+    <Conversion ID="seconds_14.4kbps_modem" Name="seconds (14.4 kbps modem)" SubType="" Symbol="s" Factor="0.00054253" Factor10="0" />
+    <Conversion ID="seconds_19.2kbps_modem" Name="secoonds (19.2 kbps modem)" SubType="" Symbol="s" Factor="0.0004069" Factor10="0" />
+    <Conversion ID="seconds_28.8kbps_modem" Name="seconds (28.8 kbps modem)" SubType="" Symbol="s" Factor="0.00027127" Factor10="0" />
+    <Conversion ID="seconds_33.6kbps_modem" Name="seconds (33.6 kbps modem)" SubType="" Symbol="s" Factor="0.00023251" Factor10="0" />
+    <Conversion ID="seconds_56kbps_modem" Name="seconds (56 kbps modem)" SubType="" Symbol="s" Factor="0.00013563" Factor10="0" />
+    <Conversion ID="seconds_128kbps_DSL" Name="seconds (128 kbps DSL)" SubType="" Symbol="s" Factor="6.1035" Factor10="-05" />
+    <Conversion ID="seconds_256kbps_DSL" Name="seconds (256 kbps DSL)" SubType="" Symbol="s" Factor="3.0518" Factor10="-05" />
+    <Conversion ID="seconds_384kbps_DSL" Name="seconds (384 kbps DSL)" SubType="" Symbol="s" Factor="2.0345" Factor10="-05" />
+    <Conversion ID="seconds_512kbps_DSL" Name="seconds (512 kbps DSL)" SubType="" Symbol="s" Factor="1.5259" Factor10="-05" />
+    <Conversion ID="seconds_768kbps_DSL" Name="seconds (768 kbps DSL)" SubType="" Symbol="s" Factor="1.0173" Factor10="-05" />
+    <Conversion ID="seconds_1024kbps_DSL" Name="seconds (1024 kbps DSL)" SubType="" Symbol="s" Factor="7.6294" Factor10="-06" />
+  </Conversions>
+</Unit>

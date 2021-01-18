@@ -1,0 +1,19 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.ListSamples.ComboBoxDesc" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="ComboBoxDesc Page">
+    <Grid x:Name="LayoutRoot">
+        <StackPanel>
+            <TextBlock Text="•	The Select Color ComboBox is a required field for this sample form. Clicking the 'Submit' button will fire the customized error stating 'Please select color'."
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+            <TextBlock Text="•	Making a selection will instantaneously return the selected value to the form, which is displayed for demonstration purposes in the 'Selected Value' field. Making the selection will also automatically remove the validation error that was fired."
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+        </StackPanel>
+
+    </Grid>
+</navigation:Page>

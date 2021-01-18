@@ -1,0 +1,31 @@
+﻿<Page x:Class="UIAtoms.WPFSamples.ListSamples.ListBoxDesc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="600"
+	Title="ListBoxDesc">
+
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <List>
+                    <ListItem>
+                        <Paragraph>	Both the Select Color and Select Type list boxes are required fields. Clicking the “Submit” button will fire the customized errors for both the fields.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	If a selection is made in any one of the required fields, and a selection is not made in the other field, and the “Submit” button is pressed, the error message for that unselected field will be displayed.</Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>	In the “Select Type” field, List Controls and Data Controls have been identified as invalid selections using the InvalidIndices property of the Listbox. Selecting either of the two will trigger the customized error for invalid selections.</Paragraph>
+                    </ListItem>
+                </List>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Page>

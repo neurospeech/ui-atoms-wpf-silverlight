@@ -1,0 +1,51 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.ListSamples.CheckBoxListSample" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           Title="CheckBoxListSample Page" 
+           xmlns:sys="clr-namespace:System;assembly=mscorlib"
+           xmlns:ns="http://uiatoms.neurospeech.com/silverlight" Loaded="Page_Loaded">
+
+    <ns:AtomForm Width="700"
+                 Header="CheckBox List" 
+                 x:Name="checkboxForm" HorizontalAlignment="Center">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <ns:AtomCheckBoxList Grid.Column="0" ns:AtomForm.IsRequired="True"
+                ns:AtomForm.Label="Choose your Options" x:Name="seatcheckbox"
+                ns:AtomForm.MissingValueMessage="Make a selection">
+                
+                    <sys:String>Leather Seats</sys:String>
+                    <sys:String>Automatic Wipers</sys:String>
+                    <sys:String>Automatic Xenon Headlamps</sys:String>
+
+            </ns:AtomCheckBoxList> 
+            
+            <ns:AtomCheckBoxList Grid.Column="1" ns:AtomForm.IsRequired="True"
+                    ns:AtomForm.Label="Choose your Options" x:Name="breakcheckbox"
+                    ns:AtomForm.MissingValueMessage="Make a selection">
+                
+                        <sys:String>ABS Braking System</sys:String>
+                        <sys:String>TCS Tranction Control System</sys:String>
+                        <sys:String>ESP - Electronic Stability Program</sys:String>
+
+            </ns:AtomCheckBoxList>
+        </Grid>
+
+        <ns:AtomButton Content="Submit" ValidationRootElement="checkboxForm"/>
+        
+    </ns:AtomForm>
+
+</navigation:Page>

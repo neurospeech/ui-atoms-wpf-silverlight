@@ -1,0 +1,22 @@
+﻿<navigation:Page x:Class="UIAtomsDemo.Views.EditorSamples.TitleTextBoxDesc" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="TitleTextBoxDesc Page">
+    <Grid x:Name="LayoutRoot">
+        <StackPanel>
+            <TextBlock Text="•	This control extends the functionality of the AtomTextBox and so all its associated parameters apply here."
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+            <TextBlock Text="•	Any input provided in the 'Upper Case' field will convert the text to upper case regardless of the case of input."
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+            <TextBlock Text="•	Any input procided in the 'Title Case' field will convert the text to title case regardless of the case of input.
+- However, in the case of Title Case, certain words need to be ignored. The list of those ignored words is provided in the 'Ignored Words' field. This list is customizable."
+                       TextWrapping="Wrap" FontWeight="Bold"/>
+        </StackPanel>
+
+    </Grid>
+</navigation:Page>

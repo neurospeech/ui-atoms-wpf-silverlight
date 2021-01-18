@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="16bdb3b0-ec62-4707-b955-75aa067a69e5" revisionNumber="1">
+  <developerHowToDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+    <introduction>
+    	<para>In this Walkthrough, we will try to create a sample Signup form in 
+    	order to demonstrate inbuilt layout and validation capabilities of 
+    	UIAtoms.</para>
+      <para>
+      	In order to create your first UIAtoms Form, please make sure you have 
+      	created Page, Window or User Control in WPF or Silverlight project. 
+      	And reference to NeuroSpeech.UIAtoms.dll (for WPF) or 
+      	NeuroSpeech.UIAtoms.Silverlight.dll (for Silverlight) is added to your 
+      	project.
+      </para>
+    </introduction>
+    <!-- Optional procedures followed by optional code example but must have
+         at least one procedure or code example -->
+    <procedure>
+      <title>In the XAML Editing window of your Page/Window or User Control, 
+      enter following code.</title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>For WPF, add following namespaces in the root tag as shown 
+            below.
+	            <code language="XAML">
+				<![CDATA[
+        xmlns:ns="http://uiatoms.neurospeech.com/wpf"
+        xmlns:nsb="http://uiatoms.neurospeech.com/wpf/buttons"
+        xmlns:nsv="http://uiatoms.neurospeech.com/wpf/validations"
+				]]>
+				</code>
+            </para>
+            <para>For Silverlight, add following namespaces in the root tag as 
+            shown below.
+	            <code language="XAML">
+				<![CDATA[
+        xmlns:ns="http://uiatoms.neurospeech.com/silverlight"
+        xmlns:nsb="http://uiatoms.neurospeech.com/silverlight/buttons"
+        xmlns:nsv="http://uiatoms.neurospeech.com/silverlight/validations"
+				]]>
+				</code>
+            </para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>You can now add 
+            <token>RefAtomForm</token>
+            as shown below.
+            </para>
+            <code language="XAML">
+				<![CDATA[
+        <ns:AtomForm 
+            x:Name="rootForm" LabelWidth="100" VerticalGap="2">
+        </ns:AtomForm>
+                ]]>
+            </code>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>Now let us add 
+            <token>RefAtomTextBox</token>
+            as shown below. This control contains ability to display watermak,
+            and also after setting IsRequired property true, it will validate
+            automatically for empty string.
+            </para>
+            <code language="XAML">
+				<![CDATA[
+        <ns:AtomForm 
+            x:Name="rootForm" LabelWidth="100" VerticalGap="2">
+
+            <ns:AtomTextBox 
+                Watermark="Testing.." ns:AtomForm.Label="Username:" 
+                ns:AtomForm.IsRequired="True"
+                />
+
+        </ns:AtomForm>
+                ]]>
+            </code>
+          </content>
+        </step>
+        
+        <step>
+          <content>
+            <para>Now let us add Password Boxes (We need two password boxes).
+            Note that the second Password Box is of different type, and it has
+            Property FirstPasswordBoxName that we will set to x:Name of the 
+            first password box.
+            </para>
+            <para>This automatically validates 2nd password box with content of
+            first password box.</para>
+            <code language="XAML">
+				<![CDATA[
+				
+            <ns:AtomPasswordBox  
+                x:Name="pb1" 
+                ns:AtomForm.IsRequired="True" 
+                ns:AtomForm.Label="Password:" />
+				
+            <ns:AtomPasswordBoxAgain 
+                FirstPasswordBoxName="pb1" 
+                ns:AtomForm.Label="Password:"
+                ns:AtomForm.IsRequired="True" />
+				
+                ]]>
+            </code>
+          </content>
+        </step>
+        
+        <step>
+          <content>
+            <para>Now let us add field for Email Text Box.
+			<token>RefAtomEmailTextBox</token>
+			automatically validates input text for being correct email address. 
+			This class already sets Attached Property ValidationRule of 
+			<token>RefAtomForm</token>
+            </para>
+            <code language="XAML">
+				<![CDATA[
+				
+            <ns:AtomEmailTextBox 
+                ns:AtomForm.Label="Email:" 
+                ns:AtomForm.IsRequired="True"
+                />
+				
+                ]]>
+            </code>
+          </content>
+        </step>
+        
+        <step>
+          <content>
+            <para>Finally lets add
+			<token>RefAtomButton</token>
+			which will automatically validate the form just after the Click 
+			event and it will halt the execution if there was any error.
+			In order for validation to work, you must set 
+			<legacyBold>ValidationRootElement</legacyBold> property of 
+			<token>RefAtomButton</token> to x:Name property of 
+			<token>RefAtomForm</token> which is its immediate logical parent.
+            </para>
+            <code language="XAML">
+				<![CDATA[
+				
+            <ns:AtomButton
+                HorizontalAlignment="Left"
+                Content="Submit"
+                ValidationRootElement="rootForm" 
+                />
+				
+                ]]>
+            </code>
+          </content>
+        </step>
+        
+        
+        
+        <step>
+          <content>
+          Last step is to write Event Handler for Click event of your 
+          <token>RefAtomButton</token> to apply your business logic. Now note 
+          that, the click event of <token>RefAtomButton</token> is fired only if
+          the form validation was successful.
+          </content>
+        </step>
+        
+        <step>
+        	<content><para>Lets add Tabs to existing form. It is easy to group
+        	form items in tabs when items run down pages.</para>
+        	<code language="XAML">
+        		<![CDATA[
+			      <ns:AtomForm
+			              Header="Tabbed Sample"
+			              x:Name="complexForm" HorizontalAlignment="Center">
+			
+			            <ns:AtomFormTab Header="Personal Details" RowLayout="2,1">
+			
+			                <ns:AtomTextBox ns:AtomForm.Label="Firstname:"/>
+			                <ns:AtomTextBox ns:AtomForm.Label="Lastname:"/>
+			                <ns:AtomTextBox ns:AtomForm.Label="Email:"/>
+			           </ns:AtomFormTab>
+			           
+			            <ns:AtomFormTab Header="Professional Details">
+			
+			                <ns:AtomTextBox ns:AtomForm.Label="Company:"/>
+			                <ns:AtomTextBox ns:AtomForm.Label="Industry:"/>
+			           </ns:AtomFormTab>
+			           
+			      </ns:AtomForm>
+        		
+        		]]>
+        	</code>
+        	</content>
+        </step>
+        
+      </steps>
+      <conclusion>Now your first business form is ready, which contains 70% 
+      less code then your traditional WPF/Silverlight code designed with Canvas
+      or Grid.
+      </conclusion>
+    </procedure>
+    <!-- <codeExample>Optional code example</codeExample> -->
+    <!-- <buildInstructions>Optional instructions for building a
+         code example.</buildInstructions> -->
+    <!-- <robustProgramming>Optional discussion of error handling and other
+         issues related to writing solid code.</robustProgramming> -->
+    <!-- <security>Optional discussion of security issues.</security> -->
+    <relatedTopics>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID">Link text</link>
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on CodePlex</linkText>
+          <linkAlternateText>Go to CodePlex</linkAlternateText>
+          <linkUri>http://shfb.codeplex.com</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerHowToDocument>
+</topic>
